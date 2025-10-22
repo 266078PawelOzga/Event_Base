@@ -1,0 +1,1893 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<linie>
+ <linia nazwa="920" typ="Strefowa autobusowa" wazny_od="01.09.2025" wazny_do="">
+  <wariant id="1" nazwa="GALERIA DOMINIKAŃSKA - WOJNÓW (Pętla)">
+   <przystanek id="10119" nazwa="GALERIA DOMINIKAŃSKA" ulica="Słowackiego" cechy="">
+    <czasy>
+     <przystanek numer="0" id="10119" nazwa="GALERIA DOMINIKAŃSKA" czas="0"/>
+     <przystanek numer="1" id="20312" nazwa="pl. Wróblewskiego" czas="5"/>
+     <przystanek numer="2" id="25497" nazwa="Na Grobli (Hydropolis)" czas="7"/>
+     <przystanek numer="3" id="25499" nazwa="Okólna" czas="9"/>
+     <przystanek numer="4" id="25503" nazwa="Międzyrzecka" czas="12"/>
+     <przystanek numer="5" id="25505" nazwa="Bierdzany" czas="13"/>
+     <przystanek numer="6" id="25507" nazwa="Nowy Dom" czas="16"/>
+     <przystanek numer="7" id="25517" nazwa="Opatowicka nr 59" czas="18"/>
+     <przystanek numer="8" id="25509" nazwa="Opatowicka nr 85" czas="19"/>
+     <przystanek numer="9" id="25511" nazwa="OPATOWICE" czas="20"/>
+     <przystanek numer="10" id="25519" nazwa="Opatowicka nr 127" czas="21"/>
+     <przystanek numer="11" id="25513" nazwa="Zalewowa" czas="22"/>
+     <przystanek numer="12" id="51934005" nazwa="Trestno - świetlica" czas="23"/>
+     <przystanek numer="13" id="51934003" nazwa="Trestno - kościół" czas="24"/>
+     <przystanek numer="14" id="50000062" nazwa="TRESTNO (pętla)" czas="25"/>
+     <przystanek numer="15" id="50000064" nazwa="BLIZANOWICE" czas="27"/>
+     <przystanek numer="16" id="425900" nazwa="WOJNÓW (Pętla)" czas="37"/>
+    </czasy>
+    <tabliczka id="1" mc="0">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="55">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="00">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="00" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="01" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="01" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="11">
+       <min m="01" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="05" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="05">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="06">
+       </min>
+       <min m="56">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="36">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="16">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="14" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="20312" nazwa="pl. Wróblewskiego" ulica="Pułaskiego" cechy="">
+    <czasy>
+     <przystanek numer="0" id="20312" nazwa="pl. Wróblewskiego" czas="0"/>
+     <przystanek numer="1" id="25497" nazwa="Na Grobli (Hydropolis)" czas="2"/>
+     <przystanek numer="2" id="25499" nazwa="Okólna" czas="4"/>
+     <przystanek numer="3" id="25503" nazwa="Międzyrzecka" czas="7"/>
+     <przystanek numer="4" id="25505" nazwa="Bierdzany" czas="8"/>
+     <przystanek numer="5" id="25507" nazwa="Nowy Dom" czas="11"/>
+     <przystanek numer="6" id="25517" nazwa="Opatowicka nr 59" czas="13"/>
+     <przystanek numer="7" id="25509" nazwa="Opatowicka nr 85" czas="14"/>
+     <przystanek numer="8" id="25511" nazwa="OPATOWICE" czas="15"/>
+     <przystanek numer="9" id="25519" nazwa="Opatowicka nr 127" czas="16"/>
+     <przystanek numer="10" id="25513" nazwa="Zalewowa" czas="17"/>
+     <przystanek numer="11" id="51934005" nazwa="Trestno - świetlica" czas="18"/>
+     <przystanek numer="12" id="51934003" nazwa="Trestno - kościół" czas="19"/>
+     <przystanek numer="13" id="50000062" nazwa="TRESTNO (pętla)" czas="20"/>
+     <przystanek numer="14" id="50000064" nazwa="BLIZANOWICE" czas="22"/>
+     <przystanek numer="15" id="425900" nazwa="WOJNÓW (Pętla)" czas="32"/>
+    </czasy>
+    <tabliczka id="2" mc="3">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="58">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="05">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="04" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="05" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="05" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="11">
+       <min m="05" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="09" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="09">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="11">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="01">
+       </min>
+       <min m="41">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="21">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="18" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="25497" nazwa="Na Grobli (Hydropolis)" ulica="Na Grobli" cechy="">
+    <czasy>
+     <przystanek numer="0" id="25497" nazwa="Na Grobli (Hydropolis)" czas="0"/>
+     <przystanek numer="1" id="25499" nazwa="Okólna" czas="2"/>
+     <przystanek numer="2" id="25503" nazwa="Międzyrzecka" czas="5"/>
+     <przystanek numer="3" id="25505" nazwa="Bierdzany" czas="6"/>
+     <przystanek numer="4" id="25507" nazwa="Nowy Dom" czas="9"/>
+     <przystanek numer="5" id="25517" nazwa="Opatowicka nr 59" czas="11"/>
+     <przystanek numer="6" id="25509" nazwa="Opatowicka nr 85" czas="12"/>
+     <przystanek numer="7" id="25511" nazwa="OPATOWICE" czas="13"/>
+     <przystanek numer="8" id="25519" nazwa="Opatowicka nr 127" czas="14"/>
+     <przystanek numer="9" id="25513" nazwa="Zalewowa" czas="15"/>
+     <przystanek numer="10" id="51934005" nazwa="Trestno - świetlica" czas="16"/>
+     <przystanek numer="11" id="51934003" nazwa="Trestno - kościół" czas="17"/>
+     <przystanek numer="12" id="50000062" nazwa="TRESTNO (pętla)" czas="18"/>
+     <przystanek numer="13" id="50000064" nazwa="BLIZANOWICE" czas="20"/>
+     <przystanek numer="14" id="425900" nazwa="WOJNÓW (Pętla)" czas="30"/>
+    </czasy>
+    <tabliczka id="3" mc="2">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="00">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="07">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="06" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="07" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="07" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="11">
+       <min m="07" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="11" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="11">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="13">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="03">
+       </min>
+       <min m="43">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="23">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="20" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="25499" nazwa="Okólna" ulica="Na Grobli" cechy="">
+    <czasy>
+     <przystanek numer="0" id="25499" nazwa="Okólna" czas="0"/>
+     <przystanek numer="1" id="25503" nazwa="Międzyrzecka" czas="3"/>
+     <przystanek numer="2" id="25505" nazwa="Bierdzany" czas="4"/>
+     <przystanek numer="3" id="25507" nazwa="Nowy Dom" czas="7"/>
+     <przystanek numer="4" id="25517" nazwa="Opatowicka nr 59" czas="9"/>
+     <przystanek numer="5" id="25509" nazwa="Opatowicka nr 85" czas="10"/>
+     <przystanek numer="6" id="25511" nazwa="OPATOWICE" czas="11"/>
+     <przystanek numer="7" id="25519" nazwa="Opatowicka nr 127" czas="12"/>
+     <przystanek numer="8" id="25513" nazwa="Zalewowa" czas="13"/>
+     <przystanek numer="9" id="51934005" nazwa="Trestno - świetlica" czas="14"/>
+     <przystanek numer="10" id="51934003" nazwa="Trestno - kościół" czas="15"/>
+     <przystanek numer="11" id="50000062" nazwa="TRESTNO (pętla)" czas="16"/>
+     <przystanek numer="12" id="50000064" nazwa="BLIZANOWICE" czas="18"/>
+     <przystanek numer="13" id="425900" nazwa="WOJNÓW (Pętla)" czas="28"/>
+    </czasy>
+    <tabliczka id="4" mc="2">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="02">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="09">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="08" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="09" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="09" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="11">
+       <min m="09" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="13" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="13">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="15">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="05">
+       </min>
+       <min m="45">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="25">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="22" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="25503" nazwa="Międzyrzecka" ulica="Międzyrzecka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="25503" nazwa="Międzyrzecka" czas="0"/>
+     <przystanek numer="1" id="25505" nazwa="Bierdzany" czas="1"/>
+     <przystanek numer="2" id="25507" nazwa="Nowy Dom" czas="4"/>
+     <przystanek numer="3" id="25517" nazwa="Opatowicka nr 59" czas="6"/>
+     <przystanek numer="4" id="25509" nazwa="Opatowicka nr 85" czas="7"/>
+     <przystanek numer="5" id="25511" nazwa="OPATOWICE" czas="8"/>
+     <przystanek numer="6" id="25519" nazwa="Opatowicka nr 127" czas="9"/>
+     <przystanek numer="7" id="25513" nazwa="Zalewowa" czas="10"/>
+     <przystanek numer="8" id="51934005" nazwa="Trestno - świetlica" czas="11"/>
+     <przystanek numer="9" id="51934003" nazwa="Trestno - kościół" czas="12"/>
+     <przystanek numer="10" id="50000062" nazwa="TRESTNO (pętla)" czas="13"/>
+     <przystanek numer="11" id="50000064" nazwa="BLIZANOWICE" czas="15"/>
+     <przystanek numer="12" id="425900" nazwa="WOJNÓW (Pętla)" czas="25"/>
+    </czasy>
+    <tabliczka id="5" mc="3" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="05">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="12">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="11" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="12" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="12" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="11">
+       <min m="12" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="16" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="16">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="18">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="08">
+       </min>
+       <min m="48">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="28">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="25" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="25505" nazwa="Bierdzany" ulica="Międzyrzecka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="25505" nazwa="Bierdzany" czas="0"/>
+     <przystanek numer="1" id="25507" nazwa="Nowy Dom" czas="3"/>
+     <przystanek numer="2" id="25517" nazwa="Opatowicka nr 59" czas="5"/>
+     <przystanek numer="3" id="25509" nazwa="Opatowicka nr 85" czas="6"/>
+     <przystanek numer="4" id="25511" nazwa="OPATOWICE" czas="7"/>
+     <przystanek numer="5" id="25519" nazwa="Opatowicka nr 127" czas="8"/>
+     <przystanek numer="6" id="25513" nazwa="Zalewowa" czas="9"/>
+     <przystanek numer="7" id="51934005" nazwa="Trestno - świetlica" czas="10"/>
+     <przystanek numer="8" id="51934003" nazwa="Trestno - kościół" czas="11"/>
+     <przystanek numer="9" id="50000062" nazwa="TRESTNO (pętla)" czas="12"/>
+     <przystanek numer="10" id="50000064" nazwa="BLIZANOWICE" czas="14"/>
+     <przystanek numer="11" id="425900" nazwa="WOJNÓW (Pętla)" czas="24"/>
+    </czasy>
+    <tabliczka id="6" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="06">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="13">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="12" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="13" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="13" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="11">
+       <min m="13" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="17" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="17">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="19">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="09">
+       </min>
+       <min m="49">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="29">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="26" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="25507" nazwa="Nowy Dom" ulica="Opatowicka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="25507" nazwa="Nowy Dom" czas="0"/>
+     <przystanek numer="1" id="25517" nazwa="Opatowicka nr 59" czas="2"/>
+     <przystanek numer="2" id="25509" nazwa="Opatowicka nr 85" czas="3"/>
+     <przystanek numer="3" id="25511" nazwa="OPATOWICE" czas="4"/>
+     <przystanek numer="4" id="25519" nazwa="Opatowicka nr 127" czas="5"/>
+     <przystanek numer="5" id="25513" nazwa="Zalewowa" czas="6"/>
+     <przystanek numer="6" id="51934005" nazwa="Trestno - świetlica" czas="7"/>
+     <przystanek numer="7" id="51934003" nazwa="Trestno - kościół" czas="8"/>
+     <przystanek numer="8" id="50000062" nazwa="TRESTNO (pętla)" czas="9"/>
+     <przystanek numer="9" id="50000064" nazwa="BLIZANOWICE" czas="11"/>
+     <przystanek numer="10" id="425900" nazwa="WOJNÓW (Pętla)" czas="21"/>
+    </czasy>
+    <tabliczka id="7" mc="3" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="09">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="16">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="15" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="16" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="16" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="11">
+       <min m="16" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="20" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="20">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="22">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="12">
+       </min>
+       <min m="52">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="32">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="29" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="25517" nazwa="Opatowicka nr 59" ulica="Opatowicka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="25517" nazwa="Opatowicka nr 59" czas="0"/>
+     <przystanek numer="1" id="25509" nazwa="Opatowicka nr 85" czas="1"/>
+     <przystanek numer="2" id="25511" nazwa="OPATOWICE" czas="2"/>
+     <przystanek numer="3" id="25519" nazwa="Opatowicka nr 127" czas="3"/>
+     <przystanek numer="4" id="25513" nazwa="Zalewowa" czas="4"/>
+     <przystanek numer="5" id="51934005" nazwa="Trestno - świetlica" czas="5"/>
+     <przystanek numer="6" id="51934003" nazwa="Trestno - kościół" czas="6"/>
+     <przystanek numer="7" id="50000062" nazwa="TRESTNO (pętla)" czas="7"/>
+     <przystanek numer="8" id="50000064" nazwa="BLIZANOWICE" czas="9"/>
+     <przystanek numer="9" id="425900" nazwa="WOJNÓW (Pętla)" czas="19"/>
+    </czasy>
+    <tabliczka id="8" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="11">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="18">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="17" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="18" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="18" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="11">
+       <min m="18" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="22" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="22">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="24">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="14">
+       </min>
+       <min m="54">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="34">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="31" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="25509" nazwa="Opatowicka nr 85" ulica="Opatowicka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="25509" nazwa="Opatowicka nr 85" czas="0"/>
+     <przystanek numer="1" id="25511" nazwa="OPATOWICE" czas="1"/>
+     <przystanek numer="2" id="25519" nazwa="Opatowicka nr 127" czas="2"/>
+     <przystanek numer="3" id="25513" nazwa="Zalewowa" czas="3"/>
+     <przystanek numer="4" id="51934005" nazwa="Trestno - świetlica" czas="4"/>
+     <przystanek numer="5" id="51934003" nazwa="Trestno - kościół" czas="5"/>
+     <przystanek numer="6" id="50000062" nazwa="TRESTNO (pętla)" czas="6"/>
+     <przystanek numer="7" id="50000064" nazwa="BLIZANOWICE" czas="8"/>
+     <przystanek numer="8" id="425900" nazwa="WOJNÓW (Pętla)" czas="18"/>
+    </czasy>
+    <tabliczka id="9" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="12">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="19">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="18" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="19" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="19" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="11">
+       <min m="19" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="23" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="23">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="25">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="15">
+       </min>
+       <min m="55">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="35">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="32" ozn="R" przyp="R - kurs skrócony do Opatowic">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="25511" nazwa="OPATOWICE" ulica="Opatowicka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="25511" nazwa="OPATOWICE" czas="0"/>
+     <przystanek numer="1" id="25519" nazwa="Opatowicka nr 127" czas="1"/>
+     <przystanek numer="2" id="25513" nazwa="Zalewowa" czas="2"/>
+     <przystanek numer="3" id="51934005" nazwa="Trestno - świetlica" czas="3"/>
+     <przystanek numer="4" id="51934003" nazwa="Trestno - kościół" czas="4"/>
+     <przystanek numer="5" id="50000062" nazwa="TRESTNO (pętla)" czas="5"/>
+     <przystanek numer="6" id="50000064" nazwa="BLIZANOWICE" czas="7"/>
+     <przystanek numer="7" id="425900" nazwa="WOJNÓW (Pętla)" czas="17"/>
+    </czasy>
+    <tabliczka id="10" mc="1">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="13">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="20">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="24">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="26">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="16">
+       </min>
+       <min m="56">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="36">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="25519" nazwa="Opatowicka nr 127" ulica="Opatowicka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="25519" nazwa="Opatowicka nr 127" czas="0"/>
+     <przystanek numer="1" id="25513" nazwa="Zalewowa" czas="1"/>
+     <przystanek numer="2" id="51934005" nazwa="Trestno - świetlica" czas="2"/>
+     <przystanek numer="3" id="51934003" nazwa="Trestno - kościół" czas="3"/>
+     <przystanek numer="4" id="50000062" nazwa="TRESTNO (pętla)" czas="4"/>
+     <przystanek numer="5" id="50000064" nazwa="BLIZANOWICE" czas="6"/>
+     <przystanek numer="6" id="425900" nazwa="WOJNÓW (Pętla)" czas="16"/>
+    </czasy>
+    <tabliczka id="11" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="14">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="21">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="25">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="27">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="17">
+       </min>
+       <min m="57">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="37">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="25513" nazwa="Zalewowa" ulica="Opatowicka" cechy="1">
+    <czasy>
+     <przystanek numer="0" id="25513" nazwa="Zalewowa" czas="0"/>
+     <przystanek numer="1" id="51934005" nazwa="Trestno - świetlica" czas="1"/>
+     <przystanek numer="2" id="51934003" nazwa="Trestno - kościół" czas="2"/>
+     <przystanek numer="3" id="50000062" nazwa="TRESTNO (pętla)" czas="3"/>
+     <przystanek numer="4" id="50000064" nazwa="BLIZANOWICE" czas="5"/>
+     <przystanek numer="5" id="425900" nazwa="WOJNÓW (Pętla)" czas="15"/>
+    </czasy>
+    <tabliczka id="12" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="15">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="22">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="26">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="28">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="18">
+       </min>
+       <min m="58">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="38">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="51934005" nazwa="Trestno - świetlica" ulica="Nadodrzańska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="51934005" nazwa="Trestno - świetlica" czas="0"/>
+     <przystanek numer="1" id="51934003" nazwa="Trestno - kościół" czas="1"/>
+     <przystanek numer="2" id="50000062" nazwa="TRESTNO (pętla)" czas="2"/>
+     <przystanek numer="3" id="50000064" nazwa="BLIZANOWICE" czas="4"/>
+     <przystanek numer="4" id="425900" nazwa="WOJNÓW (Pętla)" czas="14"/>
+    </czasy>
+    <tabliczka id="13" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="16">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="23">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="27">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="29">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="19">
+       </min>
+       <min m="59">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="39">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="51934003" nazwa="Trestno - kościół" ulica="Nadodrzańska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="51934003" nazwa="Trestno - kościół" czas="0"/>
+     <przystanek numer="1" id="50000062" nazwa="TRESTNO (pętla)" czas="1"/>
+     <przystanek numer="2" id="50000064" nazwa="BLIZANOWICE" czas="3"/>
+     <przystanek numer="3" id="425900" nazwa="WOJNÓW (Pętla)" czas="13"/>
+    </czasy>
+    <tabliczka id="14" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="17">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="24">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="28">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="30">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="20">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="00">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="40">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="50000062" nazwa="TRESTNO (pętla)" ulica="Nadodrzańska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="50000062" nazwa="TRESTNO (pętla)" czas="0"/>
+     <przystanek numer="1" id="50000064" nazwa="BLIZANOWICE" czas="2"/>
+     <przystanek numer="2" id="425900" nazwa="WOJNÓW (Pętla)" czas="12"/>
+    </czasy>
+    <tabliczka id="15" mc="1">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="18">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="25">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="29">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="31">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="21">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="01">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="41">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="50000064" nazwa="BLIZANOWICE" ulica=" " cechy="1">
+    <czasy>
+     <przystanek numer="0" id="50000064" nazwa="BLIZANOWICE" czas="0"/>
+     <przystanek numer="1" id="425900" nazwa="WOJNÓW (Pętla)" czas="10"/>
+    </czasy>
+    <tabliczka id="17" mc="2">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="20">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="27">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="31">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="33">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="23">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="03">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="43">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="425900" nazwa="WOJNÓW (Pętla)" ulica=" " cechy="1">
+    <czasy>
+    </czasy>
+   </przystanek>
+  </wariant>
+  <wariant id="2" nazwa="WOJNÓW (Pętla) - GALERIA DOMINIKAŃSKA">
+   <przystanek id="425900" nazwa="WOJNÓW (Pętla)" ulica=" " cechy="1">
+    <czasy>
+     <przystanek numer="0" id="425900" nazwa="WOJNÓW (Pętla)" czas="0"/>
+     <przystanek numer="1" id="50000064" nazwa="BLIZANOWICE" czas="9"/>
+     <przystanek numer="2" id="50000062" nazwa="TRESTNO (pętla)" czas="11"/>
+     <przystanek numer="3" id="51934004" nazwa="Trestno - kościół" czas="12"/>
+     <przystanek numer="4" id="51934006" nazwa="Trestno - świetlica" czas="13"/>
+     <przystanek numer="5" id="25514" nazwa="Zalewowa" czas="14"/>
+     <przystanek numer="6" id="25518" nazwa="Opatowicka nr 127" czas="15"/>
+     <przystanek numer="7" id="85512" nazwa="OPATOWICE" czas="16"/>
+     <przystanek numer="8" id="25510" nazwa="Opatowicka nr 85" czas="17"/>
+     <przystanek numer="9" id="25520" nazwa="Opatowicka nr 59" czas="18"/>
+     <przystanek numer="10" id="25508" nazwa="Nowy Dom" czas="20"/>
+     <przystanek numer="11" id="25506" nazwa="Bierdzany" czas="22"/>
+     <przystanek numer="12" id="25504" nazwa="Międzyrzecka" czas="24"/>
+     <przystanek numer="13" id="25500" nazwa="Okólna" czas="27"/>
+     <przystanek numer="14" id="25498" nazwa="Na Grobli (Hydropolis)" czas="29"/>
+     <przystanek numer="15" id="120200" nazwa="pl. Wróblewskiego" czas="32"/>
+     <przystanek numer="16" id="10119" nazwa="GALERIA DOMINIKAŃSKA" czas="37"/>
+    </czasy>
+    <tabliczka id="19" mc="0">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="09">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="00">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="15">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="10">
+       </min>
+       <min m="45">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="45">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="52">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="30">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="50000064" nazwa="BLIZANOWICE" ulica=" " cechy="1">
+    <czasy>
+     <przystanek numer="0" id="50000064" nazwa="BLIZANOWICE" czas="0"/>
+     <przystanek numer="1" id="50000062" nazwa="TRESTNO (pętla)" czas="2"/>
+     <przystanek numer="2" id="51934004" nazwa="Trestno - kościół" czas="3"/>
+     <przystanek numer="3" id="51934006" nazwa="Trestno - świetlica" czas="4"/>
+     <przystanek numer="4" id="25514" nazwa="Zalewowa" czas="5"/>
+     <przystanek numer="5" id="25518" nazwa="Opatowicka nr 127" czas="6"/>
+     <przystanek numer="6" id="85512" nazwa="OPATOWICE" czas="7"/>
+     <przystanek numer="7" id="25510" nazwa="Opatowicka nr 85" czas="8"/>
+     <przystanek numer="8" id="25520" nazwa="Opatowicka nr 59" czas="9"/>
+     <przystanek numer="9" id="25508" nazwa="Nowy Dom" czas="11"/>
+     <przystanek numer="10" id="25506" nazwa="Bierdzany" czas="13"/>
+     <przystanek numer="11" id="25504" nazwa="Międzyrzecka" czas="15"/>
+     <przystanek numer="12" id="25500" nazwa="Okólna" czas="18"/>
+     <przystanek numer="13" id="25498" nazwa="Na Grobli (Hydropolis)" czas="20"/>
+     <przystanek numer="14" id="120200" nazwa="pl. Wróblewskiego" czas="23"/>
+     <przystanek numer="15" id="10119" nazwa="GALERIA DOMINIKAŃSKA" czas="28"/>
+    </czasy>
+    <tabliczka id="18" mc="7">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="18">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="08">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="23">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="18">
+       </min>
+       <min m="53">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="53">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="00">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="38">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="50000062" nazwa="TRESTNO (pętla)" ulica="Nadodrzańska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="50000062" nazwa="TRESTNO (pętla)" czas="0"/>
+     <przystanek numer="1" id="51934004" nazwa="Trestno - kościół" czas="1"/>
+     <przystanek numer="2" id="51934006" nazwa="Trestno - świetlica" czas="2"/>
+     <przystanek numer="3" id="25514" nazwa="Zalewowa" czas="3"/>
+     <przystanek numer="4" id="25518" nazwa="Opatowicka nr 127" czas="4"/>
+     <przystanek numer="5" id="85512" nazwa="OPATOWICE" czas="5"/>
+     <przystanek numer="6" id="25510" nazwa="Opatowicka nr 85" czas="6"/>
+     <przystanek numer="7" id="25520" nazwa="Opatowicka nr 59" czas="7"/>
+     <przystanek numer="8" id="25508" nazwa="Nowy Dom" czas="9"/>
+     <przystanek numer="9" id="25506" nazwa="Bierdzany" czas="11"/>
+     <przystanek numer="10" id="25504" nazwa="Międzyrzecka" czas="13"/>
+     <przystanek numer="11" id="25500" nazwa="Okólna" czas="16"/>
+     <przystanek numer="12" id="25498" nazwa="Na Grobli (Hydropolis)" czas="18"/>
+     <przystanek numer="13" id="120200" nazwa="pl. Wróblewskiego" czas="21"/>
+     <przystanek numer="14" id="10119" nazwa="GALERIA DOMINIKAŃSKA" czas="26"/>
+    </czasy>
+    <tabliczka id="16" mc="2">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="20">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="10">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="25">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="20">
+       </min>
+       <min m="55">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="55">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="02">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="40">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="51934004" nazwa="Trestno - kościół" ulica="Nadodrzańska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="51934004" nazwa="Trestno - kościół" czas="0"/>
+     <przystanek numer="1" id="51934006" nazwa="Trestno - świetlica" czas="1"/>
+     <przystanek numer="2" id="25514" nazwa="Zalewowa" czas="2"/>
+     <przystanek numer="3" id="25518" nazwa="Opatowicka nr 127" czas="3"/>
+     <przystanek numer="4" id="85512" nazwa="OPATOWICE" czas="4"/>
+     <przystanek numer="5" id="25510" nazwa="Opatowicka nr 85" czas="5"/>
+     <przystanek numer="6" id="25520" nazwa="Opatowicka nr 59" czas="6"/>
+     <przystanek numer="7" id="25508" nazwa="Nowy Dom" czas="8"/>
+     <przystanek numer="8" id="25506" nazwa="Bierdzany" czas="10"/>
+     <przystanek numer="9" id="25504" nazwa="Międzyrzecka" czas="12"/>
+     <przystanek numer="10" id="25500" nazwa="Okólna" czas="15"/>
+     <przystanek numer="11" id="25498" nazwa="Na Grobli (Hydropolis)" czas="17"/>
+     <przystanek numer="12" id="120200" nazwa="pl. Wróblewskiego" czas="20"/>
+     <przystanek numer="13" id="10119" nazwa="GALERIA DOMINIKAŃSKA" czas="25"/>
+    </czasy>
+    <tabliczka id="20" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="21">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="11">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="26">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="21">
+       </min>
+       <min m="56">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="56">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="03">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="41">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="51934006" nazwa="Trestno - świetlica" ulica="Nadodrzańska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="51934006" nazwa="Trestno - świetlica" czas="0"/>
+     <przystanek numer="1" id="25514" nazwa="Zalewowa" czas="1"/>
+     <przystanek numer="2" id="25518" nazwa="Opatowicka nr 127" czas="2"/>
+     <przystanek numer="3" id="85512" nazwa="OPATOWICE" czas="3"/>
+     <przystanek numer="4" id="25510" nazwa="Opatowicka nr 85" czas="4"/>
+     <przystanek numer="5" id="25520" nazwa="Opatowicka nr 59" czas="5"/>
+     <przystanek numer="6" id="25508" nazwa="Nowy Dom" czas="7"/>
+     <przystanek numer="7" id="25506" nazwa="Bierdzany" czas="9"/>
+     <przystanek numer="8" id="25504" nazwa="Międzyrzecka" czas="11"/>
+     <przystanek numer="9" id="25500" nazwa="Okólna" czas="14"/>
+     <przystanek numer="10" id="25498" nazwa="Na Grobli (Hydropolis)" czas="16"/>
+     <przystanek numer="11" id="120200" nazwa="pl. Wróblewskiego" czas="19"/>
+     <przystanek numer="12" id="10119" nazwa="GALERIA DOMINIKAŃSKA" czas="24"/>
+    </czasy>
+    <tabliczka id="21" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="22">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="12">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="27">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="22">
+       </min>
+       <min m="57">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="57">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="04">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="42">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="25514" nazwa="Zalewowa" ulica="Opatowicka" cechy="1">
+    <czasy>
+     <przystanek numer="0" id="25514" nazwa="Zalewowa" czas="0"/>
+     <przystanek numer="1" id="25518" nazwa="Opatowicka nr 127" czas="1"/>
+     <przystanek numer="2" id="85512" nazwa="OPATOWICE" czas="2"/>
+     <przystanek numer="3" id="25510" nazwa="Opatowicka nr 85" czas="3"/>
+     <przystanek numer="4" id="25520" nazwa="Opatowicka nr 59" czas="4"/>
+     <przystanek numer="5" id="25508" nazwa="Nowy Dom" czas="6"/>
+     <przystanek numer="6" id="25506" nazwa="Bierdzany" czas="8"/>
+     <przystanek numer="7" id="25504" nazwa="Międzyrzecka" czas="10"/>
+     <przystanek numer="8" id="25500" nazwa="Okólna" czas="13"/>
+     <przystanek numer="9" id="25498" nazwa="Na Grobli (Hydropolis)" czas="15"/>
+     <przystanek numer="10" id="120200" nazwa="pl. Wróblewskiego" czas="18"/>
+     <przystanek numer="11" id="10119" nazwa="GALERIA DOMINIKAŃSKA" czas="23"/>
+    </czasy>
+    <tabliczka id="22" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="23">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="13">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="28">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="23">
+       </min>
+       <min m="58">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="58">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="05">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="43">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="25518" nazwa="Opatowicka nr 127" ulica="Opatowicka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="25518" nazwa="Opatowicka nr 127" czas="0"/>
+     <przystanek numer="1" id="85512" nazwa="OPATOWICE" czas="1"/>
+     <przystanek numer="2" id="25510" nazwa="Opatowicka nr 85" czas="2"/>
+     <przystanek numer="3" id="25520" nazwa="Opatowicka nr 59" czas="3"/>
+     <przystanek numer="4" id="25508" nazwa="Nowy Dom" czas="5"/>
+     <przystanek numer="5" id="25506" nazwa="Bierdzany" czas="7"/>
+     <przystanek numer="6" id="25504" nazwa="Międzyrzecka" czas="9"/>
+     <przystanek numer="7" id="25500" nazwa="Okólna" czas="12"/>
+     <przystanek numer="8" id="25498" nazwa="Na Grobli (Hydropolis)" czas="14"/>
+     <przystanek numer="9" id="120200" nazwa="pl. Wróblewskiego" czas="17"/>
+     <przystanek numer="10" id="10119" nazwa="GALERIA DOMINIKAŃSKA" czas="22"/>
+    </czasy>
+    <tabliczka id="23" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="24">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="14">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="29">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="24">
+       </min>
+       <min m="59">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="59">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="06">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="44">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="85512" nazwa="OPATOWICE" ulica="Opatowicka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="85512" nazwa="OPATOWICE" czas="0"/>
+     <przystanek numer="1" id="25510" nazwa="Opatowicka nr 85" czas="1"/>
+     <przystanek numer="2" id="25520" nazwa="Opatowicka nr 59" czas="2"/>
+     <przystanek numer="3" id="25508" nazwa="Nowy Dom" czas="4"/>
+     <przystanek numer="4" id="25506" nazwa="Bierdzany" czas="6"/>
+     <przystanek numer="5" id="25504" nazwa="Międzyrzecka" czas="8"/>
+     <przystanek numer="6" id="25500" nazwa="Okólna" czas="11"/>
+     <przystanek numer="7" id="25498" nazwa="Na Grobli (Hydropolis)" czas="13"/>
+     <przystanek numer="8" id="120200" nazwa="pl. Wróblewskiego" czas="16"/>
+     <przystanek numer="9" id="10119" nazwa="GALERIA DOMINIKAŃSKA" czas="21"/>
+    </czasy>
+    <tabliczka id="24" mc="1">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="25">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="25">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="15">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="30">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="38">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="38">
+       </min>
+      </godz>
+      <godz h="11">
+       <min m="38">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="38">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="25">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="00">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="00">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="07">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="45">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="25510" nazwa="Opatowicka nr 85" ulica="Opatowicka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="25510" nazwa="Opatowicka nr 85" czas="0"/>
+     <przystanek numer="1" id="25520" nazwa="Opatowicka nr 59" czas="1"/>
+     <przystanek numer="2" id="25508" nazwa="Nowy Dom" czas="3"/>
+     <przystanek numer="3" id="25506" nazwa="Bierdzany" czas="5"/>
+     <przystanek numer="4" id="25504" nazwa="Międzyrzecka" czas="7"/>
+     <przystanek numer="5" id="25500" nazwa="Okólna" czas="10"/>
+     <przystanek numer="6" id="25498" nazwa="Na Grobli (Hydropolis)" czas="12"/>
+     <przystanek numer="7" id="120200" nazwa="pl. Wróblewskiego" czas="15"/>
+     <przystanek numer="8" id="10119" nazwa="GALERIA DOMINIKAŃSKA" czas="20"/>
+    </czasy>
+    <tabliczka id="25" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="26">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="26">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="16">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="31">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="39">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="39">
+       </min>
+      </godz>
+      <godz h="11">
+       <min m="39">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="39">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="26">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="01">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="01">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="08">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="46">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="25520" nazwa="Opatowicka nr 59" ulica="Opatowicka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="25520" nazwa="Opatowicka nr 59" czas="0"/>
+     <przystanek numer="1" id="25508" nazwa="Nowy Dom" czas="2"/>
+     <przystanek numer="2" id="25506" nazwa="Bierdzany" czas="4"/>
+     <przystanek numer="3" id="25504" nazwa="Międzyrzecka" czas="6"/>
+     <przystanek numer="4" id="25500" nazwa="Okólna" czas="9"/>
+     <przystanek numer="5" id="25498" nazwa="Na Grobli (Hydropolis)" czas="11"/>
+     <przystanek numer="6" id="120200" nazwa="pl. Wróblewskiego" czas="14"/>
+     <przystanek numer="7" id="10119" nazwa="GALERIA DOMINIKAŃSKA" czas="19"/>
+    </czasy>
+    <tabliczka id="26" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="27">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="27">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="17">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="32">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="40">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="40">
+       </min>
+      </godz>
+      <godz h="11">
+       <min m="40">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="40">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="27">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="02">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="02">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="09">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="47">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="25508" nazwa="Nowy Dom" ulica="Opatowicka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="25508" nazwa="Nowy Dom" czas="0"/>
+     <przystanek numer="1" id="25506" nazwa="Bierdzany" czas="2"/>
+     <przystanek numer="2" id="25504" nazwa="Międzyrzecka" czas="4"/>
+     <przystanek numer="3" id="25500" nazwa="Okólna" czas="7"/>
+     <przystanek numer="4" id="25498" nazwa="Na Grobli (Hydropolis)" czas="9"/>
+     <przystanek numer="5" id="120200" nazwa="pl. Wróblewskiego" czas="12"/>
+     <przystanek numer="6" id="10119" nazwa="GALERIA DOMINIKAŃSKA" czas="17"/>
+    </czasy>
+    <tabliczka id="27" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="28">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="28">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="19">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="34">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="42">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="42">
+       </min>
+      </godz>
+      <godz h="11">
+       <min m="42">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="42">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="29">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="04">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="04">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="10">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="48">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="25506" nazwa="Bierdzany" ulica="Międzyrzecka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="25506" nazwa="Bierdzany" czas="0"/>
+     <przystanek numer="1" id="25504" nazwa="Międzyrzecka" czas="2"/>
+     <przystanek numer="2" id="25500" nazwa="Okólna" czas="5"/>
+     <przystanek numer="3" id="25498" nazwa="Na Grobli (Hydropolis)" czas="7"/>
+     <przystanek numer="4" id="120200" nazwa="pl. Wróblewskiego" czas="10"/>
+     <przystanek numer="5" id="10119" nazwa="GALERIA DOMINIKAŃSKA" czas="15"/>
+    </czasy>
+    <tabliczka id="28" mc="2" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="30">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="30">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="21">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="36">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="44">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="44">
+       </min>
+      </godz>
+      <godz h="11">
+       <min m="44">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="44">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="31">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="06">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="06">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="12">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="50">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="25504" nazwa="Międzyrzecka" ulica="Międzyrzecka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="25504" nazwa="Międzyrzecka" czas="0"/>
+     <przystanek numer="1" id="25500" nazwa="Okólna" czas="3"/>
+     <przystanek numer="2" id="25498" nazwa="Na Grobli (Hydropolis)" czas="5"/>
+     <przystanek numer="3" id="120200" nazwa="pl. Wróblewskiego" czas="8"/>
+     <przystanek numer="4" id="10119" nazwa="GALERIA DOMINIKAŃSKA" czas="13"/>
+    </czasy>
+    <tabliczka id="29" mc="2" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="32">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="32">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="23">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="38">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="46">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="46">
+       </min>
+      </godz>
+      <godz h="11">
+       <min m="46">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="46">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="33">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="08">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="08">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="14">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="52">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="25500" nazwa="Okólna" ulica="Na Grobli" cechy="">
+    <czasy>
+     <przystanek numer="0" id="25500" nazwa="Okólna" czas="0"/>
+     <przystanek numer="1" id="25498" nazwa="Na Grobli (Hydropolis)" czas="2"/>
+     <przystanek numer="2" id="120200" nazwa="pl. Wróblewskiego" czas="5"/>
+     <przystanek numer="3" id="10119" nazwa="GALERIA DOMINIKAŃSKA" czas="10"/>
+    </czasy>
+    <tabliczka id="30" mc="3">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="35">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="35">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="26">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="41">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="49">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="49">
+       </min>
+      </godz>
+      <godz h="11">
+       <min m="49">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="49">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="36">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="11">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="11">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="17">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="55">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="25498" nazwa="Na Grobli (Hydropolis)" ulica="Na Grobli" cechy="">
+    <czasy>
+     <przystanek numer="0" id="25498" nazwa="Na Grobli (Hydropolis)" czas="0"/>
+     <przystanek numer="1" id="120200" nazwa="pl. Wróblewskiego" czas="3"/>
+     <przystanek numer="2" id="10119" nazwa="GALERIA DOMINIKAŃSKA" czas="8"/>
+    </czasy>
+    <tabliczka id="31" mc="2">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="37">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="37">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="28">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="43">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="51">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="51">
+       </min>
+      </godz>
+      <godz h="11">
+       <min m="51">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="51">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="38">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="13">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="13">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="19">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="57">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="120200" nazwa="pl. Wróblewskiego" ulica="Traugutta" cechy="">
+    <czasy>
+     <przystanek numer="0" id="120200" nazwa="pl. Wróblewskiego" czas="0"/>
+     <przystanek numer="1" id="10119" nazwa="GALERIA DOMINIKAŃSKA" czas="5"/>
+    </czasy>
+    <tabliczka id="32" mc="3">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="39">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="40">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="31">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="46">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="54">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="54">
+       </min>
+      </godz>
+      <godz h="11">
+       <min m="54">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="54">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="41">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="16">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="16">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="22">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="00">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="10119" nazwa="GALERIA DOMINIKAŃSKA" ulica="Słowackiego" cechy="">
+    <czasy>
+    </czasy>
+   </przystanek>
+  </wariant>
+ </linia>
+</linie>

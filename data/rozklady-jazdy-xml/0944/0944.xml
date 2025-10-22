@@ -1,0 +1,1837 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<linie>
+ <linia nazwa="944" typ="Strefowa autobusowa" wazny_od="01.09.2025" wazny_do="">
+  <wariant id="1" nazwa="Mirków - skrzy. Polna - MULICKA">
+   <przystanek id="31916003" nazwa="Mirków - skrzy. Polna" ulica="Kiełczowska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="31916003" nazwa="Mirków - skrzy. Polna" czas="0"/>
+     <przystanek numer="1" id="31916001" nazwa="Mirków - Kiełczowska (na wys. nr 14)" czas="1"/>
+     <przystanek numer="2" id="30098012" nazwa="Mirków - Sportowa" czas="5"/>
+     <przystanek numer="3" id="29112" nazwa="Bierutowska (Wiadukt)" czas="8"/>
+     <przystanek numer="4" id="29118" nazwa="Bierutowska 75" czas="9"/>
+     <przystanek numer="5" id="29110" nazwa="Bierutowska" czas="10"/>
+     <przystanek numer="6" id="29126" nazwa="Bierutowska 65" czas="10"/>
+     <przystanek numer="7" id="29114" nazwa="Dobroszycka" czas="11"/>
+     <przystanek numer="8" id="29120" nazwa="PSIE POLE (Stacja kolejowa)" czas="12"/>
+     <przystanek numer="9" id="29128" nazwa="Psie Pole (Rondo Lotników Polskich)" czas="13"/>
+     <przystanek numer="10" id="29121" nazwa="Psie Pole (Gorlicka)" czas="14"/>
+     <przystanek numer="11" id="29100" nazwa="MULICKA" czas="15"/>
+    </czasy>
+    <tabliczka id="1" mc="0">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="23">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="00">
+       </min>
+       <min m="50">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="30">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="30">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="24">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="24">
+       </min>
+      </godz>
+      <godz h="11">
+       <min m="24">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="24">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="24">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="01">
+       </min>
+       <min m="46">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="46">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="46">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="39">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="24">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="24">
+       </min>
+      </godz>
+      <godz h="20">
+       <min m="45">
+       </min>
+      </godz>
+      <godz h="22">
+       <min m="15">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="31916001" nazwa="Mirków - Kiełczowska (na wys. nr 14)" ulica="Kiełczowska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="31916001" nazwa="Mirków - Kiełczowska (na wys. nr 14)" czas="0"/>
+     <przystanek numer="1" id="30098012" nazwa="Mirków - Sportowa" czas="4"/>
+     <przystanek numer="2" id="29112" nazwa="Bierutowska (Wiadukt)" czas="7"/>
+     <przystanek numer="3" id="29118" nazwa="Bierutowska 75" czas="8"/>
+     <przystanek numer="4" id="29110" nazwa="Bierutowska" czas="9"/>
+     <przystanek numer="5" id="29126" nazwa="Bierutowska 65" czas="9"/>
+     <przystanek numer="6" id="29114" nazwa="Dobroszycka" czas="10"/>
+     <przystanek numer="7" id="29120" nazwa="PSIE POLE (Stacja kolejowa)" czas="11"/>
+     <przystanek numer="8" id="29128" nazwa="Psie Pole (Rondo Lotników Polskich)" czas="12"/>
+     <przystanek numer="9" id="29121" nazwa="Psie Pole (Gorlicka)" czas="13"/>
+     <przystanek numer="10" id="29100" nazwa="MULICKA" czas="14"/>
+    </czasy>
+    <tabliczka id="2" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="24">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="01">
+       </min>
+       <min m="51">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="31">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="31">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="25">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="25">
+       </min>
+      </godz>
+      <godz h="11">
+       <min m="25">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="25">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="25">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="02">
+       </min>
+       <min m="47">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="47">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="47">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="40">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="25">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="25">
+       </min>
+      </godz>
+      <godz h="20">
+       <min m="46">
+       </min>
+      </godz>
+      <godz h="22">
+       <min m="16">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="30098012" nazwa="Mirków - Sportowa" ulica="Wrocławska" cechy="1">
+    <czasy>
+     <przystanek numer="0" id="30098012" nazwa="Mirków - Sportowa" czas="0"/>
+     <przystanek numer="1" id="29112" nazwa="Bierutowska (Wiadukt)" czas="3"/>
+     <przystanek numer="2" id="29118" nazwa="Bierutowska 75" czas="4"/>
+     <przystanek numer="3" id="29110" nazwa="Bierutowska" czas="5"/>
+     <przystanek numer="4" id="29126" nazwa="Bierutowska 65" czas="5"/>
+     <przystanek numer="5" id="29114" nazwa="Dobroszycka" czas="6"/>
+     <przystanek numer="6" id="29120" nazwa="PSIE POLE (Stacja kolejowa)" czas="7"/>
+     <przystanek numer="7" id="29128" nazwa="Psie Pole (Rondo Lotników Polskich)" czas="8"/>
+     <przystanek numer="8" id="29121" nazwa="Psie Pole (Gorlicka)" czas="9"/>
+     <przystanek numer="9" id="29100" nazwa="MULICKA" czas="10"/>
+    </czasy>
+    <tabliczka id="3" mc="4">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="27">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="05">
+       </min>
+       <min m="55">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="35">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="35">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="29">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="29">
+       </min>
+      </godz>
+      <godz h="11">
+       <min m="29">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="29">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="29">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="06">
+       </min>
+       <min m="51">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="51">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="51">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="44">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="29">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="29">
+       </min>
+      </godz>
+      <godz h="20">
+       <min m="49">
+       </min>
+      </godz>
+      <godz h="22">
+       <min m="19">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="29112" nazwa="Bierutowska (Wiadukt)" ulica="Bierutowska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="29112" nazwa="Bierutowska (Wiadukt)" czas="0"/>
+     <przystanek numer="1" id="29118" nazwa="Bierutowska 75" czas="1"/>
+     <przystanek numer="2" id="29110" nazwa="Bierutowska" czas="2"/>
+     <przystanek numer="3" id="29126" nazwa="Bierutowska 65" czas="2"/>
+     <przystanek numer="4" id="29114" nazwa="Dobroszycka" czas="3"/>
+     <przystanek numer="5" id="29120" nazwa="PSIE POLE (Stacja kolejowa)" czas="4"/>
+     <przystanek numer="6" id="29128" nazwa="Psie Pole (Rondo Lotników Polskich)" czas="5"/>
+     <przystanek numer="7" id="29121" nazwa="Psie Pole (Gorlicka)" czas="6"/>
+     <przystanek numer="8" id="29100" nazwa="MULICKA" czas="7"/>
+    </czasy>
+    <tabliczka id="4" mc="2" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="29">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="08">
+       </min>
+       <min m="58">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="38">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="37">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="31">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="31">
+       </min>
+      </godz>
+      <godz h="11">
+       <min m="31">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="31">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="31">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="09">
+       </min>
+       <min m="54">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="54">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="54">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="47">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="31">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="31">
+       </min>
+      </godz>
+      <godz h="20">
+       <min m="51">
+       </min>
+      </godz>
+      <godz h="22">
+       <min m="21">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="29118" nazwa="Bierutowska 75" ulica="Bierutowska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="29118" nazwa="Bierutowska 75" czas="0"/>
+     <przystanek numer="1" id="29110" nazwa="Bierutowska" czas="1"/>
+     <przystanek numer="2" id="29126" nazwa="Bierutowska 65" czas="1"/>
+     <przystanek numer="3" id="29114" nazwa="Dobroszycka" czas="2"/>
+     <przystanek numer="4" id="29120" nazwa="PSIE POLE (Stacja kolejowa)" czas="3"/>
+     <przystanek numer="5" id="29128" nazwa="Psie Pole (Rondo Lotników Polskich)" czas="4"/>
+     <przystanek numer="6" id="29121" nazwa="Psie Pole (Gorlicka)" czas="5"/>
+     <przystanek numer="7" id="29100" nazwa="MULICKA" czas="6"/>
+    </czasy>
+    <tabliczka id="5" mc="0" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="30">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="09">
+       </min>
+       <min m="59">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="39">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="38">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="32">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="32">
+       </min>
+      </godz>
+      <godz h="11">
+       <min m="32">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="32">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="32">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="10">
+       </min>
+       <min m="55">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="55">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="55">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="48">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="32">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="32">
+       </min>
+      </godz>
+      <godz h="20">
+       <min m="52">
+       </min>
+      </godz>
+      <godz h="22">
+       <min m="22">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="29110" nazwa="Bierutowska" ulica="Bierutowska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="29110" nazwa="Bierutowska" czas="0"/>
+     <przystanek numer="1" id="29126" nazwa="Bierutowska 65" czas="0"/>
+     <przystanek numer="2" id="29114" nazwa="Dobroszycka" czas="1"/>
+     <przystanek numer="3" id="29120" nazwa="PSIE POLE (Stacja kolejowa)" czas="2"/>
+     <przystanek numer="4" id="29128" nazwa="Psie Pole (Rondo Lotników Polskich)" czas="3"/>
+     <przystanek numer="5" id="29121" nazwa="Psie Pole (Gorlicka)" czas="4"/>
+     <przystanek numer="6" id="29100" nazwa="MULICKA" czas="5"/>
+    </czasy>
+    <tabliczka id="6" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="31">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="10">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="00">
+       </min>
+       <min m="40">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="39">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="33">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="33">
+       </min>
+      </godz>
+      <godz h="11">
+       <min m="33">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="33">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="33">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="11">
+       </min>
+       <min m="56">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="56">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="56">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="49">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="33">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="33">
+       </min>
+      </godz>
+      <godz h="20">
+       <min m="53">
+       </min>
+      </godz>
+      <godz h="22">
+       <min m="23">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="29126" nazwa="Bierutowska 65" ulica="Bierutowska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="29126" nazwa="Bierutowska 65" czas="0"/>
+     <przystanek numer="1" id="29114" nazwa="Dobroszycka" czas="1"/>
+     <przystanek numer="2" id="29120" nazwa="PSIE POLE (Stacja kolejowa)" czas="2"/>
+     <przystanek numer="3" id="29128" nazwa="Psie Pole (Rondo Lotników Polskich)" czas="3"/>
+     <przystanek numer="4" id="29121" nazwa="Psie Pole (Gorlicka)" czas="4"/>
+     <przystanek numer="5" id="29100" nazwa="MULICKA" czas="5"/>
+    </czasy>
+    <tabliczka id="7" mc="0" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="31">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="10">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="00">
+       </min>
+       <min m="40">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="39">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="33">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="33">
+       </min>
+      </godz>
+      <godz h="11">
+       <min m="33">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="33">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="33">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="11">
+       </min>
+       <min m="56">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="56">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="56">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="49">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="33">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="33">
+       </min>
+      </godz>
+      <godz h="20">
+       <min m="53">
+       </min>
+      </godz>
+      <godz h="22">
+       <min m="23">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="29114" nazwa="Dobroszycka" ulica="Bierutowska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="29114" nazwa="Dobroszycka" czas="0"/>
+     <przystanek numer="1" id="29120" nazwa="PSIE POLE (Stacja kolejowa)" czas="1"/>
+     <przystanek numer="2" id="29128" nazwa="Psie Pole (Rondo Lotników Polskich)" czas="2"/>
+     <przystanek numer="3" id="29121" nazwa="Psie Pole (Gorlicka)" czas="3"/>
+     <przystanek numer="4" id="29100" nazwa="MULICKA" czas="4"/>
+    </czasy>
+    <tabliczka id="8" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="32">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="11">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="01">
+       </min>
+       <min m="41">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="40">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="34">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="34">
+       </min>
+      </godz>
+      <godz h="11">
+       <min m="34">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="34">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="34">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="12">
+       </min>
+       <min m="57">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="57">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="57">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="50">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="34">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="34">
+       </min>
+      </godz>
+      <godz h="20">
+       <min m="54">
+       </min>
+      </godz>
+      <godz h="22">
+       <min m="24">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="29120" nazwa="PSIE POLE (Stacja kolejowa)" ulica="Bierutowska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="29120" nazwa="PSIE POLE (Stacja kolejowa)" czas="0"/>
+     <przystanek numer="1" id="29128" nazwa="Psie Pole (Rondo Lotników Polskich)" czas="1"/>
+     <przystanek numer="2" id="29121" nazwa="Psie Pole (Gorlicka)" czas="2"/>
+     <przystanek numer="3" id="29100" nazwa="MULICKA" czas="3"/>
+    </czasy>
+    <tabliczka id="9" mc="1">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="33">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="12">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="02">
+       </min>
+       <min m="42">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="41">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="35">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="35">
+       </min>
+      </godz>
+      <godz h="11">
+       <min m="35">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="35">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="35">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="13">
+       </min>
+       <min m="58">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="58">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="58">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="51">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="35">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="35">
+       </min>
+      </godz>
+      <godz h="20">
+       <min m="55">
+       </min>
+      </godz>
+      <godz h="22">
+       <min m="25">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="29128" nazwa="Psie Pole (Rondo Lotników Polskich)" ulica="Krzywoustego" cechy="">
+    <czasy>
+     <przystanek numer="0" id="29128" nazwa="Psie Pole (Rondo Lotników Polskich)" czas="0"/>
+     <przystanek numer="1" id="29121" nazwa="Psie Pole (Gorlicka)" czas="1"/>
+     <przystanek numer="2" id="29100" nazwa="MULICKA" czas="2"/>
+    </czasy>
+    <tabliczka id="10" mc="1">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="34">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="13">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="03">
+       </min>
+       <min m="43">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="42">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="36">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="36">
+       </min>
+      </godz>
+      <godz h="11">
+       <min m="36">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="36">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="36">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="14">
+       </min>
+       <min m="59">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="59">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="59">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="52">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="36">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="36">
+       </min>
+      </godz>
+      <godz h="20">
+       <min m="56">
+       </min>
+      </godz>
+      <godz h="22">
+       <min m="26">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="29121" nazwa="Psie Pole (Gorlicka)" ulica="Gorlicka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="29121" nazwa="Psie Pole (Gorlicka)" czas="0"/>
+     <przystanek numer="1" id="29100" nazwa="MULICKA" czas="1"/>
+    </czasy>
+    <tabliczka id="11" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="35">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="14">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="04">
+       </min>
+       <min m="44">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="43">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="37">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="37">
+       </min>
+      </godz>
+      <godz h="11">
+       <min m="37">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="37">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="37">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="15">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="00">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="00">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="00">
+       </min>
+       <min m="53">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="37">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="37">
+       </min>
+      </godz>
+      <godz h="20">
+       <min m="57">
+       </min>
+      </godz>
+      <godz h="22">
+       <min m="27">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="29100" nazwa="MULICKA" ulica="ks. Mariana Stanety" cechy="">
+    <czasy>
+    </czasy>
+   </przystanek>
+  </wariant>
+  <wariant id="2" nazwa="MULICKA - Mirków - skrzy. Polna">
+   <przystanek id="29100" nazwa="MULICKA" ulica="ks. Mariana Stanety" cechy="">
+    <czasy>
+     <przystanek numer="0" id="29100" nazwa="MULICKA" czas="0"/>
+     <przystanek numer="1" id="29115" nazwa="Psie Pole (Rondo Lotników Polskich)" czas="1"/>
+     <przystanek numer="2" id="29105" nazwa="PSIE POLE (Stacja kolejowa)" czas="2"/>
+     <przystanek numer="3" id="29107" nazwa="Dobroszycka" czas="3"/>
+     <przystanek numer="4" id="29125" nazwa="Bierutowska 65" czas="3"/>
+     <przystanek numer="5" id="29109" nazwa="Bierutowska" czas="4"/>
+     <przystanek numer="6" id="29117" nazwa="Bierutowska 75" czas="5"/>
+     <przystanek numer="7" id="29111" nazwa="Bierutowska (Wiadukt)" czas="6"/>
+     <przystanek numer="8" id="30098011" nazwa="Mirków - Sportowa" czas="8"/>
+     <przystanek numer="9" id="31916002" nazwa="Mirków - Kiełczowska (na wys. nr 14)" czas="12"/>
+     <przystanek numer="10" id="31916004" nazwa="Mirków - skrzy. Polna" czas="13"/>
+    </czasy>
+    <tabliczka id="12" mc="0">
+     <dzien nazwa="w dni robocze">
+      <godz h="4">
+       <min m="49">
+       </min>
+      </godz>
+      <godz h="5">
+       <min m="39">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="29">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="14">
+       </min>
+       <min m="59">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="59">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="59">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="59">
+       </min>
+      </godz>
+      <godz h="11">
+       <min m="59">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="59">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="42">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="32">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="19">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="19">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="19">
+       </min>
+       <min m="59">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="44">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="52">
+       </min>
+      </godz>
+      <godz h="21">
+       <min m="20">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="29115" nazwa="Psie Pole (Rondo Lotników Polskich)" ulica="Bierutowska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="29115" nazwa="Psie Pole (Rondo Lotników Polskich)" czas="0"/>
+     <przystanek numer="1" id="29105" nazwa="PSIE POLE (Stacja kolejowa)" czas="1"/>
+     <przystanek numer="2" id="29107" nazwa="Dobroszycka" czas="2"/>
+     <przystanek numer="3" id="29125" nazwa="Bierutowska 65" czas="2"/>
+     <przystanek numer="4" id="29109" nazwa="Bierutowska" czas="3"/>
+     <przystanek numer="5" id="29117" nazwa="Bierutowska 75" czas="4"/>
+     <przystanek numer="6" id="29111" nazwa="Bierutowska (Wiadukt)" czas="5"/>
+     <przystanek numer="7" id="30098011" nazwa="Mirków - Sportowa" czas="7"/>
+     <przystanek numer="8" id="31916002" nazwa="Mirków - Kiełczowska (na wys. nr 14)" czas="11"/>
+     <przystanek numer="9" id="31916004" nazwa="Mirków - skrzy. Polna" czas="12"/>
+    </czasy>
+    <tabliczka id="13" mc="1">
+     <dzien nazwa="w dni robocze">
+      <godz h="4">
+       <min m="50">
+       </min>
+      </godz>
+      <godz h="5">
+       <min m="40">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="30">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="15">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="00">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="00">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="00">
+       </min>
+      </godz>
+      <godz h="11">
+       <min m="00">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="00">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="00">
+       </min>
+       <min m="43">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="33">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="20">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="20">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="20">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="00">
+       </min>
+       <min m="45">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="53">
+       </min>
+      </godz>
+      <godz h="21">
+       <min m="21">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="29105" nazwa="PSIE POLE (Stacja kolejowa)" ulica="Bierutowska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="29105" nazwa="PSIE POLE (Stacja kolejowa)" czas="0"/>
+     <przystanek numer="1" id="29107" nazwa="Dobroszycka" czas="1"/>
+     <przystanek numer="2" id="29125" nazwa="Bierutowska 65" czas="1"/>
+     <przystanek numer="3" id="29109" nazwa="Bierutowska" czas="2"/>
+     <przystanek numer="4" id="29117" nazwa="Bierutowska 75" czas="3"/>
+     <przystanek numer="5" id="29111" nazwa="Bierutowska (Wiadukt)" czas="4"/>
+     <przystanek numer="6" id="30098011" nazwa="Mirków - Sportowa" czas="6"/>
+     <przystanek numer="7" id="31916002" nazwa="Mirków - Kiełczowska (na wys. nr 14)" czas="10"/>
+     <przystanek numer="8" id="31916004" nazwa="Mirków - skrzy. Polna" czas="11"/>
+    </czasy>
+    <tabliczka id="14" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="4">
+       <min m="51">
+       </min>
+      </godz>
+      <godz h="5">
+       <min m="41">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="31">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="16">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="01">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="01">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="01">
+       </min>
+      </godz>
+      <godz h="11">
+       <min m="01">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="01">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="01">
+       </min>
+       <min m="44">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="34">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="21">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="21">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="21">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="01">
+       </min>
+       <min m="46">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="54">
+       </min>
+      </godz>
+      <godz h="21">
+       <min m="22">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="29107" nazwa="Dobroszycka" ulica="Bierutowska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="29107" nazwa="Dobroszycka" czas="0"/>
+     <przystanek numer="1" id="29125" nazwa="Bierutowska 65" czas="0"/>
+     <przystanek numer="2" id="29109" nazwa="Bierutowska" czas="1"/>
+     <przystanek numer="3" id="29117" nazwa="Bierutowska 75" czas="2"/>
+     <przystanek numer="4" id="29111" nazwa="Bierutowska (Wiadukt)" czas="3"/>
+     <przystanek numer="5" id="30098011" nazwa="Mirków - Sportowa" czas="5"/>
+     <przystanek numer="6" id="31916002" nazwa="Mirków - Kiełczowska (na wys. nr 14)" czas="9"/>
+     <przystanek numer="7" id="31916004" nazwa="Mirków - skrzy. Polna" czas="10"/>
+    </czasy>
+    <tabliczka id="15" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="4">
+       <min m="52">
+       </min>
+      </godz>
+      <godz h="5">
+       <min m="42">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="32">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="17">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="02">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="02">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="02">
+       </min>
+      </godz>
+      <godz h="11">
+       <min m="02">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="02">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="02">
+       </min>
+       <min m="45">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="35">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="22">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="22">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="22">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="02">
+       </min>
+       <min m="47">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="55">
+       </min>
+      </godz>
+      <godz h="21">
+       <min m="23">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="29125" nazwa="Bierutowska 65" ulica="Bierutowska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="29125" nazwa="Bierutowska 65" czas="0"/>
+     <przystanek numer="1" id="29109" nazwa="Bierutowska" czas="1"/>
+     <przystanek numer="2" id="29117" nazwa="Bierutowska 75" czas="2"/>
+     <przystanek numer="3" id="29111" nazwa="Bierutowska (Wiadukt)" czas="3"/>
+     <przystanek numer="4" id="30098011" nazwa="Mirków - Sportowa" czas="5"/>
+     <przystanek numer="5" id="31916002" nazwa="Mirków - Kiełczowska (na wys. nr 14)" czas="9"/>
+     <przystanek numer="6" id="31916004" nazwa="Mirków - skrzy. Polna" czas="10"/>
+    </czasy>
+    <tabliczka id="16" mc="0" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="4">
+       <min m="52">
+       </min>
+      </godz>
+      <godz h="5">
+       <min m="42">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="32">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="17">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="02">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="02">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="02">
+       </min>
+      </godz>
+      <godz h="11">
+       <min m="02">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="02">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="02">
+       </min>
+       <min m="45">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="35">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="22">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="22">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="22">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="02">
+       </min>
+       <min m="47">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="55">
+       </min>
+      </godz>
+      <godz h="21">
+       <min m="23">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="29109" nazwa="Bierutowska" ulica="Bierutowska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="29109" nazwa="Bierutowska" czas="0"/>
+     <przystanek numer="1" id="29117" nazwa="Bierutowska 75" czas="1"/>
+     <przystanek numer="2" id="29111" nazwa="Bierutowska (Wiadukt)" czas="2"/>
+     <przystanek numer="3" id="30098011" nazwa="Mirków - Sportowa" czas="4"/>
+     <przystanek numer="4" id="31916002" nazwa="Mirków - Kiełczowska (na wys. nr 14)" czas="8"/>
+     <przystanek numer="5" id="31916004" nazwa="Mirków - skrzy. Polna" czas="9"/>
+    </czasy>
+    <tabliczka id="17" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="4">
+       <min m="53">
+       </min>
+      </godz>
+      <godz h="5">
+       <min m="43">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="33">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="18">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="03">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="03">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="03">
+       </min>
+      </godz>
+      <godz h="11">
+       <min m="03">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="03">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="03">
+       </min>
+       <min m="46">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="36">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="23">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="23">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="23">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="03">
+       </min>
+       <min m="48">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="56">
+       </min>
+      </godz>
+      <godz h="21">
+       <min m="24">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="29117" nazwa="Bierutowska 75" ulica="Bierutowska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="29117" nazwa="Bierutowska 75" czas="0"/>
+     <przystanek numer="1" id="29111" nazwa="Bierutowska (Wiadukt)" czas="1"/>
+     <przystanek numer="2" id="30098011" nazwa="Mirków - Sportowa" czas="3"/>
+     <przystanek numer="3" id="31916002" nazwa="Mirków - Kiełczowska (na wys. nr 14)" czas="7"/>
+     <przystanek numer="4" id="31916004" nazwa="Mirków - skrzy. Polna" czas="8"/>
+    </czasy>
+    <tabliczka id="18" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="4">
+       <min m="54">
+       </min>
+      </godz>
+      <godz h="5">
+       <min m="44">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="34">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="19">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="04">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="04">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="04">
+       </min>
+      </godz>
+      <godz h="11">
+       <min m="04">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="04">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="04">
+       </min>
+       <min m="47">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="37">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="24">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="24">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="24">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="04">
+       </min>
+       <min m="49">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="57">
+       </min>
+      </godz>
+      <godz h="21">
+       <min m="25">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="29111" nazwa="Bierutowska (Wiadukt)" ulica="Bierutowska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="29111" nazwa="Bierutowska (Wiadukt)" czas="0"/>
+     <przystanek numer="1" id="30098011" nazwa="Mirków - Sportowa" czas="2"/>
+     <przystanek numer="2" id="31916002" nazwa="Mirków - Kiełczowska (na wys. nr 14)" czas="6"/>
+     <przystanek numer="3" id="31916004" nazwa="Mirków - skrzy. Polna" czas="7"/>
+    </czasy>
+    <tabliczka id="19" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="4">
+       <min m="55">
+       </min>
+      </godz>
+      <godz h="5">
+       <min m="45">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="35">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="20">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="05">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="05">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="05">
+       </min>
+      </godz>
+      <godz h="11">
+       <min m="05">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="05">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="05">
+       </min>
+       <min m="48">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="38">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="25">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="25">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="25">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="05">
+       </min>
+       <min m="50">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="58">
+       </min>
+      </godz>
+      <godz h="21">
+       <min m="26">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="30098011" nazwa="Mirków - Sportowa" ulica="Wrocławska" cechy="1">
+    <czasy>
+     <przystanek numer="0" id="30098011" nazwa="Mirków - Sportowa" czas="0"/>
+     <przystanek numer="1" id="31916002" nazwa="Mirków - Kiełczowska (na wys. nr 14)" czas="4"/>
+     <przystanek numer="2" id="31916004" nazwa="Mirków - skrzy. Polna" czas="5"/>
+    </czasy>
+    <tabliczka id="20" mc="1">
+     <dzien nazwa="w dni robocze">
+      <godz h="4">
+       <min m="57">
+       </min>
+      </godz>
+      <godz h="5">
+       <min m="47">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="37">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="22">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="07">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="07">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="07">
+       </min>
+      </godz>
+      <godz h="11">
+       <min m="07">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="07">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="07">
+       </min>
+       <min m="50">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="40">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="27">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="27">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="27">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="07">
+       </min>
+       <min m="52">
+       </min>
+      </godz>
+      <godz h="20">
+       <min m="00">
+       </min>
+      </godz>
+      <godz h="21">
+       <min m="27">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="31916002" nazwa="Mirków - Kiełczowska (na wys. nr 14)" ulica="Kiełczowska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="31916002" nazwa="Mirków - Kiełczowska (na wys. nr 14)" czas="0"/>
+     <przystanek numer="1" id="31916004" nazwa="Mirków - skrzy. Polna" czas="1"/>
+    </czasy>
+    <tabliczka id="21" mc="4" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="00">
+       </min>
+       <min m="50">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="40">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="26">
+       </min>
+      </godz>
+      <godz h="8">
+       <min m="11">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="11">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="11">
+       </min>
+      </godz>
+      <godz h="11">
+       <min m="11">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="11">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="11">
+       </min>
+       <min m="54">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="44">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="31">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="31">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="31">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="11">
+       </min>
+       <min m="56">
+       </min>
+      </godz>
+      <godz h="20">
+       <min m="03">
+       </min>
+      </godz>
+      <godz h="21">
+       <min m="30">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="31916004" nazwa="Mirków - skrzy. Polna" ulica="Kiełczowska" cechy="">
+    <czasy>
+    </czasy>
+   </przystanek>
+  </wariant>
+ </linia>
+</linie>

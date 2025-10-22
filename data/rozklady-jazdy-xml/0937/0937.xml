@@ -1,0 +1,1966 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<linie>
+ <linia nazwa="937" typ="Strefowa autobusowa" wazny_od="01.09.2025" wazny_do="">
+  <wariant id="1" nazwa="LEŚNICA - Brzezinka Średzka - PKP">
+   <przystanek id="18386" nazwa="LEŚNICA" ulica="Płońskiego" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18386" nazwa="LEŚNICA" czas="0"/>
+     <przystanek numer="1" id="18389" nazwa="Rubczaka (Stacja kolejowa)" czas="2"/>
+     <przystanek numer="2" id="18391" nazwa="Rubczaka" czas="3"/>
+     <przystanek numer="3" id="18312" nazwa="Średzka" czas="4"/>
+     <przystanek numer="4" id="18351" nazwa="Eluarda" czas="6"/>
+     <przystanek numer="5" id="18353" nazwa="Brzezińska" czas="7"/>
+     <przystanek numer="6" id="18349" nazwa="Owczarska" czas="8"/>
+     <przystanek numer="7" id="18355" nazwa="Dolnobrzeska" czas="9"/>
+     <przystanek numer="8" id="18365" nazwa="Grzybowa" czas="10"/>
+     <przystanek numer="9" id="18357" nazwa="Mokra" czas="12"/>
+     <przystanek numer="10" id="18359" nazwa="LAS MOKRZAŃSKI" czas="13"/>
+     <przystanek numer="11" id="92052030" nazwa="Brzezina - Biedronka" czas="15"/>
+     <przystanek numer="12" id="92052028" nazwa="Brzezina - Zacisze" czas="16"/>
+     <przystanek numer="13" id="92052016" nazwa="Brzezina - Osiedle" czas="17"/>
+     <przystanek numer="14" id="92052014" nazwa="Brzezina - Chrobrego" czas="19"/>
+     <przystanek numer="15" id="90000002" nazwa="Brzezina - Kościół" czas="20"/>
+     <przystanek numer="16" id="90000004" nazwa="BRZEZINA (pętla)" czas="21"/>
+     <przystanek numer="17" id="90000001" nazwa="Brzezina - Kościół" czas="22"/>
+     <przystanek numer="18" id="92052012" nazwa="Brzezinka Średzka - Główna" czas="25"/>
+     <przystanek numer="19" id="91048864" nazwa="Brzezinka Średzka - ul. Parkowa" czas="26"/>
+     <przystanek numer="20" id="92052009" nazwa="Brzezinka Średzka - PKP" czas="29"/>
+    </czasy>
+    <tabliczka id="1" mc="0">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="05">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="15">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="15">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="50">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="25">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="25">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="02">
+       </min>
+       <min m="35">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18389" nazwa="Rubczaka (Stacja kolejowa)" ulica="Rubczaka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18389" nazwa="Rubczaka (Stacja kolejowa)" czas="0"/>
+     <przystanek numer="1" id="18391" nazwa="Rubczaka" czas="1"/>
+     <przystanek numer="2" id="18312" nazwa="Średzka" czas="2"/>
+     <przystanek numer="3" id="18351" nazwa="Eluarda" czas="4"/>
+     <przystanek numer="4" id="18353" nazwa="Brzezińska" czas="5"/>
+     <przystanek numer="5" id="18349" nazwa="Owczarska" czas="6"/>
+     <przystanek numer="6" id="18355" nazwa="Dolnobrzeska" czas="7"/>
+     <przystanek numer="7" id="18365" nazwa="Grzybowa" czas="8"/>
+     <przystanek numer="8" id="18357" nazwa="Mokra" czas="10"/>
+     <przystanek numer="9" id="18359" nazwa="LAS MOKRZAŃSKI" czas="11"/>
+     <przystanek numer="10" id="92052030" nazwa="Brzezina - Biedronka" czas="13"/>
+     <przystanek numer="11" id="92052028" nazwa="Brzezina - Zacisze" czas="14"/>
+     <przystanek numer="12" id="92052016" nazwa="Brzezina - Osiedle" czas="15"/>
+     <przystanek numer="13" id="92052014" nazwa="Brzezina - Chrobrego" czas="17"/>
+     <przystanek numer="14" id="90000002" nazwa="Brzezina - Kościół" czas="18"/>
+     <przystanek numer="15" id="90000004" nazwa="BRZEZINA (pętla)" czas="19"/>
+     <przystanek numer="16" id="90000001" nazwa="Brzezina - Kościół" czas="20"/>
+     <przystanek numer="17" id="92052012" nazwa="Brzezinka Średzka - Główna" czas="23"/>
+     <przystanek numer="18" id="91048864" nazwa="Brzezinka Średzka - ul. Parkowa" czas="24"/>
+     <przystanek numer="19" id="92052009" nazwa="Brzezinka Średzka - PKP" czas="27"/>
+    </czasy>
+    <tabliczka id="2" mc="2">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="07">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="17">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="17">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="52">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="27">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="27">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="04">
+       </min>
+       <min m="37">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18391" nazwa="Rubczaka" ulica="Rubczaka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18391" nazwa="Rubczaka" czas="0"/>
+     <przystanek numer="1" id="18312" nazwa="Średzka" czas="1"/>
+     <przystanek numer="2" id="18351" nazwa="Eluarda" czas="3"/>
+     <przystanek numer="3" id="18353" nazwa="Brzezińska" czas="4"/>
+     <przystanek numer="4" id="18349" nazwa="Owczarska" czas="5"/>
+     <przystanek numer="5" id="18355" nazwa="Dolnobrzeska" czas="6"/>
+     <przystanek numer="6" id="18365" nazwa="Grzybowa" czas="7"/>
+     <przystanek numer="7" id="18357" nazwa="Mokra" czas="9"/>
+     <przystanek numer="8" id="18359" nazwa="LAS MOKRZAŃSKI" czas="10"/>
+     <przystanek numer="9" id="92052030" nazwa="Brzezina - Biedronka" czas="12"/>
+     <przystanek numer="10" id="92052028" nazwa="Brzezina - Zacisze" czas="13"/>
+     <przystanek numer="11" id="92052016" nazwa="Brzezina - Osiedle" czas="14"/>
+     <przystanek numer="12" id="92052014" nazwa="Brzezina - Chrobrego" czas="16"/>
+     <przystanek numer="13" id="90000002" nazwa="Brzezina - Kościół" czas="17"/>
+     <przystanek numer="14" id="90000004" nazwa="BRZEZINA (pętla)" czas="18"/>
+     <przystanek numer="15" id="90000001" nazwa="Brzezina - Kościół" czas="19"/>
+     <przystanek numer="16" id="92052012" nazwa="Brzezinka Średzka - Główna" czas="22"/>
+     <przystanek numer="17" id="91048864" nazwa="Brzezinka Średzka - ul. Parkowa" czas="23"/>
+     <przystanek numer="18" id="92052009" nazwa="Brzezinka Średzka - PKP" czas="26"/>
+    </czasy>
+    <tabliczka id="3" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="08">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="18">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="18">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="53">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="28">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="28">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="05">
+       </min>
+       <min m="38">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18312" nazwa="Średzka" ulica="Trzmielowicka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18312" nazwa="Średzka" czas="0"/>
+     <przystanek numer="1" id="18351" nazwa="Eluarda" czas="2"/>
+     <przystanek numer="2" id="18353" nazwa="Brzezińska" czas="3"/>
+     <przystanek numer="3" id="18349" nazwa="Owczarska" czas="4"/>
+     <przystanek numer="4" id="18355" nazwa="Dolnobrzeska" czas="5"/>
+     <przystanek numer="5" id="18365" nazwa="Grzybowa" czas="6"/>
+     <przystanek numer="6" id="18357" nazwa="Mokra" czas="8"/>
+     <przystanek numer="7" id="18359" nazwa="LAS MOKRZAŃSKI" czas="9"/>
+     <przystanek numer="8" id="92052030" nazwa="Brzezina - Biedronka" czas="11"/>
+     <przystanek numer="9" id="92052028" nazwa="Brzezina - Zacisze" czas="12"/>
+     <przystanek numer="10" id="92052016" nazwa="Brzezina - Osiedle" czas="13"/>
+     <przystanek numer="11" id="92052014" nazwa="Brzezina - Chrobrego" czas="15"/>
+     <przystanek numer="12" id="90000002" nazwa="Brzezina - Kościół" czas="16"/>
+     <przystanek numer="13" id="90000004" nazwa="BRZEZINA (pętla)" czas="17"/>
+     <przystanek numer="14" id="90000001" nazwa="Brzezina - Kościół" czas="18"/>
+     <przystanek numer="15" id="92052012" nazwa="Brzezinka Średzka - Główna" czas="21"/>
+     <przystanek numer="16" id="91048864" nazwa="Brzezinka Średzka - ul. Parkowa" czas="22"/>
+     <przystanek numer="17" id="92052009" nazwa="Brzezinka Średzka - PKP" czas="25"/>
+    </czasy>
+    <tabliczka id="4" mc="1">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="09">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="19">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="19">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="54">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="29">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="29">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="06">
+       </min>
+       <min m="39">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18351" nazwa="Eluarda" ulica="Dolnobrzeska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18351" nazwa="Eluarda" czas="0"/>
+     <przystanek numer="1" id="18353" nazwa="Brzezińska" czas="1"/>
+     <przystanek numer="2" id="18349" nazwa="Owczarska" czas="2"/>
+     <przystanek numer="3" id="18355" nazwa="Dolnobrzeska" czas="3"/>
+     <przystanek numer="4" id="18365" nazwa="Grzybowa" czas="4"/>
+     <przystanek numer="5" id="18357" nazwa="Mokra" czas="6"/>
+     <przystanek numer="6" id="18359" nazwa="LAS MOKRZAŃSKI" czas="7"/>
+     <przystanek numer="7" id="92052030" nazwa="Brzezina - Biedronka" czas="9"/>
+     <przystanek numer="8" id="92052028" nazwa="Brzezina - Zacisze" czas="10"/>
+     <przystanek numer="9" id="92052016" nazwa="Brzezina - Osiedle" czas="11"/>
+     <przystanek numer="10" id="92052014" nazwa="Brzezina - Chrobrego" czas="13"/>
+     <przystanek numer="11" id="90000002" nazwa="Brzezina - Kościół" czas="14"/>
+     <przystanek numer="12" id="90000004" nazwa="BRZEZINA (pętla)" czas="15"/>
+     <przystanek numer="13" id="90000001" nazwa="Brzezina - Kościół" czas="16"/>
+     <przystanek numer="14" id="92052012" nazwa="Brzezinka Średzka - Główna" czas="19"/>
+     <przystanek numer="15" id="91048864" nazwa="Brzezinka Średzka - ul. Parkowa" czas="20"/>
+     <przystanek numer="16" id="92052009" nazwa="Brzezinka Średzka - PKP" czas="23"/>
+    </czasy>
+    <tabliczka id="5" mc="1">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="11">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="20">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="20">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="56">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="31">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="31">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="07">
+       </min>
+       <min m="40">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18353" nazwa="Brzezińska" ulica="Dolnobrzeska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18353" nazwa="Brzezińska" czas="0"/>
+     <przystanek numer="1" id="18349" nazwa="Owczarska" czas="1"/>
+     <przystanek numer="2" id="18355" nazwa="Dolnobrzeska" czas="2"/>
+     <przystanek numer="3" id="18365" nazwa="Grzybowa" czas="3"/>
+     <przystanek numer="4" id="18357" nazwa="Mokra" czas="5"/>
+     <przystanek numer="5" id="18359" nazwa="LAS MOKRZAŃSKI" czas="6"/>
+     <przystanek numer="6" id="92052030" nazwa="Brzezina - Biedronka" czas="8"/>
+     <przystanek numer="7" id="92052028" nazwa="Brzezina - Zacisze" czas="9"/>
+     <przystanek numer="8" id="92052016" nazwa="Brzezina - Osiedle" czas="10"/>
+     <przystanek numer="9" id="92052014" nazwa="Brzezina - Chrobrego" czas="12"/>
+     <przystanek numer="10" id="90000002" nazwa="Brzezina - Kościół" czas="13"/>
+     <przystanek numer="11" id="90000004" nazwa="BRZEZINA (pętla)" czas="14"/>
+     <przystanek numer="12" id="90000001" nazwa="Brzezina - Kościół" czas="15"/>
+     <przystanek numer="13" id="92052012" nazwa="Brzezinka Średzka - Główna" czas="18"/>
+     <przystanek numer="14" id="91048864" nazwa="Brzezinka Średzka - ul. Parkowa" czas="19"/>
+     <przystanek numer="15" id="92052009" nazwa="Brzezinka Średzka - PKP" czas="22"/>
+    </czasy>
+    <tabliczka id="6" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="12">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="21">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="21">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="57">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="32">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="32">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="08">
+       </min>
+       <min m="41">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18349" nazwa="Owczarska" ulica="Dolnobrzeska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18349" nazwa="Owczarska" czas="0"/>
+     <przystanek numer="1" id="18355" nazwa="Dolnobrzeska" czas="1"/>
+     <przystanek numer="2" id="18365" nazwa="Grzybowa" czas="2"/>
+     <przystanek numer="3" id="18357" nazwa="Mokra" czas="4"/>
+     <przystanek numer="4" id="18359" nazwa="LAS MOKRZAŃSKI" czas="5"/>
+     <przystanek numer="5" id="92052030" nazwa="Brzezina - Biedronka" czas="7"/>
+     <przystanek numer="6" id="92052028" nazwa="Brzezina - Zacisze" czas="8"/>
+     <przystanek numer="7" id="92052016" nazwa="Brzezina - Osiedle" czas="9"/>
+     <przystanek numer="8" id="92052014" nazwa="Brzezina - Chrobrego" czas="11"/>
+     <przystanek numer="9" id="90000002" nazwa="Brzezina - Kościół" czas="12"/>
+     <przystanek numer="10" id="90000004" nazwa="BRZEZINA (pętla)" czas="13"/>
+     <przystanek numer="11" id="90000001" nazwa="Brzezina - Kościół" czas="14"/>
+     <przystanek numer="12" id="92052012" nazwa="Brzezinka Średzka - Główna" czas="17"/>
+     <przystanek numer="13" id="91048864" nazwa="Brzezinka Średzka - ul. Parkowa" czas="18"/>
+     <przystanek numer="14" id="92052009" nazwa="Brzezinka Średzka - PKP" czas="21"/>
+    </czasy>
+    <tabliczka id="7" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="13">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="22">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="22">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="58">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="33">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="33">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="09">
+       </min>
+       <min m="42">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18355" nazwa="Dolnobrzeska" ulica="Dolnobrzeska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18355" nazwa="Dolnobrzeska" czas="0"/>
+     <przystanek numer="1" id="18365" nazwa="Grzybowa" czas="1"/>
+     <przystanek numer="2" id="18357" nazwa="Mokra" czas="3"/>
+     <przystanek numer="3" id="18359" nazwa="LAS MOKRZAŃSKI" czas="4"/>
+     <przystanek numer="4" id="92052030" nazwa="Brzezina - Biedronka" czas="6"/>
+     <przystanek numer="5" id="92052028" nazwa="Brzezina - Zacisze" czas="7"/>
+     <przystanek numer="6" id="92052016" nazwa="Brzezina - Osiedle" czas="8"/>
+     <przystanek numer="7" id="92052014" nazwa="Brzezina - Chrobrego" czas="10"/>
+     <przystanek numer="8" id="90000002" nazwa="Brzezina - Kościół" czas="11"/>
+     <przystanek numer="9" id="90000004" nazwa="BRZEZINA (pętla)" czas="12"/>
+     <przystanek numer="10" id="90000001" nazwa="Brzezina - Kościół" czas="13"/>
+     <przystanek numer="11" id="92052012" nazwa="Brzezinka Średzka - Główna" czas="16"/>
+     <przystanek numer="12" id="91048864" nazwa="Brzezinka Średzka - ul. Parkowa" czas="17"/>
+     <przystanek numer="13" id="92052009" nazwa="Brzezinka Średzka - PKP" czas="20"/>
+    </czasy>
+    <tabliczka id="8" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="14">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="23">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="23">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="59">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="34">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="34">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="10">
+       </min>
+       <min m="43">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18365" nazwa="Grzybowa" ulica="Dolnobrzeska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18365" nazwa="Grzybowa" czas="0"/>
+     <przystanek numer="1" id="18357" nazwa="Mokra" czas="2"/>
+     <przystanek numer="2" id="18359" nazwa="LAS MOKRZAŃSKI" czas="3"/>
+     <przystanek numer="3" id="92052030" nazwa="Brzezina - Biedronka" czas="5"/>
+     <przystanek numer="4" id="92052028" nazwa="Brzezina - Zacisze" czas="6"/>
+     <przystanek numer="5" id="92052016" nazwa="Brzezina - Osiedle" czas="7"/>
+     <przystanek numer="6" id="92052014" nazwa="Brzezina - Chrobrego" czas="9"/>
+     <przystanek numer="7" id="90000002" nazwa="Brzezina - Kościół" czas="10"/>
+     <przystanek numer="8" id="90000004" nazwa="BRZEZINA (pętla)" czas="11"/>
+     <przystanek numer="9" id="90000001" nazwa="Brzezina - Kościół" czas="12"/>
+     <przystanek numer="10" id="92052012" nazwa="Brzezinka Średzka - Główna" czas="15"/>
+     <przystanek numer="11" id="91048864" nazwa="Brzezinka Średzka - ul. Parkowa" czas="16"/>
+     <przystanek numer="12" id="92052009" nazwa="Brzezinka Średzka - PKP" czas="19"/>
+    </czasy>
+    <tabliczka id="9" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="15">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="24">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="24">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="00">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="35">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="35">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="11">
+       </min>
+       <min m="44">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18357" nazwa="Mokra" ulica="Wińska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18357" nazwa="Mokra" czas="0"/>
+     <przystanek numer="1" id="18359" nazwa="LAS MOKRZAŃSKI" czas="1"/>
+     <przystanek numer="2" id="92052030" nazwa="Brzezina - Biedronka" czas="3"/>
+     <przystanek numer="3" id="92052028" nazwa="Brzezina - Zacisze" czas="4"/>
+     <przystanek numer="4" id="92052016" nazwa="Brzezina - Osiedle" czas="5"/>
+     <przystanek numer="5" id="92052014" nazwa="Brzezina - Chrobrego" czas="7"/>
+     <przystanek numer="6" id="90000002" nazwa="Brzezina - Kościół" czas="8"/>
+     <przystanek numer="7" id="90000004" nazwa="BRZEZINA (pętla)" czas="9"/>
+     <przystanek numer="8" id="90000001" nazwa="Brzezina - Kościół" czas="10"/>
+     <przystanek numer="9" id="92052012" nazwa="Brzezinka Średzka - Główna" czas="13"/>
+     <przystanek numer="10" id="91048864" nazwa="Brzezinka Średzka - ul. Parkowa" czas="14"/>
+     <przystanek numer="11" id="92052009" nazwa="Brzezinka Średzka - PKP" czas="17"/>
+    </czasy>
+    <tabliczka id="10" mc="2" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="17">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="26">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="26">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="02">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="37">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="37">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="13">
+       </min>
+       <min m="46">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18359" nazwa="LAS MOKRZAŃSKI" ulica="Wińska" cechy="1">
+    <czasy>
+     <przystanek numer="0" id="18359" nazwa="LAS MOKRZAŃSKI" czas="0"/>
+     <przystanek numer="1" id="92052030" nazwa="Brzezina - Biedronka" czas="2"/>
+     <przystanek numer="2" id="92052028" nazwa="Brzezina - Zacisze" czas="3"/>
+     <przystanek numer="3" id="92052016" nazwa="Brzezina - Osiedle" czas="4"/>
+     <przystanek numer="4" id="92052014" nazwa="Brzezina - Chrobrego" czas="6"/>
+     <przystanek numer="5" id="90000002" nazwa="Brzezina - Kościół" czas="7"/>
+     <przystanek numer="6" id="90000004" nazwa="BRZEZINA (pętla)" czas="8"/>
+     <przystanek numer="7" id="90000001" nazwa="Brzezina - Kościół" czas="9"/>
+     <przystanek numer="8" id="92052012" nazwa="Brzezinka Średzka - Główna" czas="12"/>
+     <przystanek numer="9" id="91048864" nazwa="Brzezinka Średzka - ul. Parkowa" czas="13"/>
+     <przystanek numer="10" id="92052009" nazwa="Brzezinka Średzka - PKP" czas="16"/>
+    </czasy>
+    <tabliczka id="11" mc="1">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="18">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="27">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="27">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="03">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="38">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="38">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="14">
+       </min>
+       <min m="47">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92052030" nazwa="Brzezina - Biedronka" ulica="Chrobrego" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92052030" nazwa="Brzezina - Biedronka" czas="0"/>
+     <przystanek numer="1" id="92052028" nazwa="Brzezina - Zacisze" czas="1"/>
+     <przystanek numer="2" id="92052016" nazwa="Brzezina - Osiedle" czas="2"/>
+     <przystanek numer="3" id="92052014" nazwa="Brzezina - Chrobrego" czas="4"/>
+     <przystanek numer="4" id="90000002" nazwa="Brzezina - Kościół" czas="5"/>
+     <przystanek numer="5" id="90000004" nazwa="BRZEZINA (pętla)" czas="6"/>
+     <przystanek numer="6" id="90000001" nazwa="Brzezina - Kościół" czas="7"/>
+     <przystanek numer="7" id="92052012" nazwa="Brzezinka Średzka - Główna" czas="10"/>
+     <przystanek numer="8" id="91048864" nazwa="Brzezinka Średzka - ul. Parkowa" czas="11"/>
+     <przystanek numer="9" id="92052009" nazwa="Brzezinka Średzka - PKP" czas="14"/>
+    </czasy>
+    <tabliczka id="12" mc="2" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="20">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="29">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="29">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="05">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="40">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="40">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="16">
+       </min>
+       <min m="49">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92052028" nazwa="Brzezina - Zacisze" ulica="Chrobrego" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92052028" nazwa="Brzezina - Zacisze" czas="0"/>
+     <przystanek numer="1" id="92052016" nazwa="Brzezina - Osiedle" czas="1"/>
+     <przystanek numer="2" id="92052014" nazwa="Brzezina - Chrobrego" czas="3"/>
+     <przystanek numer="3" id="90000002" nazwa="Brzezina - Kościół" czas="4"/>
+     <przystanek numer="4" id="90000004" nazwa="BRZEZINA (pętla)" czas="5"/>
+     <przystanek numer="5" id="90000001" nazwa="Brzezina - Kościół" czas="6"/>
+     <przystanek numer="6" id="92052012" nazwa="Brzezinka Średzka - Główna" czas="9"/>
+     <przystanek numer="7" id="91048864" nazwa="Brzezinka Średzka - ul. Parkowa" czas="10"/>
+     <przystanek numer="8" id="92052009" nazwa="Brzezinka Średzka - PKP" czas="13"/>
+    </czasy>
+    <tabliczka id="13" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="21">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="30">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="30">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="06">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="41">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="41">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="17">
+       </min>
+       <min m="50">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92052016" nazwa="Brzezina - Osiedle" ulica="Chrobrego" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92052016" nazwa="Brzezina - Osiedle" czas="0"/>
+     <przystanek numer="1" id="92052014" nazwa="Brzezina - Chrobrego" czas="2"/>
+     <przystanek numer="2" id="90000002" nazwa="Brzezina - Kościół" czas="3"/>
+     <przystanek numer="3" id="90000004" nazwa="BRZEZINA (pętla)" czas="4"/>
+     <przystanek numer="4" id="90000001" nazwa="Brzezina - Kościół" czas="5"/>
+     <przystanek numer="5" id="92052012" nazwa="Brzezinka Średzka - Główna" czas="8"/>
+     <przystanek numer="6" id="91048864" nazwa="Brzezinka Średzka - ul. Parkowa" czas="9"/>
+     <przystanek numer="7" id="92052009" nazwa="Brzezinka Średzka - PKP" czas="12"/>
+    </czasy>
+    <tabliczka id="14" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="22">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="31">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="31">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="07">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="42">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="42">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="18">
+       </min>
+       <min m="51">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92052014" nazwa="Brzezina - Chrobrego" ulica="Chrobrego" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92052014" nazwa="Brzezina - Chrobrego" czas="0"/>
+     <przystanek numer="1" id="90000002" nazwa="Brzezina - Kościół" czas="1"/>
+     <przystanek numer="2" id="90000004" nazwa="BRZEZINA (pętla)" czas="2"/>
+     <przystanek numer="3" id="90000001" nazwa="Brzezina - Kościół" czas="3"/>
+     <przystanek numer="4" id="92052012" nazwa="Brzezinka Średzka - Główna" czas="6"/>
+     <przystanek numer="5" id="91048864" nazwa="Brzezinka Średzka - ul. Parkowa" czas="7"/>
+     <przystanek numer="6" id="92052009" nazwa="Brzezinka Średzka - PKP" czas="10"/>
+    </czasy>
+    <tabliczka id="15" mc="2">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="24">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="33">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="33">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="09">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="44">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="44">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="20">
+       </min>
+       <min m="53">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="90000002" nazwa="Brzezina - Kościół" ulica="Kopernika" cechy="">
+    <czasy>
+     <przystanek numer="0" id="90000002" nazwa="Brzezina - Kościół" czas="0"/>
+     <przystanek numer="1" id="90000004" nazwa="BRZEZINA (pętla)" czas="1"/>
+     <przystanek numer="2" id="90000001" nazwa="Brzezina - Kościół" czas="2"/>
+     <przystanek numer="3" id="92052012" nazwa="Brzezinka Średzka - Główna" czas="5"/>
+     <przystanek numer="4" id="91048864" nazwa="Brzezinka Średzka - ul. Parkowa" czas="6"/>
+     <przystanek numer="5" id="92052009" nazwa="Brzezinka Średzka - PKP" czas="9"/>
+    </czasy>
+    <tabliczka id="16" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="25">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="34">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="34">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="10">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="45">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="45">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="21">
+       </min>
+       <min m="54">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="90000004" nazwa="BRZEZINA (pętla)" ulica="Kopernika" cechy="">
+    <czasy>
+     <przystanek numer="0" id="90000004" nazwa="BRZEZINA (pętla)" czas="0"/>
+     <przystanek numer="1" id="90000001" nazwa="Brzezina - Kościół" czas="1"/>
+     <przystanek numer="2" id="92052012" nazwa="Brzezinka Średzka - Główna" czas="4"/>
+     <przystanek numer="3" id="91048864" nazwa="Brzezinka Średzka - ul. Parkowa" czas="5"/>
+     <przystanek numer="4" id="92052009" nazwa="Brzezinka Średzka - PKP" czas="8"/>
+    </czasy>
+    <tabliczka id="18" mc="1">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="26">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="35">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="35">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="11">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="46">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="46">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="22">
+       </min>
+       <min m="55">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="90000001" nazwa="Brzezina - Kościół" ulica="Kopernika" cechy="">
+    <czasy>
+     <przystanek numer="0" id="90000001" nazwa="Brzezina - Kościół" czas="0"/>
+     <przystanek numer="1" id="92052012" nazwa="Brzezinka Średzka - Główna" czas="3"/>
+     <przystanek numer="2" id="91048864" nazwa="Brzezinka Średzka - ul. Parkowa" czas="4"/>
+     <przystanek numer="3" id="92052009" nazwa="Brzezinka Średzka - PKP" czas="7"/>
+    </czasy>
+    <tabliczka id="20" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="27">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="36">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="36">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="12">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="47">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="47">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="23">
+       </min>
+       <min m="56">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92052012" nazwa="Brzezinka Średzka - Główna" ulica="Główna" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92052012" nazwa="Brzezinka Średzka - Główna" czas="0"/>
+     <przystanek numer="1" id="91048864" nazwa="Brzezinka Średzka - ul. Parkowa" czas="1"/>
+     <przystanek numer="2" id="92052009" nazwa="Brzezinka Średzka - PKP" czas="4"/>
+    </czasy>
+    <tabliczka id="22" mc="3">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="30">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="39">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="39">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="15">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="50">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="50">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="26">
+       </min>
+       <min m="59">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="91048864" nazwa="Brzezinka Średzka - ul. Parkowa" ulica="Parkowa" cechy="">
+    <czasy>
+     <przystanek numer="0" id="91048864" nazwa="Brzezinka Średzka - ul. Parkowa" czas="0"/>
+     <przystanek numer="1" id="92052009" nazwa="Brzezinka Średzka - PKP" czas="3"/>
+    </czasy>
+    <tabliczka id="23" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="31">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="40">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="40">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="16">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="51">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="51">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="27">
+       </min>
+      </godz>
+      <godz h="20">
+       <min m="00">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92052009" nazwa="Brzezinka Średzka - PKP" ulica="Kolejowa" cechy="">
+    <czasy>
+    </czasy>
+   </przystanek>
+  </wariant>
+  <wariant id="2" nazwa="Brzezinka Średzka - PKP - LEŚNICA" obj="na138">
+   <przystanek id="92052009" nazwa="Brzezinka Średzka - PKP" ulica="Kolejowa" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92052009" nazwa="Brzezinka Średzka - PKP" czas="0"/>
+     <przystanek numer="1" id="92052011" nazwa="Brzezinka Średzka - Główna" czas="1"/>
+     <przystanek numer="2" id="90000002" nazwa="Brzezina - Kościół" czas="4"/>
+     <przystanek numer="3" id="90000004" nazwa="BRZEZINA (pętla)" czas="5"/>
+     <przystanek numer="4" id="90000001" nazwa="Brzezina - Kościół" czas="6"/>
+     <przystanek numer="5" id="92052013" nazwa="Brzezina - Chrobrego" czas="7"/>
+     <przystanek numer="6" id="92052015" nazwa="Brzezina - Osiedle" czas="9"/>
+     <przystanek numer="7" id="92052027" nazwa="Brzezina - Zacisze" czas="10"/>
+     <przystanek numer="8" id="92052029" nazwa="Brzezina - Biedronka" czas="11"/>
+     <przystanek numer="9" id="98360" nazwa="LAS MOKRZAŃSKI" czas="13"/>
+     <przystanek numer="10" id="18358" nazwa="Mokra" czas="14"/>
+     <przystanek numer="11" id="18360" nazwa="Grzybowa" czas="16"/>
+     <przystanek numer="12" id="18356" nazwa="Dolnobrzeska" czas="17"/>
+     <przystanek numer="13" id="18350" nazwa="Owczarska" czas="18"/>
+     <przystanek numer="14" id="18354" nazwa="Brzezińska" czas="19"/>
+     <przystanek numer="15" id="18352" nazwa="Eluarda" czas="20"/>
+     <przystanek numer="16" id="18311" nazwa="Średzka" czas="22"/>
+     <przystanek numer="17" id="18392" nazwa="Rubczaka" czas="23"/>
+     <przystanek numer="18" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="24"/>
+     <przystanek numer="19" id="18388" nazwa="LEŚNICA" czas="25"/>
+    </czasy>
+    <tabliczka id="24" mc="0">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="09" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="37" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="51">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="46" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="21">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="56" ozn="L" przyp="L - kurs do Leśnicy z pominięciem ul. Rubczaka">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="56" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="20">
+       <min m="24">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92052011" nazwa="Brzezinka Średzka - Główna" ulica="Główna" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92052011" nazwa="Brzezinka Średzka - Główna" czas="0"/>
+     <przystanek numer="1" id="90000002" nazwa="Brzezina - Kościół" czas="3"/>
+     <przystanek numer="2" id="90000004" nazwa="BRZEZINA (pętla)" czas="4"/>
+     <przystanek numer="3" id="90000001" nazwa="Brzezina - Kościół" czas="5"/>
+     <przystanek numer="4" id="92052013" nazwa="Brzezina - Chrobrego" czas="6"/>
+     <przystanek numer="5" id="92052015" nazwa="Brzezina - Osiedle" czas="8"/>
+     <przystanek numer="6" id="92052027" nazwa="Brzezina - Zacisze" czas="9"/>
+     <przystanek numer="7" id="92052029" nazwa="Brzezina - Biedronka" czas="10"/>
+     <przystanek numer="8" id="98360" nazwa="LAS MOKRZAŃSKI" czas="12"/>
+     <przystanek numer="9" id="18358" nazwa="Mokra" czas="13"/>
+     <przystanek numer="10" id="18360" nazwa="Grzybowa" czas="15"/>
+     <przystanek numer="11" id="18356" nazwa="Dolnobrzeska" czas="16"/>
+     <przystanek numer="12" id="18350" nazwa="Owczarska" czas="17"/>
+     <przystanek numer="13" id="18354" nazwa="Brzezińska" czas="18"/>
+     <przystanek numer="14" id="18352" nazwa="Eluarda" czas="19"/>
+     <przystanek numer="15" id="18311" nazwa="Średzka" czas="21"/>
+     <przystanek numer="16" id="18392" nazwa="Rubczaka" czas="22"/>
+     <przystanek numer="17" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="23"/>
+     <przystanek numer="18" id="18388" nazwa="LEŚNICA" czas="24"/>
+    </czasy>
+    <tabliczka id="25" mc="1">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="10" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="38" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="52">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="47" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="22">
+       </min>
+      </godz>
+      <godz h="16">
+       <min m="57" ozn="L" przyp="L - kurs do Leśnicy z pominięciem ul. Rubczaka">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="57" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="20">
+       <min m="25">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="90000002" nazwa="Brzezina - Kościół" ulica="Kopernika" cechy="">
+    <czasy>
+     <przystanek numer="0" id="90000002" nazwa="Brzezina - Kościół" czas="0"/>
+     <przystanek numer="1" id="90000004" nazwa="BRZEZINA (pętla)" czas="1"/>
+     <przystanek numer="2" id="90000001" nazwa="Brzezina - Kościół" czas="2"/>
+     <przystanek numer="3" id="92052013" nazwa="Brzezina - Chrobrego" czas="3"/>
+     <przystanek numer="4" id="92052015" nazwa="Brzezina - Osiedle" czas="5"/>
+     <przystanek numer="5" id="92052027" nazwa="Brzezina - Zacisze" czas="6"/>
+     <przystanek numer="6" id="92052029" nazwa="Brzezina - Biedronka" czas="7"/>
+     <przystanek numer="7" id="98360" nazwa="LAS MOKRZAŃSKI" czas="9"/>
+     <przystanek numer="8" id="18358" nazwa="Mokra" czas="10"/>
+     <przystanek numer="9" id="18360" nazwa="Grzybowa" czas="12"/>
+     <przystanek numer="10" id="18356" nazwa="Dolnobrzeska" czas="13"/>
+     <przystanek numer="11" id="18350" nazwa="Owczarska" czas="14"/>
+     <przystanek numer="12" id="18354" nazwa="Brzezińska" czas="15"/>
+     <przystanek numer="13" id="18352" nazwa="Eluarda" czas="16"/>
+     <przystanek numer="14" id="18311" nazwa="Średzka" czas="18"/>
+     <przystanek numer="15" id="18392" nazwa="Rubczaka" czas="19"/>
+     <przystanek numer="16" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="20"/>
+     <przystanek numer="17" id="18388" nazwa="LEŚNICA" czas="21"/>
+    </czasy>
+    <tabliczka id="17" mc="3" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="12" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="41" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="55">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="50" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="25">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="00" ozn="L" przyp="L - kurs do Leśnicy z pominięciem ul. Rubczaka">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="00" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="20">
+       <min m="28">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="90000004" nazwa="BRZEZINA (pętla)" ulica="Kopernika" cechy="">
+    <czasy>
+     <przystanek numer="0" id="90000004" nazwa="BRZEZINA (pętla)" czas="0"/>
+     <przystanek numer="1" id="90000001" nazwa="Brzezina - Kościół" czas="1"/>
+     <przystanek numer="2" id="92052013" nazwa="Brzezina - Chrobrego" czas="2"/>
+     <przystanek numer="3" id="92052015" nazwa="Brzezina - Osiedle" czas="4"/>
+     <przystanek numer="4" id="92052027" nazwa="Brzezina - Zacisze" czas="5"/>
+     <przystanek numer="5" id="92052029" nazwa="Brzezina - Biedronka" czas="6"/>
+     <przystanek numer="6" id="98360" nazwa="LAS MOKRZAŃSKI" czas="8"/>
+     <przystanek numer="7" id="18358" nazwa="Mokra" czas="9"/>
+     <przystanek numer="8" id="18360" nazwa="Grzybowa" czas="11"/>
+     <przystanek numer="9" id="18356" nazwa="Dolnobrzeska" czas="12"/>
+     <przystanek numer="10" id="18350" nazwa="Owczarska" czas="13"/>
+     <przystanek numer="11" id="18354" nazwa="Brzezińska" czas="14"/>
+     <przystanek numer="12" id="18352" nazwa="Eluarda" czas="15"/>
+     <przystanek numer="13" id="18311" nazwa="Średzka" czas="17"/>
+     <przystanek numer="14" id="18392" nazwa="Rubczaka" czas="18"/>
+     <przystanek numer="15" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="19"/>
+     <przystanek numer="16" id="18388" nazwa="LEŚNICA" czas="20"/>
+    </czasy>
+    <tabliczka id="19" mc="1">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="13" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="42" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="56">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="51" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="26">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="01" ozn="L" przyp="L - kurs do Leśnicy z pominięciem ul. Rubczaka">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="01" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="20">
+       <min m="29">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="90000001" nazwa="Brzezina - Kościół" ulica="Kopernika" cechy="">
+    <czasy>
+     <przystanek numer="0" id="90000001" nazwa="Brzezina - Kościół" czas="0"/>
+     <przystanek numer="1" id="92052013" nazwa="Brzezina - Chrobrego" czas="1"/>
+     <przystanek numer="2" id="92052015" nazwa="Brzezina - Osiedle" czas="3"/>
+     <przystanek numer="3" id="92052027" nazwa="Brzezina - Zacisze" czas="4"/>
+     <przystanek numer="4" id="92052029" nazwa="Brzezina - Biedronka" czas="5"/>
+     <przystanek numer="5" id="98360" nazwa="LAS MOKRZAŃSKI" czas="7"/>
+     <przystanek numer="6" id="18358" nazwa="Mokra" czas="8"/>
+     <przystanek numer="7" id="18360" nazwa="Grzybowa" czas="10"/>
+     <przystanek numer="8" id="18356" nazwa="Dolnobrzeska" czas="11"/>
+     <przystanek numer="9" id="18350" nazwa="Owczarska" czas="12"/>
+     <przystanek numer="10" id="18354" nazwa="Brzezińska" czas="13"/>
+     <przystanek numer="11" id="18352" nazwa="Eluarda" czas="14"/>
+     <przystanek numer="12" id="18311" nazwa="Średzka" czas="16"/>
+     <przystanek numer="13" id="18392" nazwa="Rubczaka" czas="17"/>
+     <przystanek numer="14" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="18"/>
+     <przystanek numer="15" id="18388" nazwa="LEŚNICA" czas="19"/>
+    </czasy>
+    <tabliczka id="21" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="14" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="43" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="57">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="52" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="27">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="02" ozn="L" przyp="L - kurs do Leśnicy z pominięciem ul. Rubczaka">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="02" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="20">
+       <min m="30">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92052013" nazwa="Brzezina - Chrobrego" ulica="Chrobrego" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92052013" nazwa="Brzezina - Chrobrego" czas="0"/>
+     <przystanek numer="1" id="92052015" nazwa="Brzezina - Osiedle" czas="2"/>
+     <przystanek numer="2" id="92052027" nazwa="Brzezina - Zacisze" czas="3"/>
+     <przystanek numer="3" id="92052029" nazwa="Brzezina - Biedronka" czas="4"/>
+     <przystanek numer="4" id="98360" nazwa="LAS MOKRZAŃSKI" czas="6"/>
+     <przystanek numer="5" id="18358" nazwa="Mokra" czas="7"/>
+     <przystanek numer="6" id="18360" nazwa="Grzybowa" czas="9"/>
+     <przystanek numer="7" id="18356" nazwa="Dolnobrzeska" czas="10"/>
+     <przystanek numer="8" id="18350" nazwa="Owczarska" czas="11"/>
+     <przystanek numer="9" id="18354" nazwa="Brzezińska" czas="12"/>
+     <przystanek numer="10" id="18352" nazwa="Eluarda" czas="13"/>
+     <przystanek numer="11" id="18311" nazwa="Średzka" czas="15"/>
+     <przystanek numer="12" id="18392" nazwa="Rubczaka" czas="16"/>
+     <przystanek numer="13" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="17"/>
+     <przystanek numer="14" id="18388" nazwa="LEŚNICA" czas="18"/>
+    </czasy>
+    <tabliczka id="26" mc="1">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="15" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="44" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="9">
+       <min m="58">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="53" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="28">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="03" ozn="L" przyp="L - kurs do Leśnicy z pominięciem ul. Rubczaka">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="03" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="20">
+       <min m="31">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92052015" nazwa="Brzezina - Osiedle" ulica="Chrobrego" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92052015" nazwa="Brzezina - Osiedle" czas="0"/>
+     <przystanek numer="1" id="92052027" nazwa="Brzezina - Zacisze" czas="1"/>
+     <przystanek numer="2" id="92052029" nazwa="Brzezina - Biedronka" czas="2"/>
+     <przystanek numer="3" id="98360" nazwa="LAS MOKRZAŃSKI" czas="4"/>
+     <przystanek numer="4" id="18358" nazwa="Mokra" czas="5"/>
+     <przystanek numer="5" id="18360" nazwa="Grzybowa" czas="7"/>
+     <przystanek numer="6" id="18356" nazwa="Dolnobrzeska" czas="8"/>
+     <przystanek numer="7" id="18350" nazwa="Owczarska" czas="9"/>
+     <przystanek numer="8" id="18354" nazwa="Brzezińska" czas="10"/>
+     <przystanek numer="9" id="18352" nazwa="Eluarda" czas="11"/>
+     <przystanek numer="10" id="18311" nazwa="Średzka" czas="13"/>
+     <przystanek numer="11" id="18392" nazwa="Rubczaka" czas="14"/>
+     <przystanek numer="12" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="15"/>
+     <przystanek numer="13" id="18388" nazwa="LEŚNICA" czas="16"/>
+    </czasy>
+    <tabliczka id="27" mc="2" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="17" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="46" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="00">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="55" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="30">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="05" ozn="L" przyp="L - kurs do Leśnicy z pominięciem ul. Rubczaka">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="05" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="20">
+       <min m="33">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92052027" nazwa="Brzezina - Zacisze" ulica="Chrobrego" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92052027" nazwa="Brzezina - Zacisze" czas="0"/>
+     <przystanek numer="1" id="92052029" nazwa="Brzezina - Biedronka" czas="1"/>
+     <przystanek numer="2" id="98360" nazwa="LAS MOKRZAŃSKI" czas="3"/>
+     <przystanek numer="3" id="18358" nazwa="Mokra" czas="4"/>
+     <przystanek numer="4" id="18360" nazwa="Grzybowa" czas="6"/>
+     <przystanek numer="5" id="18356" nazwa="Dolnobrzeska" czas="7"/>
+     <przystanek numer="6" id="18350" nazwa="Owczarska" czas="8"/>
+     <przystanek numer="7" id="18354" nazwa="Brzezińska" czas="9"/>
+     <przystanek numer="8" id="18352" nazwa="Eluarda" czas="10"/>
+     <przystanek numer="9" id="18311" nazwa="Średzka" czas="12"/>
+     <przystanek numer="10" id="18392" nazwa="Rubczaka" czas="13"/>
+     <przystanek numer="11" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="14"/>
+     <przystanek numer="12" id="18388" nazwa="LEŚNICA" czas="15"/>
+    </czasy>
+    <tabliczka id="28" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="18" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="47" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="01">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="56" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="31">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="06" ozn="L" przyp="L - kurs do Leśnicy z pominięciem ul. Rubczaka">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="06" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="20">
+       <min m="34">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92052029" nazwa="Brzezina - Biedronka" ulica="Chrobrego" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92052029" nazwa="Brzezina - Biedronka" czas="0"/>
+     <przystanek numer="1" id="98360" nazwa="LAS MOKRZAŃSKI" czas="2"/>
+     <przystanek numer="2" id="18358" nazwa="Mokra" czas="3"/>
+     <przystanek numer="3" id="18360" nazwa="Grzybowa" czas="5"/>
+     <przystanek numer="4" id="18356" nazwa="Dolnobrzeska" czas="6"/>
+     <przystanek numer="5" id="18350" nazwa="Owczarska" czas="7"/>
+     <przystanek numer="6" id="18354" nazwa="Brzezińska" czas="8"/>
+     <przystanek numer="7" id="18352" nazwa="Eluarda" czas="9"/>
+     <przystanek numer="8" id="18311" nazwa="Średzka" czas="11"/>
+     <przystanek numer="9" id="18392" nazwa="Rubczaka" czas="12"/>
+     <przystanek numer="10" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="13"/>
+     <przystanek numer="11" id="18388" nazwa="LEŚNICA" czas="14"/>
+    </czasy>
+    <tabliczka id="29" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="19" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="48" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="02">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="57" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="32">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="07" ozn="L" przyp="L - kurs do Leśnicy z pominięciem ul. Rubczaka">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="07" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="20">
+       <min m="35">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="98360" nazwa="LAS MOKRZAŃSKI" ulica="Wińska" cechy="1">
+    <czasy>
+     <przystanek numer="0" id="98360" nazwa="LAS MOKRZAŃSKI" czas="0"/>
+     <przystanek numer="1" id="18358" nazwa="Mokra" czas="1"/>
+     <przystanek numer="2" id="18360" nazwa="Grzybowa" czas="3"/>
+     <przystanek numer="3" id="18356" nazwa="Dolnobrzeska" czas="4"/>
+     <przystanek numer="4" id="18350" nazwa="Owczarska" czas="5"/>
+     <przystanek numer="5" id="18354" nazwa="Brzezińska" czas="6"/>
+     <przystanek numer="6" id="18352" nazwa="Eluarda" czas="7"/>
+     <przystanek numer="7" id="18311" nazwa="Średzka" czas="9"/>
+     <przystanek numer="8" id="18392" nazwa="Rubczaka" czas="10"/>
+     <przystanek numer="9" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="11"/>
+     <przystanek numer="10" id="18388" nazwa="LEŚNICA" czas="12"/>
+    </czasy>
+    <tabliczka id="30" mc="2">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="21" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="50" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="04">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="59" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="34">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="09" ozn="L" przyp="L - kurs do Leśnicy z pominięciem ul. Rubczaka">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="09" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="20">
+       <min m="37">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18358" nazwa="Mokra" ulica="Wińska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18358" nazwa="Mokra" czas="0"/>
+     <przystanek numer="1" id="18360" nazwa="Grzybowa" czas="2"/>
+     <przystanek numer="2" id="18356" nazwa="Dolnobrzeska" czas="3"/>
+     <przystanek numer="3" id="18350" nazwa="Owczarska" czas="4"/>
+     <przystanek numer="4" id="18354" nazwa="Brzezińska" czas="5"/>
+     <przystanek numer="5" id="18352" nazwa="Eluarda" czas="6"/>
+     <przystanek numer="6" id="18311" nazwa="Średzka" czas="8"/>
+     <przystanek numer="7" id="18392" nazwa="Rubczaka" czas="9"/>
+     <przystanek numer="8" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="10"/>
+     <przystanek numer="9" id="18388" nazwa="LEŚNICA" czas="11"/>
+    </czasy>
+    <tabliczka id="31" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="22" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="51" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="05">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="00" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="35">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="10" ozn="L" przyp="L - kurs do Leśnicy z pominięciem ul. Rubczaka">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="10" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="20">
+       <min m="38">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18360" nazwa="Grzybowa" ulica="Dolnobrzeska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18360" nazwa="Grzybowa" czas="0"/>
+     <przystanek numer="1" id="18356" nazwa="Dolnobrzeska" czas="1"/>
+     <przystanek numer="2" id="18350" nazwa="Owczarska" czas="2"/>
+     <przystanek numer="3" id="18354" nazwa="Brzezińska" czas="3"/>
+     <przystanek numer="4" id="18352" nazwa="Eluarda" czas="4"/>
+     <przystanek numer="5" id="18311" nazwa="Średzka" czas="6"/>
+     <przystanek numer="6" id="18392" nazwa="Rubczaka" czas="7"/>
+     <przystanek numer="7" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="8"/>
+     <przystanek numer="8" id="18388" nazwa="LEŚNICA" czas="9"/>
+    </czasy>
+    <tabliczka id="32" mc="2" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="24" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="53" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="07">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="02" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="37">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="12" ozn="L" przyp="L - kurs do Leśnicy z pominięciem ul. Rubczaka">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="12" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="20">
+       <min m="40">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18356" nazwa="Dolnobrzeska" ulica="Dolnobrzeska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18356" nazwa="Dolnobrzeska" czas="0"/>
+     <przystanek numer="1" id="18350" nazwa="Owczarska" czas="1"/>
+     <przystanek numer="2" id="18354" nazwa="Brzezińska" czas="2"/>
+     <przystanek numer="3" id="18352" nazwa="Eluarda" czas="3"/>
+     <przystanek numer="4" id="18311" nazwa="Średzka" czas="5"/>
+     <przystanek numer="5" id="18392" nazwa="Rubczaka" czas="6"/>
+     <przystanek numer="6" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="7"/>
+     <przystanek numer="7" id="18388" nazwa="LEŚNICA" czas="8"/>
+    </czasy>
+    <tabliczka id="33" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="25" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="54" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="08">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="03" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="38">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="13" ozn="L" przyp="L - kurs do Leśnicy z pominięciem ul. Rubczaka">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="13" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="20">
+       <min m="41">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18350" nazwa="Owczarska" ulica="Dolnobrzeska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18350" nazwa="Owczarska" czas="0"/>
+     <przystanek numer="1" id="18354" nazwa="Brzezińska" czas="1"/>
+     <przystanek numer="2" id="18352" nazwa="Eluarda" czas="2"/>
+     <przystanek numer="3" id="18311" nazwa="Średzka" czas="4"/>
+     <przystanek numer="4" id="18392" nazwa="Rubczaka" czas="5"/>
+     <przystanek numer="5" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="6"/>
+     <przystanek numer="6" id="18388" nazwa="LEŚNICA" czas="7"/>
+    </czasy>
+    <tabliczka id="34" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="26" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="55" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="09">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="04" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="39">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="14" ozn="L" przyp="L - kurs do Leśnicy z pominięciem ul. Rubczaka">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="14" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="20">
+       <min m="42">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18354" nazwa="Brzezińska" ulica="Dolnobrzeska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18354" nazwa="Brzezińska" czas="0"/>
+     <przystanek numer="1" id="18352" nazwa="Eluarda" czas="1"/>
+     <przystanek numer="2" id="18311" nazwa="Średzka" czas="3"/>
+     <przystanek numer="3" id="18392" nazwa="Rubczaka" czas="4"/>
+     <przystanek numer="4" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="5"/>
+     <przystanek numer="5" id="18388" nazwa="LEŚNICA" czas="6"/>
+    </czasy>
+    <tabliczka id="35" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="27" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="56" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="10">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="05" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="40">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="15" ozn="L" przyp="L - kurs do Leśnicy z pominięciem ul. Rubczaka">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="15" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="20">
+       <min m="43">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18352" nazwa="Eluarda" ulica="Dolnobrzeska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18352" nazwa="Eluarda" czas="0"/>
+     <przystanek numer="1" id="18311" nazwa="Średzka" czas="2"/>
+     <przystanek numer="2" id="18392" nazwa="Rubczaka" czas="3"/>
+     <przystanek numer="3" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="4"/>
+     <przystanek numer="4" id="18388" nazwa="LEŚNICA" czas="5"/>
+    </czasy>
+    <tabliczka id="36" mc="1">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="28" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="57" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="11">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="06" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="41">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="16" ozn="L" przyp="L - kurs do Leśnicy z pominięciem ul. Rubczaka">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="16" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="20">
+       <min m="44">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18311" nazwa="Średzka" ulica="Trzmielowicka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18311" nazwa="Średzka" czas="0"/>
+     <przystanek numer="1" id="18392" nazwa="Rubczaka" czas="1"/>
+     <przystanek numer="2" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="2"/>
+     <przystanek numer="3" id="18388" nazwa="LEŚNICA" czas="3"/>
+    </czasy>
+    <tabliczka id="37" mc="1">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="29" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="6">
+       <min m="59" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="12">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="08" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="43">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="17" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="20">
+       <min m="45">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18392" nazwa="Rubczaka" ulica="Rubczaka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18392" nazwa="Rubczaka" czas="0"/>
+     <przystanek numer="1" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="1"/>
+     <przystanek numer="2" id="18388" nazwa="LEŚNICA" czas="2"/>
+    </czasy>
+    <tabliczka id="38" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="30" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="00" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="13">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="09" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="44">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="18" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="20">
+       <min m="46">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18390" nazwa="Rubczaka (Stacja kolejowa)" ulica="Rubczaka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="0"/>
+     <przystanek numer="1" id="18388" nazwa="LEŚNICA" czas="1"/>
+    </czasy>
+    <tabliczka id="39" mc="1">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="31" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="7">
+       <min m="01" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="10">
+       <min m="14">
+       </min>
+      </godz>
+      <godz h="14">
+       <min m="10" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="15">
+       <min m="45">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="19" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="20">
+       <min m="47">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18388" nazwa="LEŚNICA" ulica="Płońskiego" cechy="">
+    <czasy>
+    </czasy>
+   </przystanek>
+  </wariant>
+ </linia>
+</linie>

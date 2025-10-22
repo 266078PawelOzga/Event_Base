@@ -1,0 +1,4744 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<linie>
+ <linia nazwa="242" typ="Nocna autobusowa" wazny_od="18.01.2025" wazny_do="">
+  <wariant id="1" nazwa="PETRUSEWICZA - KOWALE">
+   <przystanek id="21112" nazwa="PETRUSEWICZA" ulica="Petrusewicza" cechy="">
+    <czasy>
+     <przystanek numer="0" id="21112" nazwa="PETRUSEWICZA" czas="0"/>
+     <przystanek numer="1" id="21102" nazwa="DWORZEC AUTOBUSOWY" czas="3"/>
+     <przystanek numer="2" id="120268" nazwa="DWORZEC GŁÓWNY" czas="6"/>
+     <przystanek numer="3" id="110222" nazwa="Bastion Sakwowy" czas="8"/>
+     <przystanek numer="4" id="110021" nazwa="GALERIA DOMINIKAŃSKA" czas="10"/>
+     <przystanek numer="5" id="110023" nazwa="Hala Targowa" czas="12"/>
+     <przystanek numer="6" id="20711" nazwa="Dubois" czas="15"/>
+     <przystanek numer="7" id="120621" nazwa="pl. Bema" czas="18"/>
+     <przystanek numer="8" id="120623" nazwa="Na Szańcach" czas="19"/>
+     <przystanek numer="9" id="120625" nazwa="Jedności Narodowej" czas="20"/>
+     <przystanek numer="10" id="120627" nazwa="Nowowiejska" czas="22"/>
+     <przystanek numer="11" id="120631" nazwa="Daszyńskiego" czas="23"/>
+     <przystanek numer="12" id="20729" nazwa="Mosty Warszawskie" czas="24"/>
+     <przystanek numer="13" id="24101" nazwa="KROMERA" czas="27"/>
+     <przystanek numer="14" id="24145" nazwa="Kromera (Czajkowskiego)" czas="29"/>
+     <przystanek numer="15" id="24103" nazwa="Grudziądzka" czas="30"/>
+     <przystanek numer="16" id="24105" nazwa="Brücknera" czas="33"/>
+     <przystanek numer="17" id="24129" nazwa="Olsztyńska" czas="35"/>
+     <przystanek numer="18" id="24137" nazwa="Kowalska 56" czas="36"/>
+     <przystanek numer="19" id="24125" nazwa="Kowale (Stacja kolejowa)" czas="37"/>
+     <przystanek numer="20" id="24121" nazwa="Działdowska" czas="38"/>
+     <przystanek numer="21" id="24120" nazwa="KOWALE" czas="40"/>
+     <przystanek numer="22" id="24135" nazwa="KOWALE" czas="41"/>
+    </czasy>
+    <tabliczka id="1" mc="0">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="23">
+       <min m="45">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="45">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="45">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="23">
+       <min m="45">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="45">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="45">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="23">
+       <min m="45">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="45">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="45">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="21102" nazwa="DWORZEC AUTOBUSOWY" ulica="Borowska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="21102" nazwa="DWORZEC AUTOBUSOWY" czas="0"/>
+     <przystanek numer="1" id="120268" nazwa="DWORZEC GŁÓWNY" czas="3"/>
+     <przystanek numer="2" id="110222" nazwa="Bastion Sakwowy" czas="5"/>
+     <przystanek numer="3" id="110021" nazwa="GALERIA DOMINIKAŃSKA" czas="7"/>
+     <przystanek numer="4" id="110023" nazwa="Hala Targowa" czas="9"/>
+     <przystanek numer="5" id="20711" nazwa="Dubois" czas="12"/>
+     <przystanek numer="6" id="120621" nazwa="pl. Bema" czas="15"/>
+     <przystanek numer="7" id="120623" nazwa="Na Szańcach" czas="16"/>
+     <przystanek numer="8" id="120625" nazwa="Jedności Narodowej" czas="17"/>
+     <przystanek numer="9" id="120627" nazwa="Nowowiejska" czas="19"/>
+     <przystanek numer="10" id="120631" nazwa="Daszyńskiego" czas="20"/>
+     <przystanek numer="11" id="20729" nazwa="Mosty Warszawskie" czas="21"/>
+     <przystanek numer="12" id="24101" nazwa="KROMERA" czas="24"/>
+     <przystanek numer="13" id="24145" nazwa="Kromera (Czajkowskiego)" czas="26"/>
+     <przystanek numer="14" id="24103" nazwa="Grudziądzka" czas="27"/>
+     <przystanek numer="15" id="24105" nazwa="Brücknera" czas="30"/>
+     <przystanek numer="16" id="24129" nazwa="Olsztyńska" czas="32"/>
+     <przystanek numer="17" id="24137" nazwa="Kowalska 56" czas="33"/>
+     <przystanek numer="18" id="24125" nazwa="Kowale (Stacja kolejowa)" czas="34"/>
+     <przystanek numer="19" id="24121" nazwa="Działdowska" czas="35"/>
+     <przystanek numer="20" id="24120" nazwa="KOWALE" czas="37"/>
+     <przystanek numer="21" id="24135" nazwa="KOWALE" czas="38"/>
+    </czasy>
+    <tabliczka id="2" mc="2">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="23">
+       <min m="47">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="47">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="47">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="23">
+       <min m="47">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="47">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="47">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="23">
+       <min m="47">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="47">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="47">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="120268" nazwa="DWORZEC GŁÓWNY" ulica="Peronowa" cechy="">
+    <czasy>
+     <przystanek numer="0" id="120268" nazwa="DWORZEC GŁÓWNY" czas="0"/>
+     <przystanek numer="1" id="110222" nazwa="Bastion Sakwowy" czas="2"/>
+     <przystanek numer="2" id="110021" nazwa="GALERIA DOMINIKAŃSKA" czas="4"/>
+     <przystanek numer="3" id="110023" nazwa="Hala Targowa" czas="6"/>
+     <przystanek numer="4" id="20711" nazwa="Dubois" czas="9"/>
+     <przystanek numer="5" id="120621" nazwa="pl. Bema" czas="12"/>
+     <przystanek numer="6" id="120623" nazwa="Na Szańcach" czas="13"/>
+     <przystanek numer="7" id="120625" nazwa="Jedności Narodowej" czas="14"/>
+     <przystanek numer="8" id="120627" nazwa="Nowowiejska" czas="16"/>
+     <przystanek numer="9" id="120631" nazwa="Daszyńskiego" czas="17"/>
+     <przystanek numer="10" id="20729" nazwa="Mosty Warszawskie" czas="18"/>
+     <przystanek numer="11" id="24101" nazwa="KROMERA" czas="21"/>
+     <przystanek numer="12" id="24145" nazwa="Kromera (Czajkowskiego)" czas="23"/>
+     <przystanek numer="13" id="24103" nazwa="Grudziądzka" czas="24"/>
+     <przystanek numer="14" id="24105" nazwa="Brücknera" czas="27"/>
+     <przystanek numer="15" id="24129" nazwa="Olsztyńska" czas="29"/>
+     <przystanek numer="16" id="24137" nazwa="Kowalska 56" czas="30"/>
+     <przystanek numer="17" id="24125" nazwa="Kowale (Stacja kolejowa)" czas="31"/>
+     <przystanek numer="18" id="24121" nazwa="Działdowska" czas="32"/>
+     <przystanek numer="19" id="24120" nazwa="KOWALE" czas="34"/>
+     <przystanek numer="20" id="24135" nazwa="KOWALE" czas="35"/>
+    </czasy>
+    <tabliczka id="3" mc="2">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="23">
+       <min m="49">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="49">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="49">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="23">
+       <min m="49">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="49">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="49">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="23">
+       <min m="49">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="49">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="49">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="110222" nazwa="Bastion Sakwowy" ulica="Kołłątaja" cechy="">
+    <czasy>
+     <przystanek numer="0" id="110222" nazwa="Bastion Sakwowy" czas="0"/>
+     <przystanek numer="1" id="110021" nazwa="GALERIA DOMINIKAŃSKA" czas="2"/>
+     <przystanek numer="2" id="110023" nazwa="Hala Targowa" czas="4"/>
+     <przystanek numer="3" id="20711" nazwa="Dubois" czas="7"/>
+     <przystanek numer="4" id="120621" nazwa="pl. Bema" czas="10"/>
+     <przystanek numer="5" id="120623" nazwa="Na Szańcach" czas="11"/>
+     <przystanek numer="6" id="120625" nazwa="Jedności Narodowej" czas="12"/>
+     <przystanek numer="7" id="120627" nazwa="Nowowiejska" czas="14"/>
+     <przystanek numer="8" id="120631" nazwa="Daszyńskiego" czas="15"/>
+     <przystanek numer="9" id="20729" nazwa="Mosty Warszawskie" czas="16"/>
+     <przystanek numer="10" id="24101" nazwa="KROMERA" czas="19"/>
+     <przystanek numer="11" id="24145" nazwa="Kromera (Czajkowskiego)" czas="21"/>
+     <przystanek numer="12" id="24103" nazwa="Grudziądzka" czas="22"/>
+     <przystanek numer="13" id="24105" nazwa="Brücknera" czas="25"/>
+     <przystanek numer="14" id="24129" nazwa="Olsztyńska" czas="27"/>
+     <przystanek numer="15" id="24137" nazwa="Kowalska 56" czas="28"/>
+     <przystanek numer="16" id="24125" nazwa="Kowale (Stacja kolejowa)" czas="29"/>
+     <przystanek numer="17" id="24121" nazwa="Działdowska" czas="30"/>
+     <przystanek numer="18" id="24120" nazwa="KOWALE" czas="32"/>
+     <przystanek numer="19" id="24135" nazwa="KOWALE" czas="33"/>
+    </czasy>
+    <tabliczka id="4" mc="2">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="23">
+       <min m="51">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="51">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="51">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="23">
+       <min m="51">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="51">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="51">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="23">
+       <min m="51">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="51">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="51">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="110021" nazwa="GALERIA DOMINIKAŃSKA" ulica="Św. Katarzyny" cechy="">
+    <czasy>
+     <przystanek numer="0" id="110021" nazwa="GALERIA DOMINIKAŃSKA" czas="0"/>
+     <przystanek numer="1" id="110023" nazwa="Hala Targowa" czas="2"/>
+     <przystanek numer="2" id="20711" nazwa="Dubois" czas="5"/>
+     <przystanek numer="3" id="120621" nazwa="pl. Bema" czas="8"/>
+     <przystanek numer="4" id="120623" nazwa="Na Szańcach" czas="9"/>
+     <przystanek numer="5" id="120625" nazwa="Jedności Narodowej" czas="10"/>
+     <przystanek numer="6" id="120627" nazwa="Nowowiejska" czas="12"/>
+     <przystanek numer="7" id="120631" nazwa="Daszyńskiego" czas="13"/>
+     <przystanek numer="8" id="20729" nazwa="Mosty Warszawskie" czas="14"/>
+     <przystanek numer="9" id="24101" nazwa="KROMERA" czas="17"/>
+     <przystanek numer="10" id="24145" nazwa="Kromera (Czajkowskiego)" czas="19"/>
+     <przystanek numer="11" id="24103" nazwa="Grudziądzka" czas="20"/>
+     <przystanek numer="12" id="24105" nazwa="Brücknera" czas="23"/>
+     <przystanek numer="13" id="24129" nazwa="Olsztyńska" czas="25"/>
+     <przystanek numer="14" id="24137" nazwa="Kowalska 56" czas="26"/>
+     <przystanek numer="15" id="24125" nazwa="Kowale (Stacja kolejowa)" czas="27"/>
+     <przystanek numer="16" id="24121" nazwa="Działdowska" czas="28"/>
+     <przystanek numer="17" id="24120" nazwa="KOWALE" czas="30"/>
+     <przystanek numer="18" id="24135" nazwa="KOWALE" czas="31"/>
+    </czasy>
+    <tabliczka id="5" mc="2">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="23">
+       <min m="53">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="53">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="53">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="23">
+       <min m="53">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="53">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="53">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="23">
+       <min m="53">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="53">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="53">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="110023" nazwa="Hala Targowa" ulica="Piaskowa" cechy="">
+    <czasy>
+     <przystanek numer="0" id="110023" nazwa="Hala Targowa" czas="0"/>
+     <przystanek numer="1" id="20711" nazwa="Dubois" czas="3"/>
+     <przystanek numer="2" id="120621" nazwa="pl. Bema" czas="6"/>
+     <przystanek numer="3" id="120623" nazwa="Na Szańcach" czas="7"/>
+     <przystanek numer="4" id="120625" nazwa="Jedności Narodowej" czas="8"/>
+     <przystanek numer="5" id="120627" nazwa="Nowowiejska" czas="10"/>
+     <przystanek numer="6" id="120631" nazwa="Daszyńskiego" czas="11"/>
+     <przystanek numer="7" id="20729" nazwa="Mosty Warszawskie" czas="12"/>
+     <przystanek numer="8" id="24101" nazwa="KROMERA" czas="15"/>
+     <przystanek numer="9" id="24145" nazwa="Kromera (Czajkowskiego)" czas="17"/>
+     <przystanek numer="10" id="24103" nazwa="Grudziądzka" czas="18"/>
+     <przystanek numer="11" id="24105" nazwa="Brücknera" czas="21"/>
+     <przystanek numer="12" id="24129" nazwa="Olsztyńska" czas="23"/>
+     <przystanek numer="13" id="24137" nazwa="Kowalska 56" czas="24"/>
+     <przystanek numer="14" id="24125" nazwa="Kowale (Stacja kolejowa)" czas="25"/>
+     <przystanek numer="15" id="24121" nazwa="Działdowska" czas="26"/>
+     <przystanek numer="16" id="24120" nazwa="KOWALE" czas="28"/>
+     <przystanek numer="17" id="24135" nazwa="KOWALE" czas="29"/>
+    </czasy>
+    <tabliczka id="6" mc="2" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="23">
+       <min m="54">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="54">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="54">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="23">
+       <min m="54">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="54">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="54">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="23">
+       <min m="54">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="54">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="54">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="20711" nazwa="Dubois" ulica="Drobnera" cechy="">
+    <czasy>
+     <przystanek numer="0" id="20711" nazwa="Dubois" czas="0"/>
+     <przystanek numer="1" id="120621" nazwa="pl. Bema" czas="3"/>
+     <przystanek numer="2" id="120623" nazwa="Na Szańcach" czas="4"/>
+     <przystanek numer="3" id="120625" nazwa="Jedności Narodowej" czas="5"/>
+     <przystanek numer="4" id="120627" nazwa="Nowowiejska" czas="7"/>
+     <przystanek numer="5" id="120631" nazwa="Daszyńskiego" czas="8"/>
+     <przystanek numer="6" id="20729" nazwa="Mosty Warszawskie" czas="9"/>
+     <przystanek numer="7" id="24101" nazwa="KROMERA" czas="12"/>
+     <przystanek numer="8" id="24145" nazwa="Kromera (Czajkowskiego)" czas="14"/>
+     <przystanek numer="9" id="24103" nazwa="Grudziądzka" czas="15"/>
+     <przystanek numer="10" id="24105" nazwa="Brücknera" czas="18"/>
+     <przystanek numer="11" id="24129" nazwa="Olsztyńska" czas="20"/>
+     <przystanek numer="12" id="24137" nazwa="Kowalska 56" czas="21"/>
+     <przystanek numer="13" id="24125" nazwa="Kowale (Stacja kolejowa)" czas="22"/>
+     <przystanek numer="14" id="24121" nazwa="Działdowska" czas="23"/>
+     <przystanek numer="15" id="24120" nazwa="KOWALE" czas="25"/>
+     <przystanek numer="16" id="24135" nazwa="KOWALE" czas="26"/>
+    </czasy>
+    <tabliczka id="7" mc="2">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="23">
+       <min m="56">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="56">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="56">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="23">
+       <min m="56">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="56">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="56">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="23">
+       <min m="56">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="56">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="56">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="120621" nazwa="pl. Bema" ulica="pl. Bema" cechy="">
+    <czasy>
+     <przystanek numer="0" id="120621" nazwa="pl. Bema" czas="0"/>
+     <przystanek numer="1" id="120623" nazwa="Na Szańcach" czas="1"/>
+     <przystanek numer="2" id="120625" nazwa="Jedności Narodowej" czas="2"/>
+     <przystanek numer="3" id="120627" nazwa="Nowowiejska" czas="4"/>
+     <przystanek numer="4" id="120631" nazwa="Daszyńskiego" czas="5"/>
+     <przystanek numer="5" id="20729" nazwa="Mosty Warszawskie" czas="6"/>
+     <przystanek numer="6" id="24101" nazwa="KROMERA" czas="9"/>
+     <przystanek numer="7" id="24145" nazwa="Kromera (Czajkowskiego)" czas="11"/>
+     <przystanek numer="8" id="24103" nazwa="Grudziądzka" czas="12"/>
+     <przystanek numer="9" id="24105" nazwa="Brücknera" czas="15"/>
+     <przystanek numer="10" id="24129" nazwa="Olsztyńska" czas="17"/>
+     <przystanek numer="11" id="24137" nazwa="Kowalska 56" czas="18"/>
+     <przystanek numer="12" id="24125" nazwa="Kowale (Stacja kolejowa)" czas="19"/>
+     <przystanek numer="13" id="24121" nazwa="Działdowska" czas="20"/>
+     <przystanek numer="14" id="24120" nazwa="KOWALE" czas="22"/>
+     <przystanek numer="15" id="24135" nazwa="KOWALE" czas="23"/>
+    </czasy>
+    <tabliczka id="8" mc="2">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="23">
+       <min m="58">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="58">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="58">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="23">
+       <min m="58">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="58">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="58">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="23">
+       <min m="58">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="58">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="58">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="120623" nazwa="Na Szańcach" ulica="Bema" cechy="">
+    <czasy>
+     <przystanek numer="0" id="120623" nazwa="Na Szańcach" czas="0"/>
+     <przystanek numer="1" id="120625" nazwa="Jedności Narodowej" czas="1"/>
+     <przystanek numer="2" id="120627" nazwa="Nowowiejska" czas="3"/>
+     <przystanek numer="3" id="120631" nazwa="Daszyńskiego" czas="4"/>
+     <przystanek numer="4" id="20729" nazwa="Mosty Warszawskie" czas="5"/>
+     <przystanek numer="5" id="24101" nazwa="KROMERA" czas="8"/>
+     <przystanek numer="6" id="24145" nazwa="Kromera (Czajkowskiego)" czas="10"/>
+     <przystanek numer="7" id="24103" nazwa="Grudziądzka" czas="11"/>
+     <przystanek numer="8" id="24105" nazwa="Brücknera" czas="14"/>
+     <przystanek numer="9" id="24129" nazwa="Olsztyńska" czas="16"/>
+     <przystanek numer="10" id="24137" nazwa="Kowalska 56" czas="17"/>
+     <przystanek numer="11" id="24125" nazwa="Kowale (Stacja kolejowa)" czas="18"/>
+     <przystanek numer="12" id="24121" nazwa="Działdowska" czas="19"/>
+     <przystanek numer="13" id="24120" nazwa="KOWALE" czas="21"/>
+     <przystanek numer="14" id="24135" nazwa="KOWALE" czas="22"/>
+    </czasy>
+    <tabliczka id="9" mc="1" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="23">
+       <min m="58">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="58">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="58">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="23">
+       <min m="58">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="58">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="58">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="23">
+       <min m="58">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="58">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="58">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="120625" nazwa="Jedności Narodowej" ulica="Poniatowskiego" cechy="">
+    <czasy>
+     <przystanek numer="0" id="120625" nazwa="Jedności Narodowej" czas="0"/>
+     <przystanek numer="1" id="120627" nazwa="Nowowiejska" czas="2"/>
+     <przystanek numer="2" id="120631" nazwa="Daszyńskiego" czas="3"/>
+     <przystanek numer="3" id="20729" nazwa="Mosty Warszawskie" czas="4"/>
+     <przystanek numer="4" id="24101" nazwa="KROMERA" czas="7"/>
+     <przystanek numer="5" id="24145" nazwa="Kromera (Czajkowskiego)" czas="9"/>
+     <przystanek numer="6" id="24103" nazwa="Grudziądzka" czas="10"/>
+     <przystanek numer="7" id="24105" nazwa="Brücknera" czas="13"/>
+     <przystanek numer="8" id="24129" nazwa="Olsztyńska" czas="15"/>
+     <przystanek numer="9" id="24137" nazwa="Kowalska 56" czas="16"/>
+     <przystanek numer="10" id="24125" nazwa="Kowale (Stacja kolejowa)" czas="17"/>
+     <przystanek numer="11" id="24121" nazwa="Działdowska" czas="18"/>
+     <przystanek numer="12" id="24120" nazwa="KOWALE" czas="20"/>
+     <przystanek numer="13" id="24135" nazwa="KOWALE" czas="21"/>
+    </czasy>
+    <tabliczka id="10" mc="1" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="23">
+       <min m="59">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="59">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="59">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="23">
+       <min m="59">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="59">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="59">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="23">
+       <min m="59">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="59">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="59">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="120627" nazwa="Nowowiejska" ulica="Jedności Narodowej" cechy="">
+    <czasy>
+     <przystanek numer="0" id="120627" nazwa="Nowowiejska" czas="0"/>
+     <przystanek numer="1" id="120631" nazwa="Daszyńskiego" czas="1"/>
+     <przystanek numer="2" id="20729" nazwa="Mosty Warszawskie" czas="2"/>
+     <przystanek numer="3" id="24101" nazwa="KROMERA" czas="5"/>
+     <przystanek numer="4" id="24145" nazwa="Kromera (Czajkowskiego)" czas="7"/>
+     <przystanek numer="5" id="24103" nazwa="Grudziądzka" czas="8"/>
+     <przystanek numer="6" id="24105" nazwa="Brücknera" czas="11"/>
+     <przystanek numer="7" id="24129" nazwa="Olsztyńska" czas="13"/>
+     <przystanek numer="8" id="24137" nazwa="Kowalska 56" czas="14"/>
+     <przystanek numer="9" id="24125" nazwa="Kowale (Stacja kolejowa)" czas="15"/>
+     <przystanek numer="10" id="24121" nazwa="Działdowska" czas="16"/>
+     <przystanek numer="11" id="24120" nazwa="KOWALE" czas="18"/>
+     <przystanek numer="12" id="24135" nazwa="KOWALE" czas="19"/>
+    </czasy>
+    <tabliczka id="11" mc="2" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="01">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="01">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="01">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="01">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="01">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="01">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="01">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="01">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="01">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="120631" nazwa="Daszyńskiego" ulica="Jedności Narodowej" cechy="">
+    <czasy>
+     <przystanek numer="0" id="120631" nazwa="Daszyńskiego" czas="0"/>
+     <przystanek numer="1" id="20729" nazwa="Mosty Warszawskie" czas="1"/>
+     <przystanek numer="2" id="24101" nazwa="KROMERA" czas="4"/>
+     <przystanek numer="3" id="24145" nazwa="Kromera (Czajkowskiego)" czas="6"/>
+     <przystanek numer="4" id="24103" nazwa="Grudziądzka" czas="7"/>
+     <przystanek numer="5" id="24105" nazwa="Brücknera" czas="10"/>
+     <przystanek numer="6" id="24129" nazwa="Olsztyńska" czas="12"/>
+     <przystanek numer="7" id="24137" nazwa="Kowalska 56" czas="13"/>
+     <przystanek numer="8" id="24125" nazwa="Kowale (Stacja kolejowa)" czas="14"/>
+     <przystanek numer="9" id="24121" nazwa="Działdowska" czas="15"/>
+     <przystanek numer="10" id="24120" nazwa="KOWALE" czas="17"/>
+     <przystanek numer="11" id="24135" nazwa="KOWALE" czas="18"/>
+    </czasy>
+    <tabliczka id="12" mc="1" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="02">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="02">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="02">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="02">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="02">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="02">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="02">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="02">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="02">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="20729" nazwa="Mosty Warszawskie" ulica="Wyszyńskiego" cechy="">
+    <czasy>
+     <przystanek numer="0" id="20729" nazwa="Mosty Warszawskie" czas="0"/>
+     <przystanek numer="1" id="24101" nazwa="KROMERA" czas="3"/>
+     <przystanek numer="2" id="24145" nazwa="Kromera (Czajkowskiego)" czas="5"/>
+     <przystanek numer="3" id="24103" nazwa="Grudziądzka" czas="6"/>
+     <przystanek numer="4" id="24105" nazwa="Brücknera" czas="9"/>
+     <przystanek numer="5" id="24129" nazwa="Olsztyńska" czas="11"/>
+     <przystanek numer="6" id="24137" nazwa="Kowalska 56" czas="12"/>
+     <przystanek numer="7" id="24125" nazwa="Kowale (Stacja kolejowa)" czas="13"/>
+     <przystanek numer="8" id="24121" nazwa="Działdowska" czas="14"/>
+     <przystanek numer="9" id="24120" nazwa="KOWALE" czas="16"/>
+     <przystanek numer="10" id="24135" nazwa="KOWALE" czas="17"/>
+    </czasy>
+    <tabliczka id="13" mc="1" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="03">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="03">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="03">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="03">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="03">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="03">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="03">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="03">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="03">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="24101" nazwa="KROMERA" ulica="Aleja Kromera" cechy="">
+    <czasy>
+     <przystanek numer="0" id="24101" nazwa="KROMERA" czas="0"/>
+     <przystanek numer="1" id="24145" nazwa="Kromera (Czajkowskiego)" czas="2"/>
+     <przystanek numer="2" id="24103" nazwa="Grudziądzka" czas="3"/>
+     <przystanek numer="3" id="24105" nazwa="Brücknera" czas="6"/>
+     <przystanek numer="4" id="24129" nazwa="Olsztyńska" czas="8"/>
+     <przystanek numer="5" id="24137" nazwa="Kowalska 56" czas="9"/>
+     <przystanek numer="6" id="24125" nazwa="Kowale (Stacja kolejowa)" czas="10"/>
+     <przystanek numer="7" id="24121" nazwa="Działdowska" czas="11"/>
+     <przystanek numer="8" id="24120" nazwa="KOWALE" czas="13"/>
+     <przystanek numer="9" id="24135" nazwa="KOWALE" czas="14"/>
+    </czasy>
+    <tabliczka id="14" mc="3">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="05">
+       </min>
+       <min m="57">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="05">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="05">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="05">
+       </min>
+       <min m="57">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="05">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="05">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="05">
+       </min>
+       <min m="57">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="05">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="05">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="24145" nazwa="Kromera (Czajkowskiego)" ulica="Krzywoustego" cechy="">
+    <czasy>
+     <przystanek numer="0" id="24145" nazwa="Kromera (Czajkowskiego)" czas="0"/>
+     <przystanek numer="1" id="24103" nazwa="Grudziądzka" czas="1"/>
+     <przystanek numer="2" id="24105" nazwa="Brücknera" czas="4"/>
+     <przystanek numer="3" id="24129" nazwa="Olsztyńska" czas="6"/>
+     <przystanek numer="4" id="24137" nazwa="Kowalska 56" czas="7"/>
+     <przystanek numer="5" id="24125" nazwa="Kowale (Stacja kolejowa)" czas="8"/>
+     <przystanek numer="6" id="24121" nazwa="Działdowska" czas="9"/>
+     <przystanek numer="7" id="24120" nazwa="KOWALE" czas="11"/>
+     <przystanek numer="8" id="24135" nazwa="KOWALE" czas="12"/>
+    </czasy>
+    <tabliczka id="15" mc="2" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="06">
+       </min>
+       <min m="58">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="06">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="06">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="06">
+       </min>
+       <min m="58">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="06">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="06">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="06">
+       </min>
+       <min m="58">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="06">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="06">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="24103" nazwa="Grudziądzka" ulica="Krzywoustego" cechy="">
+    <czasy>
+     <przystanek numer="0" id="24103" nazwa="Grudziądzka" czas="0"/>
+     <przystanek numer="1" id="24105" nazwa="Brücknera" czas="3"/>
+     <przystanek numer="2" id="24129" nazwa="Olsztyńska" czas="5"/>
+     <przystanek numer="3" id="24137" nazwa="Kowalska 56" czas="6"/>
+     <przystanek numer="4" id="24125" nazwa="Kowale (Stacja kolejowa)" czas="7"/>
+     <przystanek numer="5" id="24121" nazwa="Działdowska" czas="8"/>
+     <przystanek numer="6" id="24120" nazwa="KOWALE" czas="10"/>
+     <przystanek numer="7" id="24135" nazwa="KOWALE" czas="11"/>
+    </czasy>
+    <tabliczka id="16" mc="1" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="07">
+       </min>
+       <min m="59">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="07">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="07">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="07">
+       </min>
+       <min m="59">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="07">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="07">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="07">
+       </min>
+       <min m="59">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="07">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="07">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="24105" nazwa="Brücknera" ulica="Krzywoustego" cechy="">
+    <czasy>
+     <przystanek numer="0" id="24105" nazwa="Brücknera" czas="0"/>
+     <przystanek numer="1" id="24129" nazwa="Olsztyńska" czas="2"/>
+     <przystanek numer="2" id="24137" nazwa="Kowalska 56" czas="3"/>
+     <przystanek numer="3" id="24125" nazwa="Kowale (Stacja kolejowa)" czas="4"/>
+     <przystanek numer="4" id="24121" nazwa="Działdowska" czas="5"/>
+     <przystanek numer="5" id="24120" nazwa="KOWALE" czas="7"/>
+     <przystanek numer="6" id="24135" nazwa="KOWALE" czas="8"/>
+    </czasy>
+    <tabliczka id="17" mc="2" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="08">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="00">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="08">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="08">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="08">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="00">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="08">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="08">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="08">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="00">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="08">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="08">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="24129" nazwa="Olsztyńska" ulica="Kowalska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="24129" nazwa="Olsztyńska" czas="0"/>
+     <przystanek numer="1" id="24137" nazwa="Kowalska 56" czas="1"/>
+     <przystanek numer="2" id="24125" nazwa="Kowale (Stacja kolejowa)" czas="2"/>
+     <przystanek numer="3" id="24121" nazwa="Działdowska" czas="3"/>
+     <przystanek numer="4" id="24120" nazwa="KOWALE" czas="5"/>
+     <przystanek numer="5" id="24135" nazwa="KOWALE" czas="6"/>
+    </czasy>
+    <tabliczka id="18" mc="2" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="10">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="02">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="10">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="10">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="10">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="02">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="10">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="10">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="10">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="02">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="10">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="10">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="24137" nazwa="Kowalska 56" ulica="Kowalska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="24137" nazwa="Kowalska 56" czas="0"/>
+     <przystanek numer="1" id="24125" nazwa="Kowale (Stacja kolejowa)" czas="1"/>
+     <przystanek numer="2" id="24121" nazwa="Działdowska" czas="2"/>
+     <przystanek numer="3" id="24120" nazwa="KOWALE" czas="4"/>
+     <przystanek numer="4" id="24135" nazwa="KOWALE" czas="5"/>
+    </czasy>
+    <tabliczka id="19" mc="1" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="11">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="03">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="11">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="11">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="11">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="03">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="11">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="11">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="11">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="03">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="11">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="11">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="24125" nazwa="Kowale (Stacja kolejowa)" ulica="Kowalska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="24125" nazwa="Kowale (Stacja kolejowa)" czas="0"/>
+     <przystanek numer="1" id="24121" nazwa="Działdowska" czas="1"/>
+     <przystanek numer="2" id="24120" nazwa="KOWALE" czas="3"/>
+     <przystanek numer="3" id="24135" nazwa="KOWALE" czas="4"/>
+    </czasy>
+    <tabliczka id="20" mc="1" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="12">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="04">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="12">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="12">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="12">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="04">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="12">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="12">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="12">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="04">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="12">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="12">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="24121" nazwa="Działdowska" ulica="Kowalska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="24121" nazwa="Działdowska" czas="0"/>
+     <przystanek numer="1" id="24120" nazwa="KOWALE" czas="2"/>
+     <przystanek numer="2" id="24135" nazwa="KOWALE" czas="3"/>
+    </czasy>
+    <tabliczka id="21" mc="1" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="13">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="05">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="13">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="13">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="13">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="05">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="13">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="13">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="13">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="05">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="13">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="13">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="24120" nazwa="KOWALE" ulica="Działdowska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="24120" nazwa="KOWALE" czas="0"/>
+     <przystanek numer="1" id="24135" nazwa="KOWALE" czas="1"/>
+    </czasy>
+    <tabliczka id="22" mc="2" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="14">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="06">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="14">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="14">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="14">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="06">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="14">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="14">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="14">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="06">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="14">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="14">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="24135" nazwa="KOWALE" ulica="Kwidzyńska" cechy="">
+    <czasy>
+    </czasy>
+   </przystanek>
+  </wariant>
+  <wariant id="2" nazwa="KOWALE - PETRUSEWICZA">
+   <przystanek id="24135" nazwa="KOWALE" ulica="Kwidzyńska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="24135" nazwa="KOWALE" czas="0"/>
+     <przystanek numer="1" id="24119" nazwa="KOWALE" czas="0"/>
+     <przystanek numer="2" id="24122" nazwa="Działdowska" czas="2"/>
+     <przystanek numer="3" id="24126" nazwa="Kowale (Stacja kolejowa)" czas="3"/>
+     <przystanek numer="4" id="24130" nazwa="Kowalska 56" czas="4"/>
+     <przystanek numer="5" id="24136" nazwa="Olsztyńska" czas="5"/>
+     <przystanek numer="6" id="24108" nazwa="C.H. Korona" czas="7"/>
+     <przystanek numer="7" id="24106" nazwa="Brücknera" czas="9"/>
+     <przystanek numer="8" id="24104" nazwa="Grudziądzka" czas="10"/>
+     <przystanek numer="9" id="24146" nazwa="Kromera (Czajkowskiego)" czas="12"/>
+     <przystanek numer="10" id="24102" nazwa="KROMERA" czas="15"/>
+     <przystanek numer="11" id="20730" nazwa="Mosty Warszawskie" czas="17"/>
+     <przystanek numer="12" id="120632" nazwa="Daszyńskiego" czas="18"/>
+     <przystanek numer="13" id="120628" nazwa="Nowowiejska" czas="19"/>
+     <przystanek numer="14" id="120626" nazwa="Jedności Narodowej" czas="20"/>
+     <przystanek numer="15" id="120624" nazwa="Na Szańcach" czas="21"/>
+     <przystanek numer="16" id="20906" nazwa="pl. Bema" czas="22"/>
+     <przystanek numer="17" id="10712" nazwa="Dubois" czas="26"/>
+     <przystanek numer="18" id="110024" nazwa="Hala Targowa" czas="30"/>
+     <przystanek numer="19" id="10126" nazwa="GALERIA DOMINIKAŃSKA" czas="32"/>
+     <przystanek numer="20" id="110221" nazwa="Bastion Sakwowy" czas="34"/>
+     <przystanek numer="21" id="110223" nazwa="Dworzec Główny (MDK)" czas="37"/>
+     <przystanek numer="22" id="120269" nazwa="DWORZEC GŁÓWNY" czas="39"/>
+     <przystanek numer="23" id="11321" nazwa="DWORZEC AUTOBUSOWY" czas="42"/>
+     <przystanek numer="24" id="21101" nazwa="Dyrekcyjna" czas="44"/>
+     <przystanek numer="25" id="21112" nazwa="PETRUSEWICZA" czas="46"/>
+    </czasy>
+    <tabliczka id="23" mc="0">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="14" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="09">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="39">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="19" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="14" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="09">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="39">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="19" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="14" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="09">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="39">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="19" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="24119" nazwa="KOWALE" ulica="Działdowska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="24119" nazwa="KOWALE" czas="0"/>
+     <przystanek numer="1" id="24122" nazwa="Działdowska" czas="2"/>
+     <przystanek numer="2" id="24126" nazwa="Kowale (Stacja kolejowa)" czas="3"/>
+     <przystanek numer="3" id="24130" nazwa="Kowalska 56" czas="4"/>
+     <przystanek numer="4" id="24136" nazwa="Olsztyńska" czas="5"/>
+     <przystanek numer="5" id="24108" nazwa="C.H. Korona" czas="7"/>
+     <przystanek numer="6" id="24106" nazwa="Brücknera" czas="9"/>
+     <przystanek numer="7" id="24104" nazwa="Grudziądzka" czas="10"/>
+     <przystanek numer="8" id="24146" nazwa="Kromera (Czajkowskiego)" czas="12"/>
+     <przystanek numer="9" id="24102" nazwa="KROMERA" czas="15"/>
+     <przystanek numer="10" id="20730" nazwa="Mosty Warszawskie" czas="17"/>
+     <przystanek numer="11" id="120632" nazwa="Daszyńskiego" czas="18"/>
+     <przystanek numer="12" id="120628" nazwa="Nowowiejska" czas="19"/>
+     <przystanek numer="13" id="120626" nazwa="Jedności Narodowej" czas="20"/>
+     <przystanek numer="14" id="120624" nazwa="Na Szańcach" czas="21"/>
+     <przystanek numer="15" id="20906" nazwa="pl. Bema" czas="22"/>
+     <przystanek numer="16" id="10712" nazwa="Dubois" czas="26"/>
+     <przystanek numer="17" id="110024" nazwa="Hala Targowa" czas="30"/>
+     <przystanek numer="18" id="10126" nazwa="GALERIA DOMINIKAŃSKA" czas="32"/>
+     <przystanek numer="19" id="110221" nazwa="Bastion Sakwowy" czas="34"/>
+     <przystanek numer="20" id="110223" nazwa="Dworzec Główny (MDK)" czas="37"/>
+     <przystanek numer="21" id="120269" nazwa="DWORZEC GŁÓWNY" czas="39"/>
+     <przystanek numer="22" id="11321" nazwa="DWORZEC AUTOBUSOWY" czas="42"/>
+     <przystanek numer="23" id="21101" nazwa="Dyrekcyjna" czas="44"/>
+     <przystanek numer="24" id="21112" nazwa="PETRUSEWICZA" czas="46"/>
+    </czasy>
+    <tabliczka id="24" mc="0" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="14" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="09">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="39">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="19" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="14" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="09">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="39">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="19" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="14" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="09">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="39">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="19" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="24122" nazwa="Działdowska" ulica="Kowalska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="24122" nazwa="Działdowska" czas="0"/>
+     <przystanek numer="1" id="24126" nazwa="Kowale (Stacja kolejowa)" czas="1"/>
+     <przystanek numer="2" id="24130" nazwa="Kowalska 56" czas="2"/>
+     <przystanek numer="3" id="24136" nazwa="Olsztyńska" czas="3"/>
+     <przystanek numer="4" id="24108" nazwa="C.H. Korona" czas="5"/>
+     <przystanek numer="5" id="24106" nazwa="Brücknera" czas="7"/>
+     <przystanek numer="6" id="24104" nazwa="Grudziądzka" czas="8"/>
+     <przystanek numer="7" id="24146" nazwa="Kromera (Czajkowskiego)" czas="10"/>
+     <przystanek numer="8" id="24102" nazwa="KROMERA" czas="13"/>
+     <przystanek numer="9" id="20730" nazwa="Mosty Warszawskie" czas="15"/>
+     <przystanek numer="10" id="120632" nazwa="Daszyńskiego" czas="16"/>
+     <przystanek numer="11" id="120628" nazwa="Nowowiejska" czas="17"/>
+     <przystanek numer="12" id="120626" nazwa="Jedności Narodowej" czas="18"/>
+     <przystanek numer="13" id="120624" nazwa="Na Szańcach" czas="19"/>
+     <przystanek numer="14" id="20906" nazwa="pl. Bema" czas="20"/>
+     <przystanek numer="15" id="10712" nazwa="Dubois" czas="24"/>
+     <przystanek numer="16" id="110024" nazwa="Hala Targowa" czas="28"/>
+     <przystanek numer="17" id="10126" nazwa="GALERIA DOMINIKAŃSKA" czas="30"/>
+     <przystanek numer="18" id="110221" nazwa="Bastion Sakwowy" czas="32"/>
+     <przystanek numer="19" id="110223" nazwa="Dworzec Główny (MDK)" czas="35"/>
+     <przystanek numer="20" id="120269" nazwa="DWORZEC GŁÓWNY" czas="37"/>
+     <przystanek numer="21" id="11321" nazwa="DWORZEC AUTOBUSOWY" czas="40"/>
+     <przystanek numer="22" id="21101" nazwa="Dyrekcyjna" czas="42"/>
+     <przystanek numer="23" id="21112" nazwa="PETRUSEWICZA" czas="44"/>
+    </czasy>
+    <tabliczka id="25" mc="2" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="15" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="10">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="40">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="20" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="15" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="10">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="40">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="20" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="15" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="10">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="40">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="20" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="24126" nazwa="Kowale (Stacja kolejowa)" ulica="Kowalska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="24126" nazwa="Kowale (Stacja kolejowa)" czas="0"/>
+     <przystanek numer="1" id="24130" nazwa="Kowalska 56" czas="1"/>
+     <przystanek numer="2" id="24136" nazwa="Olsztyńska" czas="2"/>
+     <przystanek numer="3" id="24108" nazwa="C.H. Korona" czas="4"/>
+     <przystanek numer="4" id="24106" nazwa="Brücknera" czas="6"/>
+     <przystanek numer="5" id="24104" nazwa="Grudziądzka" czas="7"/>
+     <przystanek numer="6" id="24146" nazwa="Kromera (Czajkowskiego)" czas="9"/>
+     <przystanek numer="7" id="24102" nazwa="KROMERA" czas="12"/>
+     <przystanek numer="8" id="20730" nazwa="Mosty Warszawskie" czas="14"/>
+     <przystanek numer="9" id="120632" nazwa="Daszyńskiego" czas="15"/>
+     <przystanek numer="10" id="120628" nazwa="Nowowiejska" czas="16"/>
+     <przystanek numer="11" id="120626" nazwa="Jedności Narodowej" czas="17"/>
+     <przystanek numer="12" id="120624" nazwa="Na Szańcach" czas="18"/>
+     <przystanek numer="13" id="20906" nazwa="pl. Bema" czas="19"/>
+     <przystanek numer="14" id="10712" nazwa="Dubois" czas="23"/>
+     <przystanek numer="15" id="110024" nazwa="Hala Targowa" czas="27"/>
+     <przystanek numer="16" id="10126" nazwa="GALERIA DOMINIKAŃSKA" czas="29"/>
+     <przystanek numer="17" id="110221" nazwa="Bastion Sakwowy" czas="31"/>
+     <przystanek numer="18" id="110223" nazwa="Dworzec Główny (MDK)" czas="34"/>
+     <przystanek numer="19" id="120269" nazwa="DWORZEC GŁÓWNY" czas="36"/>
+     <przystanek numer="20" id="11321" nazwa="DWORZEC AUTOBUSOWY" czas="39"/>
+     <przystanek numer="21" id="21101" nazwa="Dyrekcyjna" czas="41"/>
+     <przystanek numer="22" id="21112" nazwa="PETRUSEWICZA" czas="43"/>
+    </czasy>
+    <tabliczka id="26" mc="1" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="16" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="11">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="41">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="21" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="16" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="11">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="41">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="21" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="16" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="11">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="41">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="21" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="24130" nazwa="Kowalska 56" ulica="Kowalska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="24130" nazwa="Kowalska 56" czas="0"/>
+     <przystanek numer="1" id="24136" nazwa="Olsztyńska" czas="1"/>
+     <przystanek numer="2" id="24108" nazwa="C.H. Korona" czas="3"/>
+     <przystanek numer="3" id="24106" nazwa="Brücknera" czas="5"/>
+     <przystanek numer="4" id="24104" nazwa="Grudziądzka" czas="6"/>
+     <przystanek numer="5" id="24146" nazwa="Kromera (Czajkowskiego)" czas="8"/>
+     <przystanek numer="6" id="24102" nazwa="KROMERA" czas="11"/>
+     <przystanek numer="7" id="20730" nazwa="Mosty Warszawskie" czas="13"/>
+     <przystanek numer="8" id="120632" nazwa="Daszyńskiego" czas="14"/>
+     <przystanek numer="9" id="120628" nazwa="Nowowiejska" czas="15"/>
+     <przystanek numer="10" id="120626" nazwa="Jedności Narodowej" czas="16"/>
+     <przystanek numer="11" id="120624" nazwa="Na Szańcach" czas="17"/>
+     <przystanek numer="12" id="20906" nazwa="pl. Bema" czas="18"/>
+     <przystanek numer="13" id="10712" nazwa="Dubois" czas="22"/>
+     <przystanek numer="14" id="110024" nazwa="Hala Targowa" czas="26"/>
+     <przystanek numer="15" id="10126" nazwa="GALERIA DOMINIKAŃSKA" czas="28"/>
+     <przystanek numer="16" id="110221" nazwa="Bastion Sakwowy" czas="30"/>
+     <przystanek numer="17" id="110223" nazwa="Dworzec Główny (MDK)" czas="33"/>
+     <przystanek numer="18" id="120269" nazwa="DWORZEC GŁÓWNY" czas="35"/>
+     <przystanek numer="19" id="11321" nazwa="DWORZEC AUTOBUSOWY" czas="38"/>
+     <przystanek numer="20" id="21101" nazwa="Dyrekcyjna" czas="40"/>
+     <przystanek numer="21" id="21112" nazwa="PETRUSEWICZA" czas="42"/>
+    </czasy>
+    <tabliczka id="27" mc="1" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="17" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="12">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="42">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="22" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="17" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="12">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="42">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="22" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="17" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="12">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="42">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="22" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="24136" nazwa="Olsztyńska" ulica="Kowalska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="24136" nazwa="Olsztyńska" czas="0"/>
+     <przystanek numer="1" id="24108" nazwa="C.H. Korona" czas="2"/>
+     <przystanek numer="2" id="24106" nazwa="Brücknera" czas="4"/>
+     <przystanek numer="3" id="24104" nazwa="Grudziądzka" czas="5"/>
+     <przystanek numer="4" id="24146" nazwa="Kromera (Czajkowskiego)" czas="7"/>
+     <przystanek numer="5" id="24102" nazwa="KROMERA" czas="10"/>
+     <przystanek numer="6" id="20730" nazwa="Mosty Warszawskie" czas="12"/>
+     <przystanek numer="7" id="120632" nazwa="Daszyńskiego" czas="13"/>
+     <przystanek numer="8" id="120628" nazwa="Nowowiejska" czas="14"/>
+     <przystanek numer="9" id="120626" nazwa="Jedności Narodowej" czas="15"/>
+     <przystanek numer="10" id="120624" nazwa="Na Szańcach" czas="16"/>
+     <przystanek numer="11" id="20906" nazwa="pl. Bema" czas="17"/>
+     <przystanek numer="12" id="10712" nazwa="Dubois" czas="21"/>
+     <przystanek numer="13" id="110024" nazwa="Hala Targowa" czas="25"/>
+     <przystanek numer="14" id="10126" nazwa="GALERIA DOMINIKAŃSKA" czas="27"/>
+     <przystanek numer="15" id="110221" nazwa="Bastion Sakwowy" czas="29"/>
+     <przystanek numer="16" id="110223" nazwa="Dworzec Główny (MDK)" czas="32"/>
+     <przystanek numer="17" id="120269" nazwa="DWORZEC GŁÓWNY" czas="34"/>
+     <przystanek numer="18" id="11321" nazwa="DWORZEC AUTOBUSOWY" czas="37"/>
+     <przystanek numer="19" id="21101" nazwa="Dyrekcyjna" czas="39"/>
+     <przystanek numer="20" id="21112" nazwa="PETRUSEWICZA" czas="41"/>
+    </czasy>
+    <tabliczka id="28" mc="1" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="18" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="13">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="43">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="23" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="18" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="13">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="43">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="23" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="18" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="13">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="43">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="23" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="24108" nazwa="C.H. Korona" ulica="Krzywoustego" cechy="">
+    <czasy>
+     <przystanek numer="0" id="24108" nazwa="C.H. Korona" czas="0"/>
+     <przystanek numer="1" id="24106" nazwa="Brücknera" czas="2"/>
+     <przystanek numer="2" id="24104" nazwa="Grudziądzka" czas="3"/>
+     <przystanek numer="3" id="24146" nazwa="Kromera (Czajkowskiego)" czas="5"/>
+     <przystanek numer="4" id="24102" nazwa="KROMERA" czas="8"/>
+     <przystanek numer="5" id="20730" nazwa="Mosty Warszawskie" czas="10"/>
+     <przystanek numer="6" id="120632" nazwa="Daszyńskiego" czas="11"/>
+     <przystanek numer="7" id="120628" nazwa="Nowowiejska" czas="12"/>
+     <przystanek numer="8" id="120626" nazwa="Jedności Narodowej" czas="13"/>
+     <przystanek numer="9" id="120624" nazwa="Na Szańcach" czas="14"/>
+     <przystanek numer="10" id="20906" nazwa="pl. Bema" czas="15"/>
+     <przystanek numer="11" id="10712" nazwa="Dubois" czas="19"/>
+     <przystanek numer="12" id="110024" nazwa="Hala Targowa" czas="23"/>
+     <przystanek numer="13" id="10126" nazwa="GALERIA DOMINIKAŃSKA" czas="25"/>
+     <przystanek numer="14" id="110221" nazwa="Bastion Sakwowy" czas="27"/>
+     <przystanek numer="15" id="110223" nazwa="Dworzec Główny (MDK)" czas="30"/>
+     <przystanek numer="16" id="120269" nazwa="DWORZEC GŁÓWNY" czas="32"/>
+     <przystanek numer="17" id="11321" nazwa="DWORZEC AUTOBUSOWY" czas="35"/>
+     <przystanek numer="18" id="21101" nazwa="Dyrekcyjna" czas="37"/>
+     <przystanek numer="19" id="21112" nazwa="PETRUSEWICZA" czas="39"/>
+    </czasy>
+    <tabliczka id="29" mc="2" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="19" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="14">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="44">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="24" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="19" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="14">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="44">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="24" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="19" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="14">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="44">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="24" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="24106" nazwa="Brücknera" ulica="Krzywoustego" cechy="">
+    <czasy>
+     <przystanek numer="0" id="24106" nazwa="Brücknera" czas="0"/>
+     <przystanek numer="1" id="24104" nazwa="Grudziądzka" czas="1"/>
+     <przystanek numer="2" id="24146" nazwa="Kromera (Czajkowskiego)" czas="3"/>
+     <przystanek numer="3" id="24102" nazwa="KROMERA" czas="6"/>
+     <przystanek numer="4" id="20730" nazwa="Mosty Warszawskie" czas="8"/>
+     <przystanek numer="5" id="120632" nazwa="Daszyńskiego" czas="9"/>
+     <przystanek numer="6" id="120628" nazwa="Nowowiejska" czas="10"/>
+     <przystanek numer="7" id="120626" nazwa="Jedności Narodowej" czas="11"/>
+     <przystanek numer="8" id="120624" nazwa="Na Szańcach" czas="12"/>
+     <przystanek numer="9" id="20906" nazwa="pl. Bema" czas="13"/>
+     <przystanek numer="10" id="10712" nazwa="Dubois" czas="17"/>
+     <przystanek numer="11" id="110024" nazwa="Hala Targowa" czas="21"/>
+     <przystanek numer="12" id="10126" nazwa="GALERIA DOMINIKAŃSKA" czas="23"/>
+     <przystanek numer="13" id="110221" nazwa="Bastion Sakwowy" czas="25"/>
+     <przystanek numer="14" id="110223" nazwa="Dworzec Główny (MDK)" czas="28"/>
+     <przystanek numer="15" id="120269" nazwa="DWORZEC GŁÓWNY" czas="30"/>
+     <przystanek numer="16" id="11321" nazwa="DWORZEC AUTOBUSOWY" czas="33"/>
+     <przystanek numer="17" id="21101" nazwa="Dyrekcyjna" czas="35"/>
+     <przystanek numer="18" id="21112" nazwa="PETRUSEWICZA" czas="37"/>
+    </czasy>
+    <tabliczka id="30" mc="2" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="20" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="15">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="45">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="25" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="20" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="15">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="45">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="25" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="20" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="15">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="45">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="25" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="24104" nazwa="Grudziądzka" ulica="Krzywoustego" cechy="">
+    <czasy>
+     <przystanek numer="0" id="24104" nazwa="Grudziądzka" czas="0"/>
+     <przystanek numer="1" id="24146" nazwa="Kromera (Czajkowskiego)" czas="2"/>
+     <przystanek numer="2" id="24102" nazwa="KROMERA" czas="5"/>
+     <przystanek numer="3" id="20730" nazwa="Mosty Warszawskie" czas="7"/>
+     <przystanek numer="4" id="120632" nazwa="Daszyńskiego" czas="8"/>
+     <przystanek numer="5" id="120628" nazwa="Nowowiejska" czas="9"/>
+     <przystanek numer="6" id="120626" nazwa="Jedności Narodowej" czas="10"/>
+     <przystanek numer="7" id="120624" nazwa="Na Szańcach" czas="11"/>
+     <przystanek numer="8" id="20906" nazwa="pl. Bema" czas="12"/>
+     <przystanek numer="9" id="10712" nazwa="Dubois" czas="16"/>
+     <przystanek numer="10" id="110024" nazwa="Hala Targowa" czas="20"/>
+     <przystanek numer="11" id="10126" nazwa="GALERIA DOMINIKAŃSKA" czas="22"/>
+     <przystanek numer="12" id="110221" nazwa="Bastion Sakwowy" czas="24"/>
+     <przystanek numer="13" id="110223" nazwa="Dworzec Główny (MDK)" czas="27"/>
+     <przystanek numer="14" id="120269" nazwa="DWORZEC GŁÓWNY" czas="29"/>
+     <przystanek numer="15" id="11321" nazwa="DWORZEC AUTOBUSOWY" czas="32"/>
+     <przystanek numer="16" id="21101" nazwa="Dyrekcyjna" czas="34"/>
+     <przystanek numer="17" id="21112" nazwa="PETRUSEWICZA" czas="36"/>
+    </czasy>
+    <tabliczka id="31" mc="1" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="21" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="16">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="46">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="26" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="21" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="16">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="46">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="26" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="21" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="16">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="46">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="26" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="24146" nazwa="Kromera (Czajkowskiego)" ulica="Aleja Kromera" cechy="">
+    <czasy>
+     <przystanek numer="0" id="24146" nazwa="Kromera (Czajkowskiego)" czas="0"/>
+     <przystanek numer="1" id="24102" nazwa="KROMERA" czas="3"/>
+     <przystanek numer="2" id="20730" nazwa="Mosty Warszawskie" czas="5"/>
+     <przystanek numer="3" id="120632" nazwa="Daszyńskiego" czas="6"/>
+     <przystanek numer="4" id="120628" nazwa="Nowowiejska" czas="7"/>
+     <przystanek numer="5" id="120626" nazwa="Jedności Narodowej" czas="8"/>
+     <przystanek numer="6" id="120624" nazwa="Na Szańcach" czas="9"/>
+     <przystanek numer="7" id="20906" nazwa="pl. Bema" czas="10"/>
+     <przystanek numer="8" id="10712" nazwa="Dubois" czas="14"/>
+     <przystanek numer="9" id="110024" nazwa="Hala Targowa" czas="18"/>
+     <przystanek numer="10" id="10126" nazwa="GALERIA DOMINIKAŃSKA" czas="20"/>
+     <przystanek numer="11" id="110221" nazwa="Bastion Sakwowy" czas="22"/>
+     <przystanek numer="12" id="110223" nazwa="Dworzec Główny (MDK)" czas="25"/>
+     <przystanek numer="13" id="120269" nazwa="DWORZEC GŁÓWNY" czas="27"/>
+     <przystanek numer="14" id="11321" nazwa="DWORZEC AUTOBUSOWY" czas="30"/>
+     <przystanek numer="15" id="21101" nazwa="Dyrekcyjna" czas="32"/>
+     <przystanek numer="16" id="21112" nazwa="PETRUSEWICZA" czas="34"/>
+    </czasy>
+    <tabliczka id="32" mc="2" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="22" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="17">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="47">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="27" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="22" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="17">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="47">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="27" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="22" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="17">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="47">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="27" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="24102" nazwa="KROMERA" ulica="Aleja Kromera" cechy="">
+    <czasy>
+     <przystanek numer="0" id="24102" nazwa="KROMERA" czas="0"/>
+     <przystanek numer="1" id="20730" nazwa="Mosty Warszawskie" czas="2"/>
+     <przystanek numer="2" id="120632" nazwa="Daszyńskiego" czas="3"/>
+     <przystanek numer="3" id="120628" nazwa="Nowowiejska" czas="4"/>
+     <przystanek numer="4" id="120626" nazwa="Jedności Narodowej" czas="5"/>
+     <przystanek numer="5" id="120624" nazwa="Na Szańcach" czas="6"/>
+     <przystanek numer="6" id="20906" nazwa="pl. Bema" czas="7"/>
+     <przystanek numer="7" id="10712" nazwa="Dubois" czas="11"/>
+     <przystanek numer="8" id="110024" nazwa="Hala Targowa" czas="15"/>
+     <przystanek numer="9" id="10126" nazwa="GALERIA DOMINIKAŃSKA" czas="17"/>
+     <przystanek numer="10" id="110221" nazwa="Bastion Sakwowy" czas="19"/>
+     <przystanek numer="11" id="110223" nazwa="Dworzec Główny (MDK)" czas="22"/>
+     <przystanek numer="12" id="120269" nazwa="DWORZEC GŁÓWNY" czas="24"/>
+     <przystanek numer="13" id="11321" nazwa="DWORZEC AUTOBUSOWY" czas="27"/>
+     <przystanek numer="14" id="21101" nazwa="Dyrekcyjna" czas="29"/>
+     <przystanek numer="15" id="21112" nazwa="PETRUSEWICZA" czas="31"/>
+    </czasy>
+    <tabliczka id="33" mc="2">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="25">
+       <min m="18">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="48">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="25">
+       <min m="18">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="48">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="25">
+       <min m="18">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="48">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="20730" nazwa="Mosty Warszawskie" ulica="Jedności Narodowej" cechy="">
+    <czasy>
+     <przystanek numer="0" id="20730" nazwa="Mosty Warszawskie" czas="0"/>
+     <przystanek numer="1" id="120632" nazwa="Daszyńskiego" czas="1"/>
+     <przystanek numer="2" id="120628" nazwa="Nowowiejska" czas="2"/>
+     <przystanek numer="3" id="120626" nazwa="Jedności Narodowej" czas="3"/>
+     <przystanek numer="4" id="120624" nazwa="Na Szańcach" czas="4"/>
+     <przystanek numer="5" id="20906" nazwa="pl. Bema" czas="5"/>
+     <przystanek numer="6" id="10712" nazwa="Dubois" czas="9"/>
+     <przystanek numer="7" id="110024" nazwa="Hala Targowa" czas="13"/>
+     <przystanek numer="8" id="10126" nazwa="GALERIA DOMINIKAŃSKA" czas="15"/>
+     <przystanek numer="9" id="110221" nazwa="Bastion Sakwowy" czas="17"/>
+     <przystanek numer="10" id="110223" nazwa="Dworzec Główny (MDK)" czas="20"/>
+     <przystanek numer="11" id="120269" nazwa="DWORZEC GŁÓWNY" czas="22"/>
+     <przystanek numer="12" id="11321" nazwa="DWORZEC AUTOBUSOWY" czas="25"/>
+     <przystanek numer="13" id="21101" nazwa="Dyrekcyjna" czas="27"/>
+     <przystanek numer="14" id="21112" nazwa="PETRUSEWICZA" czas="29"/>
+    </czasy>
+    <tabliczka id="34" mc="1" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="25">
+       <min m="19">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="49">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="25">
+       <min m="19">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="49">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="25">
+       <min m="19">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="49">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="120632" nazwa="Daszyńskiego" ulica="Jedności Narodowej" cechy="">
+    <czasy>
+     <przystanek numer="0" id="120632" nazwa="Daszyńskiego" czas="0"/>
+     <przystanek numer="1" id="120628" nazwa="Nowowiejska" czas="1"/>
+     <przystanek numer="2" id="120626" nazwa="Jedności Narodowej" czas="2"/>
+     <przystanek numer="3" id="120624" nazwa="Na Szańcach" czas="3"/>
+     <przystanek numer="4" id="20906" nazwa="pl. Bema" czas="4"/>
+     <przystanek numer="5" id="10712" nazwa="Dubois" czas="8"/>
+     <przystanek numer="6" id="110024" nazwa="Hala Targowa" czas="12"/>
+     <przystanek numer="7" id="10126" nazwa="GALERIA DOMINIKAŃSKA" czas="14"/>
+     <przystanek numer="8" id="110221" nazwa="Bastion Sakwowy" czas="16"/>
+     <przystanek numer="9" id="110223" nazwa="Dworzec Główny (MDK)" czas="19"/>
+     <przystanek numer="10" id="120269" nazwa="DWORZEC GŁÓWNY" czas="21"/>
+     <przystanek numer="11" id="11321" nazwa="DWORZEC AUTOBUSOWY" czas="24"/>
+     <przystanek numer="12" id="21101" nazwa="Dyrekcyjna" czas="26"/>
+     <przystanek numer="13" id="21112" nazwa="PETRUSEWICZA" czas="28"/>
+    </czasy>
+    <tabliczka id="35" mc="1" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="25">
+       <min m="20">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="50">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="25">
+       <min m="20">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="50">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="25">
+       <min m="20">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="50">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="120628" nazwa="Nowowiejska" ulica="Jedności Narodowej" cechy="">
+    <czasy>
+     <przystanek numer="0" id="120628" nazwa="Nowowiejska" czas="0"/>
+     <przystanek numer="1" id="120626" nazwa="Jedności Narodowej" czas="1"/>
+     <przystanek numer="2" id="120624" nazwa="Na Szańcach" czas="2"/>
+     <przystanek numer="3" id="20906" nazwa="pl. Bema" czas="3"/>
+     <przystanek numer="4" id="10712" nazwa="Dubois" czas="7"/>
+     <przystanek numer="5" id="110024" nazwa="Hala Targowa" czas="11"/>
+     <przystanek numer="6" id="10126" nazwa="GALERIA DOMINIKAŃSKA" czas="13"/>
+     <przystanek numer="7" id="110221" nazwa="Bastion Sakwowy" czas="15"/>
+     <przystanek numer="8" id="110223" nazwa="Dworzec Główny (MDK)" czas="18"/>
+     <przystanek numer="9" id="120269" nazwa="DWORZEC GŁÓWNY" czas="20"/>
+     <przystanek numer="10" id="11321" nazwa="DWORZEC AUTOBUSOWY" czas="23"/>
+     <przystanek numer="11" id="21101" nazwa="Dyrekcyjna" czas="25"/>
+     <przystanek numer="12" id="21112" nazwa="PETRUSEWICZA" czas="27"/>
+    </czasy>
+    <tabliczka id="36" mc="1" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="25">
+       <min m="21">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="51">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="25">
+       <min m="21">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="51">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="25">
+       <min m="21">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="51">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="120626" nazwa="Jedności Narodowej" ulica="Poniatowskiego" cechy="">
+    <czasy>
+     <przystanek numer="0" id="120626" nazwa="Jedności Narodowej" czas="0"/>
+     <przystanek numer="1" id="120624" nazwa="Na Szańcach" czas="1"/>
+     <przystanek numer="2" id="20906" nazwa="pl. Bema" czas="2"/>
+     <przystanek numer="3" id="10712" nazwa="Dubois" czas="6"/>
+     <przystanek numer="4" id="110024" nazwa="Hala Targowa" czas="10"/>
+     <przystanek numer="5" id="10126" nazwa="GALERIA DOMINIKAŃSKA" czas="12"/>
+     <przystanek numer="6" id="110221" nazwa="Bastion Sakwowy" czas="14"/>
+     <przystanek numer="7" id="110223" nazwa="Dworzec Główny (MDK)" czas="17"/>
+     <przystanek numer="8" id="120269" nazwa="DWORZEC GŁÓWNY" czas="19"/>
+     <przystanek numer="9" id="11321" nazwa="DWORZEC AUTOBUSOWY" czas="22"/>
+     <przystanek numer="10" id="21101" nazwa="Dyrekcyjna" czas="24"/>
+     <przystanek numer="11" id="21112" nazwa="PETRUSEWICZA" czas="26"/>
+    </czasy>
+    <tabliczka id="37" mc="1" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="25">
+       <min m="22">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="52">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="25">
+       <min m="22">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="52">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="25">
+       <min m="22">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="52">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="120624" nazwa="Na Szańcach" ulica="Poniatowskiego" cechy="">
+    <czasy>
+     <przystanek numer="0" id="120624" nazwa="Na Szańcach" czas="0"/>
+     <przystanek numer="1" id="20906" nazwa="pl. Bema" czas="1"/>
+     <przystanek numer="2" id="10712" nazwa="Dubois" czas="5"/>
+     <przystanek numer="3" id="110024" nazwa="Hala Targowa" czas="9"/>
+     <przystanek numer="4" id="10126" nazwa="GALERIA DOMINIKAŃSKA" czas="11"/>
+     <przystanek numer="5" id="110221" nazwa="Bastion Sakwowy" czas="13"/>
+     <przystanek numer="6" id="110223" nazwa="Dworzec Główny (MDK)" czas="16"/>
+     <przystanek numer="7" id="120269" nazwa="DWORZEC GŁÓWNY" czas="18"/>
+     <przystanek numer="8" id="11321" nazwa="DWORZEC AUTOBUSOWY" czas="21"/>
+     <przystanek numer="9" id="21101" nazwa="Dyrekcyjna" czas="23"/>
+     <przystanek numer="10" id="21112" nazwa="PETRUSEWICZA" czas="25"/>
+    </czasy>
+    <tabliczka id="38" mc="1" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="25">
+       <min m="23">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="53">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="25">
+       <min m="23">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="53">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="25">
+       <min m="23">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="53">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="20906" nazwa="pl. Bema" ulica="Drobnera" cechy="">
+    <czasy>
+     <przystanek numer="0" id="20906" nazwa="pl. Bema" czas="0"/>
+     <przystanek numer="1" id="10712" nazwa="Dubois" czas="4"/>
+     <przystanek numer="2" id="110024" nazwa="Hala Targowa" czas="8"/>
+     <przystanek numer="3" id="10126" nazwa="GALERIA DOMINIKAŃSKA" czas="10"/>
+     <przystanek numer="4" id="110221" nazwa="Bastion Sakwowy" czas="12"/>
+     <przystanek numer="5" id="110223" nazwa="Dworzec Główny (MDK)" czas="15"/>
+     <przystanek numer="6" id="120269" nazwa="DWORZEC GŁÓWNY" czas="17"/>
+     <przystanek numer="7" id="11321" nazwa="DWORZEC AUTOBUSOWY" czas="20"/>
+     <przystanek numer="8" id="21101" nazwa="Dyrekcyjna" czas="22"/>
+     <przystanek numer="9" id="21112" nazwa="PETRUSEWICZA" czas="24"/>
+    </czasy>
+    <tabliczka id="39" mc="1">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="25">
+       <min m="24">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="54">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="25">
+       <min m="24">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="54">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="25">
+       <min m="24">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="54">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="10712" nazwa="Dubois" ulica="Drobnera" cechy="">
+    <czasy>
+     <przystanek numer="0" id="10712" nazwa="Dubois" czas="0"/>
+     <przystanek numer="1" id="110024" nazwa="Hala Targowa" czas="4"/>
+     <przystanek numer="2" id="10126" nazwa="GALERIA DOMINIKAŃSKA" czas="6"/>
+     <przystanek numer="3" id="110221" nazwa="Bastion Sakwowy" czas="8"/>
+     <przystanek numer="4" id="110223" nazwa="Dworzec Główny (MDK)" czas="11"/>
+     <przystanek numer="5" id="120269" nazwa="DWORZEC GŁÓWNY" czas="13"/>
+     <przystanek numer="6" id="11321" nazwa="DWORZEC AUTOBUSOWY" czas="16"/>
+     <przystanek numer="7" id="21101" nazwa="Dyrekcyjna" czas="18"/>
+     <przystanek numer="8" id="21112" nazwa="PETRUSEWICZA" czas="20"/>
+    </czasy>
+    <tabliczka id="40" mc="2">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="25">
+       <min m="26">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="56">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="25">
+       <min m="26">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="56">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="25">
+       <min m="26">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="56">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="110024" nazwa="Hala Targowa" ulica="Piaskowa" cechy="">
+    <czasy>
+     <przystanek numer="0" id="110024" nazwa="Hala Targowa" czas="0"/>
+     <przystanek numer="1" id="10126" nazwa="GALERIA DOMINIKAŃSKA" czas="2"/>
+     <przystanek numer="2" id="110221" nazwa="Bastion Sakwowy" czas="4"/>
+     <przystanek numer="3" id="110223" nazwa="Dworzec Główny (MDK)" czas="7"/>
+     <przystanek numer="4" id="120269" nazwa="DWORZEC GŁÓWNY" czas="9"/>
+     <przystanek numer="5" id="11321" nazwa="DWORZEC AUTOBUSOWY" czas="12"/>
+     <przystanek numer="6" id="21101" nazwa="Dyrekcyjna" czas="14"/>
+     <przystanek numer="7" id="21112" nazwa="PETRUSEWICZA" czas="16"/>
+    </czasy>
+    <tabliczka id="41" mc="2" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="25">
+       <min m="28">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="58">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="25">
+       <min m="28">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="58">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="25">
+       <min m="28">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="58">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="10126" nazwa="GALERIA DOMINIKAŃSKA" ulica="Piotra Skargi" cechy="">
+    <czasy>
+     <przystanek numer="0" id="10126" nazwa="GALERIA DOMINIKAŃSKA" czas="0"/>
+     <przystanek numer="1" id="110221" nazwa="Bastion Sakwowy" czas="2"/>
+     <przystanek numer="2" id="110223" nazwa="Dworzec Główny (MDK)" czas="5"/>
+     <przystanek numer="3" id="120269" nazwa="DWORZEC GŁÓWNY" czas="7"/>
+     <przystanek numer="4" id="11321" nazwa="DWORZEC AUTOBUSOWY" czas="10"/>
+     <przystanek numer="5" id="21101" nazwa="Dyrekcyjna" czas="12"/>
+     <przystanek numer="6" id="21112" nazwa="PETRUSEWICZA" czas="14"/>
+    </czasy>
+    <tabliczka id="42" mc="2">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="25">
+       <min m="29">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="59">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="25">
+       <min m="29">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="59">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="25">
+       <min m="29">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="59">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="110221" nazwa="Bastion Sakwowy" ulica="Piotra Skargi" cechy="">
+    <czasy>
+     <przystanek numer="0" id="110221" nazwa="Bastion Sakwowy" czas="0"/>
+     <przystanek numer="1" id="110223" nazwa="Dworzec Główny (MDK)" czas="3"/>
+     <przystanek numer="2" id="120269" nazwa="DWORZEC GŁÓWNY" czas="5"/>
+     <przystanek numer="3" id="11321" nazwa="DWORZEC AUTOBUSOWY" czas="8"/>
+     <przystanek numer="4" id="21101" nazwa="Dyrekcyjna" czas="10"/>
+     <przystanek numer="5" id="21112" nazwa="PETRUSEWICZA" czas="12"/>
+    </czasy>
+    <tabliczka id="43" mc="2">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="25">
+       <min m="30">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="00">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="25">
+       <min m="30">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="00">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="25">
+       <min m="30">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="00">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="110223" nazwa="Dworzec Główny (MDK)" ulica="Kołłątaja" cechy="">
+    <czasy>
+     <przystanek numer="0" id="110223" nazwa="Dworzec Główny (MDK)" czas="0"/>
+     <przystanek numer="1" id="120269" nazwa="DWORZEC GŁÓWNY" czas="2"/>
+     <przystanek numer="2" id="11321" nazwa="DWORZEC AUTOBUSOWY" czas="5"/>
+     <przystanek numer="3" id="21101" nazwa="Dyrekcyjna" czas="7"/>
+     <przystanek numer="4" id="21112" nazwa="PETRUSEWICZA" czas="9"/>
+    </czasy>
+    <tabliczka id="44" mc="2" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="25">
+       <min m="31">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="01">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="25">
+       <min m="31">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="01">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="25">
+       <min m="31">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="01">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="120269" nazwa="DWORZEC GŁÓWNY" ulica="Peronowa" cechy="">
+    <czasy>
+     <przystanek numer="0" id="120269" nazwa="DWORZEC GŁÓWNY" czas="0"/>
+     <przystanek numer="1" id="11321" nazwa="DWORZEC AUTOBUSOWY" czas="3"/>
+     <przystanek numer="2" id="21101" nazwa="Dyrekcyjna" czas="5"/>
+     <przystanek numer="3" id="21112" nazwa="PETRUSEWICZA" czas="7"/>
+    </czasy>
+    <tabliczka id="45" mc="1">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="25">
+       <min m="32">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="02">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="25">
+       <min m="32">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="02">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="25">
+       <min m="32">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="02">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="11321" nazwa="DWORZEC AUTOBUSOWY" ulica="Ślężna" cechy="">
+    <czasy>
+     <przystanek numer="0" id="11321" nazwa="DWORZEC AUTOBUSOWY" czas="0"/>
+     <przystanek numer="1" id="21101" nazwa="Dyrekcyjna" czas="2"/>
+     <przystanek numer="2" id="21112" nazwa="PETRUSEWICZA" czas="4"/>
+    </czasy>
+    <tabliczka id="46" mc="3">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="25">
+       <min m="34">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="04">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="25">
+       <min m="34">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="04">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="25">
+       <min m="34">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="04">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="21101" nazwa="Dyrekcyjna" ulica="Gliniana" cechy="">
+    <czasy>
+     <przystanek numer="0" id="21101" nazwa="Dyrekcyjna" czas="0"/>
+     <przystanek numer="1" id="21112" nazwa="PETRUSEWICZA" czas="2"/>
+    </czasy>
+    <tabliczka id="47" mc="2" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="25">
+       <min m="35">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="05">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="25">
+       <min m="35">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="05">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="25">
+       <min m="35">
+       </min>
+      </godz>
+      <godz h="27">
+       <min m="05">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="21112" nazwa="PETRUSEWICZA" ulica="Petrusewicza" cechy="">
+    <czasy>
+    </czasy>
+   </przystanek>
+  </wariant>
+  <wariant id="3" nazwa="KOWALE - Zajezdnia OBORNICKA">
+   <przystanek id="24135" nazwa="KOWALE" ulica="Kwidzyńska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="24135" nazwa="KOWALE" czas="0"/>
+     <przystanek numer="1" id="24119" nazwa="KOWALE" czas="0"/>
+     <przystanek numer="2" id="24122" nazwa="Działdowska" czas="2"/>
+     <przystanek numer="3" id="24126" nazwa="Kowale (Stacja kolejowa)" czas="3"/>
+     <przystanek numer="4" id="24130" nazwa="Kowalska 56" czas="4"/>
+     <przystanek numer="5" id="24136" nazwa="Olsztyńska" czas="5"/>
+     <przystanek numer="6" id="24108" nazwa="C.H. Korona" czas="7"/>
+     <przystanek numer="7" id="24106" nazwa="Brücknera" czas="9"/>
+     <przystanek numer="8" id="24104" nazwa="Grudziądzka" czas="10"/>
+     <przystanek numer="9" id="24146" nazwa="Kromera (Czajkowskiego)" czas="12"/>
+     <przystanek numer="10" id="24102" nazwa="KROMERA" czas="15"/>
+     <przystanek numer="11" id="20730" nazwa="Mosty Warszawskie" czas="17"/>
+     <przystanek numer="12" id="120632" nazwa="Daszyńskiego" czas="18"/>
+     <przystanek numer="13" id="120628" nazwa="Nowowiejska" czas="19"/>
+     <przystanek numer="14" id="120626" nazwa="Jedności Narodowej" czas="20"/>
+     <przystanek numer="15" id="120624" nazwa="Na Szańcach" czas="21"/>
+     <przystanek numer="16" id="20906" nazwa="pl. Bema" czas="22"/>
+     <przystanek numer="17" id="10712" nazwa="Dubois" czas="26"/>
+     <przystanek numer="18" id="110024" nazwa="Hala Targowa" czas="30"/>
+     <przystanek numer="19" id="10126" nazwa="GALERIA DOMINIKAŃSKA" czas="32"/>
+     <przystanek numer="20" id="110221" nazwa="Bastion Sakwowy" czas="34"/>
+     <przystanek numer="21" id="110223" nazwa="Dworzec Główny (MDK)" czas="37"/>
+     <przystanek numer="22" id="120269" nazwa="DWORZEC GŁÓWNY" czas="39"/>
+     <przystanek numer="23" id="11321" nazwa="DWORZEC AUTOBUSOWY" czas="42"/>
+     <przystanek numer="24" id="21101" nazwa="Dyrekcyjna" czas="44"/>
+     <przystanek numer="25" id="21112" nazwa="PETRUSEWICZA" czas="46"/>
+    </czasy>
+    <tabliczka id="23" mc="0">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="14" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="09">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="39">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="19" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="14" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="09">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="39">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="19" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="14" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="09">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="39">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="19" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="24119" nazwa="KOWALE" ulica="Działdowska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="24119" nazwa="KOWALE" czas="0"/>
+     <przystanek numer="1" id="24122" nazwa="Działdowska" czas="2"/>
+     <przystanek numer="2" id="24126" nazwa="Kowale (Stacja kolejowa)" czas="3"/>
+     <przystanek numer="3" id="24130" nazwa="Kowalska 56" czas="4"/>
+     <przystanek numer="4" id="24136" nazwa="Olsztyńska" czas="5"/>
+     <przystanek numer="5" id="24108" nazwa="C.H. Korona" czas="7"/>
+     <przystanek numer="6" id="24106" nazwa="Brücknera" czas="9"/>
+     <przystanek numer="7" id="24104" nazwa="Grudziądzka" czas="10"/>
+     <przystanek numer="8" id="24146" nazwa="Kromera (Czajkowskiego)" czas="12"/>
+     <przystanek numer="9" id="24102" nazwa="KROMERA" czas="15"/>
+     <przystanek numer="10" id="20730" nazwa="Mosty Warszawskie" czas="17"/>
+     <przystanek numer="11" id="120632" nazwa="Daszyńskiego" czas="18"/>
+     <przystanek numer="12" id="120628" nazwa="Nowowiejska" czas="19"/>
+     <przystanek numer="13" id="120626" nazwa="Jedności Narodowej" czas="20"/>
+     <przystanek numer="14" id="120624" nazwa="Na Szańcach" czas="21"/>
+     <przystanek numer="15" id="20906" nazwa="pl. Bema" czas="22"/>
+     <przystanek numer="16" id="10712" nazwa="Dubois" czas="26"/>
+     <przystanek numer="17" id="110024" nazwa="Hala Targowa" czas="30"/>
+     <przystanek numer="18" id="10126" nazwa="GALERIA DOMINIKAŃSKA" czas="32"/>
+     <przystanek numer="19" id="110221" nazwa="Bastion Sakwowy" czas="34"/>
+     <przystanek numer="20" id="110223" nazwa="Dworzec Główny (MDK)" czas="37"/>
+     <przystanek numer="21" id="120269" nazwa="DWORZEC GŁÓWNY" czas="39"/>
+     <przystanek numer="22" id="11321" nazwa="DWORZEC AUTOBUSOWY" czas="42"/>
+     <przystanek numer="23" id="21101" nazwa="Dyrekcyjna" czas="44"/>
+     <przystanek numer="24" id="21112" nazwa="PETRUSEWICZA" czas="46"/>
+    </czasy>
+    <tabliczka id="24" mc="0" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="14" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="09">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="39">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="19" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="14" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="09">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="39">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="19" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="14" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="09">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="39">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="19" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="24122" nazwa="Działdowska" ulica="Kowalska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="24122" nazwa="Działdowska" czas="0"/>
+     <przystanek numer="1" id="24126" nazwa="Kowale (Stacja kolejowa)" czas="1"/>
+     <przystanek numer="2" id="24130" nazwa="Kowalska 56" czas="2"/>
+     <przystanek numer="3" id="24136" nazwa="Olsztyńska" czas="3"/>
+     <przystanek numer="4" id="24108" nazwa="C.H. Korona" czas="5"/>
+     <przystanek numer="5" id="24106" nazwa="Brücknera" czas="7"/>
+     <przystanek numer="6" id="24104" nazwa="Grudziądzka" czas="8"/>
+     <przystanek numer="7" id="24146" nazwa="Kromera (Czajkowskiego)" czas="10"/>
+     <przystanek numer="8" id="24102" nazwa="KROMERA" czas="13"/>
+     <przystanek numer="9" id="20730" nazwa="Mosty Warszawskie" czas="15"/>
+     <przystanek numer="10" id="120632" nazwa="Daszyńskiego" czas="16"/>
+     <przystanek numer="11" id="120628" nazwa="Nowowiejska" czas="17"/>
+     <przystanek numer="12" id="120626" nazwa="Jedności Narodowej" czas="18"/>
+     <przystanek numer="13" id="120624" nazwa="Na Szańcach" czas="19"/>
+     <przystanek numer="14" id="20906" nazwa="pl. Bema" czas="20"/>
+     <przystanek numer="15" id="10712" nazwa="Dubois" czas="24"/>
+     <przystanek numer="16" id="110024" nazwa="Hala Targowa" czas="28"/>
+     <przystanek numer="17" id="10126" nazwa="GALERIA DOMINIKAŃSKA" czas="30"/>
+     <przystanek numer="18" id="110221" nazwa="Bastion Sakwowy" czas="32"/>
+     <przystanek numer="19" id="110223" nazwa="Dworzec Główny (MDK)" czas="35"/>
+     <przystanek numer="20" id="120269" nazwa="DWORZEC GŁÓWNY" czas="37"/>
+     <przystanek numer="21" id="11321" nazwa="DWORZEC AUTOBUSOWY" czas="40"/>
+     <przystanek numer="22" id="21101" nazwa="Dyrekcyjna" czas="42"/>
+     <przystanek numer="23" id="21112" nazwa="PETRUSEWICZA" czas="44"/>
+    </czasy>
+    <tabliczka id="25" mc="2" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="15" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="10">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="40">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="20" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="15" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="10">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="40">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="20" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="15" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="10">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="40">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="20" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="24126" nazwa="Kowale (Stacja kolejowa)" ulica="Kowalska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="24126" nazwa="Kowale (Stacja kolejowa)" czas="0"/>
+     <przystanek numer="1" id="24130" nazwa="Kowalska 56" czas="1"/>
+     <przystanek numer="2" id="24136" nazwa="Olsztyńska" czas="2"/>
+     <przystanek numer="3" id="24108" nazwa="C.H. Korona" czas="4"/>
+     <przystanek numer="4" id="24106" nazwa="Brücknera" czas="6"/>
+     <przystanek numer="5" id="24104" nazwa="Grudziądzka" czas="7"/>
+     <przystanek numer="6" id="24146" nazwa="Kromera (Czajkowskiego)" czas="9"/>
+     <przystanek numer="7" id="24102" nazwa="KROMERA" czas="12"/>
+     <przystanek numer="8" id="20730" nazwa="Mosty Warszawskie" czas="14"/>
+     <przystanek numer="9" id="120632" nazwa="Daszyńskiego" czas="15"/>
+     <przystanek numer="10" id="120628" nazwa="Nowowiejska" czas="16"/>
+     <przystanek numer="11" id="120626" nazwa="Jedności Narodowej" czas="17"/>
+     <przystanek numer="12" id="120624" nazwa="Na Szańcach" czas="18"/>
+     <przystanek numer="13" id="20906" nazwa="pl. Bema" czas="19"/>
+     <przystanek numer="14" id="10712" nazwa="Dubois" czas="23"/>
+     <przystanek numer="15" id="110024" nazwa="Hala Targowa" czas="27"/>
+     <przystanek numer="16" id="10126" nazwa="GALERIA DOMINIKAŃSKA" czas="29"/>
+     <przystanek numer="17" id="110221" nazwa="Bastion Sakwowy" czas="31"/>
+     <przystanek numer="18" id="110223" nazwa="Dworzec Główny (MDK)" czas="34"/>
+     <przystanek numer="19" id="120269" nazwa="DWORZEC GŁÓWNY" czas="36"/>
+     <przystanek numer="20" id="11321" nazwa="DWORZEC AUTOBUSOWY" czas="39"/>
+     <przystanek numer="21" id="21101" nazwa="Dyrekcyjna" czas="41"/>
+     <przystanek numer="22" id="21112" nazwa="PETRUSEWICZA" czas="43"/>
+    </czasy>
+    <tabliczka id="26" mc="1" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="16" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="11">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="41">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="21" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="16" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="11">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="41">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="21" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="16" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="11">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="41">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="21" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="24130" nazwa="Kowalska 56" ulica="Kowalska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="24130" nazwa="Kowalska 56" czas="0"/>
+     <przystanek numer="1" id="24136" nazwa="Olsztyńska" czas="1"/>
+     <przystanek numer="2" id="24108" nazwa="C.H. Korona" czas="3"/>
+     <przystanek numer="3" id="24106" nazwa="Brücknera" czas="5"/>
+     <przystanek numer="4" id="24104" nazwa="Grudziądzka" czas="6"/>
+     <przystanek numer="5" id="24146" nazwa="Kromera (Czajkowskiego)" czas="8"/>
+     <przystanek numer="6" id="24102" nazwa="KROMERA" czas="11"/>
+     <przystanek numer="7" id="20730" nazwa="Mosty Warszawskie" czas="13"/>
+     <przystanek numer="8" id="120632" nazwa="Daszyńskiego" czas="14"/>
+     <przystanek numer="9" id="120628" nazwa="Nowowiejska" czas="15"/>
+     <przystanek numer="10" id="120626" nazwa="Jedności Narodowej" czas="16"/>
+     <przystanek numer="11" id="120624" nazwa="Na Szańcach" czas="17"/>
+     <przystanek numer="12" id="20906" nazwa="pl. Bema" czas="18"/>
+     <przystanek numer="13" id="10712" nazwa="Dubois" czas="22"/>
+     <przystanek numer="14" id="110024" nazwa="Hala Targowa" czas="26"/>
+     <przystanek numer="15" id="10126" nazwa="GALERIA DOMINIKAŃSKA" czas="28"/>
+     <przystanek numer="16" id="110221" nazwa="Bastion Sakwowy" czas="30"/>
+     <przystanek numer="17" id="110223" nazwa="Dworzec Główny (MDK)" czas="33"/>
+     <przystanek numer="18" id="120269" nazwa="DWORZEC GŁÓWNY" czas="35"/>
+     <przystanek numer="19" id="11321" nazwa="DWORZEC AUTOBUSOWY" czas="38"/>
+     <przystanek numer="20" id="21101" nazwa="Dyrekcyjna" czas="40"/>
+     <przystanek numer="21" id="21112" nazwa="PETRUSEWICZA" czas="42"/>
+    </czasy>
+    <tabliczka id="27" mc="1" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="17" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="12">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="42">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="22" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="17" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="12">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="42">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="22" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="17" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="12">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="42">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="22" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="24136" nazwa="Olsztyńska" ulica="Kowalska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="24136" nazwa="Olsztyńska" czas="0"/>
+     <przystanek numer="1" id="24108" nazwa="C.H. Korona" czas="2"/>
+     <przystanek numer="2" id="24106" nazwa="Brücknera" czas="4"/>
+     <przystanek numer="3" id="24104" nazwa="Grudziądzka" czas="5"/>
+     <przystanek numer="4" id="24146" nazwa="Kromera (Czajkowskiego)" czas="7"/>
+     <przystanek numer="5" id="24102" nazwa="KROMERA" czas="10"/>
+     <przystanek numer="6" id="20730" nazwa="Mosty Warszawskie" czas="12"/>
+     <przystanek numer="7" id="120632" nazwa="Daszyńskiego" czas="13"/>
+     <przystanek numer="8" id="120628" nazwa="Nowowiejska" czas="14"/>
+     <przystanek numer="9" id="120626" nazwa="Jedności Narodowej" czas="15"/>
+     <przystanek numer="10" id="120624" nazwa="Na Szańcach" czas="16"/>
+     <przystanek numer="11" id="20906" nazwa="pl. Bema" czas="17"/>
+     <przystanek numer="12" id="10712" nazwa="Dubois" czas="21"/>
+     <przystanek numer="13" id="110024" nazwa="Hala Targowa" czas="25"/>
+     <przystanek numer="14" id="10126" nazwa="GALERIA DOMINIKAŃSKA" czas="27"/>
+     <przystanek numer="15" id="110221" nazwa="Bastion Sakwowy" czas="29"/>
+     <przystanek numer="16" id="110223" nazwa="Dworzec Główny (MDK)" czas="32"/>
+     <przystanek numer="17" id="120269" nazwa="DWORZEC GŁÓWNY" czas="34"/>
+     <przystanek numer="18" id="11321" nazwa="DWORZEC AUTOBUSOWY" czas="37"/>
+     <przystanek numer="19" id="21101" nazwa="Dyrekcyjna" czas="39"/>
+     <przystanek numer="20" id="21112" nazwa="PETRUSEWICZA" czas="41"/>
+    </czasy>
+    <tabliczka id="28" mc="1" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="18" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="13">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="43">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="23" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="18" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="13">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="43">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="23" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="18" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="13">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="43">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="23" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="24108" nazwa="C.H. Korona" ulica="Krzywoustego" cechy="">
+    <czasy>
+     <przystanek numer="0" id="24108" nazwa="C.H. Korona" czas="0"/>
+     <przystanek numer="1" id="24106" nazwa="Brücknera" czas="2"/>
+     <przystanek numer="2" id="24104" nazwa="Grudziądzka" czas="3"/>
+     <przystanek numer="3" id="24146" nazwa="Kromera (Czajkowskiego)" czas="5"/>
+     <przystanek numer="4" id="24102" nazwa="KROMERA" czas="8"/>
+     <przystanek numer="5" id="20730" nazwa="Mosty Warszawskie" czas="10"/>
+     <przystanek numer="6" id="120632" nazwa="Daszyńskiego" czas="11"/>
+     <przystanek numer="7" id="120628" nazwa="Nowowiejska" czas="12"/>
+     <przystanek numer="8" id="120626" nazwa="Jedności Narodowej" czas="13"/>
+     <przystanek numer="9" id="120624" nazwa="Na Szańcach" czas="14"/>
+     <przystanek numer="10" id="20906" nazwa="pl. Bema" czas="15"/>
+     <przystanek numer="11" id="10712" nazwa="Dubois" czas="19"/>
+     <przystanek numer="12" id="110024" nazwa="Hala Targowa" czas="23"/>
+     <przystanek numer="13" id="10126" nazwa="GALERIA DOMINIKAŃSKA" czas="25"/>
+     <przystanek numer="14" id="110221" nazwa="Bastion Sakwowy" czas="27"/>
+     <przystanek numer="15" id="110223" nazwa="Dworzec Główny (MDK)" czas="30"/>
+     <przystanek numer="16" id="120269" nazwa="DWORZEC GŁÓWNY" czas="32"/>
+     <przystanek numer="17" id="11321" nazwa="DWORZEC AUTOBUSOWY" czas="35"/>
+     <przystanek numer="18" id="21101" nazwa="Dyrekcyjna" czas="37"/>
+     <przystanek numer="19" id="21112" nazwa="PETRUSEWICZA" czas="39"/>
+    </czasy>
+    <tabliczka id="29" mc="2" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="19" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="14">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="44">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="24" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="19" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="14">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="44">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="24" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="19" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="14">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="44">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="24" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="24106" nazwa="Brücknera" ulica="Krzywoustego" cechy="">
+    <czasy>
+     <przystanek numer="0" id="24106" nazwa="Brücknera" czas="0"/>
+     <przystanek numer="1" id="24104" nazwa="Grudziądzka" czas="1"/>
+     <przystanek numer="2" id="24146" nazwa="Kromera (Czajkowskiego)" czas="3"/>
+     <przystanek numer="3" id="24102" nazwa="KROMERA" czas="6"/>
+     <przystanek numer="4" id="20730" nazwa="Mosty Warszawskie" czas="8"/>
+     <przystanek numer="5" id="120632" nazwa="Daszyńskiego" czas="9"/>
+     <przystanek numer="6" id="120628" nazwa="Nowowiejska" czas="10"/>
+     <przystanek numer="7" id="120626" nazwa="Jedności Narodowej" czas="11"/>
+     <przystanek numer="8" id="120624" nazwa="Na Szańcach" czas="12"/>
+     <przystanek numer="9" id="20906" nazwa="pl. Bema" czas="13"/>
+     <przystanek numer="10" id="10712" nazwa="Dubois" czas="17"/>
+     <przystanek numer="11" id="110024" nazwa="Hala Targowa" czas="21"/>
+     <przystanek numer="12" id="10126" nazwa="GALERIA DOMINIKAŃSKA" czas="23"/>
+     <przystanek numer="13" id="110221" nazwa="Bastion Sakwowy" czas="25"/>
+     <przystanek numer="14" id="110223" nazwa="Dworzec Główny (MDK)" czas="28"/>
+     <przystanek numer="15" id="120269" nazwa="DWORZEC GŁÓWNY" czas="30"/>
+     <przystanek numer="16" id="11321" nazwa="DWORZEC AUTOBUSOWY" czas="33"/>
+     <przystanek numer="17" id="21101" nazwa="Dyrekcyjna" czas="35"/>
+     <przystanek numer="18" id="21112" nazwa="PETRUSEWICZA" czas="37"/>
+    </czasy>
+    <tabliczka id="30" mc="2" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="20" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="15">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="45">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="25" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="20" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="15">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="45">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="25" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="20" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="15">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="45">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="25" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="24104" nazwa="Grudziądzka" ulica="Krzywoustego" cechy="">
+    <czasy>
+     <przystanek numer="0" id="24104" nazwa="Grudziądzka" czas="0"/>
+     <przystanek numer="1" id="24146" nazwa="Kromera (Czajkowskiego)" czas="2"/>
+     <przystanek numer="2" id="24102" nazwa="KROMERA" czas="5"/>
+     <przystanek numer="3" id="20730" nazwa="Mosty Warszawskie" czas="7"/>
+     <przystanek numer="4" id="120632" nazwa="Daszyńskiego" czas="8"/>
+     <przystanek numer="5" id="120628" nazwa="Nowowiejska" czas="9"/>
+     <przystanek numer="6" id="120626" nazwa="Jedności Narodowej" czas="10"/>
+     <przystanek numer="7" id="120624" nazwa="Na Szańcach" czas="11"/>
+     <przystanek numer="8" id="20906" nazwa="pl. Bema" czas="12"/>
+     <przystanek numer="9" id="10712" nazwa="Dubois" czas="16"/>
+     <przystanek numer="10" id="110024" nazwa="Hala Targowa" czas="20"/>
+     <przystanek numer="11" id="10126" nazwa="GALERIA DOMINIKAŃSKA" czas="22"/>
+     <przystanek numer="12" id="110221" nazwa="Bastion Sakwowy" czas="24"/>
+     <przystanek numer="13" id="110223" nazwa="Dworzec Główny (MDK)" czas="27"/>
+     <przystanek numer="14" id="120269" nazwa="DWORZEC GŁÓWNY" czas="29"/>
+     <przystanek numer="15" id="11321" nazwa="DWORZEC AUTOBUSOWY" czas="32"/>
+     <przystanek numer="16" id="21101" nazwa="Dyrekcyjna" czas="34"/>
+     <przystanek numer="17" id="21112" nazwa="PETRUSEWICZA" czas="36"/>
+    </czasy>
+    <tabliczka id="31" mc="1" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="21" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="16">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="46">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="26" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="21" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="16">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="46">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="26" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="21" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="16">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="46">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="26" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="24146" nazwa="Kromera (Czajkowskiego)" ulica="Aleja Kromera" cechy="">
+    <czasy>
+     <przystanek numer="0" id="24146" nazwa="Kromera (Czajkowskiego)" czas="0"/>
+     <przystanek numer="1" id="24102" nazwa="KROMERA" czas="3"/>
+     <przystanek numer="2" id="20730" nazwa="Mosty Warszawskie" czas="5"/>
+     <przystanek numer="3" id="120632" nazwa="Daszyńskiego" czas="6"/>
+     <przystanek numer="4" id="120628" nazwa="Nowowiejska" czas="7"/>
+     <przystanek numer="5" id="120626" nazwa="Jedności Narodowej" czas="8"/>
+     <przystanek numer="6" id="120624" nazwa="Na Szańcach" czas="9"/>
+     <przystanek numer="7" id="20906" nazwa="pl. Bema" czas="10"/>
+     <przystanek numer="8" id="10712" nazwa="Dubois" czas="14"/>
+     <przystanek numer="9" id="110024" nazwa="Hala Targowa" czas="18"/>
+     <przystanek numer="10" id="10126" nazwa="GALERIA DOMINIKAŃSKA" czas="20"/>
+     <przystanek numer="11" id="110221" nazwa="Bastion Sakwowy" czas="22"/>
+     <przystanek numer="12" id="110223" nazwa="Dworzec Główny (MDK)" czas="25"/>
+     <przystanek numer="13" id="120269" nazwa="DWORZEC GŁÓWNY" czas="27"/>
+     <przystanek numer="14" id="11321" nazwa="DWORZEC AUTOBUSOWY" czas="30"/>
+     <przystanek numer="15" id="21101" nazwa="Dyrekcyjna" czas="32"/>
+     <przystanek numer="16" id="21112" nazwa="PETRUSEWICZA" czas="34"/>
+    </czasy>
+    <tabliczka id="32" mc="2" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="22" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="17">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="47">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="27" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="22" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="17">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="47">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="27" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="22" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="17">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="47">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="27" ozn="Z" przyp="Z - zjazd do zajezdni przy ul. Obornickiej (do przyst. Kromera po trasie)">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="24112" nazwa="KROMERA" ulica="Boya-Żeleńskiego" cechy="">
+    <czasy>
+     <przystanek numer="0" id="24112" nazwa="KROMERA" czas="0"/>
+     <przystanek numer="1" id="23701" nazwa="Berenta" czas="2"/>
+     <przystanek numer="2" id="23703" nazwa="Kasprowicza" czas="3"/>
+     <przystanek numer="3" id="23136" nazwa="Syrokomli" czas="5"/>
+     <przystanek numer="4" id="23134" nazwa="Pola" czas="6"/>
+     <przystanek numer="5" id="23141" nazwa="Broniewskiego" czas="10"/>
+     <przystanek numer="6" id="23143" nazwa="Bałtycka" czas="12"/>
+     <przystanek numer="7" id="23145" nazwa="Bezpieczna" czas="14"/>
+     <przystanek numer="8" id="23149" nazwa="Paprotna" czas="16"/>
+     <przystanek numer="9" id="9" nazwa="Zajezdnia OBORNICKA" czas="17"/>
+    </czasy>
+    <tabliczka id="48" mc="1">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="23">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="28">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="23">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="28">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="23">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="28">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="23701" nazwa="Berenta" ulica="Boya-Żeleńskiego" cechy="">
+    <czasy>
+     <przystanek numer="0" id="23701" nazwa="Berenta" czas="0"/>
+     <przystanek numer="1" id="23703" nazwa="Kasprowicza" czas="1"/>
+     <przystanek numer="2" id="23136" nazwa="Syrokomli" czas="3"/>
+     <przystanek numer="3" id="23134" nazwa="Pola" czas="4"/>
+     <przystanek numer="4" id="23141" nazwa="Broniewskiego" czas="8"/>
+     <przystanek numer="5" id="23143" nazwa="Bałtycka" czas="10"/>
+     <przystanek numer="6" id="23145" nazwa="Bezpieczna" czas="12"/>
+     <przystanek numer="7" id="23149" nazwa="Paprotna" czas="14"/>
+     <przystanek numer="8" id="9" nazwa="Zajezdnia OBORNICKA" czas="15"/>
+    </czasy>
+    <tabliczka id="49" mc="1" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="24">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="29">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="24">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="29">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="24">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="29">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="23703" nazwa="Kasprowicza" ulica="Boya-Żeleńskiego" cechy="">
+    <czasy>
+     <przystanek numer="0" id="23703" nazwa="Kasprowicza" czas="0"/>
+     <przystanek numer="1" id="23136" nazwa="Syrokomli" czas="2"/>
+     <przystanek numer="2" id="23134" nazwa="Pola" czas="3"/>
+     <przystanek numer="3" id="23141" nazwa="Broniewskiego" czas="7"/>
+     <przystanek numer="4" id="23143" nazwa="Bałtycka" czas="9"/>
+     <przystanek numer="5" id="23145" nazwa="Bezpieczna" czas="11"/>
+     <przystanek numer="6" id="23149" nazwa="Paprotna" czas="13"/>
+     <przystanek numer="7" id="9" nazwa="Zajezdnia OBORNICKA" czas="14"/>
+    </czasy>
+    <tabliczka id="50" mc="1" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="25">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="30">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="25">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="30">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="25">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="30">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="23136" nazwa="Syrokomli" ulica="Kasprowicza" cechy="">
+    <czasy>
+     <przystanek numer="0" id="23136" nazwa="Syrokomli" czas="0"/>
+     <przystanek numer="1" id="23134" nazwa="Pola" czas="1"/>
+     <przystanek numer="2" id="23141" nazwa="Broniewskiego" czas="5"/>
+     <przystanek numer="3" id="23143" nazwa="Bałtycka" czas="7"/>
+     <przystanek numer="4" id="23145" nazwa="Bezpieczna" czas="9"/>
+     <przystanek numer="5" id="23149" nazwa="Paprotna" czas="11"/>
+     <przystanek numer="6" id="9" nazwa="Zajezdnia OBORNICKA" czas="12"/>
+    </czasy>
+    <tabliczka id="51" mc="1" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="26">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="31">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="26">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="31">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="26">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="31">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="23134" nazwa="Pola" ulica="Kasprowicza" cechy="">
+    <czasy>
+     <przystanek numer="0" id="23134" nazwa="Pola" czas="0"/>
+     <przystanek numer="1" id="23141" nazwa="Broniewskiego" czas="4"/>
+     <przystanek numer="2" id="23143" nazwa="Bałtycka" czas="6"/>
+     <przystanek numer="3" id="23145" nazwa="Bezpieczna" czas="8"/>
+     <przystanek numer="4" id="23149" nazwa="Paprotna" czas="10"/>
+     <przystanek numer="5" id="9" nazwa="Zajezdnia OBORNICKA" czas="11"/>
+    </czasy>
+    <tabliczka id="52" mc="1" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="27">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="32">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="27">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="32">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="27">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="32">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="23141" nazwa="Broniewskiego" ulica="Broniewskiego" cechy="">
+    <czasy>
+     <przystanek numer="0" id="23141" nazwa="Broniewskiego" czas="0"/>
+     <przystanek numer="1" id="23143" nazwa="Bałtycka" czas="2"/>
+     <przystanek numer="2" id="23145" nazwa="Bezpieczna" czas="4"/>
+     <przystanek numer="3" id="23149" nazwa="Paprotna" czas="6"/>
+     <przystanek numer="4" id="9" nazwa="Zajezdnia OBORNICKA" czas="7"/>
+    </czasy>
+    <tabliczka id="53" mc="2">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="28">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="33">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="28">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="33">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="28">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="33">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="23143" nazwa="Bałtycka" ulica="Obornicka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="23143" nazwa="Bałtycka" czas="0"/>
+     <przystanek numer="1" id="23145" nazwa="Bezpieczna" czas="2"/>
+     <przystanek numer="2" id="23149" nazwa="Paprotna" czas="4"/>
+     <przystanek numer="3" id="9" nazwa="Zajezdnia OBORNICKA" czas="5"/>
+    </czasy>
+    <tabliczka id="54" mc="2" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="30">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="35">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="30">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="35">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="30">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="35">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="23145" nazwa="Bezpieczna" ulica="Obornicka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="23145" nazwa="Bezpieczna" czas="0"/>
+     <przystanek numer="1" id="23149" nazwa="Paprotna" czas="2"/>
+     <przystanek numer="2" id="9" nazwa="Zajezdnia OBORNICKA" czas="3"/>
+    </czasy>
+    <tabliczka id="55" mc="2" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="31">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="36">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="31">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="36">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="31">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="36">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="23149" nazwa="Paprotna" ulica="Obornicka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="23149" nazwa="Paprotna" czas="0"/>
+     <przystanek numer="1" id="9" nazwa="Zajezdnia OBORNICKA" czas="1"/>
+    </czasy>
+    <tabliczka id="56" mc="2" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="32">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="37">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="32">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="37">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="32">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="37">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="9" nazwa="Zajezdnia OBORNICKA" ulica="Obornicka" cechy="">
+    <czasy>
+    </czasy>
+   </przystanek>
+  </wariant>
+  <wariant id="4" nazwa="KROMERA - KOWALE">
+   <przystanek id="24141" nazwa="KROMERA" ulica="Aleja Kromera" cechy="">
+    <czasy>
+     <przystanek numer="0" id="24141" nazwa="KROMERA" czas="0"/>
+     <przystanek numer="1" id="24101" nazwa="KROMERA" czas="1"/>
+     <przystanek numer="2" id="24145" nazwa="Kromera (Czajkowskiego)" czas="3"/>
+     <przystanek numer="3" id="24103" nazwa="Grudziądzka" czas="4"/>
+     <przystanek numer="4" id="24105" nazwa="Brücknera" czas="7"/>
+     <przystanek numer="5" id="24129" nazwa="Olsztyńska" czas="9"/>
+     <przystanek numer="6" id="24137" nazwa="Kowalska 56" czas="10"/>
+     <przystanek numer="7" id="24125" nazwa="Kowale (Stacja kolejowa)" czas="11"/>
+     <przystanek numer="8" id="24121" nazwa="Działdowska" czas="12"/>
+     <przystanek numer="9" id="24120" nazwa="KOWALE" czas="14"/>
+     <przystanek numer="10" id="24135" nazwa="KOWALE" czas="15"/>
+    </czasy>
+    <tabliczka id="57" mc="0">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="56">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="56">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="56">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="24101" nazwa="KROMERA" ulica="Aleja Kromera" cechy="">
+    <czasy>
+     <przystanek numer="0" id="24101" nazwa="KROMERA" czas="0"/>
+     <przystanek numer="1" id="24145" nazwa="Kromera (Czajkowskiego)" czas="2"/>
+     <przystanek numer="2" id="24103" nazwa="Grudziądzka" czas="3"/>
+     <przystanek numer="3" id="24105" nazwa="Brücknera" czas="6"/>
+     <przystanek numer="4" id="24129" nazwa="Olsztyńska" czas="8"/>
+     <przystanek numer="5" id="24137" nazwa="Kowalska 56" czas="9"/>
+     <przystanek numer="6" id="24125" nazwa="Kowale (Stacja kolejowa)" czas="10"/>
+     <przystanek numer="7" id="24121" nazwa="Działdowska" czas="11"/>
+     <przystanek numer="8" id="24120" nazwa="KOWALE" czas="13"/>
+     <przystanek numer="9" id="24135" nazwa="KOWALE" czas="14"/>
+    </czasy>
+    <tabliczka id="14" mc="1">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="05">
+       </min>
+       <min m="57">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="05">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="05">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="05">
+       </min>
+       <min m="57">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="05">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="05">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="05">
+       </min>
+       <min m="57">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="05">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="05">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="24145" nazwa="Kromera (Czajkowskiego)" ulica="Krzywoustego" cechy="">
+    <czasy>
+     <przystanek numer="0" id="24145" nazwa="Kromera (Czajkowskiego)" czas="0"/>
+     <przystanek numer="1" id="24103" nazwa="Grudziądzka" czas="1"/>
+     <przystanek numer="2" id="24105" nazwa="Brücknera" czas="4"/>
+     <przystanek numer="3" id="24129" nazwa="Olsztyńska" czas="6"/>
+     <przystanek numer="4" id="24137" nazwa="Kowalska 56" czas="7"/>
+     <przystanek numer="5" id="24125" nazwa="Kowale (Stacja kolejowa)" czas="8"/>
+     <przystanek numer="6" id="24121" nazwa="Działdowska" czas="9"/>
+     <przystanek numer="7" id="24120" nazwa="KOWALE" czas="11"/>
+     <przystanek numer="8" id="24135" nazwa="KOWALE" czas="12"/>
+    </czasy>
+    <tabliczka id="15" mc="2" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="06">
+       </min>
+       <min m="58">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="06">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="06">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="06">
+       </min>
+       <min m="58">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="06">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="06">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="06">
+       </min>
+       <min m="58">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="06">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="06">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="24103" nazwa="Grudziądzka" ulica="Krzywoustego" cechy="">
+    <czasy>
+     <przystanek numer="0" id="24103" nazwa="Grudziądzka" czas="0"/>
+     <przystanek numer="1" id="24105" nazwa="Brücknera" czas="3"/>
+     <przystanek numer="2" id="24129" nazwa="Olsztyńska" czas="5"/>
+     <przystanek numer="3" id="24137" nazwa="Kowalska 56" czas="6"/>
+     <przystanek numer="4" id="24125" nazwa="Kowale (Stacja kolejowa)" czas="7"/>
+     <przystanek numer="5" id="24121" nazwa="Działdowska" czas="8"/>
+     <przystanek numer="6" id="24120" nazwa="KOWALE" czas="10"/>
+     <przystanek numer="7" id="24135" nazwa="KOWALE" czas="11"/>
+    </czasy>
+    <tabliczka id="16" mc="1" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="07">
+       </min>
+       <min m="59">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="07">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="07">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="07">
+       </min>
+       <min m="59">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="07">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="07">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="07">
+       </min>
+       <min m="59">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="07">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="07">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="24105" nazwa="Brücknera" ulica="Krzywoustego" cechy="">
+    <czasy>
+     <przystanek numer="0" id="24105" nazwa="Brücknera" czas="0"/>
+     <przystanek numer="1" id="24129" nazwa="Olsztyńska" czas="2"/>
+     <przystanek numer="2" id="24137" nazwa="Kowalska 56" czas="3"/>
+     <przystanek numer="3" id="24125" nazwa="Kowale (Stacja kolejowa)" czas="4"/>
+     <przystanek numer="4" id="24121" nazwa="Działdowska" czas="5"/>
+     <przystanek numer="5" id="24120" nazwa="KOWALE" czas="7"/>
+     <przystanek numer="6" id="24135" nazwa="KOWALE" czas="8"/>
+    </czasy>
+    <tabliczka id="17" mc="2" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="08">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="00">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="08">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="08">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="08">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="00">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="08">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="08">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="08">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="00">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="08">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="08">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="24129" nazwa="Olsztyńska" ulica="Kowalska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="24129" nazwa="Olsztyńska" czas="0"/>
+     <przystanek numer="1" id="24137" nazwa="Kowalska 56" czas="1"/>
+     <przystanek numer="2" id="24125" nazwa="Kowale (Stacja kolejowa)" czas="2"/>
+     <przystanek numer="3" id="24121" nazwa="Działdowska" czas="3"/>
+     <przystanek numer="4" id="24120" nazwa="KOWALE" czas="5"/>
+     <przystanek numer="5" id="24135" nazwa="KOWALE" czas="6"/>
+    </czasy>
+    <tabliczka id="18" mc="2" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="10">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="02">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="10">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="10">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="10">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="02">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="10">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="10">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="10">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="02">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="10">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="10">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="24137" nazwa="Kowalska 56" ulica="Kowalska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="24137" nazwa="Kowalska 56" czas="0"/>
+     <przystanek numer="1" id="24125" nazwa="Kowale (Stacja kolejowa)" czas="1"/>
+     <przystanek numer="2" id="24121" nazwa="Działdowska" czas="2"/>
+     <przystanek numer="3" id="24120" nazwa="KOWALE" czas="4"/>
+     <przystanek numer="4" id="24135" nazwa="KOWALE" czas="5"/>
+    </czasy>
+    <tabliczka id="19" mc="1" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="11">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="03">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="11">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="11">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="11">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="03">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="11">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="11">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="11">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="03">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="11">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="11">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="24125" nazwa="Kowale (Stacja kolejowa)" ulica="Kowalska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="24125" nazwa="Kowale (Stacja kolejowa)" czas="0"/>
+     <przystanek numer="1" id="24121" nazwa="Działdowska" czas="1"/>
+     <przystanek numer="2" id="24120" nazwa="KOWALE" czas="3"/>
+     <przystanek numer="3" id="24135" nazwa="KOWALE" czas="4"/>
+    </czasy>
+    <tabliczka id="20" mc="1" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="12">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="04">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="12">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="12">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="12">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="04">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="12">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="12">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="12">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="04">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="12">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="12">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="24121" nazwa="Działdowska" ulica="Kowalska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="24121" nazwa="Działdowska" czas="0"/>
+     <przystanek numer="1" id="24120" nazwa="KOWALE" czas="2"/>
+     <przystanek numer="2" id="24135" nazwa="KOWALE" czas="3"/>
+    </czasy>
+    <tabliczka id="21" mc="1" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="13">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="05">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="13">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="13">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="13">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="05">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="13">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="13">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="13">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="05">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="13">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="13">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="24120" nazwa="KOWALE" ulica="Działdowska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="24120" nazwa="KOWALE" czas="0"/>
+     <przystanek numer="1" id="24135" nazwa="KOWALE" czas="1"/>
+    </czasy>
+    <tabliczka id="22" mc="2" cechy="NZ">
+     <dzien nazwa="niedz./ pon. – czw./ pt.">
+      <godz h="24">
+       <min m="14">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="06">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="14">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="14">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="pt./ sob.">
+      <godz h="24">
+       <min m="14">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="06">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="14">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="14">
+       </min>
+      </godz>
+     </dzien>
+     <dzien nazwa="sob./ niedz.">
+      <godz h="24">
+       <min m="14">
+       </min>
+      </godz>
+      <godz h="25">
+       <min m="06">
+       </min>
+      </godz>
+      <godz h="26">
+       <min m="14">
+       </min>
+      </godz>
+      <godz h="28">
+       <min m="14">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="24135" nazwa="KOWALE" ulica="Kwidzyńska" cechy="">
+    <czasy>
+    </czasy>
+   </przystanek>
+  </wariant>
+ </linia>
+</linie>

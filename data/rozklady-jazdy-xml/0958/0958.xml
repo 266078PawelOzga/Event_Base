@@ -1,0 +1,2873 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<linie>
+ <linia nazwa="958" typ="Strefowa autobusowa" wazny_od="01.09.2025" wazny_do="">
+  <wariant id="1" nazwa="LEŚNICA - Księginice P&amp;R">
+   <przystanek id="18388" nazwa="LEŚNICA" ulica="Płońskiego" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18388" nazwa="LEŚNICA" czas="0"/>
+     <przystanek numer="1" id="18389" nazwa="Rubczaka (Stacja kolejowa)" czas="2"/>
+     <przystanek numer="2" id="18391" nazwa="Rubczaka" czas="3"/>
+     <przystanek numer="3" id="18312" nazwa="Średzka" czas="4"/>
+     <przystanek numer="4" id="18341" nazwa="Leśnica - Hermes" czas="6"/>
+     <przystanek numer="5" id="18343" nazwa="Mokrzańska" czas="8"/>
+     <przystanek numer="6" id="18347" nazwa="ŻAR" czas="10"/>
+     <przystanek numer="7" id="92058008" nazwa="Krępice - Wrocławska" czas="14"/>
+     <przystanek numer="8" id="91048792" nazwa="Żurawiniec" czas="17"/>
+     <przystanek numer="9" id="92058002" nazwa="Mrozów - Świetlica" czas="20"/>
+     <przystanek numer="10" id="92058004" nazwa="Mrozów - Wyzwolenia" czas="22"/>
+     <przystanek numer="11" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="30"/>
+     <przystanek numer="12" id="92056014" nazwa="Miękinia - stacja PKP" czas="32"/>
+     <przystanek numer="13" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="34"/>
+     <przystanek numer="14" id="92056010" nazwa="Klęka" czas="37"/>
+     <przystanek numer="15" id="92060012" nazwa="Zabór Wielki" czas="40"/>
+     <przystanek numer="16" id="92060010" nazwa="Zabór Mały" czas="42"/>
+     <przystanek numer="17" id="92060008" nazwa="Lubiatów" czas="44"/>
+     <przystanek numer="18" id="91048802" nazwa="Głoska - ul. Średzka" czas="49"/>
+     <przystanek numer="19" id="92056003" nazwa="Gąsiorów" czas="51"/>
+     <przystanek numer="20" id="92056005" nazwa="Księginice ul. Sportowa" czas="53"/>
+     <przystanek numer="21" id="92052017" nazwa="Księginice P&amp;R" czas="54"/>
+    </czasy>
+    <tabliczka id="1" mc="0">
+     <dzien nazwa="w dni robocze">
+      <godz h="11">
+       <min m="40">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="15" ozn="H" przyp="H - kurs do Księginic przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18389" nazwa="Rubczaka (Stacja kolejowa)" ulica="Rubczaka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18389" nazwa="Rubczaka (Stacja kolejowa)" czas="0"/>
+     <przystanek numer="1" id="18391" nazwa="Rubczaka" czas="1"/>
+     <przystanek numer="2" id="18312" nazwa="Średzka" czas="2"/>
+     <przystanek numer="3" id="18341" nazwa="Leśnica - Hermes" czas="4"/>
+     <przystanek numer="4" id="18343" nazwa="Mokrzańska" czas="6"/>
+     <przystanek numer="5" id="18347" nazwa="ŻAR" czas="8"/>
+     <przystanek numer="6" id="92058008" nazwa="Krępice - Wrocławska" czas="12"/>
+     <przystanek numer="7" id="91048792" nazwa="Żurawiniec" czas="15"/>
+     <przystanek numer="8" id="92058002" nazwa="Mrozów - Świetlica" czas="18"/>
+     <przystanek numer="9" id="92058004" nazwa="Mrozów - Wyzwolenia" czas="20"/>
+     <przystanek numer="10" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="28"/>
+     <przystanek numer="11" id="92056014" nazwa="Miękinia - stacja PKP" czas="30"/>
+     <przystanek numer="12" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="32"/>
+     <przystanek numer="13" id="92056010" nazwa="Klęka" czas="35"/>
+     <przystanek numer="14" id="92060012" nazwa="Zabór Wielki" czas="38"/>
+     <przystanek numer="15" id="92060010" nazwa="Zabór Mały" czas="40"/>
+     <przystanek numer="16" id="92060008" nazwa="Lubiatów" czas="42"/>
+     <przystanek numer="17" id="91048802" nazwa="Głoska - ul. Średzka" czas="47"/>
+     <przystanek numer="18" id="92056003" nazwa="Gąsiorów" czas="49"/>
+     <przystanek numer="19" id="92056005" nazwa="Księginice ul. Sportowa" czas="51"/>
+     <przystanek numer="20" id="92052017" nazwa="Księginice P&amp;R" czas="52"/>
+    </czasy>
+    <tabliczka id="2" mc="2">
+     <dzien nazwa="w dni robocze">
+      <godz h="11">
+       <min m="42">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="17" ozn="H" przyp="H - kurs do Księginic przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18391" nazwa="Rubczaka" ulica="Rubczaka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18391" nazwa="Rubczaka" czas="0"/>
+     <przystanek numer="1" id="18312" nazwa="Średzka" czas="1"/>
+     <przystanek numer="2" id="18341" nazwa="Leśnica - Hermes" czas="3"/>
+     <przystanek numer="3" id="18343" nazwa="Mokrzańska" czas="5"/>
+     <przystanek numer="4" id="18347" nazwa="ŻAR" czas="7"/>
+     <przystanek numer="5" id="92058008" nazwa="Krępice - Wrocławska" czas="11"/>
+     <przystanek numer="6" id="91048792" nazwa="Żurawiniec" czas="14"/>
+     <przystanek numer="7" id="92058002" nazwa="Mrozów - Świetlica" czas="17"/>
+     <przystanek numer="8" id="92058004" nazwa="Mrozów - Wyzwolenia" czas="19"/>
+     <przystanek numer="9" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="27"/>
+     <przystanek numer="10" id="92056014" nazwa="Miękinia - stacja PKP" czas="29"/>
+     <przystanek numer="11" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="31"/>
+     <przystanek numer="12" id="92056010" nazwa="Klęka" czas="34"/>
+     <przystanek numer="13" id="92060012" nazwa="Zabór Wielki" czas="37"/>
+     <przystanek numer="14" id="92060010" nazwa="Zabór Mały" czas="39"/>
+     <przystanek numer="15" id="92060008" nazwa="Lubiatów" czas="41"/>
+     <przystanek numer="16" id="91048802" nazwa="Głoska - ul. Średzka" czas="46"/>
+     <przystanek numer="17" id="92056003" nazwa="Gąsiorów" czas="48"/>
+     <przystanek numer="18" id="92056005" nazwa="Księginice ul. Sportowa" czas="50"/>
+     <przystanek numer="19" id="92052017" nazwa="Księginice P&amp;R" czas="51"/>
+    </czasy>
+    <tabliczka id="3" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="11">
+       <min m="43">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="18" ozn="H" przyp="H - kurs do Księginic przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18312" nazwa="Średzka" ulica="Trzmielowicka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18312" nazwa="Średzka" czas="0"/>
+     <przystanek numer="1" id="18341" nazwa="Leśnica - Hermes" czas="2"/>
+     <przystanek numer="2" id="18343" nazwa="Mokrzańska" czas="4"/>
+     <przystanek numer="3" id="18347" nazwa="ŻAR" czas="6"/>
+     <przystanek numer="4" id="92058008" nazwa="Krępice - Wrocławska" czas="10"/>
+     <przystanek numer="5" id="91048792" nazwa="Żurawiniec" czas="13"/>
+     <przystanek numer="6" id="92058002" nazwa="Mrozów - Świetlica" czas="16"/>
+     <przystanek numer="7" id="92058004" nazwa="Mrozów - Wyzwolenia" czas="18"/>
+     <przystanek numer="8" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="26"/>
+     <przystanek numer="9" id="92056014" nazwa="Miękinia - stacja PKP" czas="28"/>
+     <przystanek numer="10" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="30"/>
+     <przystanek numer="11" id="92056010" nazwa="Klęka" czas="33"/>
+     <przystanek numer="12" id="92060012" nazwa="Zabór Wielki" czas="36"/>
+     <przystanek numer="13" id="92060010" nazwa="Zabór Mały" czas="38"/>
+     <przystanek numer="14" id="92060008" nazwa="Lubiatów" czas="40"/>
+     <przystanek numer="15" id="91048802" nazwa="Głoska - ul. Średzka" czas="45"/>
+     <przystanek numer="16" id="92056003" nazwa="Gąsiorów" czas="47"/>
+     <przystanek numer="17" id="92056005" nazwa="Księginice ul. Sportowa" czas="49"/>
+     <przystanek numer="18" id="92052017" nazwa="Księginice P&amp;R" czas="50"/>
+    </czasy>
+    <tabliczka id="4" mc="1">
+     <dzien nazwa="w dni robocze">
+      <godz h="11">
+       <min m="44">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="19" ozn="H" przyp="H - kurs do Księginic przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18341" nazwa="Leśnica - Hermes" ulica="Średzka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18341" nazwa="Leśnica - Hermes" czas="0"/>
+     <przystanek numer="1" id="18343" nazwa="Mokrzańska" czas="2"/>
+     <przystanek numer="2" id="18347" nazwa="ŻAR" czas="4"/>
+     <przystanek numer="3" id="92058008" nazwa="Krępice - Wrocławska" czas="8"/>
+     <przystanek numer="4" id="91048792" nazwa="Żurawiniec" czas="11"/>
+     <przystanek numer="5" id="92058002" nazwa="Mrozów - Świetlica" czas="14"/>
+     <przystanek numer="6" id="92058004" nazwa="Mrozów - Wyzwolenia" czas="16"/>
+     <przystanek numer="7" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="24"/>
+     <przystanek numer="8" id="92056014" nazwa="Miękinia - stacja PKP" czas="26"/>
+     <przystanek numer="9" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="28"/>
+     <przystanek numer="10" id="92056010" nazwa="Klęka" czas="31"/>
+     <przystanek numer="11" id="92060012" nazwa="Zabór Wielki" czas="34"/>
+     <przystanek numer="12" id="92060010" nazwa="Zabór Mały" czas="36"/>
+     <przystanek numer="13" id="92060008" nazwa="Lubiatów" czas="38"/>
+     <przystanek numer="14" id="91048802" nazwa="Głoska - ul. Średzka" czas="43"/>
+     <przystanek numer="15" id="92056003" nazwa="Gąsiorów" czas="45"/>
+     <przystanek numer="16" id="92056005" nazwa="Księginice ul. Sportowa" czas="47"/>
+     <przystanek numer="17" id="92052017" nazwa="Księginice P&amp;R" czas="48"/>
+    </czasy>
+    <tabliczka id="5" mc="1">
+     <dzien nazwa="w dni robocze">
+      <godz h="11">
+       <min m="46">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18343" nazwa="Mokrzańska" ulica="Średzka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18343" nazwa="Mokrzańska" czas="0"/>
+     <przystanek numer="1" id="18347" nazwa="ŻAR" czas="2"/>
+     <przystanek numer="2" id="92058008" nazwa="Krępice - Wrocławska" czas="6"/>
+     <przystanek numer="3" id="91048792" nazwa="Żurawiniec" czas="9"/>
+     <przystanek numer="4" id="92058002" nazwa="Mrozów - Świetlica" czas="12"/>
+     <przystanek numer="5" id="92058004" nazwa="Mrozów - Wyzwolenia" czas="14"/>
+     <przystanek numer="6" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="22"/>
+     <przystanek numer="7" id="92056014" nazwa="Miękinia - stacja PKP" czas="24"/>
+     <przystanek numer="8" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="26"/>
+     <przystanek numer="9" id="92056010" nazwa="Klęka" czas="29"/>
+     <przystanek numer="10" id="92060012" nazwa="Zabór Wielki" czas="32"/>
+     <przystanek numer="11" id="92060010" nazwa="Zabór Mały" czas="34"/>
+     <przystanek numer="12" id="92060008" nazwa="Lubiatów" czas="36"/>
+     <przystanek numer="13" id="91048802" nazwa="Głoska - ul. Średzka" czas="41"/>
+     <przystanek numer="14" id="92056003" nazwa="Gąsiorów" czas="43"/>
+     <przystanek numer="15" id="92056005" nazwa="Księginice ul. Sportowa" czas="45"/>
+     <przystanek numer="16" id="92052017" nazwa="Księginice P&amp;R" czas="46"/>
+    </czasy>
+    <tabliczka id="6" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="11">
+       <min m="47">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="27">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18347" nazwa="ŻAR" ulica="Średzka" cechy="1">
+    <czasy>
+     <przystanek numer="0" id="18347" nazwa="ŻAR" czas="0"/>
+     <przystanek numer="1" id="92058008" nazwa="Krępice - Wrocławska" czas="4"/>
+     <przystanek numer="2" id="91048792" nazwa="Żurawiniec" czas="7"/>
+     <przystanek numer="3" id="92058002" nazwa="Mrozów - Świetlica" czas="10"/>
+     <przystanek numer="4" id="92058004" nazwa="Mrozów - Wyzwolenia" czas="12"/>
+     <przystanek numer="5" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="20"/>
+     <przystanek numer="6" id="92056014" nazwa="Miękinia - stacja PKP" czas="22"/>
+     <przystanek numer="7" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="24"/>
+     <przystanek numer="8" id="92056010" nazwa="Klęka" czas="27"/>
+     <przystanek numer="9" id="92060012" nazwa="Zabór Wielki" czas="30"/>
+     <przystanek numer="10" id="92060010" nazwa="Zabór Mały" czas="32"/>
+     <przystanek numer="11" id="92060008" nazwa="Lubiatów" czas="34"/>
+     <przystanek numer="12" id="91048802" nazwa="Głoska - ul. Średzka" czas="39"/>
+     <przystanek numer="13" id="92056003" nazwa="Gąsiorów" czas="41"/>
+     <przystanek numer="14" id="92056005" nazwa="Księginice ul. Sportowa" czas="43"/>
+     <przystanek numer="15" id="92052017" nazwa="Księginice P&amp;R" czas="44"/>
+    </czasy>
+    <tabliczka id="7" mc="2">
+     <dzien nazwa="w dni robocze">
+      <godz h="11">
+       <min m="49">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="29">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92058008" nazwa="Krępice - Wrocławska" ulica="Wrocławska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92058008" nazwa="Krępice - Wrocławska" czas="0"/>
+     <przystanek numer="1" id="91048792" nazwa="Żurawiniec" czas="3"/>
+     <przystanek numer="2" id="92058002" nazwa="Mrozów - Świetlica" czas="6"/>
+     <przystanek numer="3" id="92058004" nazwa="Mrozów - Wyzwolenia" czas="8"/>
+     <przystanek numer="4" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="16"/>
+     <przystanek numer="5" id="92056014" nazwa="Miękinia - stacja PKP" czas="18"/>
+     <przystanek numer="6" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="20"/>
+     <przystanek numer="7" id="92056010" nazwa="Klęka" czas="23"/>
+     <przystanek numer="8" id="92060012" nazwa="Zabór Wielki" czas="26"/>
+     <przystanek numer="9" id="92060010" nazwa="Zabór Mały" czas="28"/>
+     <przystanek numer="10" id="92060008" nazwa="Lubiatów" czas="30"/>
+     <przystanek numer="11" id="91048802" nazwa="Głoska - ul. Średzka" czas="35"/>
+     <przystanek numer="12" id="92056003" nazwa="Gąsiorów" czas="37"/>
+     <przystanek numer="13" id="92056005" nazwa="Księginice ul. Sportowa" czas="39"/>
+     <przystanek numer="14" id="92052017" nazwa="Księginice P&amp;R" czas="40"/>
+    </czasy>
+    <tabliczka id="8" mc="4" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="11">
+       <min m="53">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="33">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="91048792" nazwa="Żurawiniec" ulica=" " cechy="">
+    <czasy>
+     <przystanek numer="0" id="91048792" nazwa="Żurawiniec" czas="0"/>
+     <przystanek numer="1" id="92058002" nazwa="Mrozów - Świetlica" czas="3"/>
+     <przystanek numer="2" id="92058004" nazwa="Mrozów - Wyzwolenia" czas="5"/>
+     <przystanek numer="3" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="13"/>
+     <przystanek numer="4" id="92056014" nazwa="Miękinia - stacja PKP" czas="15"/>
+     <przystanek numer="5" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="17"/>
+     <przystanek numer="6" id="92056010" nazwa="Klęka" czas="20"/>
+     <przystanek numer="7" id="92060012" nazwa="Zabór Wielki" czas="23"/>
+     <przystanek numer="8" id="92060010" nazwa="Zabór Mały" czas="25"/>
+     <przystanek numer="9" id="92060008" nazwa="Lubiatów" czas="27"/>
+     <przystanek numer="10" id="91048802" nazwa="Głoska - ul. Średzka" czas="32"/>
+     <przystanek numer="11" id="92056003" nazwa="Gąsiorów" czas="34"/>
+     <przystanek numer="12" id="92056005" nazwa="Księginice ul. Sportowa" czas="36"/>
+     <przystanek numer="13" id="92052017" nazwa="Księginice P&amp;R" czas="37"/>
+    </czasy>
+    <tabliczka id="9" mc="3" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="11">
+       <min m="56">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="36">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92058002" nazwa="Mrozów - Świetlica" ulica="Chrobrego" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92058002" nazwa="Mrozów - Świetlica" czas="0"/>
+     <przystanek numer="1" id="92058004" nazwa="Mrozów - Wyzwolenia" czas="2"/>
+     <przystanek numer="2" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="10"/>
+     <przystanek numer="3" id="92056014" nazwa="Miękinia - stacja PKP" czas="12"/>
+     <przystanek numer="4" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="14"/>
+     <przystanek numer="5" id="92056010" nazwa="Klęka" czas="17"/>
+     <przystanek numer="6" id="92060012" nazwa="Zabór Wielki" czas="20"/>
+     <przystanek numer="7" id="92060010" nazwa="Zabór Mały" czas="22"/>
+     <przystanek numer="8" id="92060008" nazwa="Lubiatów" czas="24"/>
+     <przystanek numer="9" id="91048802" nazwa="Głoska - ul. Średzka" czas="29"/>
+     <przystanek numer="10" id="92056003" nazwa="Gąsiorów" czas="31"/>
+     <przystanek numer="11" id="92056005" nazwa="Księginice ul. Sportowa" czas="33"/>
+     <przystanek numer="12" id="92052017" nazwa="Księginice P&amp;R" czas="34"/>
+    </czasy>
+    <tabliczka id="10" mc="3">
+     <dzien nazwa="w dni robocze">
+      <godz h="11">
+       <min m="59">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="39">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92058004" nazwa="Mrozów - Wyzwolenia" ulica="Piastowska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92058004" nazwa="Mrozów - Wyzwolenia" czas="0"/>
+     <przystanek numer="1" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="8"/>
+     <przystanek numer="2" id="92056014" nazwa="Miękinia - stacja PKP" czas="10"/>
+     <przystanek numer="3" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="12"/>
+     <przystanek numer="4" id="92056010" nazwa="Klęka" czas="15"/>
+     <przystanek numer="5" id="92060012" nazwa="Zabór Wielki" czas="18"/>
+     <przystanek numer="6" id="92060010" nazwa="Zabór Mały" czas="20"/>
+     <przystanek numer="7" id="92060008" nazwa="Lubiatów" czas="22"/>
+     <przystanek numer="8" id="91048802" nazwa="Głoska - ul. Średzka" czas="27"/>
+     <przystanek numer="9" id="92056003" nazwa="Gąsiorów" czas="29"/>
+     <przystanek numer="10" id="92056005" nazwa="Księginice ul. Sportowa" czas="31"/>
+     <przystanek numer="11" id="92052017" nazwa="Księginice P&amp;R" czas="32"/>
+    </czasy>
+    <tabliczka id="11" mc="2">
+     <dzien nazwa="w dni robocze">
+      <godz h="12">
+       <min m="01">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="41">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92056011" nazwa="Miękinia - Urząd Gminy" ulica="Kościuszki" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="0"/>
+     <przystanek numer="1" id="92056014" nazwa="Miękinia - stacja PKP" czas="2"/>
+     <przystanek numer="2" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="4"/>
+     <przystanek numer="3" id="92056010" nazwa="Klęka" czas="7"/>
+     <przystanek numer="4" id="92060012" nazwa="Zabór Wielki" czas="10"/>
+     <przystanek numer="5" id="92060010" nazwa="Zabór Mały" czas="12"/>
+     <przystanek numer="6" id="92060008" nazwa="Lubiatów" czas="14"/>
+     <przystanek numer="7" id="91048802" nazwa="Głoska - ul. Średzka" czas="19"/>
+     <przystanek numer="8" id="92056003" nazwa="Gąsiorów" czas="21"/>
+     <przystanek numer="9" id="92056005" nazwa="Księginice ul. Sportowa" czas="23"/>
+     <przystanek numer="10" id="92052017" nazwa="Księginice P&amp;R" czas="24"/>
+    </czasy>
+    <tabliczka id="12" mc="8">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="35">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="09">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="49">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92056014" nazwa="Miękinia - stacja PKP" ulica="Kościuszki" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92056014" nazwa="Miękinia - stacja PKP" czas="0"/>
+     <przystanek numer="1" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="2"/>
+     <przystanek numer="2" id="92056010" nazwa="Klęka" czas="5"/>
+     <przystanek numer="3" id="92060012" nazwa="Zabór Wielki" czas="8"/>
+     <przystanek numer="4" id="92060010" nazwa="Zabór Mały" czas="10"/>
+     <przystanek numer="5" id="92060008" nazwa="Lubiatów" czas="12"/>
+     <przystanek numer="6" id="91048802" nazwa="Głoska - ul. Średzka" czas="17"/>
+     <przystanek numer="7" id="92056003" nazwa="Gąsiorów" czas="19"/>
+     <przystanek numer="8" id="92056005" nazwa="Księginice ul. Sportowa" czas="21"/>
+     <przystanek numer="9" id="92052017" nazwa="Księginice P&amp;R" czas="22"/>
+    </czasy>
+    <tabliczka id="14" mc="2">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="37">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="11">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="51">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92056012" nazwa="Miękinia - Urząd Gminy" ulica="Kościuszki" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="0"/>
+     <przystanek numer="1" id="92056010" nazwa="Klęka" czas="3"/>
+     <przystanek numer="2" id="92060012" nazwa="Zabór Wielki" czas="6"/>
+     <przystanek numer="3" id="92060010" nazwa="Zabór Mały" czas="8"/>
+     <przystanek numer="4" id="92060008" nazwa="Lubiatów" czas="10"/>
+     <przystanek numer="5" id="91048802" nazwa="Głoska - ul. Średzka" czas="15"/>
+     <przystanek numer="6" id="92056003" nazwa="Gąsiorów" czas="17"/>
+     <przystanek numer="7" id="92056005" nazwa="Księginice ul. Sportowa" czas="19"/>
+     <przystanek numer="8" id="92052017" nazwa="Księginice P&amp;R" czas="20"/>
+    </czasy>
+    <tabliczka id="15" mc="2">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="39">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="13">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="53">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92056010" nazwa="Klęka" ulica=" " cechy="">
+    <czasy>
+     <przystanek numer="0" id="92056010" nazwa="Klęka" czas="0"/>
+     <przystanek numer="1" id="92060012" nazwa="Zabór Wielki" czas="3"/>
+     <przystanek numer="2" id="92060010" nazwa="Zabór Mały" czas="5"/>
+     <przystanek numer="3" id="92060008" nazwa="Lubiatów" czas="7"/>
+     <przystanek numer="4" id="91048802" nazwa="Głoska - ul. Średzka" czas="12"/>
+     <przystanek numer="5" id="92056003" nazwa="Gąsiorów" czas="14"/>
+     <przystanek numer="6" id="92056005" nazwa="Księginice ul. Sportowa" czas="16"/>
+     <przystanek numer="7" id="92052017" nazwa="Księginice P&amp;R" czas="17"/>
+    </czasy>
+    <tabliczka id="17" mc="3" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="42">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="16">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="56">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92060012" nazwa="Zabór Wielki" ulica=" " cechy="">
+    <czasy>
+     <przystanek numer="0" id="92060012" nazwa="Zabór Wielki" czas="0"/>
+     <przystanek numer="1" id="92060010" nazwa="Zabór Mały" czas="2"/>
+     <przystanek numer="2" id="92060008" nazwa="Lubiatów" czas="4"/>
+     <przystanek numer="3" id="91048802" nazwa="Głoska - ul. Średzka" czas="9"/>
+     <przystanek numer="4" id="92056003" nazwa="Gąsiorów" czas="11"/>
+     <przystanek numer="5" id="92056005" nazwa="Księginice ul. Sportowa" czas="13"/>
+     <przystanek numer="6" id="92052017" nazwa="Księginice P&amp;R" czas="14"/>
+    </czasy>
+    <tabliczka id="18" mc="3" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="45">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="19">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="59">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92060010" nazwa="Zabór Mały" ulica=" " cechy="">
+    <czasy>
+     <przystanek numer="0" id="92060010" nazwa="Zabór Mały" czas="0"/>
+     <przystanek numer="1" id="92060008" nazwa="Lubiatów" czas="2"/>
+     <przystanek numer="2" id="91048802" nazwa="Głoska - ul. Średzka" czas="7"/>
+     <przystanek numer="3" id="92056003" nazwa="Gąsiorów" czas="9"/>
+     <przystanek numer="4" id="92056005" nazwa="Księginice ul. Sportowa" czas="11"/>
+     <przystanek numer="5" id="92052017" nazwa="Księginice P&amp;R" czas="12"/>
+    </czasy>
+    <tabliczka id="19" mc="2" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="47">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="21">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="01">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92060008" nazwa="Lubiatów" ulica=" " cechy="">
+    <czasy>
+     <przystanek numer="0" id="92060008" nazwa="Lubiatów" czas="0"/>
+     <przystanek numer="1" id="91048802" nazwa="Głoska - ul. Średzka" czas="5"/>
+     <przystanek numer="2" id="92056003" nazwa="Gąsiorów" czas="7"/>
+     <przystanek numer="3" id="92056005" nazwa="Księginice ul. Sportowa" czas="9"/>
+     <przystanek numer="4" id="92052017" nazwa="Księginice P&amp;R" czas="10"/>
+    </czasy>
+    <tabliczka id="20" mc="2" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="49">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="23">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="03">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="91048802" nazwa="Głoska - ul. Średzka" ulica="Średzka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="91048802" nazwa="Głoska - ul. Średzka" czas="0"/>
+     <przystanek numer="1" id="92056003" nazwa="Gąsiorów" czas="2"/>
+     <przystanek numer="2" id="92056005" nazwa="Księginice ul. Sportowa" czas="4"/>
+     <przystanek numer="3" id="92052017" nazwa="Księginice P&amp;R" czas="5"/>
+    </czasy>
+    <tabliczka id="21" mc="5" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="54">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="28">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="08">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92056003" nazwa="Gąsiorów" ulica="Wrocławska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92056003" nazwa="Gąsiorów" czas="0"/>
+     <przystanek numer="1" id="92056005" nazwa="Księginice ul. Sportowa" czas="2"/>
+     <przystanek numer="2" id="92052017" nazwa="Księginice P&amp;R" czas="3"/>
+    </czasy>
+    <tabliczka id="22" mc="2" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="56">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="30">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="10">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92056005" nazwa="Księginice ul. Sportowa" ulica="Sportowa" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92056005" nazwa="Księginice ul. Sportowa" czas="0"/>
+     <przystanek numer="1" id="92052017" nazwa="Księginice P&amp;R" czas="1"/>
+    </czasy>
+    <tabliczka id="23" mc="2">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="58">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="32">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="12">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92052017" nazwa="Księginice P&amp;R" ulica="Kolejowa" cechy="">
+    <czasy>
+    </czasy>
+   </przystanek>
+  </wariant>
+  <wariant id="2" nazwa="LEŚNICA - Księginice P&amp;R" obj="Krępicka">
+   <przystanek id="18388" nazwa="LEŚNICA" ulica="Płońskiego" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18388" nazwa="LEŚNICA" czas="0"/>
+     <przystanek numer="1" id="18389" nazwa="Rubczaka (Stacja kolejowa)" czas="2"/>
+     <przystanek numer="2" id="18391" nazwa="Rubczaka" czas="3"/>
+     <przystanek numer="3" id="18312" nazwa="Średzka" czas="4"/>
+     <przystanek numer="4" id="18341" nazwa="Leśnica - Hermes" czas="6"/>
+     <przystanek numer="5" id="18343" nazwa="Mokrzańska" czas="8"/>
+     <przystanek numer="6" id="18347" nazwa="ŻAR" czas="10"/>
+     <przystanek numer="7" id="92058008" nazwa="Krępice - Wrocławska" czas="14"/>
+     <przystanek numer="8" id="91048792" nazwa="Żurawiniec" czas="17"/>
+     <przystanek numer="9" id="92058002" nazwa="Mrozów - Świetlica" czas="20"/>
+     <przystanek numer="10" id="92058004" nazwa="Mrozów - Wyzwolenia" czas="22"/>
+     <przystanek numer="11" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="30"/>
+     <przystanek numer="12" id="92056014" nazwa="Miękinia - stacja PKP" czas="32"/>
+     <przystanek numer="13" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="34"/>
+     <przystanek numer="14" id="92056010" nazwa="Klęka" czas="37"/>
+     <przystanek numer="15" id="92060012" nazwa="Zabór Wielki" czas="40"/>
+     <przystanek numer="16" id="92060010" nazwa="Zabór Mały" czas="42"/>
+     <przystanek numer="17" id="92060008" nazwa="Lubiatów" czas="44"/>
+     <przystanek numer="18" id="91048802" nazwa="Głoska - ul. Średzka" czas="49"/>
+     <przystanek numer="19" id="92056003" nazwa="Gąsiorów" czas="51"/>
+     <przystanek numer="20" id="92056005" nazwa="Księginice ul. Sportowa" czas="53"/>
+     <przystanek numer="21" id="92052017" nazwa="Księginice P&amp;R" czas="54"/>
+    </czasy>
+    <tabliczka id="1" mc="0">
+     <dzien nazwa="w dni robocze">
+      <godz h="11">
+       <min m="40">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="15" ozn="H" przyp="H - kurs do Księginic przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18389" nazwa="Rubczaka (Stacja kolejowa)" ulica="Rubczaka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18389" nazwa="Rubczaka (Stacja kolejowa)" czas="0"/>
+     <przystanek numer="1" id="18391" nazwa="Rubczaka" czas="1"/>
+     <przystanek numer="2" id="18312" nazwa="Średzka" czas="2"/>
+     <przystanek numer="3" id="18341" nazwa="Leśnica - Hermes" czas="4"/>
+     <przystanek numer="4" id="18343" nazwa="Mokrzańska" czas="6"/>
+     <przystanek numer="5" id="18347" nazwa="ŻAR" czas="8"/>
+     <przystanek numer="6" id="92058008" nazwa="Krępice - Wrocławska" czas="12"/>
+     <przystanek numer="7" id="91048792" nazwa="Żurawiniec" czas="15"/>
+     <przystanek numer="8" id="92058002" nazwa="Mrozów - Świetlica" czas="18"/>
+     <przystanek numer="9" id="92058004" nazwa="Mrozów - Wyzwolenia" czas="20"/>
+     <przystanek numer="10" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="28"/>
+     <przystanek numer="11" id="92056014" nazwa="Miękinia - stacja PKP" czas="30"/>
+     <przystanek numer="12" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="32"/>
+     <przystanek numer="13" id="92056010" nazwa="Klęka" czas="35"/>
+     <przystanek numer="14" id="92060012" nazwa="Zabór Wielki" czas="38"/>
+     <przystanek numer="15" id="92060010" nazwa="Zabór Mały" czas="40"/>
+     <przystanek numer="16" id="92060008" nazwa="Lubiatów" czas="42"/>
+     <przystanek numer="17" id="91048802" nazwa="Głoska - ul. Średzka" czas="47"/>
+     <przystanek numer="18" id="92056003" nazwa="Gąsiorów" czas="49"/>
+     <przystanek numer="19" id="92056005" nazwa="Księginice ul. Sportowa" czas="51"/>
+     <przystanek numer="20" id="92052017" nazwa="Księginice P&amp;R" czas="52"/>
+    </czasy>
+    <tabliczka id="2" mc="2">
+     <dzien nazwa="w dni robocze">
+      <godz h="11">
+       <min m="42">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="17" ozn="H" przyp="H - kurs do Księginic przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18391" nazwa="Rubczaka" ulica="Rubczaka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18391" nazwa="Rubczaka" czas="0"/>
+     <przystanek numer="1" id="18312" nazwa="Średzka" czas="1"/>
+     <przystanek numer="2" id="18341" nazwa="Leśnica - Hermes" czas="3"/>
+     <przystanek numer="3" id="18343" nazwa="Mokrzańska" czas="5"/>
+     <przystanek numer="4" id="18347" nazwa="ŻAR" czas="7"/>
+     <przystanek numer="5" id="92058008" nazwa="Krępice - Wrocławska" czas="11"/>
+     <przystanek numer="6" id="91048792" nazwa="Żurawiniec" czas="14"/>
+     <przystanek numer="7" id="92058002" nazwa="Mrozów - Świetlica" czas="17"/>
+     <przystanek numer="8" id="92058004" nazwa="Mrozów - Wyzwolenia" czas="19"/>
+     <przystanek numer="9" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="27"/>
+     <przystanek numer="10" id="92056014" nazwa="Miękinia - stacja PKP" czas="29"/>
+     <przystanek numer="11" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="31"/>
+     <przystanek numer="12" id="92056010" nazwa="Klęka" czas="34"/>
+     <przystanek numer="13" id="92060012" nazwa="Zabór Wielki" czas="37"/>
+     <przystanek numer="14" id="92060010" nazwa="Zabór Mały" czas="39"/>
+     <przystanek numer="15" id="92060008" nazwa="Lubiatów" czas="41"/>
+     <przystanek numer="16" id="91048802" nazwa="Głoska - ul. Średzka" czas="46"/>
+     <przystanek numer="17" id="92056003" nazwa="Gąsiorów" czas="48"/>
+     <przystanek numer="18" id="92056005" nazwa="Księginice ul. Sportowa" czas="50"/>
+     <przystanek numer="19" id="92052017" nazwa="Księginice P&amp;R" czas="51"/>
+    </czasy>
+    <tabliczka id="3" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="11">
+       <min m="43">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="18" ozn="H" przyp="H - kurs do Księginic przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18312" nazwa="Średzka" ulica="Trzmielowicka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18312" nazwa="Średzka" czas="0"/>
+     <przystanek numer="1" id="18341" nazwa="Leśnica - Hermes" czas="2"/>
+     <przystanek numer="2" id="18343" nazwa="Mokrzańska" czas="4"/>
+     <przystanek numer="3" id="18347" nazwa="ŻAR" czas="6"/>
+     <przystanek numer="4" id="92058008" nazwa="Krępice - Wrocławska" czas="10"/>
+     <przystanek numer="5" id="91048792" nazwa="Żurawiniec" czas="13"/>
+     <przystanek numer="6" id="92058002" nazwa="Mrozów - Świetlica" czas="16"/>
+     <przystanek numer="7" id="92058004" nazwa="Mrozów - Wyzwolenia" czas="18"/>
+     <przystanek numer="8" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="26"/>
+     <przystanek numer="9" id="92056014" nazwa="Miękinia - stacja PKP" czas="28"/>
+     <przystanek numer="10" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="30"/>
+     <przystanek numer="11" id="92056010" nazwa="Klęka" czas="33"/>
+     <przystanek numer="12" id="92060012" nazwa="Zabór Wielki" czas="36"/>
+     <przystanek numer="13" id="92060010" nazwa="Zabór Mały" czas="38"/>
+     <przystanek numer="14" id="92060008" nazwa="Lubiatów" czas="40"/>
+     <przystanek numer="15" id="91048802" nazwa="Głoska - ul. Średzka" czas="45"/>
+     <przystanek numer="16" id="92056003" nazwa="Gąsiorów" czas="47"/>
+     <przystanek numer="17" id="92056005" nazwa="Księginice ul. Sportowa" czas="49"/>
+     <przystanek numer="18" id="92052017" nazwa="Księginice P&amp;R" czas="50"/>
+    </czasy>
+    <tabliczka id="4" mc="1">
+     <dzien nazwa="w dni robocze">
+      <godz h="11">
+       <min m="44">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="19" ozn="H" przyp="H - kurs do Księginic przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18351" nazwa="Eluarda" ulica="Dolnobrzeska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18351" nazwa="Eluarda" czas="0"/>
+     <przystanek numer="1" id="18303" nazwa="Zajazdowa" czas="1"/>
+     <przystanek numer="2" id="18305" nazwa="Krępicka - szkoła" czas="3"/>
+     <przystanek numer="3" id="18361" nazwa="Krępicka" czas="4"/>
+     <przystanek numer="4" id="18363" nazwa="Krępicka" czas="5"/>
+     <przystanek numer="5" id="18343" nazwa="Mokrzańska" czas="6"/>
+     <przystanek numer="6" id="18347" nazwa="ŻAR" czas="8"/>
+     <przystanek numer="7" id="92058008" nazwa="Krępice - Wrocławska" czas="12"/>
+     <przystanek numer="8" id="91048792" nazwa="Żurawiniec" czas="15"/>
+     <przystanek numer="9" id="92058002" nazwa="Mrozów - Świetlica" czas="18"/>
+     <przystanek numer="10" id="92058004" nazwa="Mrozów - Wyzwolenia" czas="20"/>
+     <przystanek numer="11" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="28"/>
+     <przystanek numer="12" id="92056014" nazwa="Miękinia - stacja PKP" czas="30"/>
+     <przystanek numer="13" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="32"/>
+     <przystanek numer="14" id="92056010" nazwa="Klęka" czas="35"/>
+     <przystanek numer="15" id="92060012" nazwa="Zabór Wielki" czas="38"/>
+     <przystanek numer="16" id="92060010" nazwa="Zabór Mały" czas="40"/>
+     <przystanek numer="17" id="92060008" nazwa="Lubiatów" czas="42"/>
+     <przystanek numer="18" id="91048802" nazwa="Głoska - ul. Średzka" czas="47"/>
+     <przystanek numer="19" id="92056003" nazwa="Gąsiorów" czas="49"/>
+     <przystanek numer="20" id="92056005" nazwa="Księginice ul. Sportowa" czas="51"/>
+     <przystanek numer="21" id="92052017" nazwa="Księginice P&amp;R" czas="52"/>
+    </czasy>
+    <tabliczka id="44" mc="1">
+     <dzien nazwa="w dni robocze">
+      <godz h="17">
+       <min m="21">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18303" nazwa="Zajazdowa" ulica="Krępicka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18303" nazwa="Zajazdowa" czas="0"/>
+     <przystanek numer="1" id="18305" nazwa="Krępicka - szkoła" czas="2"/>
+     <przystanek numer="2" id="18361" nazwa="Krępicka" czas="3"/>
+     <przystanek numer="3" id="18363" nazwa="Krępicka" czas="4"/>
+     <przystanek numer="4" id="18343" nazwa="Mokrzańska" czas="5"/>
+     <przystanek numer="5" id="18347" nazwa="ŻAR" czas="7"/>
+     <przystanek numer="6" id="92058008" nazwa="Krępice - Wrocławska" czas="11"/>
+     <przystanek numer="7" id="91048792" nazwa="Żurawiniec" czas="14"/>
+     <przystanek numer="8" id="92058002" nazwa="Mrozów - Świetlica" czas="17"/>
+     <przystanek numer="9" id="92058004" nazwa="Mrozów - Wyzwolenia" czas="19"/>
+     <przystanek numer="10" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="27"/>
+     <przystanek numer="11" id="92056014" nazwa="Miękinia - stacja PKP" czas="29"/>
+     <przystanek numer="12" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="31"/>
+     <przystanek numer="13" id="92056010" nazwa="Klęka" czas="34"/>
+     <przystanek numer="14" id="92060012" nazwa="Zabór Wielki" czas="37"/>
+     <przystanek numer="15" id="92060010" nazwa="Zabór Mały" czas="39"/>
+     <przystanek numer="16" id="92060008" nazwa="Lubiatów" czas="41"/>
+     <przystanek numer="17" id="91048802" nazwa="Głoska - ul. Średzka" czas="46"/>
+     <przystanek numer="18" id="92056003" nazwa="Gąsiorów" czas="48"/>
+     <przystanek numer="19" id="92056005" nazwa="Księginice ul. Sportowa" czas="50"/>
+     <przystanek numer="20" id="92052017" nazwa="Księginice P&amp;R" czas="51"/>
+    </czasy>
+    <tabliczka id="45" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="17">
+       <min m="22">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18305" nazwa="Krępicka - szkoła" ulica="Krępicka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18305" nazwa="Krępicka - szkoła" czas="0"/>
+     <przystanek numer="1" id="18361" nazwa="Krępicka" czas="1"/>
+     <przystanek numer="2" id="18363" nazwa="Krępicka" czas="2"/>
+     <przystanek numer="3" id="18343" nazwa="Mokrzańska" czas="3"/>
+     <przystanek numer="4" id="18347" nazwa="ŻAR" czas="5"/>
+     <przystanek numer="5" id="92058008" nazwa="Krępice - Wrocławska" czas="9"/>
+     <przystanek numer="6" id="91048792" nazwa="Żurawiniec" czas="12"/>
+     <przystanek numer="7" id="92058002" nazwa="Mrozów - Świetlica" czas="15"/>
+     <przystanek numer="8" id="92058004" nazwa="Mrozów - Wyzwolenia" czas="17"/>
+     <przystanek numer="9" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="25"/>
+     <przystanek numer="10" id="92056014" nazwa="Miękinia - stacja PKP" czas="27"/>
+     <przystanek numer="11" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="29"/>
+     <przystanek numer="12" id="92056010" nazwa="Klęka" czas="32"/>
+     <przystanek numer="13" id="92060012" nazwa="Zabór Wielki" czas="35"/>
+     <przystanek numer="14" id="92060010" nazwa="Zabór Mały" czas="37"/>
+     <przystanek numer="15" id="92060008" nazwa="Lubiatów" czas="39"/>
+     <przystanek numer="16" id="91048802" nazwa="Głoska - ul. Średzka" czas="44"/>
+     <przystanek numer="17" id="92056003" nazwa="Gąsiorów" czas="46"/>
+     <przystanek numer="18" id="92056005" nazwa="Księginice ul. Sportowa" czas="48"/>
+     <przystanek numer="19" id="92052017" nazwa="Księginice P&amp;R" czas="49"/>
+    </czasy>
+    <tabliczka id="46" mc="2">
+     <dzien nazwa="w dni robocze">
+      <godz h="17">
+       <min m="24">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18361" nazwa="Krępicka" ulica="Krępicka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18361" nazwa="Krępicka" czas="0"/>
+     <przystanek numer="1" id="18363" nazwa="Krępicka" czas="1"/>
+     <przystanek numer="2" id="18343" nazwa="Mokrzańska" czas="2"/>
+     <przystanek numer="3" id="18347" nazwa="ŻAR" czas="4"/>
+     <przystanek numer="4" id="92058008" nazwa="Krępice - Wrocławska" czas="8"/>
+     <przystanek numer="5" id="91048792" nazwa="Żurawiniec" czas="11"/>
+     <przystanek numer="6" id="92058002" nazwa="Mrozów - Świetlica" czas="14"/>
+     <przystanek numer="7" id="92058004" nazwa="Mrozów - Wyzwolenia" czas="16"/>
+     <przystanek numer="8" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="24"/>
+     <przystanek numer="9" id="92056014" nazwa="Miękinia - stacja PKP" czas="26"/>
+     <przystanek numer="10" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="28"/>
+     <przystanek numer="11" id="92056010" nazwa="Klęka" czas="31"/>
+     <przystanek numer="12" id="92060012" nazwa="Zabór Wielki" czas="34"/>
+     <przystanek numer="13" id="92060010" nazwa="Zabór Mały" czas="36"/>
+     <przystanek numer="14" id="92060008" nazwa="Lubiatów" czas="38"/>
+     <przystanek numer="15" id="91048802" nazwa="Głoska - ul. Średzka" czas="43"/>
+     <przystanek numer="16" id="92056003" nazwa="Gąsiorów" czas="45"/>
+     <przystanek numer="17" id="92056005" nazwa="Księginice ul. Sportowa" czas="47"/>
+     <przystanek numer="18" id="92052017" nazwa="Księginice P&amp;R" czas="48"/>
+    </czasy>
+    <tabliczka id="47" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="17">
+       <min m="25">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18363" nazwa="Krępicka" ulica="Mokrzańska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18363" nazwa="Krępicka" czas="0"/>
+     <przystanek numer="1" id="18343" nazwa="Mokrzańska" czas="1"/>
+     <przystanek numer="2" id="18347" nazwa="ŻAR" czas="3"/>
+     <przystanek numer="3" id="92058008" nazwa="Krępice - Wrocławska" czas="7"/>
+     <przystanek numer="4" id="91048792" nazwa="Żurawiniec" czas="10"/>
+     <przystanek numer="5" id="92058002" nazwa="Mrozów - Świetlica" czas="13"/>
+     <przystanek numer="6" id="92058004" nazwa="Mrozów - Wyzwolenia" czas="15"/>
+     <przystanek numer="7" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="23"/>
+     <przystanek numer="8" id="92056014" nazwa="Miękinia - stacja PKP" czas="25"/>
+     <przystanek numer="9" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="27"/>
+     <przystanek numer="10" id="92056010" nazwa="Klęka" czas="30"/>
+     <przystanek numer="11" id="92060012" nazwa="Zabór Wielki" czas="33"/>
+     <przystanek numer="12" id="92060010" nazwa="Zabór Mały" czas="35"/>
+     <przystanek numer="13" id="92060008" nazwa="Lubiatów" czas="37"/>
+     <przystanek numer="14" id="91048802" nazwa="Głoska - ul. Średzka" czas="42"/>
+     <przystanek numer="15" id="92056003" nazwa="Gąsiorów" czas="44"/>
+     <przystanek numer="16" id="92056005" nazwa="Księginice ul. Sportowa" czas="46"/>
+     <przystanek numer="17" id="92052017" nazwa="Księginice P&amp;R" czas="47"/>
+    </czasy>
+    <tabliczka id="48" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="17">
+       <min m="26">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18343" nazwa="Mokrzańska" ulica="Średzka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18343" nazwa="Mokrzańska" czas="0"/>
+     <przystanek numer="1" id="18347" nazwa="ŻAR" czas="2"/>
+     <przystanek numer="2" id="92058008" nazwa="Krępice - Wrocławska" czas="6"/>
+     <przystanek numer="3" id="91048792" nazwa="Żurawiniec" czas="9"/>
+     <przystanek numer="4" id="92058002" nazwa="Mrozów - Świetlica" czas="12"/>
+     <przystanek numer="5" id="92058004" nazwa="Mrozów - Wyzwolenia" czas="14"/>
+     <przystanek numer="6" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="22"/>
+     <przystanek numer="7" id="92056014" nazwa="Miękinia - stacja PKP" czas="24"/>
+     <przystanek numer="8" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="26"/>
+     <przystanek numer="9" id="92056010" nazwa="Klęka" czas="29"/>
+     <przystanek numer="10" id="92060012" nazwa="Zabór Wielki" czas="32"/>
+     <przystanek numer="11" id="92060010" nazwa="Zabór Mały" czas="34"/>
+     <przystanek numer="12" id="92060008" nazwa="Lubiatów" czas="36"/>
+     <przystanek numer="13" id="91048802" nazwa="Głoska - ul. Średzka" czas="41"/>
+     <przystanek numer="14" id="92056003" nazwa="Gąsiorów" czas="43"/>
+     <przystanek numer="15" id="92056005" nazwa="Księginice ul. Sportowa" czas="45"/>
+     <przystanek numer="16" id="92052017" nazwa="Księginice P&amp;R" czas="46"/>
+    </czasy>
+    <tabliczka id="6" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="11">
+       <min m="47">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="27">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18347" nazwa="ŻAR" ulica="Średzka" cechy="1">
+    <czasy>
+     <przystanek numer="0" id="18347" nazwa="ŻAR" czas="0"/>
+     <przystanek numer="1" id="92058008" nazwa="Krępice - Wrocławska" czas="4"/>
+     <przystanek numer="2" id="91048792" nazwa="Żurawiniec" czas="7"/>
+     <przystanek numer="3" id="92058002" nazwa="Mrozów - Świetlica" czas="10"/>
+     <przystanek numer="4" id="92058004" nazwa="Mrozów - Wyzwolenia" czas="12"/>
+     <przystanek numer="5" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="20"/>
+     <przystanek numer="6" id="92056014" nazwa="Miękinia - stacja PKP" czas="22"/>
+     <przystanek numer="7" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="24"/>
+     <przystanek numer="8" id="92056010" nazwa="Klęka" czas="27"/>
+     <przystanek numer="9" id="92060012" nazwa="Zabór Wielki" czas="30"/>
+     <przystanek numer="10" id="92060010" nazwa="Zabór Mały" czas="32"/>
+     <przystanek numer="11" id="92060008" nazwa="Lubiatów" czas="34"/>
+     <przystanek numer="12" id="91048802" nazwa="Głoska - ul. Średzka" czas="39"/>
+     <przystanek numer="13" id="92056003" nazwa="Gąsiorów" czas="41"/>
+     <przystanek numer="14" id="92056005" nazwa="Księginice ul. Sportowa" czas="43"/>
+     <przystanek numer="15" id="92052017" nazwa="Księginice P&amp;R" czas="44"/>
+    </czasy>
+    <tabliczka id="7" mc="2">
+     <dzien nazwa="w dni robocze">
+      <godz h="11">
+       <min m="49">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="29">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92058008" nazwa="Krępice - Wrocławska" ulica="Wrocławska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92058008" nazwa="Krępice - Wrocławska" czas="0"/>
+     <przystanek numer="1" id="91048792" nazwa="Żurawiniec" czas="3"/>
+     <przystanek numer="2" id="92058002" nazwa="Mrozów - Świetlica" czas="6"/>
+     <przystanek numer="3" id="92058004" nazwa="Mrozów - Wyzwolenia" czas="8"/>
+     <przystanek numer="4" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="16"/>
+     <przystanek numer="5" id="92056014" nazwa="Miękinia - stacja PKP" czas="18"/>
+     <przystanek numer="6" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="20"/>
+     <przystanek numer="7" id="92056010" nazwa="Klęka" czas="23"/>
+     <przystanek numer="8" id="92060012" nazwa="Zabór Wielki" czas="26"/>
+     <przystanek numer="9" id="92060010" nazwa="Zabór Mały" czas="28"/>
+     <przystanek numer="10" id="92060008" nazwa="Lubiatów" czas="30"/>
+     <przystanek numer="11" id="91048802" nazwa="Głoska - ul. Średzka" czas="35"/>
+     <przystanek numer="12" id="92056003" nazwa="Gąsiorów" czas="37"/>
+     <przystanek numer="13" id="92056005" nazwa="Księginice ul. Sportowa" czas="39"/>
+     <przystanek numer="14" id="92052017" nazwa="Księginice P&amp;R" czas="40"/>
+    </czasy>
+    <tabliczka id="8" mc="4" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="11">
+       <min m="53">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="33">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="91048792" nazwa="Żurawiniec" ulica=" " cechy="">
+    <czasy>
+     <przystanek numer="0" id="91048792" nazwa="Żurawiniec" czas="0"/>
+     <przystanek numer="1" id="92058002" nazwa="Mrozów - Świetlica" czas="3"/>
+     <przystanek numer="2" id="92058004" nazwa="Mrozów - Wyzwolenia" czas="5"/>
+     <przystanek numer="3" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="13"/>
+     <przystanek numer="4" id="92056014" nazwa="Miękinia - stacja PKP" czas="15"/>
+     <przystanek numer="5" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="17"/>
+     <przystanek numer="6" id="92056010" nazwa="Klęka" czas="20"/>
+     <przystanek numer="7" id="92060012" nazwa="Zabór Wielki" czas="23"/>
+     <przystanek numer="8" id="92060010" nazwa="Zabór Mały" czas="25"/>
+     <przystanek numer="9" id="92060008" nazwa="Lubiatów" czas="27"/>
+     <przystanek numer="10" id="91048802" nazwa="Głoska - ul. Średzka" czas="32"/>
+     <przystanek numer="11" id="92056003" nazwa="Gąsiorów" czas="34"/>
+     <przystanek numer="12" id="92056005" nazwa="Księginice ul. Sportowa" czas="36"/>
+     <przystanek numer="13" id="92052017" nazwa="Księginice P&amp;R" czas="37"/>
+    </czasy>
+    <tabliczka id="9" mc="3" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="11">
+       <min m="56">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="36">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92058002" nazwa="Mrozów - Świetlica" ulica="Chrobrego" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92058002" nazwa="Mrozów - Świetlica" czas="0"/>
+     <przystanek numer="1" id="92058004" nazwa="Mrozów - Wyzwolenia" czas="2"/>
+     <przystanek numer="2" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="10"/>
+     <przystanek numer="3" id="92056014" nazwa="Miękinia - stacja PKP" czas="12"/>
+     <przystanek numer="4" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="14"/>
+     <przystanek numer="5" id="92056010" nazwa="Klęka" czas="17"/>
+     <przystanek numer="6" id="92060012" nazwa="Zabór Wielki" czas="20"/>
+     <przystanek numer="7" id="92060010" nazwa="Zabór Mały" czas="22"/>
+     <przystanek numer="8" id="92060008" nazwa="Lubiatów" czas="24"/>
+     <przystanek numer="9" id="91048802" nazwa="Głoska - ul. Średzka" czas="29"/>
+     <przystanek numer="10" id="92056003" nazwa="Gąsiorów" czas="31"/>
+     <przystanek numer="11" id="92056005" nazwa="Księginice ul. Sportowa" czas="33"/>
+     <przystanek numer="12" id="92052017" nazwa="Księginice P&amp;R" czas="34"/>
+    </czasy>
+    <tabliczka id="10" mc="3">
+     <dzien nazwa="w dni robocze">
+      <godz h="11">
+       <min m="59">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="39">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92058004" nazwa="Mrozów - Wyzwolenia" ulica="Piastowska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92058004" nazwa="Mrozów - Wyzwolenia" czas="0"/>
+     <przystanek numer="1" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="8"/>
+     <przystanek numer="2" id="92056014" nazwa="Miękinia - stacja PKP" czas="10"/>
+     <przystanek numer="3" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="12"/>
+     <przystanek numer="4" id="92056010" nazwa="Klęka" czas="15"/>
+     <przystanek numer="5" id="92060012" nazwa="Zabór Wielki" czas="18"/>
+     <przystanek numer="6" id="92060010" nazwa="Zabór Mały" czas="20"/>
+     <przystanek numer="7" id="92060008" nazwa="Lubiatów" czas="22"/>
+     <przystanek numer="8" id="91048802" nazwa="Głoska - ul. Średzka" czas="27"/>
+     <przystanek numer="9" id="92056003" nazwa="Gąsiorów" czas="29"/>
+     <przystanek numer="10" id="92056005" nazwa="Księginice ul. Sportowa" czas="31"/>
+     <przystanek numer="11" id="92052017" nazwa="Księginice P&amp;R" czas="32"/>
+    </czasy>
+    <tabliczka id="11" mc="2">
+     <dzien nazwa="w dni robocze">
+      <godz h="12">
+       <min m="01">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="41">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92056011" nazwa="Miękinia - Urząd Gminy" ulica="Kościuszki" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="0"/>
+     <przystanek numer="1" id="92056014" nazwa="Miękinia - stacja PKP" czas="2"/>
+     <przystanek numer="2" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="4"/>
+     <przystanek numer="3" id="92056010" nazwa="Klęka" czas="7"/>
+     <przystanek numer="4" id="92060012" nazwa="Zabór Wielki" czas="10"/>
+     <przystanek numer="5" id="92060010" nazwa="Zabór Mały" czas="12"/>
+     <przystanek numer="6" id="92060008" nazwa="Lubiatów" czas="14"/>
+     <przystanek numer="7" id="91048802" nazwa="Głoska - ul. Średzka" czas="19"/>
+     <przystanek numer="8" id="92056003" nazwa="Gąsiorów" czas="21"/>
+     <przystanek numer="9" id="92056005" nazwa="Księginice ul. Sportowa" czas="23"/>
+     <przystanek numer="10" id="92052017" nazwa="Księginice P&amp;R" czas="24"/>
+    </czasy>
+    <tabliczka id="12" mc="8">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="35">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="09">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="49">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92056014" nazwa="Miękinia - stacja PKP" ulica="Kościuszki" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92056014" nazwa="Miękinia - stacja PKP" czas="0"/>
+     <przystanek numer="1" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="2"/>
+     <przystanek numer="2" id="92056010" nazwa="Klęka" czas="5"/>
+     <przystanek numer="3" id="92060012" nazwa="Zabór Wielki" czas="8"/>
+     <przystanek numer="4" id="92060010" nazwa="Zabór Mały" czas="10"/>
+     <przystanek numer="5" id="92060008" nazwa="Lubiatów" czas="12"/>
+     <przystanek numer="6" id="91048802" nazwa="Głoska - ul. Średzka" czas="17"/>
+     <przystanek numer="7" id="92056003" nazwa="Gąsiorów" czas="19"/>
+     <przystanek numer="8" id="92056005" nazwa="Księginice ul. Sportowa" czas="21"/>
+     <przystanek numer="9" id="92052017" nazwa="Księginice P&amp;R" czas="22"/>
+    </czasy>
+    <tabliczka id="14" mc="2">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="37">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="11">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="51">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92056012" nazwa="Miękinia - Urząd Gminy" ulica="Kościuszki" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="0"/>
+     <przystanek numer="1" id="92056010" nazwa="Klęka" czas="3"/>
+     <przystanek numer="2" id="92060012" nazwa="Zabór Wielki" czas="6"/>
+     <przystanek numer="3" id="92060010" nazwa="Zabór Mały" czas="8"/>
+     <przystanek numer="4" id="92060008" nazwa="Lubiatów" czas="10"/>
+     <przystanek numer="5" id="91048802" nazwa="Głoska - ul. Średzka" czas="15"/>
+     <przystanek numer="6" id="92056003" nazwa="Gąsiorów" czas="17"/>
+     <przystanek numer="7" id="92056005" nazwa="Księginice ul. Sportowa" czas="19"/>
+     <przystanek numer="8" id="92052017" nazwa="Księginice P&amp;R" czas="20"/>
+    </czasy>
+    <tabliczka id="15" mc="2">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="39">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="13">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="53">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92056010" nazwa="Klęka" ulica=" " cechy="">
+    <czasy>
+     <przystanek numer="0" id="92056010" nazwa="Klęka" czas="0"/>
+     <przystanek numer="1" id="92060012" nazwa="Zabór Wielki" czas="3"/>
+     <przystanek numer="2" id="92060010" nazwa="Zabór Mały" czas="5"/>
+     <przystanek numer="3" id="92060008" nazwa="Lubiatów" czas="7"/>
+     <przystanek numer="4" id="91048802" nazwa="Głoska - ul. Średzka" czas="12"/>
+     <przystanek numer="5" id="92056003" nazwa="Gąsiorów" czas="14"/>
+     <przystanek numer="6" id="92056005" nazwa="Księginice ul. Sportowa" czas="16"/>
+     <przystanek numer="7" id="92052017" nazwa="Księginice P&amp;R" czas="17"/>
+    </czasy>
+    <tabliczka id="17" mc="3" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="42">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="16">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="56">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92060012" nazwa="Zabór Wielki" ulica=" " cechy="">
+    <czasy>
+     <przystanek numer="0" id="92060012" nazwa="Zabór Wielki" czas="0"/>
+     <przystanek numer="1" id="92060010" nazwa="Zabór Mały" czas="2"/>
+     <przystanek numer="2" id="92060008" nazwa="Lubiatów" czas="4"/>
+     <przystanek numer="3" id="91048802" nazwa="Głoska - ul. Średzka" czas="9"/>
+     <przystanek numer="4" id="92056003" nazwa="Gąsiorów" czas="11"/>
+     <przystanek numer="5" id="92056005" nazwa="Księginice ul. Sportowa" czas="13"/>
+     <przystanek numer="6" id="92052017" nazwa="Księginice P&amp;R" czas="14"/>
+    </czasy>
+    <tabliczka id="18" mc="3" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="45">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="19">
+       </min>
+      </godz>
+      <godz h="17">
+       <min m="59">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92060010" nazwa="Zabór Mały" ulica=" " cechy="">
+    <czasy>
+     <przystanek numer="0" id="92060010" nazwa="Zabór Mały" czas="0"/>
+     <przystanek numer="1" id="92060008" nazwa="Lubiatów" czas="2"/>
+     <przystanek numer="2" id="91048802" nazwa="Głoska - ul. Średzka" czas="7"/>
+     <przystanek numer="3" id="92056003" nazwa="Gąsiorów" czas="9"/>
+     <przystanek numer="4" id="92056005" nazwa="Księginice ul. Sportowa" czas="11"/>
+     <przystanek numer="5" id="92052017" nazwa="Księginice P&amp;R" czas="12"/>
+    </czasy>
+    <tabliczka id="19" mc="2" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="47">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="21">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="01">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92060008" nazwa="Lubiatów" ulica=" " cechy="">
+    <czasy>
+     <przystanek numer="0" id="92060008" nazwa="Lubiatów" czas="0"/>
+     <przystanek numer="1" id="91048802" nazwa="Głoska - ul. Średzka" czas="5"/>
+     <przystanek numer="2" id="92056003" nazwa="Gąsiorów" czas="7"/>
+     <przystanek numer="3" id="92056005" nazwa="Księginice ul. Sportowa" czas="9"/>
+     <przystanek numer="4" id="92052017" nazwa="Księginice P&amp;R" czas="10"/>
+    </czasy>
+    <tabliczka id="20" mc="2" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="49">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="23">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="03">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="91048802" nazwa="Głoska - ul. Średzka" ulica="Średzka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="91048802" nazwa="Głoska - ul. Średzka" czas="0"/>
+     <przystanek numer="1" id="92056003" nazwa="Gąsiorów" czas="2"/>
+     <przystanek numer="2" id="92056005" nazwa="Księginice ul. Sportowa" czas="4"/>
+     <przystanek numer="3" id="92052017" nazwa="Księginice P&amp;R" czas="5"/>
+    </czasy>
+    <tabliczka id="21" mc="5" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="54">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="28">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="08">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92056003" nazwa="Gąsiorów" ulica="Wrocławska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92056003" nazwa="Gąsiorów" czas="0"/>
+     <przystanek numer="1" id="92056005" nazwa="Księginice ul. Sportowa" czas="2"/>
+     <przystanek numer="2" id="92052017" nazwa="Księginice P&amp;R" czas="3"/>
+    </czasy>
+    <tabliczka id="22" mc="2" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="56">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="30">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="10">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92056005" nazwa="Księginice ul. Sportowa" ulica="Sportowa" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92056005" nazwa="Księginice ul. Sportowa" czas="0"/>
+     <przystanek numer="1" id="92052017" nazwa="Księginice P&amp;R" czas="1"/>
+    </czasy>
+    <tabliczka id="23" mc="2">
+     <dzien nazwa="w dni robocze">
+      <godz h="5">
+       <min m="58">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="32">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="12">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92052017" nazwa="Księginice P&amp;R" ulica="Kolejowa" cechy="">
+    <czasy>
+    </czasy>
+   </przystanek>
+  </wariant>
+  <wariant id="3" nazwa="Księginice P&amp;R - LEŚNICA">
+   <przystanek id="92052017" nazwa="Księginice P&amp;R" ulica="Kolejowa" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92052017" nazwa="Księginice P&amp;R" czas="0"/>
+     <przystanek numer="1" id="92056006" nazwa="Księginice ul. Sportowa" czas="1"/>
+     <przystanek numer="2" id="92056004" nazwa="Gąsiorów" czas="3"/>
+     <przystanek numer="3" id="91048801" nazwa="Głoska - ul. Średzka" czas="6"/>
+     <przystanek numer="4" id="92060007" nazwa="Lubiatów" czas="11"/>
+     <przystanek numer="5" id="92060009" nazwa="Zabór Mały" czas="13"/>
+     <przystanek numer="6" id="92060011" nazwa="Zabór Wielki" czas="15"/>
+     <przystanek numer="7" id="92056009" nazwa="Klęka" czas="17"/>
+     <przystanek numer="8" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="20"/>
+     <przystanek numer="9" id="92056013" nazwa="Miękinia - stacja PKP" czas="21"/>
+     <przystanek numer="10" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="22"/>
+     <przystanek numer="11" id="92058003" nazwa="Mrozów - Wyzwolenia" czas="30"/>
+     <przystanek numer="12" id="92058001" nazwa="Mrozów - Świetlica" czas="32"/>
+     <przystanek numer="13" id="91048791" nazwa="Żurawiniec" czas="35"/>
+     <przystanek numer="14" id="92058007" nazwa="Krępice - Wrocławska" czas="37"/>
+     <przystanek numer="15" id="90094001" nazwa="Krępice" czas="40"/>
+     <przystanek numer="16" id="18346" nazwa="ŻAR" czas="44"/>
+     <przystanek numer="17" id="18344" nazwa="Mokrzańska" czas="48"/>
+     <przystanek numer="18" id="18342" nazwa="Leśnica - Hermes" czas="50"/>
+     <przystanek numer="19" id="18311" nazwa="Średzka" czas="51"/>
+     <przystanek numer="20" id="18392" nazwa="Rubczaka" czas="52"/>
+     <przystanek numer="21" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="53"/>
+     <przystanek numer="22" id="18388" nazwa="LEŚNICA" czas="54"/>
+    </czasy>
+    <tabliczka id="24" mc="0">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="12" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="49">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="18" ozn="H" przyp="H - kurs do Leśnicy przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92056006" nazwa="Księginice ul. Sportowa" ulica="Sportowa" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92056006" nazwa="Księginice ul. Sportowa" czas="0"/>
+     <przystanek numer="1" id="92056004" nazwa="Gąsiorów" czas="2"/>
+     <przystanek numer="2" id="91048801" nazwa="Głoska - ul. Średzka" czas="5"/>
+     <przystanek numer="3" id="92060007" nazwa="Lubiatów" czas="10"/>
+     <przystanek numer="4" id="92060009" nazwa="Zabór Mały" czas="12"/>
+     <przystanek numer="5" id="92060011" nazwa="Zabór Wielki" czas="14"/>
+     <przystanek numer="6" id="92056009" nazwa="Klęka" czas="16"/>
+     <przystanek numer="7" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="19"/>
+     <przystanek numer="8" id="92056013" nazwa="Miękinia - stacja PKP" czas="20"/>
+     <przystanek numer="9" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="21"/>
+     <przystanek numer="10" id="92058003" nazwa="Mrozów - Wyzwolenia" czas="29"/>
+     <przystanek numer="11" id="92058001" nazwa="Mrozów - Świetlica" czas="31"/>
+     <przystanek numer="12" id="91048791" nazwa="Żurawiniec" czas="34"/>
+     <przystanek numer="13" id="92058007" nazwa="Krępice - Wrocławska" czas="36"/>
+     <przystanek numer="14" id="90094001" nazwa="Krępice" czas="39"/>
+     <przystanek numer="15" id="18346" nazwa="ŻAR" czas="43"/>
+     <przystanek numer="16" id="18344" nazwa="Mokrzańska" czas="47"/>
+     <przystanek numer="17" id="18342" nazwa="Leśnica - Hermes" czas="49"/>
+     <przystanek numer="18" id="18311" nazwa="Średzka" czas="50"/>
+     <przystanek numer="19" id="18392" nazwa="Rubczaka" czas="51"/>
+     <przystanek numer="20" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="52"/>
+     <przystanek numer="21" id="18388" nazwa="LEŚNICA" czas="53"/>
+    </czasy>
+    <tabliczka id="25" mc="1">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="13" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="50">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="19" ozn="H" przyp="H - kurs do Leśnicy przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92056004" nazwa="Gąsiorów" ulica="Wrocławska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92056004" nazwa="Gąsiorów" czas="0"/>
+     <przystanek numer="1" id="91048801" nazwa="Głoska - ul. Średzka" czas="3"/>
+     <przystanek numer="2" id="92060007" nazwa="Lubiatów" czas="8"/>
+     <przystanek numer="3" id="92060009" nazwa="Zabór Mały" czas="10"/>
+     <przystanek numer="4" id="92060011" nazwa="Zabór Wielki" czas="12"/>
+     <przystanek numer="5" id="92056009" nazwa="Klęka" czas="14"/>
+     <przystanek numer="6" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="17"/>
+     <przystanek numer="7" id="92056013" nazwa="Miękinia - stacja PKP" czas="18"/>
+     <przystanek numer="8" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="19"/>
+     <przystanek numer="9" id="92058003" nazwa="Mrozów - Wyzwolenia" czas="27"/>
+     <przystanek numer="10" id="92058001" nazwa="Mrozów - Świetlica" czas="29"/>
+     <przystanek numer="11" id="91048791" nazwa="Żurawiniec" czas="32"/>
+     <przystanek numer="12" id="92058007" nazwa="Krępice - Wrocławska" czas="34"/>
+     <przystanek numer="13" id="90094001" nazwa="Krępice" czas="37"/>
+     <przystanek numer="14" id="18346" nazwa="ŻAR" czas="41"/>
+     <przystanek numer="15" id="18344" nazwa="Mokrzańska" czas="45"/>
+     <przystanek numer="16" id="18342" nazwa="Leśnica - Hermes" czas="47"/>
+     <przystanek numer="17" id="18311" nazwa="Średzka" czas="48"/>
+     <przystanek numer="18" id="18392" nazwa="Rubczaka" czas="49"/>
+     <przystanek numer="19" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="50"/>
+     <przystanek numer="20" id="18388" nazwa="LEŚNICA" czas="51"/>
+    </czasy>
+    <tabliczka id="26" mc="2" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="15" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="52">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="21" ozn="H" przyp="H - kurs do Leśnicy przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="91048801" nazwa="Głoska - ul. Średzka" ulica="Średzka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="91048801" nazwa="Głoska - ul. Średzka" czas="0"/>
+     <przystanek numer="1" id="92060007" nazwa="Lubiatów" czas="5"/>
+     <przystanek numer="2" id="92060009" nazwa="Zabór Mały" czas="7"/>
+     <przystanek numer="3" id="92060011" nazwa="Zabór Wielki" czas="9"/>
+     <przystanek numer="4" id="92056009" nazwa="Klęka" czas="11"/>
+     <przystanek numer="5" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="14"/>
+     <przystanek numer="6" id="92056013" nazwa="Miękinia - stacja PKP" czas="15"/>
+     <przystanek numer="7" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="16"/>
+     <przystanek numer="8" id="92058003" nazwa="Mrozów - Wyzwolenia" czas="24"/>
+     <przystanek numer="9" id="92058001" nazwa="Mrozów - Świetlica" czas="26"/>
+     <przystanek numer="10" id="91048791" nazwa="Żurawiniec" czas="29"/>
+     <przystanek numer="11" id="92058007" nazwa="Krępice - Wrocławska" czas="31"/>
+     <przystanek numer="12" id="90094001" nazwa="Krępice" czas="34"/>
+     <przystanek numer="13" id="18346" nazwa="ŻAR" czas="38"/>
+     <przystanek numer="14" id="18344" nazwa="Mokrzańska" czas="42"/>
+     <przystanek numer="15" id="18342" nazwa="Leśnica - Hermes" czas="44"/>
+     <przystanek numer="16" id="18311" nazwa="Średzka" czas="45"/>
+     <przystanek numer="17" id="18392" nazwa="Rubczaka" czas="46"/>
+     <przystanek numer="18" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="47"/>
+     <przystanek numer="19" id="18388" nazwa="LEŚNICA" czas="48"/>
+    </czasy>
+    <tabliczka id="27" mc="3" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="18" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="55">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="24" ozn="H" przyp="H - kurs do Leśnicy przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92060007" nazwa="Lubiatów" ulica=" " cechy="">
+    <czasy>
+     <przystanek numer="0" id="92060007" nazwa="Lubiatów" czas="0"/>
+     <przystanek numer="1" id="92060009" nazwa="Zabór Mały" czas="2"/>
+     <przystanek numer="2" id="92060011" nazwa="Zabór Wielki" czas="4"/>
+     <przystanek numer="3" id="92056009" nazwa="Klęka" czas="6"/>
+     <przystanek numer="4" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="9"/>
+     <przystanek numer="5" id="92056013" nazwa="Miękinia - stacja PKP" czas="10"/>
+     <przystanek numer="6" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="11"/>
+     <przystanek numer="7" id="92058003" nazwa="Mrozów - Wyzwolenia" czas="19"/>
+     <przystanek numer="8" id="92058001" nazwa="Mrozów - Świetlica" czas="21"/>
+     <przystanek numer="9" id="91048791" nazwa="Żurawiniec" czas="24"/>
+     <przystanek numer="10" id="92058007" nazwa="Krępice - Wrocławska" czas="26"/>
+     <przystanek numer="11" id="90094001" nazwa="Krępice" czas="29"/>
+     <przystanek numer="12" id="18346" nazwa="ŻAR" czas="33"/>
+     <przystanek numer="13" id="18344" nazwa="Mokrzańska" czas="37"/>
+     <przystanek numer="14" id="18342" nazwa="Leśnica - Hermes" czas="39"/>
+     <przystanek numer="15" id="18311" nazwa="Średzka" czas="40"/>
+     <przystanek numer="16" id="18392" nazwa="Rubczaka" czas="41"/>
+     <przystanek numer="17" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="42"/>
+     <przystanek numer="18" id="18388" nazwa="LEŚNICA" czas="43"/>
+    </czasy>
+    <tabliczka id="28" mc="5" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="23" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="00">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="29" ozn="H" przyp="H - kurs do Leśnicy przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92060009" nazwa="Zabór Mały" ulica=" " cechy="">
+    <czasy>
+     <przystanek numer="0" id="92060009" nazwa="Zabór Mały" czas="0"/>
+     <przystanek numer="1" id="92060011" nazwa="Zabór Wielki" czas="2"/>
+     <przystanek numer="2" id="92056009" nazwa="Klęka" czas="4"/>
+     <przystanek numer="3" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="7"/>
+     <przystanek numer="4" id="92056013" nazwa="Miękinia - stacja PKP" czas="8"/>
+     <przystanek numer="5" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="9"/>
+     <przystanek numer="6" id="92058003" nazwa="Mrozów - Wyzwolenia" czas="17"/>
+     <przystanek numer="7" id="92058001" nazwa="Mrozów - Świetlica" czas="19"/>
+     <przystanek numer="8" id="91048791" nazwa="Żurawiniec" czas="22"/>
+     <przystanek numer="9" id="92058007" nazwa="Krępice - Wrocławska" czas="24"/>
+     <przystanek numer="10" id="90094001" nazwa="Krępice" czas="27"/>
+     <przystanek numer="11" id="18346" nazwa="ŻAR" czas="31"/>
+     <przystanek numer="12" id="18344" nazwa="Mokrzańska" czas="35"/>
+     <przystanek numer="13" id="18342" nazwa="Leśnica - Hermes" czas="37"/>
+     <przystanek numer="14" id="18311" nazwa="Średzka" czas="38"/>
+     <przystanek numer="15" id="18392" nazwa="Rubczaka" czas="39"/>
+     <przystanek numer="16" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="40"/>
+     <przystanek numer="17" id="18388" nazwa="LEŚNICA" czas="41"/>
+    </czasy>
+    <tabliczka id="29" mc="2" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="25" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="02">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="31" ozn="H" przyp="H - kurs do Leśnicy przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92060011" nazwa="Zabór Wielki" ulica=" " cechy="">
+    <czasy>
+     <przystanek numer="0" id="92060011" nazwa="Zabór Wielki" czas="0"/>
+     <przystanek numer="1" id="92056009" nazwa="Klęka" czas="2"/>
+     <przystanek numer="2" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="5"/>
+     <przystanek numer="3" id="92056013" nazwa="Miękinia - stacja PKP" czas="6"/>
+     <przystanek numer="4" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="7"/>
+     <przystanek numer="5" id="92058003" nazwa="Mrozów - Wyzwolenia" czas="15"/>
+     <przystanek numer="6" id="92058001" nazwa="Mrozów - Świetlica" czas="17"/>
+     <przystanek numer="7" id="91048791" nazwa="Żurawiniec" czas="20"/>
+     <przystanek numer="8" id="92058007" nazwa="Krępice - Wrocławska" czas="22"/>
+     <przystanek numer="9" id="90094001" nazwa="Krępice" czas="25"/>
+     <przystanek numer="10" id="18346" nazwa="ŻAR" czas="29"/>
+     <przystanek numer="11" id="18344" nazwa="Mokrzańska" czas="33"/>
+     <przystanek numer="12" id="18342" nazwa="Leśnica - Hermes" czas="35"/>
+     <przystanek numer="13" id="18311" nazwa="Średzka" czas="36"/>
+     <przystanek numer="14" id="18392" nazwa="Rubczaka" czas="37"/>
+     <przystanek numer="15" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="38"/>
+     <przystanek numer="16" id="18388" nazwa="LEŚNICA" czas="39"/>
+    </czasy>
+    <tabliczka id="30" mc="2" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="27" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="04">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="33" ozn="H" przyp="H - kurs do Leśnicy przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92056009" nazwa="Klęka" ulica=" " cechy="">
+    <czasy>
+     <przystanek numer="0" id="92056009" nazwa="Klęka" czas="0"/>
+     <przystanek numer="1" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="3"/>
+     <przystanek numer="2" id="92056013" nazwa="Miękinia - stacja PKP" czas="4"/>
+     <przystanek numer="3" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="5"/>
+     <przystanek numer="4" id="92058003" nazwa="Mrozów - Wyzwolenia" czas="13"/>
+     <przystanek numer="5" id="92058001" nazwa="Mrozów - Świetlica" czas="15"/>
+     <przystanek numer="6" id="91048791" nazwa="Żurawiniec" czas="18"/>
+     <przystanek numer="7" id="92058007" nazwa="Krępice - Wrocławska" czas="20"/>
+     <przystanek numer="8" id="90094001" nazwa="Krępice" czas="23"/>
+     <przystanek numer="9" id="18346" nazwa="ŻAR" czas="27"/>
+     <przystanek numer="10" id="18344" nazwa="Mokrzańska" czas="31"/>
+     <przystanek numer="11" id="18342" nazwa="Leśnica - Hermes" czas="33"/>
+     <przystanek numer="12" id="18311" nazwa="Średzka" czas="34"/>
+     <przystanek numer="13" id="18392" nazwa="Rubczaka" czas="35"/>
+     <przystanek numer="14" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="36"/>
+     <przystanek numer="15" id="18388" nazwa="LEŚNICA" czas="37"/>
+    </czasy>
+    <tabliczka id="31" mc="2" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="29" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="06">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="35" ozn="H" przyp="H - kurs do Leśnicy przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92056011" nazwa="Miękinia - Urząd Gminy" ulica="Kościuszki" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="0"/>
+     <przystanek numer="1" id="92056013" nazwa="Miękinia - stacja PKP" czas="1"/>
+     <przystanek numer="2" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="2"/>
+     <przystanek numer="3" id="92058003" nazwa="Mrozów - Wyzwolenia" czas="10"/>
+     <przystanek numer="4" id="92058001" nazwa="Mrozów - Świetlica" czas="12"/>
+     <przystanek numer="5" id="91048791" nazwa="Żurawiniec" czas="15"/>
+     <przystanek numer="6" id="92058007" nazwa="Krępice - Wrocławska" czas="17"/>
+     <przystanek numer="7" id="90094001" nazwa="Krępice" czas="20"/>
+     <przystanek numer="8" id="18346" nazwa="ŻAR" czas="24"/>
+     <przystanek numer="9" id="18344" nazwa="Mokrzańska" czas="28"/>
+     <przystanek numer="10" id="18342" nazwa="Leśnica - Hermes" czas="30"/>
+     <przystanek numer="11" id="18311" nazwa="Średzka" czas="31"/>
+     <przystanek numer="12" id="18392" nazwa="Rubczaka" czas="32"/>
+     <przystanek numer="13" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="33"/>
+     <przystanek numer="14" id="18388" nazwa="LEŚNICA" czas="34"/>
+    </czasy>
+    <tabliczka id="13" mc="3">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="32" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="09">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="38" ozn="H" przyp="H - kurs do Leśnicy przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92056013" nazwa="Miękinia - stacja PKP" ulica="Kościuszki" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92056013" nazwa="Miękinia - stacja PKP" czas="0"/>
+     <przystanek numer="1" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="1"/>
+     <przystanek numer="2" id="92058003" nazwa="Mrozów - Wyzwolenia" czas="9"/>
+     <przystanek numer="3" id="92058001" nazwa="Mrozów - Świetlica" czas="11"/>
+     <przystanek numer="4" id="91048791" nazwa="Żurawiniec" czas="14"/>
+     <przystanek numer="5" id="92058007" nazwa="Krępice - Wrocławska" czas="16"/>
+     <przystanek numer="6" id="90094001" nazwa="Krępice" czas="19"/>
+     <przystanek numer="7" id="18346" nazwa="ŻAR" czas="23"/>
+     <przystanek numer="8" id="18344" nazwa="Mokrzańska" czas="27"/>
+     <przystanek numer="9" id="18342" nazwa="Leśnica - Hermes" czas="29"/>
+     <przystanek numer="10" id="18311" nazwa="Średzka" czas="30"/>
+     <przystanek numer="11" id="18392" nazwa="Rubczaka" czas="31"/>
+     <przystanek numer="12" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="32"/>
+     <przystanek numer="13" id="18388" nazwa="LEŚNICA" czas="33"/>
+    </czasy>
+    <tabliczka id="32" mc="1">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="33" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="10">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="39" ozn="H" przyp="H - kurs do Leśnicy przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92056012" nazwa="Miękinia - Urząd Gminy" ulica="Kościuszki" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="0"/>
+     <przystanek numer="1" id="92058003" nazwa="Mrozów - Wyzwolenia" czas="8"/>
+     <przystanek numer="2" id="92058001" nazwa="Mrozów - Świetlica" czas="10"/>
+     <przystanek numer="3" id="91048791" nazwa="Żurawiniec" czas="13"/>
+     <przystanek numer="4" id="92058007" nazwa="Krępice - Wrocławska" czas="15"/>
+     <przystanek numer="5" id="90094001" nazwa="Krępice" czas="18"/>
+     <przystanek numer="6" id="18346" nazwa="ŻAR" czas="22"/>
+     <przystanek numer="7" id="18344" nazwa="Mokrzańska" czas="26"/>
+     <przystanek numer="8" id="18342" nazwa="Leśnica - Hermes" czas="28"/>
+     <przystanek numer="9" id="18311" nazwa="Średzka" czas="29"/>
+     <przystanek numer="10" id="18392" nazwa="Rubczaka" czas="30"/>
+     <przystanek numer="11" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="31"/>
+     <przystanek numer="12" id="18388" nazwa="LEŚNICA" czas="32"/>
+    </czasy>
+    <tabliczka id="16" mc="1">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="34" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="11">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="40" ozn="H" przyp="H - kurs do Leśnicy przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92058003" nazwa="Mrozów - Wyzwolenia" ulica="Piastowska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92058003" nazwa="Mrozów - Wyzwolenia" czas="0"/>
+     <przystanek numer="1" id="92058001" nazwa="Mrozów - Świetlica" czas="2"/>
+     <przystanek numer="2" id="91048791" nazwa="Żurawiniec" czas="5"/>
+     <przystanek numer="3" id="92058007" nazwa="Krępice - Wrocławska" czas="7"/>
+     <przystanek numer="4" id="90094001" nazwa="Krępice" czas="10"/>
+     <przystanek numer="5" id="18346" nazwa="ŻAR" czas="14"/>
+     <przystanek numer="6" id="18344" nazwa="Mokrzańska" czas="18"/>
+     <przystanek numer="7" id="18342" nazwa="Leśnica - Hermes" czas="20"/>
+     <przystanek numer="8" id="18311" nazwa="Średzka" czas="21"/>
+     <przystanek numer="9" id="18392" nazwa="Rubczaka" czas="22"/>
+     <przystanek numer="10" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="23"/>
+     <przystanek numer="11" id="18388" nazwa="LEŚNICA" czas="24"/>
+    </czasy>
+    <tabliczka id="33" mc="8">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="42" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="19">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="48" ozn="H" przyp="H - kurs do Leśnicy przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92058001" nazwa="Mrozów - Świetlica" ulica="Chrobrego" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92058001" nazwa="Mrozów - Świetlica" czas="0"/>
+     <przystanek numer="1" id="91048791" nazwa="Żurawiniec" czas="3"/>
+     <przystanek numer="2" id="92058007" nazwa="Krępice - Wrocławska" czas="5"/>
+     <przystanek numer="3" id="90094001" nazwa="Krępice" czas="8"/>
+     <przystanek numer="4" id="18346" nazwa="ŻAR" czas="12"/>
+     <przystanek numer="5" id="18344" nazwa="Mokrzańska" czas="16"/>
+     <przystanek numer="6" id="18342" nazwa="Leśnica - Hermes" czas="18"/>
+     <przystanek numer="7" id="18311" nazwa="Średzka" czas="19"/>
+     <przystanek numer="8" id="18392" nazwa="Rubczaka" czas="20"/>
+     <przystanek numer="9" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="21"/>
+     <przystanek numer="10" id="18388" nazwa="LEŚNICA" czas="22"/>
+    </czasy>
+    <tabliczka id="34" mc="2">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="44" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="21">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="50" ozn="H" przyp="H - kurs do Leśnicy przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="91048791" nazwa="Żurawiniec" ulica=" " cechy="">
+    <czasy>
+     <przystanek numer="0" id="91048791" nazwa="Żurawiniec" czas="0"/>
+     <przystanek numer="1" id="92058007" nazwa="Krępice - Wrocławska" czas="2"/>
+     <przystanek numer="2" id="90094001" nazwa="Krępice" czas="5"/>
+     <przystanek numer="3" id="18346" nazwa="ŻAR" czas="9"/>
+     <przystanek numer="4" id="18344" nazwa="Mokrzańska" czas="13"/>
+     <przystanek numer="5" id="18342" nazwa="Leśnica - Hermes" czas="15"/>
+     <przystanek numer="6" id="18311" nazwa="Średzka" czas="16"/>
+     <przystanek numer="7" id="18392" nazwa="Rubczaka" czas="17"/>
+     <przystanek numer="8" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="18"/>
+     <przystanek numer="9" id="18388" nazwa="LEŚNICA" czas="19"/>
+    </czasy>
+    <tabliczka id="35" mc="3" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="47" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="24">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="53" ozn="H" przyp="H - kurs do Leśnicy przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92058007" nazwa="Krępice - Wrocławska" ulica="Wrocławska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92058007" nazwa="Krępice - Wrocławska" czas="0"/>
+     <przystanek numer="1" id="90094001" nazwa="Krępice" czas="3"/>
+     <przystanek numer="2" id="18346" nazwa="ŻAR" czas="7"/>
+     <przystanek numer="3" id="18344" nazwa="Mokrzańska" czas="11"/>
+     <przystanek numer="4" id="18342" nazwa="Leśnica - Hermes" czas="13"/>
+     <przystanek numer="5" id="18311" nazwa="Średzka" czas="14"/>
+     <przystanek numer="6" id="18392" nazwa="Rubczaka" czas="15"/>
+     <przystanek numer="7" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="16"/>
+     <przystanek numer="8" id="18388" nazwa="LEŚNICA" czas="17"/>
+    </czasy>
+    <tabliczka id="36" mc="2" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="49" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="26">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="55" ozn="H" przyp="H - kurs do Leśnicy przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="90094001" nazwa="Krępice" ulica="Średzka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="90094001" nazwa="Krępice" czas="0"/>
+     <przystanek numer="1" id="18346" nazwa="ŻAR" czas="4"/>
+     <przystanek numer="2" id="18344" nazwa="Mokrzańska" czas="8"/>
+     <przystanek numer="3" id="18342" nazwa="Leśnica - Hermes" czas="10"/>
+     <przystanek numer="4" id="18311" nazwa="Średzka" czas="11"/>
+     <przystanek numer="5" id="18392" nazwa="Rubczaka" czas="12"/>
+     <przystanek numer="6" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="13"/>
+     <przystanek numer="7" id="18388" nazwa="LEŚNICA" czas="14"/>
+    </czasy>
+    <tabliczka id="37" mc="3">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="52" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="29">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="58" ozn="H" przyp="H - kurs do Leśnicy przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18346" nazwa="ŻAR" ulica="Średzka" cechy="1">
+    <czasy>
+     <przystanek numer="0" id="18346" nazwa="ŻAR" czas="0"/>
+     <przystanek numer="1" id="18344" nazwa="Mokrzańska" czas="4"/>
+     <przystanek numer="2" id="18342" nazwa="Leśnica - Hermes" czas="6"/>
+     <przystanek numer="3" id="18311" nazwa="Średzka" czas="7"/>
+     <przystanek numer="4" id="18392" nazwa="Rubczaka" czas="8"/>
+     <przystanek numer="5" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="9"/>
+     <przystanek numer="6" id="18388" nazwa="LEŚNICA" czas="10"/>
+    </czasy>
+    <tabliczka id="38" mc="3">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="56" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="32">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="01" ozn="H" przyp="H - kurs do Leśnicy przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18344" nazwa="Mokrzańska" ulica="Średzka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18344" nazwa="Mokrzańska" czas="0"/>
+     <przystanek numer="1" id="18342" nazwa="Leśnica - Hermes" czas="2"/>
+     <przystanek numer="2" id="18311" nazwa="Średzka" czas="3"/>
+     <przystanek numer="3" id="18392" nazwa="Rubczaka" czas="4"/>
+     <przystanek numer="4" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="5"/>
+     <przystanek numer="5" id="18388" nazwa="LEŚNICA" czas="6"/>
+    </czasy>
+    <tabliczka id="39" mc="3" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="7">
+       <min m="00" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="35">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18342" nazwa="Leśnica - Hermes" ulica="Średzka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18342" nazwa="Leśnica - Hermes" czas="0"/>
+     <przystanek numer="1" id="18311" nazwa="Średzka" czas="1"/>
+     <przystanek numer="2" id="18392" nazwa="Rubczaka" czas="2"/>
+     <przystanek numer="3" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="3"/>
+     <przystanek numer="4" id="18388" nazwa="LEŚNICA" czas="4"/>
+    </czasy>
+    <tabliczka id="40" mc="2">
+     <dzien nazwa="w dni robocze">
+      <godz h="7">
+       <min m="02" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="37">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18311" nazwa="Średzka" ulica="Trzmielowicka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18311" nazwa="Średzka" czas="0"/>
+     <przystanek numer="1" id="18392" nazwa="Rubczaka" czas="1"/>
+     <przystanek numer="2" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="2"/>
+     <przystanek numer="3" id="18388" nazwa="LEŚNICA" czas="3"/>
+    </czasy>
+    <tabliczka id="41" mc="1">
+     <dzien nazwa="w dni robocze">
+      <godz h="7">
+       <min m="03" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="38">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="10" ozn="H" przyp="H - kurs do Leśnicy przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18392" nazwa="Rubczaka" ulica="Rubczaka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18392" nazwa="Rubczaka" czas="0"/>
+     <przystanek numer="1" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="1"/>
+     <przystanek numer="2" id="18388" nazwa="LEŚNICA" czas="2"/>
+    </czasy>
+    <tabliczka id="42" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="7">
+       <min m="04" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="39">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="11" ozn="H" przyp="H - kurs do Leśnicy przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18390" nazwa="Rubczaka (Stacja kolejowa)" ulica="Rubczaka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="0"/>
+     <przystanek numer="1" id="18388" nazwa="LEŚNICA" czas="1"/>
+    </czasy>
+    <tabliczka id="43" mc="1">
+     <dzien nazwa="w dni robocze">
+      <godz h="7">
+       <min m="05" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="40">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="12" ozn="H" przyp="H - kurs do Leśnicy przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18388" nazwa="LEŚNICA" ulica="Płońskiego" cechy="">
+    <czasy>
+    </czasy>
+   </przystanek>
+  </wariant>
+  <wariant id="4" nazwa="Księginice P&amp;R - LEŚNICA" obj="Krępicka">
+   <przystanek id="92052017" nazwa="Księginice P&amp;R" ulica="Kolejowa" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92052017" nazwa="Księginice P&amp;R" czas="0"/>
+     <przystanek numer="1" id="92056006" nazwa="Księginice ul. Sportowa" czas="1"/>
+     <przystanek numer="2" id="92056004" nazwa="Gąsiorów" czas="3"/>
+     <przystanek numer="3" id="91048801" nazwa="Głoska - ul. Średzka" czas="6"/>
+     <przystanek numer="4" id="92060007" nazwa="Lubiatów" czas="11"/>
+     <przystanek numer="5" id="92060009" nazwa="Zabór Mały" czas="13"/>
+     <przystanek numer="6" id="92060011" nazwa="Zabór Wielki" czas="15"/>
+     <przystanek numer="7" id="92056009" nazwa="Klęka" czas="17"/>
+     <przystanek numer="8" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="20"/>
+     <przystanek numer="9" id="92056013" nazwa="Miękinia - stacja PKP" czas="21"/>
+     <przystanek numer="10" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="22"/>
+     <przystanek numer="11" id="92058003" nazwa="Mrozów - Wyzwolenia" czas="30"/>
+     <przystanek numer="12" id="92058001" nazwa="Mrozów - Świetlica" czas="32"/>
+     <przystanek numer="13" id="91048791" nazwa="Żurawiniec" czas="35"/>
+     <przystanek numer="14" id="92058007" nazwa="Krępice - Wrocławska" czas="37"/>
+     <przystanek numer="15" id="90094001" nazwa="Krępice" czas="40"/>
+     <przystanek numer="16" id="18346" nazwa="ŻAR" czas="44"/>
+     <przystanek numer="17" id="18344" nazwa="Mokrzańska" czas="48"/>
+     <przystanek numer="18" id="18342" nazwa="Leśnica - Hermes" czas="50"/>
+     <przystanek numer="19" id="18311" nazwa="Średzka" czas="51"/>
+     <przystanek numer="20" id="18392" nazwa="Rubczaka" czas="52"/>
+     <przystanek numer="21" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="53"/>
+     <przystanek numer="22" id="18388" nazwa="LEŚNICA" czas="54"/>
+    </czasy>
+    <tabliczka id="24" mc="0">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="12" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="49">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="18" ozn="H" przyp="H - kurs do Leśnicy przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92056006" nazwa="Księginice ul. Sportowa" ulica="Sportowa" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92056006" nazwa="Księginice ul. Sportowa" czas="0"/>
+     <przystanek numer="1" id="92056004" nazwa="Gąsiorów" czas="2"/>
+     <przystanek numer="2" id="91048801" nazwa="Głoska - ul. Średzka" czas="5"/>
+     <przystanek numer="3" id="92060007" nazwa="Lubiatów" czas="10"/>
+     <przystanek numer="4" id="92060009" nazwa="Zabór Mały" czas="12"/>
+     <przystanek numer="5" id="92060011" nazwa="Zabór Wielki" czas="14"/>
+     <przystanek numer="6" id="92056009" nazwa="Klęka" czas="16"/>
+     <przystanek numer="7" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="19"/>
+     <przystanek numer="8" id="92056013" nazwa="Miękinia - stacja PKP" czas="20"/>
+     <przystanek numer="9" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="21"/>
+     <przystanek numer="10" id="92058003" nazwa="Mrozów - Wyzwolenia" czas="29"/>
+     <przystanek numer="11" id="92058001" nazwa="Mrozów - Świetlica" czas="31"/>
+     <przystanek numer="12" id="91048791" nazwa="Żurawiniec" czas="34"/>
+     <przystanek numer="13" id="92058007" nazwa="Krępice - Wrocławska" czas="36"/>
+     <przystanek numer="14" id="90094001" nazwa="Krępice" czas="39"/>
+     <przystanek numer="15" id="18346" nazwa="ŻAR" czas="43"/>
+     <przystanek numer="16" id="18344" nazwa="Mokrzańska" czas="47"/>
+     <przystanek numer="17" id="18342" nazwa="Leśnica - Hermes" czas="49"/>
+     <przystanek numer="18" id="18311" nazwa="Średzka" czas="50"/>
+     <przystanek numer="19" id="18392" nazwa="Rubczaka" czas="51"/>
+     <przystanek numer="20" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="52"/>
+     <przystanek numer="21" id="18388" nazwa="LEŚNICA" czas="53"/>
+    </czasy>
+    <tabliczka id="25" mc="1">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="13" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="50">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="19" ozn="H" przyp="H - kurs do Leśnicy przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92056004" nazwa="Gąsiorów" ulica="Wrocławska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92056004" nazwa="Gąsiorów" czas="0"/>
+     <przystanek numer="1" id="91048801" nazwa="Głoska - ul. Średzka" czas="3"/>
+     <przystanek numer="2" id="92060007" nazwa="Lubiatów" czas="8"/>
+     <przystanek numer="3" id="92060009" nazwa="Zabór Mały" czas="10"/>
+     <przystanek numer="4" id="92060011" nazwa="Zabór Wielki" czas="12"/>
+     <przystanek numer="5" id="92056009" nazwa="Klęka" czas="14"/>
+     <przystanek numer="6" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="17"/>
+     <przystanek numer="7" id="92056013" nazwa="Miękinia - stacja PKP" czas="18"/>
+     <przystanek numer="8" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="19"/>
+     <przystanek numer="9" id="92058003" nazwa="Mrozów - Wyzwolenia" czas="27"/>
+     <przystanek numer="10" id="92058001" nazwa="Mrozów - Świetlica" czas="29"/>
+     <przystanek numer="11" id="91048791" nazwa="Żurawiniec" czas="32"/>
+     <przystanek numer="12" id="92058007" nazwa="Krępice - Wrocławska" czas="34"/>
+     <przystanek numer="13" id="90094001" nazwa="Krępice" czas="37"/>
+     <przystanek numer="14" id="18346" nazwa="ŻAR" czas="41"/>
+     <przystanek numer="15" id="18344" nazwa="Mokrzańska" czas="45"/>
+     <przystanek numer="16" id="18342" nazwa="Leśnica - Hermes" czas="47"/>
+     <przystanek numer="17" id="18311" nazwa="Średzka" czas="48"/>
+     <przystanek numer="18" id="18392" nazwa="Rubczaka" czas="49"/>
+     <przystanek numer="19" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="50"/>
+     <przystanek numer="20" id="18388" nazwa="LEŚNICA" czas="51"/>
+    </czasy>
+    <tabliczka id="26" mc="2" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="15" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="52">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="21" ozn="H" przyp="H - kurs do Leśnicy przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="91048801" nazwa="Głoska - ul. Średzka" ulica="Średzka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="91048801" nazwa="Głoska - ul. Średzka" czas="0"/>
+     <przystanek numer="1" id="92060007" nazwa="Lubiatów" czas="5"/>
+     <przystanek numer="2" id="92060009" nazwa="Zabór Mały" czas="7"/>
+     <przystanek numer="3" id="92060011" nazwa="Zabór Wielki" czas="9"/>
+     <przystanek numer="4" id="92056009" nazwa="Klęka" czas="11"/>
+     <przystanek numer="5" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="14"/>
+     <przystanek numer="6" id="92056013" nazwa="Miękinia - stacja PKP" czas="15"/>
+     <przystanek numer="7" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="16"/>
+     <przystanek numer="8" id="92058003" nazwa="Mrozów - Wyzwolenia" czas="24"/>
+     <przystanek numer="9" id="92058001" nazwa="Mrozów - Świetlica" czas="26"/>
+     <przystanek numer="10" id="91048791" nazwa="Żurawiniec" czas="29"/>
+     <przystanek numer="11" id="92058007" nazwa="Krępice - Wrocławska" czas="31"/>
+     <przystanek numer="12" id="90094001" nazwa="Krępice" czas="34"/>
+     <przystanek numer="13" id="18346" nazwa="ŻAR" czas="38"/>
+     <przystanek numer="14" id="18344" nazwa="Mokrzańska" czas="42"/>
+     <przystanek numer="15" id="18342" nazwa="Leśnica - Hermes" czas="44"/>
+     <przystanek numer="16" id="18311" nazwa="Średzka" czas="45"/>
+     <przystanek numer="17" id="18392" nazwa="Rubczaka" czas="46"/>
+     <przystanek numer="18" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="47"/>
+     <przystanek numer="19" id="18388" nazwa="LEŚNICA" czas="48"/>
+    </czasy>
+    <tabliczka id="27" mc="3" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="18" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="12">
+       <min m="55">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="24" ozn="H" przyp="H - kurs do Leśnicy przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92060007" nazwa="Lubiatów" ulica=" " cechy="">
+    <czasy>
+     <przystanek numer="0" id="92060007" nazwa="Lubiatów" czas="0"/>
+     <przystanek numer="1" id="92060009" nazwa="Zabór Mały" czas="2"/>
+     <przystanek numer="2" id="92060011" nazwa="Zabór Wielki" czas="4"/>
+     <przystanek numer="3" id="92056009" nazwa="Klęka" czas="6"/>
+     <przystanek numer="4" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="9"/>
+     <przystanek numer="5" id="92056013" nazwa="Miękinia - stacja PKP" czas="10"/>
+     <przystanek numer="6" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="11"/>
+     <przystanek numer="7" id="92058003" nazwa="Mrozów - Wyzwolenia" czas="19"/>
+     <przystanek numer="8" id="92058001" nazwa="Mrozów - Świetlica" czas="21"/>
+     <przystanek numer="9" id="91048791" nazwa="Żurawiniec" czas="24"/>
+     <przystanek numer="10" id="92058007" nazwa="Krępice - Wrocławska" czas="26"/>
+     <przystanek numer="11" id="90094001" nazwa="Krępice" czas="29"/>
+     <przystanek numer="12" id="18346" nazwa="ŻAR" czas="33"/>
+     <przystanek numer="13" id="18344" nazwa="Mokrzańska" czas="37"/>
+     <przystanek numer="14" id="18342" nazwa="Leśnica - Hermes" czas="39"/>
+     <przystanek numer="15" id="18311" nazwa="Średzka" czas="40"/>
+     <przystanek numer="16" id="18392" nazwa="Rubczaka" czas="41"/>
+     <przystanek numer="17" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="42"/>
+     <przystanek numer="18" id="18388" nazwa="LEŚNICA" czas="43"/>
+    </czasy>
+    <tabliczka id="28" mc="5" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="23" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="00">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="29" ozn="H" przyp="H - kurs do Leśnicy przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92060009" nazwa="Zabór Mały" ulica=" " cechy="">
+    <czasy>
+     <przystanek numer="0" id="92060009" nazwa="Zabór Mały" czas="0"/>
+     <przystanek numer="1" id="92060011" nazwa="Zabór Wielki" czas="2"/>
+     <przystanek numer="2" id="92056009" nazwa="Klęka" czas="4"/>
+     <przystanek numer="3" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="7"/>
+     <przystanek numer="4" id="92056013" nazwa="Miękinia - stacja PKP" czas="8"/>
+     <przystanek numer="5" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="9"/>
+     <przystanek numer="6" id="92058003" nazwa="Mrozów - Wyzwolenia" czas="17"/>
+     <przystanek numer="7" id="92058001" nazwa="Mrozów - Świetlica" czas="19"/>
+     <przystanek numer="8" id="91048791" nazwa="Żurawiniec" czas="22"/>
+     <przystanek numer="9" id="92058007" nazwa="Krępice - Wrocławska" czas="24"/>
+     <przystanek numer="10" id="90094001" nazwa="Krępice" czas="27"/>
+     <przystanek numer="11" id="18346" nazwa="ŻAR" czas="31"/>
+     <przystanek numer="12" id="18344" nazwa="Mokrzańska" czas="35"/>
+     <przystanek numer="13" id="18342" nazwa="Leśnica - Hermes" czas="37"/>
+     <przystanek numer="14" id="18311" nazwa="Średzka" czas="38"/>
+     <przystanek numer="15" id="18392" nazwa="Rubczaka" czas="39"/>
+     <przystanek numer="16" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="40"/>
+     <przystanek numer="17" id="18388" nazwa="LEŚNICA" czas="41"/>
+    </czasy>
+    <tabliczka id="29" mc="2" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="25" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="02">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="31" ozn="H" przyp="H - kurs do Leśnicy przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92060011" nazwa="Zabór Wielki" ulica=" " cechy="">
+    <czasy>
+     <przystanek numer="0" id="92060011" nazwa="Zabór Wielki" czas="0"/>
+     <przystanek numer="1" id="92056009" nazwa="Klęka" czas="2"/>
+     <przystanek numer="2" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="5"/>
+     <przystanek numer="3" id="92056013" nazwa="Miękinia - stacja PKP" czas="6"/>
+     <przystanek numer="4" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="7"/>
+     <przystanek numer="5" id="92058003" nazwa="Mrozów - Wyzwolenia" czas="15"/>
+     <przystanek numer="6" id="92058001" nazwa="Mrozów - Świetlica" czas="17"/>
+     <przystanek numer="7" id="91048791" nazwa="Żurawiniec" czas="20"/>
+     <przystanek numer="8" id="92058007" nazwa="Krępice - Wrocławska" czas="22"/>
+     <przystanek numer="9" id="90094001" nazwa="Krępice" czas="25"/>
+     <przystanek numer="10" id="18346" nazwa="ŻAR" czas="29"/>
+     <przystanek numer="11" id="18344" nazwa="Mokrzańska" czas="33"/>
+     <przystanek numer="12" id="18342" nazwa="Leśnica - Hermes" czas="35"/>
+     <przystanek numer="13" id="18311" nazwa="Średzka" czas="36"/>
+     <przystanek numer="14" id="18392" nazwa="Rubczaka" czas="37"/>
+     <przystanek numer="15" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="38"/>
+     <przystanek numer="16" id="18388" nazwa="LEŚNICA" czas="39"/>
+    </czasy>
+    <tabliczka id="30" mc="2" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="27" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="04">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="33" ozn="H" przyp="H - kurs do Leśnicy przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92056009" nazwa="Klęka" ulica=" " cechy="">
+    <czasy>
+     <przystanek numer="0" id="92056009" nazwa="Klęka" czas="0"/>
+     <przystanek numer="1" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="3"/>
+     <przystanek numer="2" id="92056013" nazwa="Miękinia - stacja PKP" czas="4"/>
+     <przystanek numer="3" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="5"/>
+     <przystanek numer="4" id="92058003" nazwa="Mrozów - Wyzwolenia" czas="13"/>
+     <przystanek numer="5" id="92058001" nazwa="Mrozów - Świetlica" czas="15"/>
+     <przystanek numer="6" id="91048791" nazwa="Żurawiniec" czas="18"/>
+     <przystanek numer="7" id="92058007" nazwa="Krępice - Wrocławska" czas="20"/>
+     <przystanek numer="8" id="90094001" nazwa="Krępice" czas="23"/>
+     <przystanek numer="9" id="18346" nazwa="ŻAR" czas="27"/>
+     <przystanek numer="10" id="18344" nazwa="Mokrzańska" czas="31"/>
+     <przystanek numer="11" id="18342" nazwa="Leśnica - Hermes" czas="33"/>
+     <przystanek numer="12" id="18311" nazwa="Średzka" czas="34"/>
+     <przystanek numer="13" id="18392" nazwa="Rubczaka" czas="35"/>
+     <przystanek numer="14" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="36"/>
+     <przystanek numer="15" id="18388" nazwa="LEŚNICA" czas="37"/>
+    </czasy>
+    <tabliczka id="31" mc="2" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="29" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="06">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="35" ozn="H" przyp="H - kurs do Leśnicy przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92056011" nazwa="Miękinia - Urząd Gminy" ulica="Kościuszki" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92056011" nazwa="Miękinia - Urząd Gminy" czas="0"/>
+     <przystanek numer="1" id="92056013" nazwa="Miękinia - stacja PKP" czas="1"/>
+     <przystanek numer="2" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="2"/>
+     <przystanek numer="3" id="92058003" nazwa="Mrozów - Wyzwolenia" czas="10"/>
+     <przystanek numer="4" id="92058001" nazwa="Mrozów - Świetlica" czas="12"/>
+     <przystanek numer="5" id="91048791" nazwa="Żurawiniec" czas="15"/>
+     <przystanek numer="6" id="92058007" nazwa="Krępice - Wrocławska" czas="17"/>
+     <przystanek numer="7" id="90094001" nazwa="Krępice" czas="20"/>
+     <przystanek numer="8" id="18346" nazwa="ŻAR" czas="24"/>
+     <przystanek numer="9" id="18344" nazwa="Mokrzańska" czas="28"/>
+     <przystanek numer="10" id="18342" nazwa="Leśnica - Hermes" czas="30"/>
+     <przystanek numer="11" id="18311" nazwa="Średzka" czas="31"/>
+     <przystanek numer="12" id="18392" nazwa="Rubczaka" czas="32"/>
+     <przystanek numer="13" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="33"/>
+     <przystanek numer="14" id="18388" nazwa="LEŚNICA" czas="34"/>
+    </czasy>
+    <tabliczka id="13" mc="3">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="32" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="09">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="38" ozn="H" przyp="H - kurs do Leśnicy przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92056013" nazwa="Miękinia - stacja PKP" ulica="Kościuszki" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92056013" nazwa="Miękinia - stacja PKP" czas="0"/>
+     <przystanek numer="1" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="1"/>
+     <przystanek numer="2" id="92058003" nazwa="Mrozów - Wyzwolenia" czas="9"/>
+     <przystanek numer="3" id="92058001" nazwa="Mrozów - Świetlica" czas="11"/>
+     <przystanek numer="4" id="91048791" nazwa="Żurawiniec" czas="14"/>
+     <przystanek numer="5" id="92058007" nazwa="Krępice - Wrocławska" czas="16"/>
+     <przystanek numer="6" id="90094001" nazwa="Krępice" czas="19"/>
+     <przystanek numer="7" id="18346" nazwa="ŻAR" czas="23"/>
+     <przystanek numer="8" id="18344" nazwa="Mokrzańska" czas="27"/>
+     <przystanek numer="9" id="18342" nazwa="Leśnica - Hermes" czas="29"/>
+     <przystanek numer="10" id="18311" nazwa="Średzka" czas="30"/>
+     <przystanek numer="11" id="18392" nazwa="Rubczaka" czas="31"/>
+     <przystanek numer="12" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="32"/>
+     <przystanek numer="13" id="18388" nazwa="LEŚNICA" czas="33"/>
+    </czasy>
+    <tabliczka id="32" mc="1">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="33" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="10">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="39" ozn="H" przyp="H - kurs do Leśnicy przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92056012" nazwa="Miękinia - Urząd Gminy" ulica="Kościuszki" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92056012" nazwa="Miękinia - Urząd Gminy" czas="0"/>
+     <przystanek numer="1" id="92058003" nazwa="Mrozów - Wyzwolenia" czas="8"/>
+     <przystanek numer="2" id="92058001" nazwa="Mrozów - Świetlica" czas="10"/>
+     <przystanek numer="3" id="91048791" nazwa="Żurawiniec" czas="13"/>
+     <przystanek numer="4" id="92058007" nazwa="Krępice - Wrocławska" czas="15"/>
+     <przystanek numer="5" id="90094001" nazwa="Krępice" czas="18"/>
+     <przystanek numer="6" id="18346" nazwa="ŻAR" czas="22"/>
+     <przystanek numer="7" id="18344" nazwa="Mokrzańska" czas="26"/>
+     <przystanek numer="8" id="18342" nazwa="Leśnica - Hermes" czas="28"/>
+     <przystanek numer="9" id="18311" nazwa="Średzka" czas="29"/>
+     <przystanek numer="10" id="18392" nazwa="Rubczaka" czas="30"/>
+     <przystanek numer="11" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="31"/>
+     <przystanek numer="12" id="18388" nazwa="LEŚNICA" czas="32"/>
+    </czasy>
+    <tabliczka id="16" mc="1">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="34" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="11">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="40" ozn="H" przyp="H - kurs do Leśnicy przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92058003" nazwa="Mrozów - Wyzwolenia" ulica="Piastowska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92058003" nazwa="Mrozów - Wyzwolenia" czas="0"/>
+     <przystanek numer="1" id="92058001" nazwa="Mrozów - Świetlica" czas="2"/>
+     <przystanek numer="2" id="91048791" nazwa="Żurawiniec" czas="5"/>
+     <przystanek numer="3" id="92058007" nazwa="Krępice - Wrocławska" czas="7"/>
+     <przystanek numer="4" id="90094001" nazwa="Krępice" czas="10"/>
+     <przystanek numer="5" id="18346" nazwa="ŻAR" czas="14"/>
+     <przystanek numer="6" id="18344" nazwa="Mokrzańska" czas="18"/>
+     <przystanek numer="7" id="18342" nazwa="Leśnica - Hermes" czas="20"/>
+     <przystanek numer="8" id="18311" nazwa="Średzka" czas="21"/>
+     <przystanek numer="9" id="18392" nazwa="Rubczaka" czas="22"/>
+     <przystanek numer="10" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="23"/>
+     <przystanek numer="11" id="18388" nazwa="LEŚNICA" czas="24"/>
+    </czasy>
+    <tabliczka id="33" mc="8">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="42" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="19">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="48" ozn="H" przyp="H - kurs do Leśnicy przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92058001" nazwa="Mrozów - Świetlica" ulica="Chrobrego" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92058001" nazwa="Mrozów - Świetlica" czas="0"/>
+     <przystanek numer="1" id="91048791" nazwa="Żurawiniec" czas="3"/>
+     <przystanek numer="2" id="92058007" nazwa="Krępice - Wrocławska" czas="5"/>
+     <przystanek numer="3" id="90094001" nazwa="Krępice" czas="8"/>
+     <przystanek numer="4" id="18346" nazwa="ŻAR" czas="12"/>
+     <przystanek numer="5" id="18344" nazwa="Mokrzańska" czas="16"/>
+     <przystanek numer="6" id="18342" nazwa="Leśnica - Hermes" czas="18"/>
+     <przystanek numer="7" id="18311" nazwa="Średzka" czas="19"/>
+     <przystanek numer="8" id="18392" nazwa="Rubczaka" czas="20"/>
+     <przystanek numer="9" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="21"/>
+     <przystanek numer="10" id="18388" nazwa="LEŚNICA" czas="22"/>
+    </czasy>
+    <tabliczka id="34" mc="2">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="44" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="21">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="50" ozn="H" przyp="H - kurs do Leśnicy przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="91048791" nazwa="Żurawiniec" ulica=" " cechy="">
+    <czasy>
+     <przystanek numer="0" id="91048791" nazwa="Żurawiniec" czas="0"/>
+     <przystanek numer="1" id="92058007" nazwa="Krępice - Wrocławska" czas="2"/>
+     <przystanek numer="2" id="90094001" nazwa="Krępice" czas="5"/>
+     <przystanek numer="3" id="18346" nazwa="ŻAR" czas="9"/>
+     <przystanek numer="4" id="18344" nazwa="Mokrzańska" czas="13"/>
+     <przystanek numer="5" id="18342" nazwa="Leśnica - Hermes" czas="15"/>
+     <przystanek numer="6" id="18311" nazwa="Średzka" czas="16"/>
+     <przystanek numer="7" id="18392" nazwa="Rubczaka" czas="17"/>
+     <przystanek numer="8" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="18"/>
+     <przystanek numer="9" id="18388" nazwa="LEŚNICA" czas="19"/>
+    </czasy>
+    <tabliczka id="35" mc="3" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="47" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="24">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="53" ozn="H" przyp="H - kurs do Leśnicy przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="92058007" nazwa="Krępice - Wrocławska" ulica="Wrocławska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="92058007" nazwa="Krępice - Wrocławska" czas="0"/>
+     <przystanek numer="1" id="90094001" nazwa="Krępice" czas="3"/>
+     <przystanek numer="2" id="18346" nazwa="ŻAR" czas="7"/>
+     <przystanek numer="3" id="18344" nazwa="Mokrzańska" czas="11"/>
+     <przystanek numer="4" id="18342" nazwa="Leśnica - Hermes" czas="13"/>
+     <przystanek numer="5" id="18311" nazwa="Średzka" czas="14"/>
+     <przystanek numer="6" id="18392" nazwa="Rubczaka" czas="15"/>
+     <przystanek numer="7" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="16"/>
+     <przystanek numer="8" id="18388" nazwa="LEŚNICA" czas="17"/>
+    </czasy>
+    <tabliczka id="36" mc="2" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="49" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="26">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="55" ozn="H" przyp="H - kurs do Leśnicy przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="90094001" nazwa="Krępice" ulica="Średzka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="90094001" nazwa="Krępice" czas="0"/>
+     <przystanek numer="1" id="18346" nazwa="ŻAR" czas="4"/>
+     <przystanek numer="2" id="18344" nazwa="Mokrzańska" czas="8"/>
+     <przystanek numer="3" id="18342" nazwa="Leśnica - Hermes" czas="10"/>
+     <przystanek numer="4" id="18311" nazwa="Średzka" czas="11"/>
+     <przystanek numer="5" id="18392" nazwa="Rubczaka" czas="12"/>
+     <przystanek numer="6" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="13"/>
+     <przystanek numer="7" id="18388" nazwa="LEŚNICA" czas="14"/>
+    </czasy>
+    <tabliczka id="37" mc="3">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="52" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="29">
+       </min>
+      </godz>
+      <godz h="18">
+       <min m="58" ozn="H" przyp="H - kurs do Leśnicy przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18346" nazwa="ŻAR" ulica="Średzka" cechy="1">
+    <czasy>
+     <przystanek numer="0" id="18346" nazwa="ŻAR" czas="0"/>
+     <przystanek numer="1" id="18344" nazwa="Mokrzańska" czas="4"/>
+     <przystanek numer="2" id="18342" nazwa="Leśnica - Hermes" czas="6"/>
+     <przystanek numer="3" id="18311" nazwa="Średzka" czas="7"/>
+     <przystanek numer="4" id="18392" nazwa="Rubczaka" czas="8"/>
+     <przystanek numer="5" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="9"/>
+     <przystanek numer="6" id="18388" nazwa="LEŚNICA" czas="10"/>
+    </czasy>
+    <tabliczka id="38" mc="3">
+     <dzien nazwa="w dni robocze">
+      <godz h="6">
+       <min m="56" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="32">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="01" ozn="H" przyp="H - kurs do Leśnicy przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18364" nazwa="Mokrzańska" ulica="Mokrzańska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18364" nazwa="Mokrzańska" czas="0"/>
+     <przystanek numer="1" id="18362" nazwa="Krępicka" czas="1"/>
+     <przystanek numer="2" id="18306" nazwa="Krępicka - szkoła" czas="2"/>
+     <przystanek numer="3" id="18304" nazwa="Zajazdowa" czas="4"/>
+     <przystanek numer="4" id="18352" nazwa="Eluarda" czas="5"/>
+     <przystanek numer="5" id="18311" nazwa="Średzka" czas="7"/>
+     <przystanek numer="6" id="18392" nazwa="Rubczaka" czas="8"/>
+     <przystanek numer="7" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="9"/>
+     <przystanek numer="8" id="18384" nazwa="LEŚNICA" czas="10"/>
+    </czasy>
+    <tabliczka id="49" mc="3" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="19">
+       <min m="04">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18362" nazwa="Krępicka" ulica="Krępicka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18362" nazwa="Krępicka" czas="0"/>
+     <przystanek numer="1" id="18306" nazwa="Krępicka - szkoła" czas="1"/>
+     <przystanek numer="2" id="18304" nazwa="Zajazdowa" czas="3"/>
+     <przystanek numer="3" id="18352" nazwa="Eluarda" czas="4"/>
+     <przystanek numer="4" id="18311" nazwa="Średzka" czas="6"/>
+     <przystanek numer="5" id="18392" nazwa="Rubczaka" czas="7"/>
+     <przystanek numer="6" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="8"/>
+     <przystanek numer="7" id="18384" nazwa="LEŚNICA" czas="9"/>
+    </czasy>
+    <tabliczka id="50" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="19">
+       <min m="05">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18306" nazwa="Krępicka - szkoła" ulica="Krępicka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18306" nazwa="Krępicka - szkoła" czas="0"/>
+     <przystanek numer="1" id="18304" nazwa="Zajazdowa" czas="2"/>
+     <przystanek numer="2" id="18352" nazwa="Eluarda" czas="3"/>
+     <przystanek numer="3" id="18311" nazwa="Średzka" czas="5"/>
+     <przystanek numer="4" id="18392" nazwa="Rubczaka" czas="6"/>
+     <przystanek numer="5" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="7"/>
+     <przystanek numer="6" id="18384" nazwa="LEŚNICA" czas="8"/>
+    </czasy>
+    <tabliczka id="51" mc="1">
+     <dzien nazwa="w dni robocze">
+      <godz h="19">
+       <min m="06">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18304" nazwa="Zajazdowa" ulica="Krępicka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18304" nazwa="Zajazdowa" czas="0"/>
+     <przystanek numer="1" id="18352" nazwa="Eluarda" czas="1"/>
+     <przystanek numer="2" id="18311" nazwa="Średzka" czas="3"/>
+     <przystanek numer="3" id="18392" nazwa="Rubczaka" czas="4"/>
+     <przystanek numer="4" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="5"/>
+     <przystanek numer="5" id="18384" nazwa="LEŚNICA" czas="6"/>
+    </czasy>
+    <tabliczka id="52" mc="2" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="19">
+       <min m="08">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18352" nazwa="Eluarda" ulica="Dolnobrzeska" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18352" nazwa="Eluarda" czas="0"/>
+     <przystanek numer="1" id="18311" nazwa="Średzka" czas="2"/>
+     <przystanek numer="2" id="18392" nazwa="Rubczaka" czas="3"/>
+     <przystanek numer="3" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="4"/>
+     <przystanek numer="4" id="18384" nazwa="LEŚNICA" czas="5"/>
+    </czasy>
+    <tabliczka id="53" mc="1">
+     <dzien nazwa="w dni robocze">
+      <godz h="19">
+       <min m="09">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18311" nazwa="Średzka" ulica="Trzmielowicka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18311" nazwa="Średzka" czas="0"/>
+     <przystanek numer="1" id="18392" nazwa="Rubczaka" czas="1"/>
+     <przystanek numer="2" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="2"/>
+     <przystanek numer="3" id="18388" nazwa="LEŚNICA" czas="3"/>
+    </czasy>
+    <tabliczka id="41" mc="1">
+     <dzien nazwa="w dni robocze">
+      <godz h="7">
+       <min m="03" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="38">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="10" ozn="H" przyp="H - kurs do Leśnicy przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18392" nazwa="Rubczaka" ulica="Rubczaka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18392" nazwa="Rubczaka" czas="0"/>
+     <przystanek numer="1" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="1"/>
+     <przystanek numer="2" id="18388" nazwa="LEŚNICA" czas="2"/>
+    </czasy>
+    <tabliczka id="42" mc="1" cechy="NZ">
+     <dzien nazwa="w dni robocze">
+      <godz h="7">
+       <min m="04" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="39">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="11" ozn="H" przyp="H - kurs do Leśnicy przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18390" nazwa="Rubczaka (Stacja kolejowa)" ulica="Rubczaka" cechy="">
+    <czasy>
+     <przystanek numer="0" id="18390" nazwa="Rubczaka (Stacja kolejowa)" czas="0"/>
+     <przystanek numer="1" id="18388" nazwa="LEŚNICA" czas="1"/>
+    </czasy>
+    <tabliczka id="43" mc="1">
+     <dzien nazwa="w dni robocze">
+      <godz h="7">
+       <min m="05" ozn="R" przyp="R - kurs do Leśnicy">
+       </min>
+      </godz>
+      <godz h="13">
+       <min m="40">
+       </min>
+      </godz>
+      <godz h="19">
+       <min m="12" ozn="H" przyp="H - kurs do Leśnicy przez ul. Krępicką">
+       </min>
+      </godz>
+     </dzien>
+    </tabliczka>
+   </przystanek>
+   <przystanek id="18384" nazwa="LEŚNICA" ulica="Płońskiego" cechy="">
+    <czasy>
+    </czasy>
+   </przystanek>
+  </wariant>
+ </linia>
+</linie>
