@@ -23,6 +23,6 @@ poetry env activate
 # Install dependencies
 poetry install
 
-# Run a script
-poetry run hello
+# Run CLI
+poetry run cli --help
 ```
