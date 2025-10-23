@@ -8,7 +8,11 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "ruff (>=0.14.1,<0.15.0)"
+    "ruff (>=0.14.1,<0.15.0)",
+    "click (>=8.3.0,<9.0.0)",
+    "folium (>=0.20.0,<0.21.0)",
+    "numpy (>=2.3.4,<3.0.0)",
+    "pandas (>=2.3.3,<3.0.0)"
 ]
 
 [tool.poetry]
@@ -20,3 +24,4 @@ build-backend = "poetry.core.masonry.api"
 
 [project.scripts]
 hello = "ebc:hello"
+cli = "ebc.cli:main"
