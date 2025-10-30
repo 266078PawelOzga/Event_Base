@@ -33,9 +33,9 @@ def stops_map(ctx) -> None:
             icon=folium.Icon("red")
         ).add_to(m)
 
-    tmpfile = "/tmp/index.html"
+    tmpfile = ctx.obj.cache / "index.html"
     m.save(tmpfile)
-    webbrowser.open('file://' + tmpfile)
+    webbrowser.open('file://' + str(tmpfile.resolve()))
 
 @click.command()
 @click.pass_context
