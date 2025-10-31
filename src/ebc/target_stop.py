@@ -8,7 +8,7 @@ Find the nearest stop_id to the student position.
 Check if any bus route (trip_id) serves that stop_id. if not find the next nearest stop_id.
 """
 """
-    1 Find all bus stop with name containing "Dworzec Główny"
+    1 Find all bus stop with name containing eg. "Dworzec Główny"
 """
 conn = sqlite3.connect('.cache/mpk.db')
 cursor = conn.cursor()
