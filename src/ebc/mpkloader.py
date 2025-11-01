@@ -47,8 +47,14 @@ def load_trips(conn, filepath):
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS trips (
         trip_id TEXT PRIMARY KEY,
+        route_id TEXT,
+        service_id TEXT,
         trip_headsign TEXT,
-        route_id TEXT
+        direction_id INTEGER,
+        shape_id INTEGER,
+        brigade_id INTEGER,
+        vehicle_id INTEGER,
+        variant_id INTEGER
     )
     ''')
 
@@ -57,13 +63,13 @@ def load_trips(conn, filepath):
                      header=0)
 
     trips = df[[
-        'trip_id', 'trip_headsign', 'route_id'
+        'trip_id', 'trip_headsign', 'route_id', 'service_id', 'direction_id', 'shape_id', 'brigade_id', 'vehicle_id', 'variant_id'
     ]].itertuples(index=False, name=None)
 
     cursor.executemany('''
     INSERT OR REPLACE INTO trips
-        (trip_id, trip_headsign, route_id)
-    VALUES (?, ?, ?)
+        (trip_id, trip_headsign, route_id, service_id, direction_id, shape_id, brigade_id, vehicle_id, variant_id)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
     ''', trips)
 
 
@@ -76,7 +82,8 @@ def load_stop_times(conn, filepath):
         trip_id TEXT,
         arrival_time TEXT,
         departure_time TEXT,
-        stop_id INTEGER
+        stop_id INTEGER,
+        stop_sequence INTEGER
     )
     ''')
 
@@ -85,11 +92,11 @@ def load_stop_times(conn, filepath):
                      header=0)
 
     stop_times = df[[
-        'trip_id','arrival_time','departure_time','stop_id'
+        'trip_id','arrival_time','departure_time','stop_id','stop_sequence'
     ]].itertuples(index=False, name=None)
 
     cursor.executemany('''
     INSERT INTO stop_times
-        (trip_id,arrival_time,departure_time,stop_id)
-    VALUES (?, ?, ?, ?)
+        (trip_id,arrival_time,departure_time,stop_id,stop_sequence)
+    VALUES (?, ?, ?, ?, ?)
     ''', stop_times)

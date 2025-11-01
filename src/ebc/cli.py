@@ -70,7 +70,13 @@ def stop_times(ctx) -> None:
     for row in cursor:
         click.echo(row)
 
-@click.group()
+@click.group(
+    epilog="""
+You can also run: 
+  poetry run python target_stop.py\n
+- to see 12 bus stops with 3 different target stops and departure times after 06:05:01.
+"""
+)
 @click.option('--dataset', type=click.Path(exists=True), help='Load MPK dataset.')
 @click.pass_context
 def main(ctx, dataset):
