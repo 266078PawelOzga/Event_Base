@@ -1,5 +1,12 @@
 from target_stop import find_nearest_stops
-
+"""
+Event: User requests to find nearest bus stops
+the target_stop.py is implemented in run_search method
+FSM states:
+IDLE - waiting for user request
+SEARCHING - searching for nearest stops
+DISPLAYING - displaying results to user
+"""
 class StopFinderFSM:
     def __init__(self):
         self.state = 'IDLE'
@@ -32,12 +39,6 @@ class StopFinderFSM:
         self.on_event("search_done")
 
 
-#Test
+#Test - always run user_request first
 fsm = StopFinderFSM()
 fsm.on_event("user_request")
-
-#     conn.close()
-#     return reachable_stops, time_right_now
-
-# if __name__ == "__main__":
-#     find_nearest_stops()

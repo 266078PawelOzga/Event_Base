@@ -72,11 +72,15 @@ def stop_times(ctx) -> None:
 
 @click.group(
     epilog="""
-You can also run: 
-  poetry run python target_stop.py\n
-- to see 12 bus stops with 3 different target stops and departure times after 06:05:01.
+You can also run: \n
+$ poetry run python target_stop.py
+ -to see 12 bus stops with 3 different target stops and departure times after 06:05:01.
+
+$ poetry run python AutomatFSM.py
+ -to see FSM searching for nearest bus stops (testing).
 """
 )
+
 @click.option('--dataset', type=click.Path(exists=True), help='Load MPK dataset.')
 @click.pass_context
 def main(ctx, dataset):
