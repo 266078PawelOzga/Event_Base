@@ -1,17 +1,21 @@
 from target_stop import find_nearest_stops
 from students_pos import check_student_pos
+from wro_map import show_map_with_students_and_stops
 """
 Event: User requests to find nearest bus stops
 the target_stop.py is implemented in run_search method
+
 FSM states:
 IDLE - waiting for user request
 SEARCHING - searching for nearest stops
 DISPLAYING - displaying results to user
+WROMAP - showing map
 """
 class StopFinderFSM:
     def __init__(self):
         self.state = 'IDLE'
         self.results = []
+        self.students_position = []
 
     def on_event(self,event):
 
@@ -19,6 +23,7 @@ class StopFinderFSM:
             if event == 'user_request':
                 print("IDLE")
                 students_position = check_student_pos()
+                self.students_position = students_position
                 self.state = 'SEARCHING'
                 self.event_happend()
                 self.run_search(students_position)
@@ -34,14 +39,28 @@ class StopFinderFSM:
             #if event == 'user_request':
                 print('DISPLAYING:')
                 self.display_find_nearest_stops()
-                self.state = 'IDLE'
+                self.state = 'WROMAP'
+                self.on_event("show")
 
+
+        elif self.state == 'WROMAP':
+            if event == 'show':
+                print('Loading map...')
+                self.draw_map()
+                self.state = 'IDLE'
 
     def event_happend(self): # testing empty event
         print(" Event_happened: No event")
         print(" solution found: None")
         self.on_event("search_done")
 
+
+    def draw_map(self):
+        stops = []
+        for student in self.results:
+            for stop in student['reachable_stops']:
+                stops.append((stop['stop_name'], stop['stop_lon'], stop['stop_lat']))
+        show_map_with_students_and_stops(stops, self.students_position)
 
     def run_search(self, students_position):
         self.results = find_nearest_stops(students_pos=students_position) 
