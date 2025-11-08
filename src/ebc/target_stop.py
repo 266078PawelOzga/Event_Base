@@ -2,6 +2,7 @@ import sqlite3
 import random
 import math
 from datetime import timedelta
+from students_pos import check_student_pos 
 """
 Raw Data in .txt:
 - Stop: stop_id,stop_code,stop_name,stop_lat,stop_lon
@@ -19,80 +20,43 @@ Input: Student localization & data.time
 Output: stop_id, trip_id, departure_time
 """
 
-"""
-    1 Find all bus stop with name containing eg. "Dworzec Główny"
-"""
-def find_nearest_stops(target = "Dworzec Główny",student_pos = None, max_results=30):
-    conn = sqlite3.connect('.cache/mpk.db')
-    cursor = conn.cursor()
+""" 1 Find all bus stop with name containing eg. "Dworzec Główny" """
+def distance(lat1, lon1, lat2, lon2):
+        return math.sqrt((lat1 - lat2)**2 + (lon1 - lon2)**2)   # Euclidean distance
+    
+
+def find_target_stops(cursor, target):
     # CHECK IF TARGET EXISTS !
     #target = "Dworzec Główny" # ! the name of bus_stop without knowledge about its stop_id !
     cursor.execute("SELECT stop_id, stop_name, stop_lat, stop_lon FROM stops WHERE stop_name LIKE ?", (f"%{target}%",))
     rows = cursor.fetchall() # if not, fetchall returns empty list
     for row in rows:
         print(row)
-    
-    """
-    poetry run python src/ebc/target_stop.py
-    OUTPUT:
-        (5428, 'Dworzec Główny (MDK)', 51.10071395, 17.03607078)
-        (5437, 'Dworzec Główny (MDK)', 51.10072906, 17.03607078)
-    """
+    return rows
 
-    """
-        2: Generate Student position
-    """
-    if student_pos is None:
-        student_lat = random.uniform(51.05, 51.15)
-        student_lon = random.uniform(16.85, 17.05)
-        
-    else:
-        student_lat, student_lon = student_pos
-    print("Student position in Wroclaw (random):", (student_lat, student_lon))
-
-    """
-        3: Find nearest stop_id to student position
-    """
-    def distance(lat1, lon1, lat2, lon2):
-        return math.sqrt((lat1 - lat2)**2 + (lon1 - lon2)**2)   # Euclidean distance
     
+def find_nearest_to_student(cursor, student_lat, student_lon, max_results=12):
+    """ 3: Find nearest stop_id to student position """
     cursor.execute("SELECT stop_id, stop_name, stop_lat, stop_lon FROM stops")
     all_stops = cursor.fetchall()
-    stops_close_to_student = []
 
+    stops_close_to_student = []
+    
     for stop_id, stop_name, stop_lat, stop_lon in all_stops:
         d = distance(student_lat, student_lon, stop_lat, stop_lon)
         stops_close_to_student.append((d, stop_id, stop_name, stop_lat, stop_lon))
 
     stops_close_to_student.sort(key=lambda x: x[0])
     nearest_stops = stops_close_to_student[:max_results]  
+    return nearest_stops
 
-    for d, stop_id, stop_name, stop_lat, stop_lon in nearest_stops:
-        print(f"Stop: {stop_name}, ID: {stop_id}, Distance: {d:.6f}")
 
-    # conn.close()
-    # return nearest_stops
-    """
-    OUTPUT example: 
-        Stop: Dworska, ID: 4066, Distance: 0.000472
-        Stop: Dworska, ID: 4065, Distance: 0.000553
-        Stop: Dworska, ID: 113, Distance: 0.000623
-    """
-    # conn = sqlite3.connect('.cache/mpk.db')   # debugg table info
-    # cursor = conn.cursor()
-    # cursor.execute("PRAGMA table_info(stop_times)")
-    # for col in cursor.fetchall():
-    #     print(col)
-    # conn.close()
-    """
-        4: Check if any bus route (trip_id) serves that stop_id. if not find the next nearest stop_id.
-    """
-
+    # """
+    #     4: Check if any bus route (trip_id) serves that stop_id. if not find the next nearest stop_id.
+    # """
+def check_trip_id_for_stops(cursor, nearest_stops, target_stops, max_results=3):
     reachable_stops = []
     count_reachable_stops = 0
-    cursor.execute("SELECT stop_id FROM stops WHERE stop_name LIKE ?", (f"%{target}%",))
-    target_stops = [row[0] for row in cursor.fetchall()]
-
     for d, stop_id, stop_name, stop_lat, stop_lon in nearest_stops:
         lines_to_target = set()
         for target_stop_id in target_stops:
@@ -130,25 +94,26 @@ def find_nearest_stops(target = "Dworzec Główny",student_pos = None, max_resul
             })
             count_reachable_stops += 1
 
-        if count_reachable_stops >= 3:
+        if count_reachable_stops >= max_results:
             break  
 
-    for stop in reachable_stops:
-        print(f"Stop: {stop['stop_name']}, ID: {stop['stop_id']}, Routes to target: {stop['routes_to_target']}")
-    
-    """
-        5: Find the timetable for the selected stop_id and trip_id
-    """
-    def parse_gtfs_time(s):
-        h, m, sec = map(int, s.split(":"))
-        return timedelta(hours=h, minutes=m, seconds=sec)
+    return reachable_stops
+    # """
+    #     5: Find the timetable for the selected stop_id and trip_id
+    # """
 
+def parse_gtfs_time(s):
+    h, m, sec = map(int, s.split(":"))
+    return timedelta(hours=h, minutes=m, seconds=sec)
+
+def check_departure_time(cursor, reachable_stops):
     time_right_now = "06:05:01"  # HH:MM:SS
     time_right_now_td = parse_gtfs_time(time_right_now)
+    departures = []
 
     for stop in reachable_stops:
         stop_id = stop['stop_id']
-        print(f"\nStop: {stop['stop_name']} (ID: {stop_id})")
+        #print(f"\nStop: {stop['stop_name']} (ID: {stop_id})")
 
         for route_id in stop["routes_to_target"]:
             cursor.execute(
@@ -168,10 +133,43 @@ def find_nearest_stops(target = "Dworzec Główny",student_pos = None, max_resul
 
             # find the next departure time after 'time_right_now'
             next_time = next((t for t in times if parse_gtfs_time(t) >= time_right_now_td), None)
-            print(f"Route {route_id}: Next departure at {next_time if next_time else 'No more today'}")
+            #print(f"Route {route_id}: Next departure at {next_time if next_time else 'No more today'}")
+            departures.append({
+                "stop_id":stop_id,
+                "stop_name":stop['stop_name'],
+                "route_id":route_id,
+                "next_departure": next_time
+            })
+
+    return departures
+
+
+def find_nearest_stops( target="Dworzec Główny", students_pos=None, max_results=12):
+    conn = sqlite3.connect('.cache/mpk.db')
+    cursor = conn.cursor()
+
+    find_target_stops(cursor, target)
+    result = []
+     
+    cursor.execute("SELECT stop_id FROM stops WHERE stop_name LIKE ?", (f"%{target}%",))
+    target_stops = [row[0] for row in cursor.fetchall()]
+    
+    for idx, (student_lat, student_lon) in enumerate(students_pos):
+        nearest_stops = find_nearest_to_student(cursor, student_lat, student_lon, max_results)
+        reachable_stops = check_trip_id_for_stops(cursor, nearest_stops, target_stops)
+        departure_times = check_departure_time(cursor, reachable_stops)
+
+        result.append({
+            "student_id": idx +1,
+            "position": (student_lat, student_lon),
+            "nearest_stops": nearest_stops,
+            "reachable_stops": reachable_stops,
+            "departures": departure_times
+        })
 
     conn.close()
-    return reachable_stops, time_right_now
+    return result
+
 
 if __name__ == "__main__":
     find_nearest_stops()
