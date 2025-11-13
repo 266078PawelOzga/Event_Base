@@ -1,6 +1,7 @@
 from target_stop import find_nearest_stops
 from students_pos import check_student_pos
 from wro_map import show_map_with_students_and_stops
+from time_operation import display_departure_time_once
 """
 Event: User requests to find nearest bus stops
 the target_stop.py is implemented in run_search method
@@ -31,7 +32,7 @@ class StopFinderFSM:
 
         elif self.state == 'SEARCHING':
             if event =='search_done':
-                print('SEARCHING done\n')
+                print('SEARCHING done')
                 self.state = 'DISPLAYING'
 
 
@@ -46,7 +47,8 @@ class StopFinderFSM:
         elif self.state == 'WROMAP':
             if event == 'show':
                 print('Loading map...')
-                self.draw_map()
+                print('OFF')
+                #self.draw_map()
                 self.state = 'IDLE'
 
     def event_happend(self): # testing empty event
@@ -89,8 +91,11 @@ class StopFinderFSM:
             print(' Next departures:')
             for dep in student.get('departures', []):
                 print(f"    Stop:{dep['stop_name']}, Route {dep['route_id']}: {dep['next_departure']}")
+            display_departure_time_once(student['departures'])
         else:
             print("  No departure times available for reachable stops.")
+        
+        
 
 #Test - always run user_request first
 fsm = StopFinderFSM()
