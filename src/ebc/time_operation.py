@@ -1,27 +1,26 @@
 from datetime import timedelta, datetime
+import time
 
-def time_now():
-    now = datetime.now()
-    return now
+def time_now_td():
+    now = datetime.now() #2025-11-13 16:15:32
+    return timedelta(hours=now.hour, minutes=now.minute, seconds=now.second)
 
 def parse_gtfs_time(s):
-    h, m, sec = map(int, s.split(":"))
+    h, m, sec = map(int, s.split(":")) #['16', '15', '32']
     return timedelta(hours=h, minutes=m, seconds=sec)
 
     # """
     #     5: Find the timetable for the selected stop_id and trip_id
     # """
 def check_departure_time(cursor, reachable_stops):
-    #time_right_now = "06:05:01"  # HH:MM:SS
-    #time_right_now_td = parse_gtfs_time(time_right_now)
-    current_time = time_now().strftime("%H:%M:%S")
-    time_right_now_td = parse_gtfs_time(current_time)
-
+    """
+    
+    """
+    current_time_td = time_now_td()  
     departures = []
 
     for stop in reachable_stops:
         stop_id = stop['stop_id']
-        #print(f"\nStop: {stop['stop_name']} (ID: {stop_id})")
 
         for route_id in stop["routes_to_target"]:
             cursor.execute(
@@ -39,14 +38,40 @@ def check_departure_time(cursor, reachable_stops):
             )
             times = [row[0] for row in cursor.fetchall()]
 
-            # find the next departure time after 'time_right_now'
-            next_time = next((t for t in times if parse_gtfs_time(t) >= time_right_now_td), None)
-            #print(f"Route {route_id}: Next departure at {next_time if next_time else 'No more today'}")
+            next_time = next((t for t in times if parse_gtfs_time(t) >= current_time_td), None)
+
             departures.append({
-                "stop_id":stop_id,
-                "stop_name":stop['stop_name'],
-                "route_id":route_id,
+                "stop_id": stop_id,
+                "stop_name": stop['stop_name'],
+                "route_id": route_id,
                 "next_departure": next_time
             })
 
     return departures
+
+
+def display_departure_time_once(departures, expired_seconds=5):
+    now_td = time_now_td()
+    now_datetime = datetime.now()
+    output_lines = []
+
+    for dep in departures:
+        stop_name = dep['stop_name']
+        route_id = dep['route_id']
+        departure_td = parse_gtfs_time(dep['next_departure'])
+        time_diff = departure_td - now_td
+        total_sec = time_diff.total_seconds()
+
+        if total_sec > 0:
+            hours, remainder = divmod(total_sec, 3600)
+            minutes, seconds = divmod(remainder, 60)
+            line = f"{stop_name} - Route {route_id}: {int(hours):02}h {int(minutes):02}m {int(seconds):02}s left"
+        elif -60 < total_sec <= 0:
+            line = f"{stop_name} - Route {route_id}: already departed"
+        else:
+            line = f"{stop_name} - Route {route_id}: departed long ago"
+
+        output_lines.append(line)
+
+    for line in output_lines:
+        print("     ",line.ljust(60))
