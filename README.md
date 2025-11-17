@@ -26,3 +26,5 @@ poetry install
 # Run CLI
 poetry run cli --help
 ```
+# Run project
+poetry run python src/ebc/AutomatFSM.py
