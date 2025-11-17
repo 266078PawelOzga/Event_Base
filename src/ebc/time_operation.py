@@ -17,6 +17,7 @@ def check_departure_time(cursor, reachable_stops):
     
     """
     current_time_td = time_now_td()  
+    # debug/test values removed - do not print here to avoid spamming stdout
     departures = []
 
     for stop in reachable_stops:

@@ -12,7 +12,6 @@ def check_student_pos(students_count=2, students_pos=None):
     for _ in range(students_count):
         student_lat = random.uniform(51.05, 51.15)
         student_lon = random.uniform(16.85, 17.05)
-        print("Student position in Wroclaw (random):", (student_lat, student_lon))
         positions.append((student_lat, student_lon))
 
     return positions

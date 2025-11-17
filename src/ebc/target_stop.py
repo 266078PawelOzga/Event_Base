@@ -1,9 +1,11 @@
 import sqlite3
+import sys
 import random
 import math
 from datetime import timedelta, datetime
 from students_pos import check_student_pos 
 from time_operation import time_now_td, check_departure_time, display_departure_time_once
+
 """
 Raw Data in .txt:
 - Stop: stop_id,stop_code,stop_name,stop_lat,stop_lon
@@ -31,8 +33,11 @@ def find_target_stops(cursor, target):
     #target = "Dworzec Główny" # ! the name of bus_stop without knowledge about its stop_id !
     cursor.execute("SELECT stop_id, stop_name, stop_lat, stop_lon FROM stops WHERE stop_name LIKE ?", (f"%{target}%",))
     rows = cursor.fetchall() # if not, fetchall returns empty list
-    for row in rows:
-        print(row)
+    # for row in rows:
+    #    print(row)
+    if not rows:
+        # No matching target stops found — raise to let caller decide how to handle
+        raise ValueError(f"No target stops found matching '{target}'")
     return rows
 
     
@@ -104,12 +109,18 @@ def check_trip_id_for_stops(cursor, nearest_stops, target_stops, max_results=3):
 def find_nearest_stops( target="Dworzec Główny", students_pos=None, max_results=12):
     conn = sqlite3.connect('.cache/mpk.db')
     cursor = conn.cursor()
-
-    find_target_stops(cursor, target)
+    # ensure target stops exist (find_target_stops will raise if none)
+    try:
+        target_rows = find_target_stops(cursor, target)
+    except ValueError as e:
+        # Abort program with explanatory message
+        print(f"Error: {e}")
+        conn.close()
+        sys.exit(1)
     result = []
      
-    cursor.execute("SELECT stop_id FROM stops WHERE stop_name LIKE ?", (f"%{target}%",))
-    target_stops = [row[0] for row in cursor.fetchall()]
+    # extract stop ids for the target stops
+    target_stops = [row[0] for row in target_rows]
     
     for idx, (student_lat, student_lon) in enumerate(students_pos):
         nearest_stops = find_nearest_to_student(cursor, student_lat, student_lon, max_results)
@@ -129,4 +140,4 @@ def find_nearest_stops( target="Dworzec Główny", students_pos=None, max_result
 
 
 if __name__ == "__main__":
-    find_nearest_stops()
+        find_nearest_stops()
