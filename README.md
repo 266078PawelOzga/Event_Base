@@ -23,8 +23,10 @@ poetry env activate
 # Install dependencies
 poetry install
 
-# Run CLI
-poetry run cli --help
+# Run simulation server
+poetry run sim
 ```
-# Run project
-poetry run python src/ebc/AutomatFSM.py
+
+## Documentation
+
+When running the server, automatically generated documentation of the API is available at [http://localhost:8000/docs](http://localhost:8000/docs).
