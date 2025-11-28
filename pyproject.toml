@@ -3,8 +3,9 @@ name = "ebc"
 version = "0.1.0"
 description = ""
 authors = [
-    {name = "Kacper Drążyk", email = "kacper.drazyk@outlook.com"}
-    {name = "Paweł Ozga", email = "ozgaapawell@gmail.com"}
+    {name = "Kacper Drążyk", email = "kacper.drazyk@outlook.com"},
+    {name = "Paweł Ozga", email = "ozgaapawell@gmail.com"},
+    {name = "Filip Szkudlarek", email = "fszkudlarek6@gmail.com"}
 ]
 readme = "README.md"
 requires-python = ">=3.11"
