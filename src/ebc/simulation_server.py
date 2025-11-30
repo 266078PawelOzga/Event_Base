@@ -1,6 +1,7 @@
 from .simulation import Simulation
 import threading
 from fastapi import FastAPI
+from fastapi.responses import HTMLResponse
 import uvicorn
 import time
 
@@ -56,3 +57,8 @@ def tick_simulation():
 @app.get("/time")
 def get_simulation_time():
     return {"current_time": sim.get_time()}
+
+@app.get("/map", response_class=HTMLResponse)
+def get_simulation_map():
+    map_html = sim.generate_map().get_root().render()
+    return map_html

@@ -23,8 +23,8 @@ poetry env activate
 # Install dependencies
 poetry install
 
-# Run simulation server
-poetry run sim
+# Run the application
+poetry run app
 ```
 
 ## Documentation
