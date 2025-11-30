@@ -29,3 +29,10 @@ class Simulation:
     def get_time(self) -> datetime:
         """Get current time in simulation"""
         return self.t
+
+    # TODO show student locations
+    def generate_map(self):
+        "Generate a folium map displaying current simulation status"
+        import folium
+        m = folium.Map(location=[51, 17], zoom_start=10)
+        return m
