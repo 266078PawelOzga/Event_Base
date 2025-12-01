@@ -26,6 +26,9 @@ poetry install
 # Run CLI
 poetry run cli --help
 
+# Load dataset
+poetry run cli --dataset data/rozklady-jazdy stop-times
+
 # Run Automat
 poetry run python src/ebc/AutomatFSM.py
 ```
