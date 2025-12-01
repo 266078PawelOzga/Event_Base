@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_c939bcfd515b70b8e59a14c2c58e581e {
+                #map_41010ea05da349424d6956afa9349338 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -54,16 +54,16 @@
 <body>
     
     
-            <div class="folium-map" id="map_c939bcfd515b70b8e59a14c2c58e581e" ></div>
+            <div class="folium-map" id="map_41010ea05da349424d6956afa9349338" ></div>
         
 </body>
 <script>
     
     
-            var map_c939bcfd515b70b8e59a14c2c58e581e = L.map(
-                "map_c939bcfd515b70b8e59a14c2c58e581e",
+            var map_41010ea05da349424d6956afa9349338 = L.map(
+                "map_41010ea05da349424d6956afa9349338",
                 {
-                    center: [51.064770112259836, 17.012752735262424],
+                    center: [51.12576260664598, 16.894225743677502],
                     crs: L.CRS.EPSG3857,
                     ...{
   "zoom": 13,
@@ -78,7 +78,7 @@
 
         
     
-            var tile_layer_20ecaac1467459791bd48dab51df7c76 = L.tileLayer(
+            var tile_layer_44233f9a0cedbde1bb50d701d216bc63 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -95,17 +95,169 @@
             );
         
     
-            tile_layer_20ecaac1467459791bd48dab51df7c76.addTo(map_c939bcfd515b70b8e59a14c2c58e581e);
+            tile_layer_44233f9a0cedbde1bb50d701d216bc63.addTo(map_41010ea05da349424d6956afa9349338);
         
     
-            var marker_a9b87e1de3736cd47b7ee6a921c0ddde = L.marker(
-                [51.064770112259836, 17.012752735262424],
+            var marker_80df79c48fe48f5f38c19b0e3c79cf15 = L.marker(
+                [51.12752171, 16.90059558],
                 {
 }
-            ).addTo(map_c939bcfd515b70b8e59a14c2c58e581e);
+            ).addTo(map_41010ea05da349424d6956afa9349338);
         
     
-            var icon_59f0bb3da040977a427d97db57e42490 = L.AwesomeMarkers.icon(
+            var icon_aaf777cb6a5a4aa97334c96cd727631f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4921a2bec6cb78b09f6a11b5ebe6fd26 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6afc78c95dd6a77d0a4c68bb46ce896b = $(`<div id="html_6afc78c95dd6a77d0a4c68bb46ce896b" style="width: 100.0%; height: 100.0%;">Stop: Jerzmanowska nr 17</div>`)[0];
+                popup_4921a2bec6cb78b09f6a11b5ebe6fd26.setContent(html_6afc78c95dd6a77d0a4c68bb46ce896b);
+            
+        
+
+        marker_80df79c48fe48f5f38c19b0e3c79cf15.bindPopup(popup_4921a2bec6cb78b09f6a11b5ebe6fd26)
+        ;
+
+        
+    
+    
+                marker_80df79c48fe48f5f38c19b0e3c79cf15.setIcon(icon_aaf777cb6a5a4aa97334c96cd727631f);
+            
+    
+            var marker_01005f46d67ec4144365403d35164389 = L.marker(
+                [51.12410886, 16.88600906],
+                {
+}
+            ).addTo(map_41010ea05da349424d6956afa9349338);
+        
+    
+            var icon_7f28215395f8a7fb3a304e17a266f331 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_08c8538458e3eb1e0216a7bae2266dcd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d9946bd6a67b98b062315b00eb206717 = $(`<div id="html_d9946bd6a67b98b062315b00eb206717" style="width: 100.0%; height: 100.0%;">Stop: Jerzmanowo (Cmentarz I)</div>`)[0];
+                popup_08c8538458e3eb1e0216a7bae2266dcd.setContent(html_d9946bd6a67b98b062315b00eb206717);
+            
+        
+
+        marker_01005f46d67ec4144365403d35164389.bindPopup(popup_08c8538458e3eb1e0216a7bae2266dcd)
+        ;
+
+        
+    
+    
+                marker_01005f46d67ec4144365403d35164389.setIcon(icon_7f28215395f8a7fb3a304e17a266f331);
+            
+    
+            var marker_7acc2d03b24d464ebca9935173e8e49e = L.marker(
+                [51.12319263, 16.88278896],
+                {
+}
+            ).addTo(map_41010ea05da349424d6956afa9349338);
+        
+    
+            var icon_f65690dd840fbdb10300abb1534ce305 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ef377ba1a67d706dc28afa0161e0054d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_36ed11f737fec9da11b886c0e8586954 = $(`<div id="html_36ed11f737fec9da11b886c0e8586954" style="width: 100.0%; height: 100.0%;">Stop: Jerzmanowo (Cmentarz II)</div>`)[0];
+                popup_ef377ba1a67d706dc28afa0161e0054d.setContent(html_36ed11f737fec9da11b886c0e8586954);
+            
+        
+
+        marker_7acc2d03b24d464ebca9935173e8e49e.bindPopup(popup_ef377ba1a67d706dc28afa0161e0054d)
+        ;
+
+        
+    
+    
+                marker_7acc2d03b24d464ebca9935173e8e49e.setIcon(icon_f65690dd840fbdb10300abb1534ce305);
+            
+    
+            var marker_09b13098eda37d07e561cbfc2dcd198f = L.marker(
+                [51.13977496, 16.92138878],
+                {
+}
+            ).addTo(map_41010ea05da349424d6956afa9349338);
+        
+    
+            var icon_3d3f7c6ed36d0519551dcc151f33cf98 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4f591cd08b131468d4676558350e3767 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c987404d0a0b0c867242631a18b29b46 = $(`<div id="html_c987404d0a0b0c867242631a18b29b46" style="width: 100.0%; height: 100.0%;">Stop: Grabowa</div>`)[0];
+                popup_4f591cd08b131468d4676558350e3767.setContent(html_c987404d0a0b0c867242631a18b29b46);
+            
+        
+
+        marker_09b13098eda37d07e561cbfc2dcd198f.bindPopup(popup_4f591cd08b131468d4676558350e3767)
+        ;
+
+        
+    
+    
+                marker_09b13098eda37d07e561cbfc2dcd198f.setIcon(icon_3d3f7c6ed36d0519551dcc151f33cf98);
+            
+    
+            var marker_55027d0a868613e1b01b0fb06f7be5d9 = L.marker(
+                [51.12576260664598, 16.894225743677502],
+                {
+}
+            ).addTo(map_41010ea05da349424d6956afa9349338);
+        
+    
+            var icon_3bc6f043469480dfdd138fe90fb2b831 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -116,34 +268,34 @@
             );
         
     
-        var popup_28bb1ee55356a854b76607e5217d7143 = L.popup({
+        var popup_9558b62b8c4a3da856b6b15d2282bede = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_9f40d5ac3a3f94d59cbd77f565111d5e = $(`<div id="html_9f40d5ac3a3f94d59cbd77f565111d5e" style="width: 100.0%; height: 100.0%;">Student 1</div>`)[0];
-                popup_28bb1ee55356a854b76607e5217d7143.setContent(html_9f40d5ac3a3f94d59cbd77f565111d5e);
+                var html_532f78e36f0ef4aa460efa2fbd4eba49 = $(`<div id="html_532f78e36f0ef4aa460efa2fbd4eba49" style="width: 100.0%; height: 100.0%;">Student 1</div>`)[0];
+                popup_9558b62b8c4a3da856b6b15d2282bede.setContent(html_532f78e36f0ef4aa460efa2fbd4eba49);
             
         
 
-        marker_a9b87e1de3736cd47b7ee6a921c0ddde.bindPopup(popup_28bb1ee55356a854b76607e5217d7143)
+        marker_55027d0a868613e1b01b0fb06f7be5d9.bindPopup(popup_9558b62b8c4a3da856b6b15d2282bede)
         ;
 
         
     
     
-                marker_a9b87e1de3736cd47b7ee6a921c0ddde.setIcon(icon_59f0bb3da040977a427d97db57e42490);
+                marker_55027d0a868613e1b01b0fb06f7be5d9.setIcon(icon_3bc6f043469480dfdd138fe90fb2b831);
             
     
-            var marker_40116a4af21ce084c7b8333301641842 = L.marker(
-                [51.06956372665765, 17.048044066350343],
+            var marker_10c65a330e7c24c07c90efc862732910 = L.marker(
+                [51.14748830459307, 16.922840210700546],
                 {
 }
-            ).addTo(map_c939bcfd515b70b8e59a14c2c58e581e);
+            ).addTo(map_41010ea05da349424d6956afa9349338);
         
     
-            var icon_798822d4feb77ba6e8c54e21422a3e80 = L.AwesomeMarkers.icon(
+            var icon_e64ddfe52e5da6dfc9f1ade0be496da9 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "blue",
   "iconColor": "white",
@@ -154,24 +306,24 @@
             );
         
     
-        var popup_35c0e24b13ea68a6c50e905dbf197c65 = L.popup({
+        var popup_69bb702966e6d6f66066eec4d1866018 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_39624f3ccc3cbd78e71ecaa7e402c595 = $(`<div id="html_39624f3ccc3cbd78e71ecaa7e402c595" style="width: 100.0%; height: 100.0%;">Student 2</div>`)[0];
-                popup_35c0e24b13ea68a6c50e905dbf197c65.setContent(html_39624f3ccc3cbd78e71ecaa7e402c595);
+                var html_f9616084b0841152c900f9790dbdc0c8 = $(`<div id="html_f9616084b0841152c900f9790dbdc0c8" style="width: 100.0%; height: 100.0%;">Student 2</div>`)[0];
+                popup_69bb702966e6d6f66066eec4d1866018.setContent(html_f9616084b0841152c900f9790dbdc0c8);
             
         
 
-        marker_40116a4af21ce084c7b8333301641842.bindPopup(popup_35c0e24b13ea68a6c50e905dbf197c65)
+        marker_10c65a330e7c24c07c90efc862732910.bindPopup(popup_69bb702966e6d6f66066eec4d1866018)
         ;
 
         
     
     
-                marker_40116a4af21ce084c7b8333301641842.setIcon(icon_798822d4feb77ba6e8c54e21422a3e80);
+                marker_10c65a330e7c24c07c90efc862732910.setIcon(icon_e64ddfe52e5da6dfc9f1ade0be496da9);
             
 </script>
 </html>
