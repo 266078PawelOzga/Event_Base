@@ -21,7 +21,9 @@ def run_server():
     """Run the simulation thread and then start the API server"""
     sim_thread = threading.Thread(target=simulation_loop, daemon=True)
     sim_thread.start()
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8000,
+                access_log=False,
+                )
 
 @app.get("/tickrate")
 def get_tickrate():

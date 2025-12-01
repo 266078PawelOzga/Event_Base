@@ -3,8 +3,8 @@ import sys
 import random
 import math
 from datetime import timedelta, datetime
-from students_pos import check_student_pos 
-from time_operation import time_now_td, check_departure_time, display_departure_time_once
+from .students_pos import check_student_pos 
+from .time_operation import time_now_td, check_departure_time, display_departure_time_once
 
 """
 Raw Data in .txt:

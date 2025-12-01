@@ -1,7 +1,7 @@
-from target_stop import find_nearest_stops
-from students_pos import check_student_pos
-from wro_map import show_map_with_students_and_stops
-from time_operation import display_departure_time_once, time_now_td, check_departure_time
+from .target_stop import find_nearest_stops
+from .students_pos import check_student_pos
+from .wro_map import show_map_with_students_and_stops
+from .time_operation import display_departure_time_once, time_now_td, check_departure_time
 import threading
 import time
 import sqlite3
@@ -139,6 +139,7 @@ class StopFinderFSM:
         
 
 #Test - always run user_request first
-fsm = StopFinderFSM()
-fsm.on_event("user_request")
+if __name__ == '__main__':
+    fsm = StopFinderFSM()
+    fsm.on_event("user_request")
 
