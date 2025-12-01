@@ -14,7 +14,12 @@ dependencies = [
     "click (>=8.3.0,<9.0.0)",
     "folium (>=0.20.0,<0.21.0)",
     "numpy (>=2.3.4,<3.0.0)",
-    "pandas (>=2.3.3,<3.0.0)"
+    "pandas (>=2.3.3,<3.0.0)",
+    "fastapi (>=0.122.0,<0.123.0)",
+    "uvicorn (>=0.38.0,<0.39.0)",
+    "requests (>=2.32.5,<3.0.0)",
+    "pyqt5 (>=5.15.11,<6.0.0)",
+    "pyqtwebengine (>=5.15.7,<6.0.0)"
 ]
 
 [tool.poetry]
@@ -27,3 +32,6 @@ build-backend = "poetry.core.masonry.api"
 [project.scripts]
 hello = "ebc:hello"
 cli = "ebc.cli:main"
+sim = "ebc.simulation_server:run_server"
+gui = "ebc.gui:run_gui"
+app = "ebc.app:run_app"

@@ -23,12 +23,14 @@ poetry env activate
 # Install dependencies
 poetry install
 
-# Run CLI
+# Help information
 poetry run cli --help
 
-# Load dataset
-poetry run cli --dataset data/rozklady-jazdy stop-times
+# Run the application
+poetry run app
 
-# Run Automat
-poetry run python src/ebc/AutomatFSM.py
 ```
+
+## Documentation
+
+When running the server, automatically generated documentation of the API is available at [http://localhost:8000/docs](http://localhost:8000/docs).
