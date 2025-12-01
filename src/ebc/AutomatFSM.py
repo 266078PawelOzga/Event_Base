@@ -80,7 +80,6 @@ class StopFinderFSM:
             self.on_event("show")
 
 
-
         elif self.state == 'WROMAP':
             if event == 'show':
                 print('Loading map...')
