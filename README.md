@@ -29,6 +29,9 @@ poetry run cli --help
 # Run the application
 poetry run app
 
+# Run the Automat - with event, map, etc. 
+poetry run python src/ebc/AutomatFSM.py
+
 ```
 
 ## Documentation
