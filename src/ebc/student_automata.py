@@ -8,7 +8,7 @@ TRANSITIONS = {
         'classes_canceled': 'TERMINAL_STATE',
     },
     'WAITING_FOR_TRANSPORTATION': {
-        'available_bus_arrived':  'TRAVEING',
+        'available_bus_arrived':  'TRAVELING',
         'classes_canceled': 'TERMINAL_STATE',
 
     },
