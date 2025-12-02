@@ -49,10 +49,11 @@ WROMAP - showing map
 # safe_self._vprint('Main koniec')
 
 class StopFinderFSM:
-    def __init__(self, verbose = False, show_map = False):
+    def __init__(self, number_of_students = 2, verbose = False, show_map = False):
         self.state = 'IDLE'
         self.results = []
         self.students_position = []
+        self.number_of_students = number_of_students
         self.verbose = verbose
         self.show_map = show_map
       #  self.live_terminal_started = False 
@@ -66,7 +67,7 @@ class StopFinderFSM:
         if self.state == 'IDLE':
             if event == 'user_request':
                 self._vprint("IDLE")
-                students_position = check_student_pos()
+                students_position = check_student_pos(students_count=self.number_of_students)
                 self.students_position = students_position
                 self.state = 'SEARCHING'
                 self.event_happend()

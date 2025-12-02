@@ -6,7 +6,7 @@ from .events_simulator import EventSimulator
 def run_app():
     sim_thread = threading.Thread(target=run_server, daemon=True)
     sim_thread.start()
-    events_simulator = EventSimulator(verbose=True)
+    events_simulator = EventSimulator(verbose=True, number_of_students=4)
     event_sim_thread = threading.Thread(
         target=events_simulator.event_simulation_loop, daemon=True)
     event_sim_thread.start()

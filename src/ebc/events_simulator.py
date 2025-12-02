@@ -5,7 +5,7 @@ import random
 
 class EventSimulator:
     def __init__(self, number_of_students=2, verbose=False):
-        fsm = StopFinderFSM(verbose=True)
+        fsm = StopFinderFSM(verbose=True, number_of_students=number_of_students)
         fsm.on_event("user_request")
         stops_finding_results = fsm.results
 
