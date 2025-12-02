@@ -12,11 +12,14 @@ def parse_gtfs_time(s):
     # """
     #     5: Find the timetable for the selected stop_id and trip_id
     # """
-def check_departure_time(cursor, reachable_stops):
+def check_departure_time(cursor, reachable_stops, current_time = datetime.now()):
     """
     
     """
-    current_time_td = time_now_td()  
+    # current_time_td = time_now_td()
+    current_time_td = timedelta(hours=current_time.hour,
+                                minutes=current_time.minute,
+                                seconds=current_time.second)
     # debug/test values removed - do not print here to avoid spamming stdout
     departures = []
 

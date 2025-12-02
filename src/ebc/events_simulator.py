@@ -2,14 +2,20 @@ from .AutomatFSM import StopFinderFSM
 from .student_automata import StudentAutomata, TRANSITIONS
 import time
 import random
+import datetime
 
 class EventSimulator:
-    def __init__(self, number_of_students=2, verbose=False):
-        fsm = StopFinderFSM(verbose=True, number_of_students=number_of_students)
+    def __init__(self, number_of_students=2, verbose=False,
+                 current_time=datetime.datetime.now):
+        self.curren_time = current_time
+        self.verbose = verbose
+
+        fsm = StopFinderFSM(verbose=True,
+                            number_of_students=number_of_students,
+                            current_time=self.curren_time)
         fsm.on_event("user_request")
         stops_finding_results = fsm.results
 
-        self.verbose = verbose
         self.students_automatas = []
         for student in stops_finding_results:
             self.students_automatas.append(StudentAutomata(student))

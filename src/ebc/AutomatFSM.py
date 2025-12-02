@@ -7,6 +7,7 @@ import time
 import sqlite3
 import subprocess
 import os, sys
+from datetime import datetime
 """
 Event: User requests to find nearest bus stops
 the target_stop.py is implemented in run_search method
@@ -49,13 +50,15 @@ WROMAP - showing map
 # safe_self._vprint('Main koniec')
 
 class StopFinderFSM:
-    def __init__(self, number_of_students = 2, verbose = False, show_map = False):
+    def __init__(self, number_of_students = 2, verbose = False, show_map = False,
+                 current_time = datetime.now()):
         self.state = 'IDLE'
         self.results = []
         self.students_position = []
         self.number_of_students = number_of_students
         self.verbose = verbose
         self.show_map = show_map
+        self.current_time = current_time
       #  self.live_terminal_started = False 
 
     def _vprint(self, *args, **kwargs):
@@ -109,7 +112,8 @@ class StopFinderFSM:
         show_map_with_students_and_stops(stops, self.students_position)
 
     def run_search(self, students_position):
-        self.results = find_nearest_stops(students_pos=students_position) 
+        self.results = find_nearest_stops(students_pos=students_position,
+                                          current_time=self.current_time) 
         self.on_event("search_done")
        
     # def display_student_pos(self):
