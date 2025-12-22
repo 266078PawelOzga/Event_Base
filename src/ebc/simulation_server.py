@@ -1,48 +1,45 @@
 from .simulation import Simulation
-import threading
+from .models import SimulationStatus, SimulationConfig
+from datetime import datetime, timedelta
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
 import uvicorn
 import time
+import folium
 
 app = FastAPI()
-sim = Simulation(activate=True)
-tickrate = 1.0
-
-def simulation_loop():
-    """Advance the simulation in a variable frequency loop"""
-    global tickrate
-    while True:
-        if tickrate > 0:
-            sim.tick()
-            time.sleep(1.0/tickrate)
+sim = Simulation(config=SimulationConfig(), run=False)
 
 def run_server():
-    """Run the simulation thread and then start the API server"""
-    sim_thread = threading.Thread(target=simulation_loop, daemon=True)
-    sim_thread.start()
+    """Start the API server"""
     uvicorn.run(app, host="0.0.0.0", port=8000)
 
-@app.get("/tickrate")
-def get_tickrate():
-    global tickrate
-    return {"tickrate": tickrate}
+@app.get("/status")
+def get_simulation_status() -> SimulationStatus:
+    return sim.get_status()
+
+@app.get("/config")
+def get_simulation_config() -> SimulationConfig:
+    return sim.get_config()
+
+@app.post("/config")
+def set_simulation_config(config: SimulationConfig):
+    sim.config = config
 
 @app.post("/tickrate")
 def set_tickrate(value: float):
-    global tickrate
-    tickrate = value
-    return get_tickrate()
+    sim.config.tickrate = value
+    return {"tickrate": sim.config.tickrate}
 
-@app.post("/start")
-def start_simulation():
-    sim.start()
-    return {"status": "Simulation started"}
+@app.post("/resume")
+def resume_simulation():
+    sim.resume()
+    return {"status": "Simulation resumed"}
 
-@app.post("/stop")
-def stop_simulation():
-    sim.stop()
-    return {"status": "Simulation stopped"}
+@app.post("/pause")
+def pause_simulation():
+    sim.pause()
+    return {"status": "Simulation paused"}
 
 @app.post("/reset")
 def reset_simulation():
@@ -54,11 +51,8 @@ def tick_simulation():
     sim.tick()
     return {"status": "Simulation ticked"}
 
-@app.get("/time")
-def get_simulation_time():
-    return {"current_time": sim.get_time()}
-
 @app.get("/map", response_class=HTMLResponse)
 def get_simulation_map():
-    map_html = sim.generate_map().get_root().render()
-    return map_html
+    "Generate a folium map displaying current simulation status"
+    m = folium.Map(location=[51, 17], zoom_start=10)
+    return m.get_root().render()
