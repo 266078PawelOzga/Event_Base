@@ -9,10 +9,14 @@ from PyQt5.QtWidgets import (
     QPushButton,
     QLabel,
     QSlider,
-    QWidget
+    QWidget,
+    QSizePolicy
 )
 from PyQt5.QtCore import Qt, QTimer, QUrl
 from PyQt5.QtWebEngineWidgets import QWebEngineView
+
+border_width = 1
+border_color = '#666'
 
 class SimulationControlApp(QMainWindow):
     def __init__(self):
@@ -30,21 +34,35 @@ class SimulationControlApp(QMainWindow):
     def init_ui(self):
         self.setWindowTitle('EBC: Wrocław MPK Navigation')
         layout_body = QHBoxLayout()
-        layout_body.addWidget(self.build_menu(), alignment=Qt.AlignTop)
+        layout_body.addWidget(self.build_menu())
         layout_body.addWidget(self.build_map())
 
         layout = QVBoxLayout()
         layout.addLayout(layout_body)
-        layout.addWidget(self.build_modeline(), alignment=Qt.AlignRight)
+        layout.addWidget(self.build_modeline())
 
-        widget = QWidget()
+        widget = QWidget(objectName='window')
+        widget.setStyleSheet(f"""
+        QWidget[objectName="menu"] {{
+        border: {border_width}px solid {border_color};
+        }}
+        QWidget[objectName="modeline"] {{
+        border: {border_width}px solid {border_color};
+        }}
+        QWidget[objectName="map"] {{
+        border: {border_width}px solid {border_color};
+        }}
+        """)
+        layout.setSpacing(0)
+        layout.setContentsMargins(0, 0, 0, 0)
         widget.setLayout(layout)
         self.setCentralWidget(widget)
 
     def build_modeline(self) -> QWidget:
-        modeline = QWidget()
+        modeline = QWidget(objectName='modeline')
         modeline.setFixedHeight(30)
         layout = QHBoxLayout()
+        layout.addStretch()
 
         self.time_label = QLabel('Time: -')
         layout.addWidget(self.time_label)
@@ -53,12 +71,17 @@ class SimulationControlApp(QMainWindow):
         return modeline
 
     def build_map(self) -> QWidget:
+        map_ = QWidget(objectName='map')
+        layout = QVBoxLayout()
+        layout.setContentsMargins(border_width, border_width, border_width, border_width)
         self.web_view = QWebEngineView()
         self.web_view.setUrl(QUrl(f"{self.base_url}/map"))
-        return self.web_view
+        layout.addWidget(self.web_view)
+        map_.setLayout(layout)
+        return map_
 
     def build_menu(self) -> QWidget:
-        menu = QWidget()
+        menu = QWidget(objectName='menu')
         menu.setFixedWidth(120)
         layout = QVBoxLayout()
 
@@ -66,6 +89,8 @@ class SimulationControlApp(QMainWindow):
         self.sim_toggle_btn = QPushButton('Start')
         self.sim_toggle_btn.clicked.connect(self.toggle_simulation)
         layout.addWidget(self.sim_toggle_btn)
+
+        layout.addStretch()
 
         # Simulation Reset Button
         sim_reset_btn = QPushButton('Reset')
