@@ -17,14 +17,23 @@ from PyQt5.QtWebEngineWidgets import QWebEngineView
 
 border_width = 1
 border_color = '#666'
+spinner_base_period = 100
 
 class SimulationControlApp(QMainWindow):
     def __init__(self):
         super().__init__()
+
+        self.simulation_config = SimulationConfig()
+        self.simulation_status = SimulationStatus()
+
         self.timer = QTimer(self)
         self.timer.timeout.connect(self.sync_simulation_status)
         self.timer.timeout.connect(self.sync_simulation_config)
         self.timer.start(1000)
+
+        self.spinner_timer = QTimer(self)
+        self.spinner_timer.timeout.connect(self.update_spinner)
+        self.spinner_timer.start(spinner_base_period)
 
         self.base_url = "http://localhost:8000"
         self.init_ui()
@@ -43,6 +52,7 @@ class SimulationControlApp(QMainWindow):
 
         widget = QWidget(objectName='window')
         widget.setStyleSheet(f"""
+        * {{ font-size: 12pt; }}
         QWidget[objectName="menu"] {{
         border: {border_width}px solid {border_color};
         }}
@@ -60,8 +70,13 @@ class SimulationControlApp(QMainWindow):
 
     def build_modeline(self) -> QWidget:
         modeline = QWidget(objectName='modeline')
-        modeline.setFixedHeight(30)
+        modeline.setFixedHeight(36)
         layout = QHBoxLayout()
+
+        self.spinner = QLabel('⏸')
+        self.spinner_progress = 0
+        layout.addWidget(self.spinner)
+
         layout.addStretch()
 
         self.time_label = QLabel('Time: -')
@@ -82,7 +97,7 @@ class SimulationControlApp(QMainWindow):
 
     def build_menu(self) -> QWidget:
         menu = QWidget(objectName='menu')
-        menu.setFixedWidth(120)
+        menu.setFixedWidth(140)
         layout = QVBoxLayout()
 
         # Simulation Toggle Button
@@ -134,6 +149,26 @@ class SimulationControlApp(QMainWindow):
         else:
             self.simulation_config = SimulationConfig()
             print(f'{self.base_url}/config -> response error {response.status_code}')
+
+    def update_spinner(self):
+        spinner_chars = [' ⠋', ' ⠙', ' ⠹', ' ⠸', ' ⠼', ' ⠴', ' ⠦', ' ⠧', ' ⠇', ' ⠏']
+        paused = '⏸'
+
+        if not self.simulation_status.running:
+            self.spinner.setText(paused)
+            return
+
+        if self.simulation_config.tickrate <= 0:
+            return
+
+        if self.spinner_progress >= len(spinner_chars):
+            self.spinner_progress = 0
+
+        self.spinner.setText(spinner_chars[self.spinner_progress])
+        self.spinner_progress += 1
+
+        # Wheeeeeee...
+        self.spinner_timer.start(int(spinner_base_period / self.simulation_config.tickrate**0.5))
 
     def process_simulation_status(self):
         status = self.simulation_status
