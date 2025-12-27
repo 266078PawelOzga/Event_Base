@@ -1,5 +1,5 @@
 from datetime import datetime, timedelta
-from .models import SimulationStatus, SimulationConfig
+from .models import *
 import threading
 import time
 
@@ -24,6 +24,7 @@ class Simulation:
 
     def reset(self) -> None:
         """Reset the simulation to initial conditions"""
+        self.trips = []
         self.status = SimulationStatus(
             reset = True,
             running = False,
@@ -41,6 +42,14 @@ class Simulation:
     def get_config(self) -> SimulationConfig:
         """Get current simulation config"""
         return self.config
+
+    def get_trips(self) -> list[Trip]:
+        """Get all trips in simulation"""
+        return self.trips
+
+    def add_trip(self, trip: Trip):
+        """Add trip to simulation"""
+        self.trips.append(trip)
 
     def _simulation_loop(self):
         """Simulation thread execution loop"""
