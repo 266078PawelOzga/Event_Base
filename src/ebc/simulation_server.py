@@ -33,11 +33,11 @@ def set_tickrate(value: float):
     return {"tickrate": sim.config.tickrate}
 
 @app.get("/trips")
-def pause_simulation() -> list[Trip]:
+def get_trips() -> list[Trip]:
     return sim.get_trips()
 
 @app.post("/trip")
-def pause_simulation(trip: Trip):
+def add_trip(trip: Trip):
     import geocoder
 
     if trip.origin_coord is None:
@@ -85,7 +85,7 @@ def tick_simulation():
 @app.get("/map", response_class=HTMLResponse)
 def get_simulation_map():
     "Generate a folium map displaying current simulation status"
-    m = folium.Map(location=[51, 17], zoom_start=10)
+    m = folium.Map(location=[51.107778, 17.038611], zoom_start=10)
 
     for trip in sim.get_trips():
         folium.Marker(

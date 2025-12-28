@@ -2,6 +2,7 @@ from .models import *
 import sys
 import requests
 from PyQt5.QtWidgets import (
+    QScrollArea,
     QApplication,
     QMainWindow,
     QDialog,
@@ -29,6 +30,8 @@ class SimulationControlApp(QMainWindow):
     def __init__(self):
         super().__init__()
 
+        self.resize(960, 640)
+
         quit_shortcut = QShortcut(QKeySequence('Ctrl+q'), self)
         quit_shortcut.activated.connect(QApplication.instance().quit)
 
@@ -51,9 +54,14 @@ class SimulationControlApp(QMainWindow):
     def init_ui(self):
         self.setWindowTitle('EBC: Wrocław MPK Navigation')
         layout_body = QHBoxLayout()
+        # TODO: currently map has to be created first so menu can reference self.web_view
+        # can we make them independent?
         wmap = self.build_map()
         wmenu = self.build_menu()
+        self.trips_panel = self.build_trips_panel()
+        self.trips_panel.hide()
         layout_body.addWidget(wmenu)
+        layout_body.addWidget(self.trips_panel)
         layout_body.addWidget(wmap)
 
         layout = QVBoxLayout()
@@ -64,6 +72,14 @@ class SimulationControlApp(QMainWindow):
         widget.setStyleSheet(f"""
         * {{ font-size: {font_size}pt; }}
         QWidget[objectName="menu"] {{
+        border: {border_width}px solid {border_color};
+        }}
+        QWidget[objectName="trip"] {{
+        border: {border_width}px solid {border_color};
+        border-radius: 6px;
+        background-color: #f4f4f4;
+        }}
+        QWidget[objectName="trips"] {{
         border: {border_width}px solid {border_color};
         }}
         QWidget[objectName="modeline"] {{
@@ -95,6 +111,40 @@ class SimulationControlApp(QMainWindow):
         modeline.setLayout(layout)
         return modeline
 
+    def build_trips_panel(self) -> QWidget:
+        trips = QScrollArea(objectName='trips')
+        trips.setWidgetResizable(True)
+        trips.setFixedWidth(300)
+
+        container = QWidget()
+        self.trips_layout = QVBoxLayout(container)
+        self.trips_layout.addStretch()
+        self.trips_list = []
+
+        trips.setWidget(container)
+        return trips
+
+    def toggle_trips_panel(self):
+        self.trips_panel.setVisible(not self.trips_panel.isVisible())
+
+    def add_trip_to_panel(self, trip: Trip):
+        """Add trip widget to the top of Trips panel"""
+        trip_widget = QWidget(objectName='trip')
+        layout = QVBoxLayout(trip_widget)
+        layout.addWidget(QLabel(f"O: {trip.origin}"))
+        layout.addWidget(QLabel(f"D: {trip.destination}"))
+        layout.addWidget(QLabel(f"State: {trip.state}"))
+
+        self.trips_layout.insertWidget(0, trip_widget)
+        self.trips_list.insert(0, trip_widget)
+
+    def clear_trips_panel(self):
+        """Remove all trips from the Trips panel"""
+        for trip in self.trips_list[:]:
+            self.trips_layout.removeWidget(trip)
+            trip.deleteLater()
+            self.trips_list.remove(trip)
+
     def build_map(self) -> QWidget:
         map_ = QWidget(objectName='map')
         layout = QVBoxLayout()
@@ -118,21 +168,24 @@ class SimulationControlApp(QMainWindow):
         sim_toggle_shortcut = QShortcut(QKeySequence('s'), self)
         sim_toggle_shortcut.activated.connect(self.toggle_simulation)
 
-        self.add_route_btn = QPushButton('Add route')
+        self.add_route_btn = QPushButton('New trip')
         self.add_route_btn.clicked.connect(self.add_route_window)
         layout.addWidget(self.add_route_btn)
 
         add_route_shortcut = QShortcut(QKeySequence('a'), self)
         add_route_shortcut.activated.connect(self.add_route_window)
 
+        self.toggle_trips_btn = QPushButton('Trips')
+        self.toggle_trips_btn.clicked.connect(self.toggle_trips_panel)
+
+        toggle_trips_shortcut = QShortcut(QKeySequence('t'), self)
+        toggle_trips_shortcut.activated.connect(self.toggle_trips_panel)
+
+        layout.addWidget(self.toggle_trips_btn)
         layout.addStretch()
 
-        self.web_reload_btn = QPushButton('Reload map')
-        self.web_reload_btn.clicked.connect(self.web_view.reload)
-        layout.addWidget(self.web_reload_btn)
-
-        web_reload_shortcut = QShortcut(QKeySequence('v'), self)
-        web_reload_shortcut.activated.connect(self.web_view.reload)
+        update_trips_shortcut = QShortcut(QKeySequence('r'), self)
+        update_trips_shortcut.activated.connect(self.update_trips)
 
         # Simulation Reset Button
         sim_reset_btn = QPushButton('Reset')
@@ -156,8 +209,22 @@ class SimulationControlApp(QMainWindow):
         menu.setLayout(layout)
         return menu
 
+    def update_trips(self):
+        """Get list of trips and current map from the server"""
+        response = requests.get(f"{base_url}/trips")
+        if response.status_code != 200:
+            return
+
+        self.clear_trips_panel()
+        for item in response.json():
+            trip = Trip.parse_obj(item)
+            self.add_trip_to_panel(trip)
+
+        self.web_view.reload()
+
+
     def add_route_window(self):
-        dialog = AddRouteWindow(self)
+        dialog = NewTripWindow(self)
         dialog.exec_()  # Modal dialog, blocks main window
 
     def resume_simulation(self):
@@ -239,8 +306,7 @@ class SimulationControlApp(QMainWindow):
 
     def reset_simulation(self):
         requests.post(f"{base_url}/reset")
-        # TODO: maybe move the reload() somewhere else?
-        self.web_view.reload()
+        self.update_trips()
         self.sync_simulation_status()
 
     def tick_simulation(self):
@@ -254,11 +320,11 @@ class SimulationControlApp(QMainWindow):
         self.sync_simulation_config()
 
 
-class AddRouteWindow(QDialog):
+class NewTripWindow(QDialog):
     def __init__(self, mainwindow):
         super().__init__()
         self.mainwindow = mainwindow
-        self.setWindowTitle("Add route")
+        self.setWindowTitle("New trip")
         layout = QVBoxLayout()
 
         self.setStyleSheet(f"""
@@ -304,7 +370,7 @@ class AddRouteWindow(QDialog):
 
         response = requests.post(f"{base_url}/trip", json=trip.model_dump())
         if response.status_code == 200:
-            self.mainwindow.web_view.reload()
+            self.mainwindow.update_trips()
             self.accept()
         elif 'detail' in response.json():
             self.error_label.setText(response.json().get('detail'))
