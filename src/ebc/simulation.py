@@ -1,38 +1,71 @@
 from datetime import datetime, timedelta
+from .models import *
+import threading
+import time
 
 class Simulation:
-    def __init__(self, t0: datetime = datetime.now(), dt: timedelta = timedelta(seconds=30), activate: bool = False):
-        self.t0 = t0
-        self.t = self.t0
-        self.dt = dt
-        self.active = activate
+    def __init__(self, config: SimulationConfig, run: bool = False):
+        self.config = config
+        self.reset()
+        if run:
+            self.resume()
+        self.terminate = threading.Event()
+        self.thread = threading.Thread(target=self._simulation_loop, daemon=True)
+        self.thread.start()
 
-    def start(self) -> None:
-        """Start advancing the simulation"""
-        self.active = True
-
-    def stop(self) -> None:
+    def pause(self) -> None:
         """Stop advancing the simulation"""
-        self.active = False
+        self.status.running = False
+
+    def resume(self) -> None:
+        """Start advancing the simulation"""
+        self.status.reset = False
+        self.status.running = True
 
     def reset(self) -> None:
         """Reset the simulation to initial conditions"""
-        self.stop()
-        self.t = self.t0
+        self.trips = []
+        self.status = SimulationStatus(
+            reset = True,
+            running = False,
+            time = self.config.t0
+        )
 
     def tick(self) -> None:
         """Advance the simulation by one tick"""
-        if not self.active:
-            return
-        self.t += self.dt
+        self.status.time += self.config.dt
 
-    def get_time(self) -> datetime:
-        """Get current time in simulation"""
-        return self.t
+    def get_status(self) -> SimulationStatus:
+        """Get current simulation status"""
+        return self.status
 
-    # TODO show student locations
-    def generate_map(self):
-        "Generate a folium map displaying current simulation status"
-        import folium
-        m = folium.Map(location=[51, 17], zoom_start=10)
-        return m
+    def get_config(self) -> SimulationConfig:
+        """Get current simulation config"""
+        return self.config
+
+    def get_trips(self) -> list[Trip]:
+        """Get all trips in simulation"""
+        return self.trips
+
+    def add_trip(self, trip: Trip):
+        """Add trip to simulation"""
+        self.trips.append(trip)
+
+    def _simulation_loop(self):
+        """Simulation thread execution loop"""
+        while not self.terminate.is_set():
+            if self.config.tickrate <= 0:
+                time.sleep(0.1)
+                continue
+
+            time.sleep(1.0/self.config.tickrate)
+
+            if not self.status.running:
+                continue
+
+            self.tick()
+
+    def __del__(self):
+        """Terminate the thread when the object is deleted"""
+        self.terminate.set()
+        self.thread.join()
