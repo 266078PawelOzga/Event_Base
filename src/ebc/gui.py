@@ -2,6 +2,7 @@ import sys
 import requests
 import threading
 import logging
+import sqlite3
 from .wro_map import create_map_with_students_and_stops
 from PyQt5.QtWidgets import (
     QApplication,
@@ -11,7 +12,10 @@ from PyQt5.QtWidgets import (
     QPushButton,
     QLabel,
     QSlider,
-    QWidget
+    QWidget,
+    QComboBox,
+    QSpinBox,
+    QCompleter
 )
 from PyQt5.QtCore import Qt, QTimer, QUrl, pyqtSignal, QObject
 from PyQt5.QtWebEngineWidgets import QWebEngineView
@@ -39,7 +43,30 @@ class SimulationControlApp(QMainWindow):
         self.map_signals.map_loaded.connect(self.on_map_loaded)
         self.map_signals.map_error.connect(self.on_map_error)
         
+        # Store current start/end stops for map display
+        self.current_start_stop = None
+        self.current_end_stop = None
+        self.current_start_coords = None
+        self.current_end_coords = None
+        
+        # Load stops list for autocomplete
+        self.all_stops = self._load_stops_from_db()
+        
         self.initUI()
+    
+    def _load_stops_from_db(self):
+        """Load all stop names from database for autocomplete."""
+        try:
+            conn = sqlite3.connect('.cache/mpk.db')
+            cursor = conn.cursor()
+            cursor.execute("SELECT DISTINCT stop_name FROM stops ORDER BY stop_name")
+            stops = [row[0] for row in cursor.fetchall()]
+            conn.close()
+            logger.info(f"Loaded {len(stops)} unique stops from database")
+            return stops
+        except Exception as e:
+            logger.error(f"Error loading stops: {e}")
+            return []
 
     def initUI(self):
         self.setWindowTitle('EBC: Wrocław MPK Navigation')
@@ -79,8 +106,43 @@ class SimulationControlApp(QMainWindow):
         layout.addWidget(self.tickrate_display)
         layout.addWidget(self.tickrate_slider)
 
+        # Students count selector
+        students_layout = QHBoxLayout()
+        students_layout.addWidget(QLabel('Number of students:'))
+        self.students_spinbox = QSpinBox()
+        self.students_spinbox.setMinimum(1)
+        self.students_spinbox.setMaximum(20)
+        self.students_spinbox.setValue(1)
+        students_layout.addWidget(self.students_spinbox)
+        layout.addLayout(students_layout)
+
+        # Start and End Stop inputs with autocomplete
+        stops_layout = QHBoxLayout()
+        stops_layout.addWidget(QLabel('Start stop:'))
+        self.start_stop_input = QComboBox()
+        self.start_stop_input.setEditable(True)
+        self.start_stop_input.addItems(self.all_stops)
+        self.start_stop_input.setCurrentText('Dworzec Główny')
+        # Add completer for autocomplete
+        completer_start = QCompleter(self.all_stops)
+        completer_start.setCaseSensitivity(Qt.CaseInsensitive)
+        self.start_stop_input.setCompleter(completer_start)
+        stops_layout.addWidget(self.start_stop_input)
+
+        stops_layout.addWidget(QLabel('End stop:'))
+        self.end_stop_input = QComboBox()
+        self.end_stop_input.setEditable(True)
+        self.end_stop_input.addItems(self.all_stops)
+        self.end_stop_input.setCurrentText('Uniwersytet')
+        # Add completer for autocomplete
+        completer_end = QCompleter(self.all_stops)
+        completer_end.setCaseSensitivity(Qt.CaseInsensitive)
+        self.end_stop_input.setCompleter(completer_end)
+        stops_layout.addWidget(self.end_stop_input)
+        layout.addLayout(stops_layout)
+
         # Load Map Button
-        load_map_btn = QPushButton('Load Map')
+        load_map_btn = QPushButton('Find Routes')
         load_map_btn.clicked.connect(self.load_and_show_map)
         layout.addWidget(load_map_btn)
 
@@ -93,17 +155,20 @@ class SimulationControlApp(QMainWindow):
         self.setCentralWidget(central_widget)
         self.resize(1000, 800)  # Set initial window size
 
-    def show_map(self, stops, students):
+    def show_map(self, stops, students, start_stop=None, end_stop=None,
+                 start_coords=None, end_coords=None):
         """Display map with stops and students in the web view."""
-        logger.info(f"show_map: stops={len(stops)}, students={len(students)}")
+        logger.info(f"show_map: stops={len(stops)}, students={len(students)}, start='{start_stop}', end='{end_stop}'")
+        logger.info(f"show_map: start_coords={start_coords}, end_coords={end_coords}")
         try:
-            if not stops or not students:
-                logger.warning("show_map: No data to display")
-                self.web_view.setHtml("<p>No data to display on map.</p>")
+            if not students:
+                logger.warning("show_map: No students to display")
+                self.web_view.setHtml("<p>No students to display on map.</p>")
                 return
             
             logger.debug("show_map: Creating map object...")
-            map_obj = create_map_with_students_and_stops(stops, students)
+            map_obj = create_map_with_students_and_stops(stops, students, start_stop, end_stop,
+                                                         start_coords, end_coords)
             logger.debug("show_map: Getting map HTML...")
             map_html = map_obj._repr_html_()
             
@@ -149,14 +214,60 @@ class SimulationControlApp(QMainWindow):
         try:
             logger.info("Starting map data load...")
             from .students_pos import check_student_pos
-            from .target_stop import find_nearest_stops
+            from .target_stop import find_nearest_stops, find_target_stops
+            import sqlite3
             
-            logger.info("Getting student positions...")
-            students = check_student_pos()
+            # Get user inputs
+            num_students = self.students_spinbox.value()
+            start_stop = self.start_stop_input.currentText().strip()
+            end_stop = self.end_stop_input.currentText().strip()
+            
+            logger.info(f"Parameters: {num_students} students, start='{start_stop}', end='{end_stop}'")
+            
+            # Check if start and end stops are the same
+            if start_stop.lower() == end_stop.lower():
+                self.map_signals.map_error.emit("Start stop and end stop cannot be the same!")
+                return
+            
+            # Validate stops exist in database and get their full details
+            logger.info("Validating stops and getting coordinates...")
+            conn = sqlite3.connect('.cache/mpk.db')
+            cursor = conn.cursor()
+            
+            try:
+                start_stops = find_target_stops(cursor, start_stop)
+                # find_target_stops returns (stop_id, stop_name, stop_lat, stop_lon)
+                start_stop_data = start_stops[0]  # (stop_id, stop_name, stop_lat, stop_lon)
+                start_stop_name = start_stop_data[1]
+                start_stop_coords = (start_stop_data[2], start_stop_data[3])  # (lat, lon)
+                logger.info(f"Start stop '{start_stop}' found: {start_stop_name} at {start_stop_coords}")
+            except ValueError:
+                conn.close()
+                self.map_signals.map_error.emit(f"Start stop '{start_stop}' not found in database!")
+                return
+            
+            try:
+                end_stops = find_target_stops(cursor, end_stop)
+                # find_target_stops returns (stop_id, stop_name, stop_lat, stop_lon)
+                end_stop_data = end_stops[0]  # (stop_id, stop_name, stop_lat, stop_lon)
+                end_stop_name = end_stop_data[1]
+                end_stop_coords = (end_stop_data[2], end_stop_data[3])  # (lat, lon)
+                logger.info(f"End stop '{end_stop}' found: {end_stop_name} at {end_stop_coords}")
+            except ValueError:
+                conn.close()
+                self.map_signals.map_error.emit(f"End stop '{end_stop}' not found in database!")
+                return
+            
+            conn.close()
+            
+            # Get student positions
+            logger.info(f"Getting {num_students} student positions...")
+            students = check_student_pos(students_count=num_students)
             logger.info(f"Got {len(students)} students")
             
-            logger.info("Finding nearest stops...")
-            data = find_nearest_stops(students_pos=students)
+            # Find nearest stops (using end stop as target)
+            logger.info(f"Finding nearest stops to '{end_stop}'...")
+            data = find_nearest_stops(target=end_stop, students_pos=students)
             logger.info(f"Got data for {len(data)} students")
             
             # Extract stops: (name, lon, lat)
@@ -169,7 +280,12 @@ class SimulationControlApp(QMainWindow):
                         stop['stop_lat']
                     ))
             
-            logger.info(f"Extracted {len(stops)} stops")
+            logger.info(f"Extracted {len(stops)} reachable stops")
+            # Store start/end stops and coordinates for later use in show_map
+            self.current_start_stop = start_stop_name
+            self.current_end_stop = end_stop_name
+            self.current_start_coords = start_stop_coords
+            self.current_end_coords = end_stop_coords
             self.map_signals.map_loaded.emit(stops, students)
             
         except Exception as e:
@@ -179,7 +295,8 @@ class SimulationControlApp(QMainWindow):
     def on_map_loaded(self, stops, students):
         """Called when map data is loaded."""
         logger.info("Map data loaded, displaying...")
-        self.show_map(stops, students)
+        self.show_map(stops, students, self.current_start_stop, self.current_end_stop,
+                      self.current_start_coords, self.current_end_coords)
     
     def on_map_error(self, error_msg):
         """Called when map loading fails."""
