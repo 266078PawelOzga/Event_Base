@@ -10,8 +10,8 @@ def check_student_pos(students_count=2, students_pos=None):
         return students_pos
     
     for _ in range(students_count):
-        student_lat = random.uniform(51.05, 51.15)
-        student_lon = random.uniform(16.85, 17.05)
+        student_lat = random.uniform(51.08, 51.10) #51.05, 51.15
+        student_lon = random.uniform(16.95, 17.00) #16.85, 17.05
         positions.append((student_lat, student_lon))
 
     return positions
