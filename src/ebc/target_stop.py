@@ -2,9 +2,13 @@ import sqlite3
 import sys
 import random
 import math
+import logging
+import time
 from datetime import timedelta, datetime
 from .students_pos import check_student_pos 
 from .time_operation import time_now_td, check_departure_time, display_departure_time_once
+
+logger = logging.getLogger(__name__)
 
 """
 Raw Data in .txt:
@@ -61,35 +65,68 @@ def find_nearest_to_student(cursor, student_lat, student_lon, max_results=12):
     #     4: Check if any bus route (trip_id) serves that stop_id. if not find the next nearest stop_id.
     # """
 def check_trip_id_for_stops(cursor, nearest_stops, target_stops, max_results=3):
+    logger.debug(f"check_trip_id_for_stops: {len(nearest_stops)} nearest stops, {len(target_stops)} target stops")
+    
+    start = time.time()
     reachable_stops = []
     count_reachable_stops = 0
+    
+    # Pre-load all data we need - single pass through database
+    logger.debug("Loading stop_times and trips data...")
+    
+    # Extract stop_ids from nearest_stops: (distance, stop_id, stop_name, stop_lat, stop_lon)
+    all_stops = [stop_id for d, stop_id, _, _, _ in nearest_stops] + target_stops
+    placeholders = ','.join('?' * len(all_stops))
+    
+    cursor.execute(
+        f"SELECT trip_id, stop_id, stop_sequence FROM stop_times WHERE stop_id IN ({placeholders})",
+        all_stops
+    )
+    stop_times_data = cursor.fetchall()
+    logger.debug(f"Loaded {len(stop_times_data)} stop_times records")
+    
+    # Build maps in memory
+    stop_times_map = {}  # (stop_id, trip_id) -> stop_sequence
+    trips_set = set()
+    for trip_id, stop_id, stop_seq in stop_times_data:
+        stop_times_map[(stop_id, trip_id)] = stop_seq
+        trips_set.add(trip_id)
+    
+    # Get all routes for these trips in one query
+    if trips_set:
+        placeholders_trips = ','.join('?' * len(trips_set))
+        cursor.execute(
+            f"SELECT trip_id, route_id FROM trips WHERE trip_id IN ({placeholders_trips})",
+            list(trips_set)
+        )
+        trip_route_map = {trip_id: route_id for trip_id, route_id in cursor.fetchall()}
+    else:
+        trip_route_map = {}
+    
+    logger.debug(f"Loaded {len(trip_route_map)} trip->route mappings")
+    
+    # Now process nearest stops
     for d, stop_id, stop_name, stop_lat, stop_lon in nearest_stops:
         lines_to_target = set()
+        
+        # Find trips from this stop
+        trips_from_start = {trip_id for (sid, trip_id), seq in stop_times_map.items() if sid == stop_id}
+        
+        if not trips_from_start:
+            continue
+        
+        # Check each target stop
         for target_stop_id in target_stops:
+            trips_to_target = {trip_id for (sid, trip_id), seq in stop_times_map.items() if sid == target_stop_id}
             
-            cursor.execute("SELECT trip_id, stop_sequence FROM stop_times WHERE stop_id = ?", (stop_id,))
-            start_trips = cursor.fetchall()
-            start_dict = {trip: seq for trip, seq in start_trips}
-            # Eg. 3_1568416 : 5, # line 3, trip 15684168, this bus_stop is 5-th in the route
-            cursor.execute("SELECT trip_id, stop_sequence FROM stop_times WHERE stop_id = ?", (target_stop_id,))
-            end_trips = cursor.fetchall()
-            # check if any trip_id serves both stops in correct order
-            valid_trip_ids = set()
-            for trip_id, end_seq in end_trips:
-                if trip_id in start_dict and start_dict[trip_id] < end_seq:
-                    valid_trip_ids.add(trip_id)
-                #^-- This checks whether a given trip (trip_id) passes through the starting stop!
-                #^-- And whether the starting stop appears earlier on the route than the destination stop!
-            # v--check which route_id serves valid_trip_ids
-            if valid_trip_ids:
-                cursor.execute(
-                    "SELECT DISTINCT route_id FROM trips WHERE trip_id IN ({seq})".format(
-                        seq=','.join('?'*len(valid_trip_ids))
-                    ), tuple(valid_trip_ids)
-                )
-                for row in cursor.fetchall():
-                    lines_to_target.add(row[0]) # which route_id serves this trip_id, eg. route 3, 10, 14, etc.
-
+            # Find common trips that serve both in correct order
+            for trip_id in trips_from_start & trips_to_target:
+                start_seq = stop_times_map[(stop_id, trip_id)]
+                end_seq = stop_times_map[(target_stop_id, trip_id)]
+                
+                if start_seq < end_seq and trip_id in trip_route_map:
+                    lines_to_target.add(trip_route_map[trip_id])
+        
         if lines_to_target:
             reachable_stops.append({
                 "stop_id": stop_id,
@@ -103,12 +140,18 @@ def check_trip_id_for_stops(cursor, nearest_stops, target_stops, max_results=3):
         if count_reachable_stops >= max_results:
             break  
 
+    elapsed = time.time() - start
+    logger.debug(f"check_trip_id_for_stops: found {len(reachable_stops)} reachable stops in {elapsed:.3f}s")
     return reachable_stops
 
 
 def find_nearest_stops( target="Dworzec Główny", students_pos=None, max_results=12):
+    logger.info(f"find_nearest_stops: target='{target}', {len(students_pos)} students")
+    start_total = time.time()
+    
     conn = sqlite3.connect('.cache/mpk.db')
     cursor = conn.cursor()
+    
     # ensure target stops exist (find_target_stops will raise if none)
     try:
         target_rows = find_target_stops(cursor, target)
@@ -121,11 +164,25 @@ def find_nearest_stops( target="Dworzec Główny", students_pos=None, max_result
      
     # extract stop ids for the target stops
     target_stops = [row[0] for row in target_rows]
+    logger.debug(f"Target stops found: {target_stops}")
     
     for idx, (student_lat, student_lon) in enumerate(students_pos):
+        logger.debug(f"Processing student {idx+1}...")
+        
+        start = time.time()
         nearest_stops = find_nearest_to_student(cursor, student_lat, student_lon, max_results)
+        elapsed_nearest = time.time() - start
+        logger.debug(f"Student {idx+1}: found {len(nearest_stops)} nearest stops in {elapsed_nearest:.3f}s")
+        
+        start = time.time()
         reachable_stops = check_trip_id_for_stops(cursor, nearest_stops, target_stops)
+        elapsed_reachable = time.time() - start
+        logger.debug(f"Student {idx+1}: {len(reachable_stops)} reachable stops found in {elapsed_reachable:.3f}s")
+        
+        start = time.time()
         departure_times = check_departure_time(cursor, reachable_stops)
+        elapsed_departures = time.time() - start
+        logger.debug(f"Student {idx+1}: departures checked in {elapsed_departures:.3f}s")
 
         result.append({
             "student_id": idx +1,
@@ -136,6 +193,9 @@ def find_nearest_stops( target="Dworzec Główny", students_pos=None, max_result
         })
 
     conn.close()
+    
+    elapsed_total = time.time() - start_total
+    logger.info(f"find_nearest_stops: complete, {len(result)} students processed in {elapsed_total:.3f}s total")
     return result
 
 

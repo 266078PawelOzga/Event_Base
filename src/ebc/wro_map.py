@@ -1,7 +1,7 @@
 import folium
 import webbrowser
 
-def show_map_with_students_and_stops(stops, students):
+def create_map_with_students_and_stops(stops, students):
     m = folium.Map(location=students[0], zoom_start=13)
     
     for name, lon, lat in stops:
@@ -17,6 +17,9 @@ def show_map_with_students_and_stops(stops, students):
             popup=f"Student {i+1}",
             icon=folium.Icon(color="blue", icon="user")
         ).add_to(m)
+    return m
 
-    m.save("students_stops_map.html")
-    webbrowser.open("students_stops_map.html")
+def get_map_html(stops, students):
+    """Get map as HTML string."""
+    m = create_map_with_students_and_stops(stops, students)
+    return m._repr_html_()  # folium map in HTML format
