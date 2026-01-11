@@ -17,11 +17,11 @@ def run_server():
 
 @app.get("/status")
 def get_simulation_status() -> SimulationStatus:
-    return sim.get_status()
+    return sim.status
 
 @app.get("/config")
 def get_simulation_config() -> SimulationConfig:
-    return sim.get_config()
+    return sim.config
 
 @app.post("/config")
 def set_simulation_config(config: SimulationConfig):
@@ -32,35 +32,42 @@ def set_tickrate(value: float):
     sim.config.tickrate = value
     return {"tickrate": sim.config.tickrate}
 
-@app.get("/trips")
-def get_trips() -> list[Trip]:
-    return sim.get_trips()
-
-@app.post("/trip")
-def add_trip(trip: Trip):
+@app.post("/journey")
+def add_journey(journey: Journey):
     import geocoder
+    journey.model_validate(journey)
+    print(journey)
 
-    if trip.origin_coord is None:
-        o = geocoder.arcgis(trip.origin + "Wrocław")
+    if journey.origin.coord is None:
+        o = geocoder.arcgis(journey.origin.name + " Wrocław")
         if o.ok:
-            trip.origin_coord = tuple(o.latlng)
+            journey.origin.coord = Coordinates(lat=o.latlng[0], lon=o.latlng[1])
         else:
             raise HTTPException(
                 status_code=status.HTTP_400_BAD_REQUEST,
                 detail="Can't locate origin"
             )
 
-    if trip.destination_coord is None:
-        d = geocoder.arcgis(trip.destination + "Wrocław")
+    if journey.origin.arrival is None:
+        journey.origin.arrival = sim.status.time
+
+    if journey.destination.coord is None:
+        d = geocoder.arcgis(journey.destination.name + " Wrocław")
         if d.ok:
-            trip.destination_coord = tuple(d.latlng)
+            journey.destination.coord = Coordinates(lat=d.latlng[0], lon=d.latlng[1])
         else:
             raise HTTPException(
                 status_code=status.HTTP_400_BAD_REQUEST,
                 detail="Can't locate destination"
             )
 
-    sim.add_trip(trip)
+    if journey.current_position is None:
+        journey.current_position = journey.origin.coord
+
+    if journey.current_time is None:
+        journey.current_time = sim.status.time
+
+    sim.add_journey(journey)
 
 @app.post("/resume")
 def resume_simulation():
@@ -87,17 +94,35 @@ def get_simulation_map():
     "Generate a folium map displaying current simulation status"
     m = folium.Map(location=[51.107778, 17.038611], zoom_start=10)
 
-    for trip in sim.get_trips():
+    position_markers = {}
+
+    for journey in sim.status.journeys:
         folium.Marker(
-            location=trip.origin_coord,
-            popup=folium.Popup(f"Origin: {trip.origin}", parse_html=True, max_width=100),
+            location=journey.origin.coord.tuple(),
+            popup=folium.Popup(f"Origin: {journey.origin.name}", parse_html=True, max_width=100),
         ).add_to(m)
         folium.Marker(
-            location=trip.destination_coord,
-            popup=folium.Popup(f"Destination: {trip.destination}", parse_html=True, max_width=100),
+            location=journey.destination.coord.tuple(),
+            popup=folium.Popup(f"Destination: {journey.destination.name}", parse_html=True, max_width=100),
         ).add_to(m)
+
         AntPath(
-            locations=[trip.origin_coord, trip.destination_coord]
+            locations=[loc.coord.tuple() for loc in journey.locations]
         ).add_to(m)
+
+        position_marker = folium.CircleMarker(location = journey.current_position.tuple(),
+                            radius = 5,
+                            color = 'blue',
+                            fill = True
+                            )
+
+        position_markers[journey.id] = position_marker
+        position_marker.add_to(m)
+
+    marker_script = "var position_markers = {};\n"
+    for key, marker in position_markers.items():
+        marker_script += f"position_markers['journey_{key}'] = '{marker.get_name()}';\n"
+
+    m.get_root().html.add_child(folium.Element(f"<script>{marker_script}</script>"))
 
     return m.get_root().render()
