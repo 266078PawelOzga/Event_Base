@@ -1,5 +1,6 @@
 from datetime import datetime, timedelta
 from .models import *
+from .journey_fsm import journey_fsm_simple
 import threading
 import time
 
@@ -13,43 +14,33 @@ class Simulation:
         self.thread = threading.Thread(target=self._simulation_loop, daemon=True)
         self.thread.start()
 
-    def pause(self) -> None:
+    def pause(self):
         """Stop advancing the simulation"""
         self.status.running = False
 
-    def resume(self) -> None:
+    def resume(self):
         """Start advancing the simulation"""
         self.status.reset = False
         self.status.running = True
 
-    def reset(self) -> None:
+    def reset(self):
         """Reset the simulation to initial conditions"""
-        self.trips = []
+        self._journey_counter = counter()
         self.status = SimulationStatus(
             reset = True,
             running = False,
-            time = self.config.t0
+            time = self.config.t0,
+            journeys = []
         )
 
-    def tick(self) -> None:
+    def tick(self):
         """Advance the simulation by one tick"""
         self.status.time += self.config.dt
 
-    def get_status(self) -> SimulationStatus:
-        """Get current simulation status"""
-        return self.status
-
-    def get_config(self) -> SimulationConfig:
-        """Get current simulation config"""
-        return self.config
-
-    def get_trips(self) -> list[Trip]:
-        """Get all trips in simulation"""
-        return self.trips
-
-    def add_trip(self, trip: Trip):
-        """Add trip to simulation"""
-        self.trips.append(trip)
+    def add_journey(self, journey: Journey):
+        """Add journey to simulation"""
+        journey.id = next(self._journey_counter)
+        self.status.journeys.append(journey)
 
     def _simulation_loop(self):
         """Simulation thread execution loop"""
@@ -60,12 +51,19 @@ class Simulation:
 
             time.sleep(1.0/self.config.tickrate)
 
-            if not self.status.running:
-                continue
-
-            self.tick()
+            if self.status.running:
+                for journey in self.status.journeys:
+                    journey_fsm_simple(journey)
+                    journey.update_position(self.status.time)
+                self.tick()
 
     def __del__(self):
         """Terminate the thread when the object is deleted"""
         self.terminate.set()
         self.thread.join()
+
+def counter() -> int:
+    n: int = 1
+    while True:
+        yield n
+        n += 1

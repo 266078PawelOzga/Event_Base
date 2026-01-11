@@ -54,14 +54,14 @@ class SimulationControlApp(QMainWindow):
     def init_ui(self):
         self.setWindowTitle('EBC: Wrocław MPK Navigation')
         layout_body = QHBoxLayout()
-        # TODO: currently map has to be created first so menu can reference self.web_view
+        # FIXME: currently map has to be created first so menu can reference self.web_view
         # can we make them independent?
         wmap = self.build_map()
         wmenu = self.build_menu()
-        self.trips_panel = self.build_trips_panel()
-        self.trips_panel.hide()
+        self.journeys_panel = self.build_journeys_panel()
+        self.journeys_panel.hide()
         layout_body.addWidget(wmenu)
-        layout_body.addWidget(self.trips_panel)
+        layout_body.addWidget(self.journeys_panel)
         layout_body.addWidget(wmap)
 
         layout = QVBoxLayout()
@@ -74,12 +74,12 @@ class SimulationControlApp(QMainWindow):
         QWidget[objectName="menu"] {{
         border: {border_width}px solid {border_color};
         }}
-        QWidget[objectName="trip"] {{
+        QWidget[objectName="journey"] {{
         border: {border_width}px solid {border_color};
         border-radius: 6px;
         background-color: #f4f4f4;
         }}
-        QWidget[objectName="trips"] {{
+        QWidget[objectName="journeys"] {{
         border: {border_width}px solid {border_color};
         }}
         QWidget[objectName="modeline"] {{
@@ -111,39 +111,39 @@ class SimulationControlApp(QMainWindow):
         modeline.setLayout(layout)
         return modeline
 
-    def build_trips_panel(self) -> QWidget:
-        trips = QScrollArea(objectName='trips')
-        trips.setWidgetResizable(True)
-        trips.setFixedWidth(300)
+    def build_journeys_panel(self) -> QWidget:
+        journeys = QScrollArea(objectName='journeys')
+        journeys.setWidgetResizable(True)
+        journeys.setFixedWidth(300)
 
         container = QWidget()
-        self.trips_layout = QVBoxLayout(container)
-        self.trips_layout.addStretch()
-        self.trips_list = []
+        self.journeys_layout = QVBoxLayout(container)
+        self.journeys_layout.addStretch()
+        self.journeys_list = []
 
-        trips.setWidget(container)
-        return trips
+        journeys.setWidget(container)
+        return journeys
 
-    def toggle_trips_panel(self):
-        self.trips_panel.setVisible(not self.trips_panel.isVisible())
+    def toggle_journeys_panel(self):
+        self.journeys_panel.setVisible(not self.journeys_panel.isVisible())
 
-    def add_trip_to_panel(self, trip: Trip):
-        """Add trip widget to the top of Trips panel"""
-        trip_widget = QWidget(objectName='trip')
-        layout = QVBoxLayout(trip_widget)
-        layout.addWidget(QLabel(f"O: {trip.origin}"))
-        layout.addWidget(QLabel(f"D: {trip.destination}"))
-        layout.addWidget(QLabel(f"State: {trip.state}"))
+    def add_journey_to_panel(self, journey: Journey):
+        """Add journey widget to the top of Journeys panel"""
+        journey_widget = QWidget(objectName='journey')
+        layout = QVBoxLayout(journey_widget)
+        layout.addWidget(QLabel(f"O: {journey.origin.name}"))
+        layout.addWidget(QLabel(f"D: {journey.destination.name}"))
+        layout.addWidget(QLabel(f"State: {journey.state.value}"))
 
-        self.trips_layout.insertWidget(0, trip_widget)
-        self.trips_list.insert(0, trip_widget)
+        self.journeys_layout.insertWidget(0, journey_widget)
+        self.journeys_list.insert(0, journey_widget)
 
-    def clear_trips_panel(self):
-        """Remove all trips from the Trips panel"""
-        for trip in self.trips_list[:]:
-            self.trips_layout.removeWidget(trip)
-            trip.deleteLater()
-            self.trips_list.remove(trip)
+    def clear_journeys_panel(self):
+        """Remove all journeys from the Journeys panel"""
+        for journey in self.journeys_list[:]:
+            self.journeys_layout.removeWidget(journey)
+            journey.deleteLater()
+            self.journeys_list.remove(journey)
 
     def build_map(self) -> QWidget:
         map_ = QWidget(objectName='map')
@@ -168,24 +168,24 @@ class SimulationControlApp(QMainWindow):
         sim_toggle_shortcut = QShortcut(QKeySequence('s'), self)
         sim_toggle_shortcut.activated.connect(self.toggle_simulation)
 
-        self.add_route_btn = QPushButton('New trip')
+        self.add_route_btn = QPushButton('New journey')
         self.add_route_btn.clicked.connect(self.add_route_window)
         layout.addWidget(self.add_route_btn)
 
         add_route_shortcut = QShortcut(QKeySequence('a'), self)
         add_route_shortcut.activated.connect(self.add_route_window)
 
-        self.toggle_trips_btn = QPushButton('Trips')
-        self.toggle_trips_btn.clicked.connect(self.toggle_trips_panel)
+        self.toggle_journeys_btn = QPushButton('Journeys')
+        self.toggle_journeys_btn.clicked.connect(self.toggle_journeys_panel)
 
-        toggle_trips_shortcut = QShortcut(QKeySequence('t'), self)
-        toggle_trips_shortcut.activated.connect(self.toggle_trips_panel)
+        toggle_journeys_shortcut = QShortcut(QKeySequence('t'), self)
+        toggle_journeys_shortcut.activated.connect(self.toggle_journeys_panel)
 
-        layout.addWidget(self.toggle_trips_btn)
+        layout.addWidget(self.toggle_journeys_btn)
         layout.addStretch()
 
-        update_trips_shortcut = QShortcut(QKeySequence('r'), self)
-        update_trips_shortcut.activated.connect(self.update_trips)
+        update_journeys_shortcut = QShortcut(QKeySequence('r'), self)
+        update_journeys_shortcut.activated.connect(self.web_view.reload)
 
         # Simulation Reset Button
         sim_reset_btn = QPushButton('Reset')
@@ -209,22 +209,8 @@ class SimulationControlApp(QMainWindow):
         menu.setLayout(layout)
         return menu
 
-    def update_trips(self):
-        """Get list of trips and current map from the server"""
-        response = requests.get(f"{base_url}/trips")
-        if response.status_code != 200:
-            return
-
-        self.clear_trips_panel()
-        for item in response.json():
-            trip = Trip.parse_obj(item)
-            self.add_trip_to_panel(trip)
-
-        self.web_view.reload()
-
-
     def add_route_window(self):
-        dialog = NewTripWindow(self)
+        dialog = NewJourneyWindow(self)
         dialog.exec_()  # Modal dialog, blocks main window
 
     def resume_simulation(self):
@@ -284,6 +270,26 @@ class SimulationControlApp(QMainWindow):
         time = self.simulation_status.time.strftime("%H:%M")
         self.time_label.setText(f'Time: {time}')
 
+        # FIXME: inefficient, but simple
+        self.clear_journeys_panel()
+        for journey in status.journeys:
+            self.update_marker_position(journey)
+            self.add_journey_to_panel(journey)
+
+
+    def update_marker_position(self, journey: Journey):
+        """
+        Update the position of the marker on the map
+        without reloading the whole map
+        """
+        lat, lon = journey.current_position.tuple()
+        js_script = f"""
+        if (position_markers['journey_{journey.id}']) {{
+        eval(position_markers['journey_{journey.id}']).setLatLng([{lat}, {lon}]);
+        }}
+        """
+        self.web_view.page().runJavaScript(js_script)
+
     def process_simulation_config(self):
         config = self.simulation_config
         self.tickrate_display.setText(f'Ticks: {config.tickrate:.1f} Hz')
@@ -306,8 +312,8 @@ class SimulationControlApp(QMainWindow):
 
     def reset_simulation(self):
         requests.post(f"{base_url}/reset")
-        self.update_trips()
         self.sync_simulation_status()
+        self.web_view.reload()
 
     def tick_simulation(self):
         requests.post(f"{base_url}/tick")
@@ -320,11 +326,11 @@ class SimulationControlApp(QMainWindow):
         self.sync_simulation_config()
 
 
-class NewTripWindow(QDialog):
+class NewJourneyWindow(QDialog):
     def __init__(self, mainwindow):
         super().__init__()
         self.mainwindow = mainwindow
-        self.setWindowTitle("New trip")
+        self.setWindowTitle("New journey")
         layout = QVBoxLayout()
 
         self.setStyleSheet(f"""
@@ -364,16 +370,17 @@ class NewTripWindow(QDialog):
             self.error_label.setText("Destination missing")
             return
 
-        trip = Trip()
-        trip.origin = self.origin.text()
-        trip.destination = self.destination.text()
+        journey = Journey(
+            origin = Location(name=self.origin.text()),
+            destination = Location(name=self.destination.text())
+        )
 
-        response = requests.post(f"{base_url}/trip", json=trip.model_dump())
+        response = requests.post(f"{base_url}/journey", json=journey.model_dump())
         if response.status_code == 200:
-            self.mainwindow.update_trips()
+            self.mainwindow.web_view.reload()
             self.accept()
-        elif 'detail' in response.json():
-            self.error_label.setText(response.json().get('detail'))
+        # elif 'detail' in response.json():
+        #     self.error_label.setText(response.json().get('detail'))
         else:
             self.error_label.setText(f"Server request error ({response.status_code})")
 
