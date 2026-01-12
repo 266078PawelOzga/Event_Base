@@ -51,6 +51,14 @@ class Simulation:
         stops_finding_results = fsm.results
         for student in stops_finding_results:
             self.status.students_automatas.append(StudentAutomata(student))
+            d, stop_id, stop_name, stop_lat, stop_lon = student['nearest_stops'][0]
+            loc = Location(name = stop_name,
+                           coord=Coordinates(lat=stop_lat,
+                                             lon=stop_lon))
+            initial_trip = Trip(kind = ModeOfTransport.WALK,
+                                name = "Walk to stop",
+                                locations=[loc])
+            self.status.journeys[-1].trips.append(initial_trip)
 
     def _simulation_loop(self):
         """Simulation thread execution loop"""
