@@ -1,38 +1,69 @@
 from datetime import datetime, timedelta
+from .models import *
+from .journey_fsm import journey_fsm_simple
+import threading
+import time
 
 class Simulation:
-    def __init__(self, t0: datetime = datetime.now(), dt: timedelta = timedelta(seconds=30), activate: bool = False):
-        self.t0 = t0
-        self.t = self.t0
-        self.dt = dt
-        self.active = activate
+    def __init__(self, config: SimulationConfig, run: bool = False):
+        self.config = config
+        self.reset()
+        if run:
+            self.resume()
+        self.terminate = threading.Event()
+        self.thread = threading.Thread(target=self._simulation_loop, daemon=True)
+        self.thread.start()
 
-    def start(self) -> None:
-        """Start advancing the simulation"""
-        self.active = True
-
-    def stop(self) -> None:
+    def pause(self):
         """Stop advancing the simulation"""
-        self.active = False
+        self.status.running = False
 
-    def reset(self) -> None:
+    def resume(self):
+        """Start advancing the simulation"""
+        self.status.reset = False
+        self.status.running = True
+
+    def reset(self):
         """Reset the simulation to initial conditions"""
-        self.stop()
-        self.t = self.t0
+        self._journey_counter = counter()
+        self.status = SimulationStatus(
+            reset = True,
+            running = False,
+            time = self.config.t0,
+            journeys = []
+        )
 
-    def tick(self) -> None:
+    def tick(self):
         """Advance the simulation by one tick"""
-        if not self.active:
-            return
-        self.t += self.dt
+        self.status.time += self.config.dt
 
-    def get_time(self) -> datetime:
-        """Get current time in simulation"""
-        return self.t
+    def add_journey(self, journey: Journey):
+        """Add journey to simulation"""
+        journey.id = next(self._journey_counter)
+        self.status.journeys.append(journey)
 
-    # TODO show student locations
-    def generate_map(self):
-        "Generate a folium map displaying current simulation status"
-        import folium
-        m = folium.Map(location=[51, 17], zoom_start=10)
-        return m
+    def _simulation_loop(self):
+        """Simulation thread execution loop"""
+        while not self.terminate.is_set():
+            if self.config.tickrate <= 0:
+                time.sleep(0.1)
+                continue
+
+            time.sleep(1.0/self.config.tickrate)
+
+            if self.status.running:
+                for journey in self.status.journeys:
+                    journey_fsm_simple(journey)
+                    journey.update_position(self.status.time)
+                self.tick()
+
+    def __del__(self):
+        """Terminate the thread when the object is deleted"""
+        self.terminate.set()
+        self.thread.join()
+
+def counter() -> int:
+    n: int = 1
+    while True:
+        yield n
+        n += 1
