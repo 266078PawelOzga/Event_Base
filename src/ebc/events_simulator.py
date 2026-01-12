@@ -3,6 +3,7 @@ from .student_automata import StudentAutomata, TRANSITIONS
 import time
 import random
 import datetime
+from .models import *
 
 class EventSimulator:
     def __init__(self, number_of_students=2, verbose=False,

@@ -3,6 +3,7 @@ from .models import *
 from .journey_fsm import journey_fsm_simple
 import threading
 import time
+from .AutomatFSM import StopFinderFSM
 
 class Simulation:
     def __init__(self, config: SimulationConfig, run: bool = False):
@@ -30,17 +31,26 @@ class Simulation:
             reset = True,
             running = False,
             time = self.config.t0,
-            journeys = []
+            journeys = [],
+            students_automatas = []
         )
 
     def tick(self):
         """Advance the simulation by one tick"""
         self.status.time += self.config.dt
 
-    def add_journey(self, journey: Journey):
+    def add_journey_and_automata(self, journey: Journey):
         """Add journey to simulation"""
         journey.id = next(self._journey_counter)
         self.status.journeys.append(journey)
+        fsm = StopFinderFSM(verbose=True,
+                            number_of_students=1,
+                            current_time=self.status.time,
+                            journey=journey)
+        fsm.on_event("user_request")
+        stops_finding_results = fsm.results
+        for student in stops_finding_results:
+            self.status.students_automatas.append(StudentAutomata(student))
 
     def _simulation_loop(self):
         """Simulation thread execution loop"""

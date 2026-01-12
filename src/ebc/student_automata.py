@@ -42,3 +42,9 @@ class StudentAutomata:
     
     def print_student_state(self):
         print(f"\nStudent {self.student['student_id']} state: {self.state}")
+        
+    def to_dict(self):
+        return {
+            "student_id": self.student.get("student_id"),
+            "state": self.state,
+        }

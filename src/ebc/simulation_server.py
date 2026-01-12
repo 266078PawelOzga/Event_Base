@@ -67,7 +67,7 @@ def add_journey(journey: Journey):
     if journey.current_time is None:
         journey.current_time = sim.status.time
 
-    sim.add_journey(journey)
+    sim.add_journey_and_automata(journey)
 
 @app.post("/resume")
 def resume_simulation():

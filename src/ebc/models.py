@@ -1,8 +1,9 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict, Field, field_serializer, field_validator
 from datetime import datetime, timedelta
 from enum import Enum, unique
 from typing import NamedTuple
 import math
+from .student_automata import StudentAutomata
 
 # Trip
 # ----------------------------------------------------------
@@ -107,3 +108,27 @@ class SimulationStatus(BaseModel):
     running: bool = False
     time: datetime = datetime.fromtimestamp(0)
     journeys: list[Journey] = []
+    students_automatas: list[StudentAutomata] = Field(default_factory=list)
+
+    model_config = ConfigDict(arbitrary_types_allowed=True)
+    
+    @field_validator("students_automatas", mode="before")
+    @classmethod
+    def parse_students(cls, v):
+        # v is the raw JSON value (list of dicts)
+        if v is None:
+            return []
+
+        students = []
+        for s in v:
+            automata = StudentAutomata(
+                student={"student_id": s["student_id"]}
+            )
+            automata.state = s["state"]
+            students.append(automata)
+
+        return students
+    
+    @field_serializer("students_automatas")
+    def serialize_students(self, students):
+        return [s.to_dict() for s in students]
