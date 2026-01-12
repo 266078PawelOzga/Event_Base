@@ -26,7 +26,36 @@ Output: stop_id, trip_id, departure_time
 """ 1 Find all bus stop with name containing eg. "Dworzec Główny" """
 def distance(lat1, lon1, lat2, lon2):
         return math.sqrt((lat1 - lat2)**2 + (lon1 - lon2)**2)   # Euclidean distance
+
+def get_distance_from_lat_lon_in_m(lat1, lon1, lat2, lon2):
+    """
+    Calculate the great-circle distance between two points on Earth using the Haversine formula.
     
+    Parameters:
+    lat1, lon1: Latitude and longitude of first point in degrees
+    lat2, lon2: Latitude and longitude of second point in degrees
+    
+    Returns:
+    Distance in meters
+    """
+    R = 6371  # Radius of the earth in km
+    
+    d_lat = deg2rad(lat2 - lat1)
+    d_lon = deg2rad(lon2 - lon1)
+    
+    a = (math.sin(d_lat / 2) * math.sin(d_lat / 2) +
+         math.cos(deg2rad(lat1)) * math.cos(deg2rad(lat2)) *
+         math.sin(d_lon / 2) * math.sin(d_lon / 2))
+    
+    c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
+    d = R * c  # Distance in km
+    d = d*1000 # distance in m
+    
+    return d
+
+def deg2rad(deg):
+    """Convert degrees to radians."""
+    return deg * (math.pi / 180)
 
 def find_target_stops(cursor, target):
     # CHECK IF TARGET EXISTS !

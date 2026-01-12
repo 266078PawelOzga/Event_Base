@@ -1,5 +1,5 @@
 import random
-from .models import *
+from .models import Location
 """
     2: Generate Student position
 """

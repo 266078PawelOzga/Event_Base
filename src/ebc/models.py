@@ -46,6 +46,7 @@ class Location(BaseModel):
     coord: Coordinates | None = None
     arrival: datetime | None = None
     departure: datetime | None = None
+    visited: bool = False
 
 class Trip(BaseModel):
     """
@@ -76,7 +77,7 @@ class Journey(BaseModel):
                [self.destination]
 
     # TODO: make it linear
-    def update_position(self, time: datetime):
+    def update_position_arrival_time(self, time: datetime):
         next_location = None
         for location in self.locations:
             if location.arrival > self.current_time:
@@ -92,7 +93,31 @@ class Journey(BaseModel):
             self.current_position = self.locations[-1].coord
 
         self.current_time = time
+        
+    def update_position_travel_speed(self, time: datetime, speed_m_per_s: float):
+        from .target_stop import get_distance_from_lat_lon_in_m
+        next_location = None
+        for location in self.locations:
+            if location.visited == False:
+                next_location = location
+                break
+        
+        if next_location:
+            distance_to_next_location_m = get_distance_from_lat_lon_in_m(self.current_position.lat, self.current_position.lon,
+                                        next_location.coord.lat, next_location.coord.lon)
+            timestep = (time - self.current_time).total_seconds()
+            time_to_next_location = distance_to_next_location_m/speed_m_per_s
+            if time_to_next_location > 0.1:
+                a = min(timestep / time_to_next_location, 1)
+                self.current_position = self.current_position * (1-a) + next_location.coord * a
+                next_location.visited = True
+            else:
+                self.current_position = next_location.coord
+                next_location.visited = True
+        else:
+            self.current_position = self.locations[-1].coord
 
+        self.current_time = time
 
 # Simulation
 # ----------------------------------------------------------
