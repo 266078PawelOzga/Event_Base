@@ -120,8 +120,13 @@ class StopFinderFSM:
     def run_search(self, students_position):
         # TODO: add fining nearest stop to the destination of the journey
         #       (now it finds stops leading to the "Dworzec Główny")
-        self.results = find_nearest_stops(students_pos=students_position,
+        if self.journey == None:
+            self.results = find_nearest_stops(students_pos=students_position,
                                           current_time=self.current_time) 
+        else:
+            self.results = find_nearest_stops(students_pos=students_position,
+                                          current_time=self.current_time,
+                                          target= self.journey.destination.name) 
         self.on_event("search_done")
        
     # def display_student_pos(self):

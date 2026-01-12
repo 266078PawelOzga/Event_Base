@@ -76,7 +76,6 @@ class Journey(BaseModel):
                [loc for trip in self.trips for loc in trip.locations ] + \
                [self.destination]
 
-    # TODO: make it linear
     def update_position_arrival_time(self, time: datetime):
         next_location = None
         for location in self.locations:
@@ -110,7 +109,6 @@ class Journey(BaseModel):
             if time_to_next_location > 0.1:
                 a = min(timestep / time_to_next_location, 1)
                 self.current_position = self.current_position * (1-a) + next_location.coord * a
-                next_location.visited = True
             else:
                 self.current_position = next_location.coord
                 next_location.visited = True
