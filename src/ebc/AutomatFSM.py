@@ -1,7 +1,7 @@
 from .target_stop import find_nearest_stops
 from .students_pos import check_student_pos
-from .wro_map import show_map_with_students_and_stops
-from .time_operation import display_departure_time_once, time_now_td, check_departure_time
+from .wro_map import create_map_with_students_and_stops
+from .time_operation import display_departure_time_once, time_now_td, check_departure_time, select_fastest_departure
 import threading
 import time
 import sqlite3
@@ -17,36 +17,6 @@ SEARCHING - searching for nearest stops
 DISPLAYING - displaying results to user
 WROMAP - showing map
 """
-
-# def open_live_terminal():
-#     subprocess.Popen([
-#         "x-terminal-emulator",
-#         "-e",
-#         "bash -c 'python3 src/ebc/live_update_runner.py; exec bash'"
-#     ])
-
-
-# def print_current_time(stop_event):
-#     while not stop_event.is_set():
-#         now = time_now_td()
-#         with print_lock:
-#             # clear line then print current time (keeps it on single line)
-#             self._vprint(f"\r\033[KCurrent time: {now}", end='', flush=True)
-#         stop_event.wait(timeout=1)
-
-# stop_event = threading.Event()
-
-# # simple thread-safe print helper used in this module
-# print_lock = threading.Lock()
-# def safe_self._vprint(*args, **kwargs):
-#     with print_lock:
-#         self._vprint(*args, **kwargs)
-
-# t = threading.Thread(target=print_current_time, args=(stop_event,) ,daemon=True)
-# t.start()
-# safe_self._vprint('Main dalej')
-# t.join(timeout=5)
-# safe_self._vprint('Main koniec')
 
 class StopFinderFSM:
     def __init__(self, verbose = False, show_map = False):
@@ -105,7 +75,7 @@ class StopFinderFSM:
         for student in self.results:
             for stop in student['reachable_stops']:
                 stops.append((stop['stop_name'], stop['stop_lon'], stop['stop_lat']))
-        show_map_with_students_and_stops(stops, self.students_position)
+        create_map_with_students_and_stops(stops, self.students_position)
 
     def run_search(self, students_position):
         self.results = find_nearest_stops(students_pos=students_position) 
@@ -118,35 +88,48 @@ class StopFinderFSM:
 
 
     def display_find_nearest_stops(self):
-     for student in self.results:
-        self._vprint(f"\nStudents {student['student_id']}: {student['position']}")
+        for student in self.results:
+            self._vprint(f"\nStudent {student['student_id']}: {student['position']}")
 
-        if student['nearest_stops']:
-            self._vprint("  Nearest stops:")        
-            for d, stop_id, stop_name, stop_lat, stop_lon in student['nearest_stops'][:3]:
-                self._vprint(f"  Stop: {stop_name}, ID: {stop_id}, Distance: {d:.6f}")
-        else:
-            self._vprint(" In your area, the bus stop is far far away")
+            if student['nearest_stops']:
+                self._vprint("  Nearest stops:")        
+                for d, stop_id, stop_name, stop_lat, stop_lon in student['nearest_stops'][:3]:
+                    self._vprint(f"    Stop: {stop_name}, ID: {stop_id}, Distance: {d:.6f}")
+            else:
+                self._vprint("  In your area, the bus stop is far far away")
 
-        if student['reachable_stops']:
-            self._vprint("  Reachable stops (with routes to target):")
-            for stop in student['reachable_stops']:
-                self._vprint(f"    Stop: {stop['stop_name']}, ID: {stop['stop_id']}, Routes to target: {stop['routes_to_target']}")
-        else:
-            self._vprint("  No reachable stops with routes to target from nearest stops.")
-            
-        if student.get('departures'):
-            self._vprint(' Next departures:')
-            for dep in student.get('departures', []):
-                self._vprint(f"    Stop:{dep['stop_name']}, Route {dep['route_id']}: {dep['next_departure']}")
-            display_departure_time_once(student['departures'])
-        else:
-            self._vprint("  No departure times available for reachable stops.")
-        
-        
+            if student['reachable_stops']:
+                self._vprint("  Reachable stops (with routes to target):")
+                for stop in student['reachable_stops']:
+                    self._vprint(f"    Stop: {stop['stop_name']}, ID: {stop['stop_id']}, Routes to target: {stop['routes_to_target']}")
+            else:
+                self._vprint("  No reachable stops with routes to target from nearest stops.")
+                
+            if student.get('departures'):
+                self._vprint('  Next departures:')
+                for dep in student['departures']:
+                    self._vprint(f"    Stop:{dep['stop_name']}, Route {dep['route_id']}: {dep['next_departure']}")
+                display_departure_time_once(student['departures'])
+            else:
+                self._vprint("  No departure times available for reachable stops.")
+
+            # --- dodatkowo wyświetlamy best_option ---
+            best = student.get('best_option')
+            if best:
+                self._vprint("\n  Best option (fastest bus student can catch):")
+                self._vprint(f"    Stop: {best['stop_name']} (ID: {best['stop_id']})")
+                self._vprint(f"    Route: {best['route_id']}")
+                self._vprint(f"    Next departure: {best['next_departure']}")
+                self._vprint(f"    Walk time to stop: {int(best['walk_seconds'])} s")
+                # total_wait to timedelta, zamieniamy na minuty i sekundy
+                total_sec = best['total_wait'].total_seconds()
+                minutes, seconds = divmod(total_sec, 60)
+                self._vprint(f"    Time until departure: {int(minutes)}m {int(seconds)}s")
+            else:
+                self._vprint("  Best option: no reachable bus available.")
 
 #Test - always run user_request first
 if __name__ == '__main__':
-    fsm = StopFinderFSM()
+    fsm = StopFinderFSM(verbose=True)
     fsm.on_event("user_request")
 

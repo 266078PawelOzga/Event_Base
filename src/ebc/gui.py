@@ -19,6 +19,10 @@ from PyQt5.QtWidgets import (
 )
 from PyQt5.QtCore import Qt, QTimer, QUrl, pyqtSignal, QObject
 from PyQt5.QtWebEngineWidgets import QWebEngineView
+import os
+PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+DB_PATH = os.path.join(PROJECT_ROOT, ".cache", "mpk.db")
+#conn = sqlite3.connect(DB_PATH)
 
 # Setup logging
 logging.basicConfig(level=logging.DEBUG)
@@ -57,7 +61,8 @@ class SimulationControlApp(QMainWindow):
     def _load_stops_from_db(self):
         """Load all stop names from database for autocomplete."""
         try:
-            conn = sqlite3.connect('.cache/mpk.db')
+            #conn = sqlite3.connect('.cache/mpk.db')
+            conn = sqlite3.connect(DB_PATH)
             cursor = conn.cursor()
             cursor.execute("SELECT DISTINCT stop_name FROM stops ORDER BY stop_name")
             stops = [row[0] for row in cursor.fetchall()]
@@ -231,7 +236,8 @@ class SimulationControlApp(QMainWindow):
             
             # Validate stops exist in database and get their full details
             logger.info("Validating stops and getting coordinates...")
-            conn = sqlite3.connect('.cache/mpk.db')
+            #conn = sqlite3.connect('.cache/mpk.db')
+            conn = sqlite3.connect(DB_PATH)
             cursor = conn.cursor()
             
             try:

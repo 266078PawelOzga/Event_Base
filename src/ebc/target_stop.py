@@ -1,14 +1,22 @@
+import os
 import sqlite3
 import sys
 import random
 import math
+from math import radians, cos, sin, asin, sqrt
 import logging
 import time
 from datetime import timedelta, datetime
 from .students_pos import check_student_pos 
-from .time_operation import time_now_td, check_departure_time, display_departure_time_once
-
+from .time_operation import select_fastest_departure, time_now_td, check_departure_time, display_departure_time_once
+from ebc import students_pos
 logger = logging.getLogger(__name__)
+PROJECT_ROOT = os.path.abspath(
+    os.path.join(os.path.dirname(__file__), "..", "..")
+)
+DB_PATH = os.path.join(PROJECT_ROOT, ".cache", "mpk.db")
+
+conn = sqlite3.connect(DB_PATH)
 
 """
 Raw Data in .txt:
@@ -30,7 +38,15 @@ Output: stop_id, trip_id, departure_time
 """ 1 Find all bus stop with name containing eg. "Dworzec Główny" """
 def distance(lat1, lon1, lat2, lon2):
         return math.sqrt((lat1 - lat2)**2 + (lon1 - lon2)**2)   # Euclidean distance
-    
+
+def haversine(lat1, lon1, lat2, lon2):
+    R = 6371  # km
+    dlat = radians(lat2 - lat1)
+    dlon = radians(lon2 - lon1)
+    a = sin(dlat/2)**2 + cos(radians(lat1))*cos(radians(lat2))*sin(dlon/2)**2
+    c = 2*asin(sqrt(a))
+    return R * c
+
 
 def find_target_stops(cursor, target):
     # CHECK IF TARGET EXISTS !
@@ -149,7 +165,7 @@ def find_nearest_stops( target="Dworzec Główny", students_pos=None, max_result
     logger.info(f"find_nearest_stops: target='{target}', {len(students_pos)} students")
     start_total = time.time()
     
-    conn = sqlite3.connect('.cache/mpk.db')
+    conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
     
     # ensure target stops exist (find_target_stops will raise if none)
@@ -168,36 +184,45 @@ def find_nearest_stops( target="Dworzec Główny", students_pos=None, max_result
     
     for idx, (student_lat, student_lon) in enumerate(students_pos):
         logger.debug(f"Processing student {idx+1}...")
-        
+        # nearest bus stops ---
         start = time.time()
         nearest_stops = find_nearest_to_student(cursor, student_lat, student_lon, max_results)
         elapsed_nearest = time.time() - start
         logger.debug(f"Student {idx+1}: found {len(nearest_stops)} nearest stops in {elapsed_nearest:.3f}s")
-        
+        # reachable stops ---
         start = time.time()
         reachable_stops = check_trip_id_for_stops(cursor, nearest_stops, target_stops)
         elapsed_reachable = time.time() - start
         logger.debug(f"Student {idx+1}: {len(reachable_stops)} reachable stops found in {elapsed_reachable:.3f}s")
-        
+        # --- get departure times ---
         start = time.time()
         departure_times = check_departure_time(cursor, reachable_stops)
         elapsed_departures = time.time() - start
         logger.debug(f"Student {idx+1}: departures checked in {elapsed_departures:.3f}s")
-
+        # ---best choice ---
+        best_option = select_fastest_departure(
+            student_pos=(student_lat, student_lon),
+            reachable_stops=reachable_stops,
+            departures=departure_times
+        )
+        # --- output ---
         result.append({
-            "student_id": idx +1,
+            "student_id": idx + 1,
             "position": (student_lat, student_lon),
             "nearest_stops": nearest_stops,
             "reachable_stops": reachable_stops,
-            "departures": departure_times
+            "departures": departure_times,
+            "best_option": best_option 
         })
-
     conn.close()
-    
     elapsed_total = time.time() - start_total
     logger.info(f"find_nearest_stops: complete, {len(result)} students processed in {elapsed_total:.3f}s total")
     return result
 
-
 if __name__ == "__main__":
-        find_nearest_stops()
+    print(">>> AutomatFSM START <<<")
+    # generujemy pozycje studentów (2 przykładowe)
+    students_positions = check_student_pos(students_count=2)
+    # przekazujemy je do funkcji
+    find_nearest_stops(students_pos=students_positions)
+    print(">>> AutomatFSM END <<<")
