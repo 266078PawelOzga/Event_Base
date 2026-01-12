@@ -1,12 +1,13 @@
-from target_stop import find_nearest_stops
-from students_pos import check_student_pos
-from wro_map import show_map_with_students_and_stops
-from time_operation import display_departure_time_once, time_now_td, check_departure_time
+from .target_stop import find_nearest_stops
+from .students_pos import check_student_pos
+from .wro_map import show_map_with_students_and_stops
+from .time_operation import display_departure_time_once, time_now_td, check_departure_time
 import threading
 import time
 import sqlite3
 import subprocess
 import os, sys
+from datetime import datetime
 """
 Event: User requests to find nearest bus stops
 the target_stop.py is implemented in run_search method
@@ -31,36 +32,45 @@ WROMAP - showing map
 #         now = time_now_td()
 #         with print_lock:
 #             # clear line then print current time (keeps it on single line)
-#             print(f"\r\033[KCurrent time: {now}", end='', flush=True)
+#             self._vprint(f"\r\033[KCurrent time: {now}", end='', flush=True)
 #         stop_event.wait(timeout=1)
 
 # stop_event = threading.Event()
 
 # # simple thread-safe print helper used in this module
 # print_lock = threading.Lock()
-# def safe_print(*args, **kwargs):
+# def safe_self._vprint(*args, **kwargs):
 #     with print_lock:
-#         print(*args, **kwargs)
+#         self._vprint(*args, **kwargs)
 
 # t = threading.Thread(target=print_current_time, args=(stop_event,) ,daemon=True)
 # t.start()
-# safe_print('Main dalej')
+# safe_self._vprint('Main dalej')
 # t.join(timeout=5)
-# safe_print('Main koniec')
+# safe_self._vprint('Main koniec')
 
 class StopFinderFSM:
-    def __init__(self):
+    def __init__(self, number_of_students = 2, verbose = False, show_map = False,
+                 current_time = datetime.now()):
         self.state = 'IDLE'
         self.results = []
         self.students_position = []
+        self.number_of_students = number_of_students
+        self.verbose = verbose
+        self.show_map = show_map
+        self.current_time = current_time
       #  self.live_terminal_started = False 
+
+    def _vprint(self, *args, **kwargs):
+        if self.verbose:
+            print(*args, **kwargs)
 
     def on_event(self,event):
 
         if self.state == 'IDLE':
             if event == 'user_request':
-                print("IDLE")
-                students_position = check_student_pos()
+                self._vprint("IDLE")
+                students_position = check_student_pos(students_count=self.number_of_students)
                 self.students_position = students_position
                 self.state = 'SEARCHING'
                 self.event_happend()
@@ -68,12 +78,12 @@ class StopFinderFSM:
 
         elif self.state == 'SEARCHING':
             if event =='search_done':
-                print('SEARCHING done')
+                self._vprint('SEARCHING done')
                 self.state = 'DISPLAYING'
 
 
         elif self.state == 'DISPLAYING':
-            print("\nDISPLAYING\n")
+            self._vprint("\nDISPLAYING\n")
             self.display_find_nearest_stops()
             #self.display_student_pos()
             self.state = 'WROMAP'
@@ -82,14 +92,15 @@ class StopFinderFSM:
 
         elif self.state == 'WROMAP':
             if event == 'show':
-                print('Loading map...')
-                print('OFF')
-                self.draw_map()
+                self._vprint('Loading map...')
+                self._vprint('OFF')
+                if self.show_map:
+                    self.draw_map()
                 self.state = 'IDLE'
 
     def event_happend(self): # testing empty event
-        print(" Event_happened: No event")
-        print(" solution found: None")
+        self._vprint(" Event_happened: No event")
+        self._vprint(" solution found: None")
         self.on_event("search_done")
 
 
@@ -101,44 +112,46 @@ class StopFinderFSM:
         show_map_with_students_and_stops(stops, self.students_position)
 
     def run_search(self, students_position):
-        self.results = find_nearest_stops(students_pos=students_position) 
+        self.results = find_nearest_stops(students_pos=students_position,
+                                          current_time=self.current_time) 
         self.on_event("search_done")
        
     # def display_student_pos(self):
-    #     safe_print("Student position in Wroclaw (random):")
+    #     safe_self._vprint("Student position in Wroclaw (random):")
     #     for i, pos in enumerate(self.students_position, start=1):
-    #         safe_print(f"  Student {i}: {pos}")
+    #         safe_self._vprint(f"  Student {i}: {pos}")
 
 
     def display_find_nearest_stops(self):
      for student in self.results:
-        print(f"\nStudents {student['student_id']}: {student['position']}")
+        self._vprint(f"\nStudents {student['student_id']}: {student['position']}")
 
         if student['nearest_stops']:
-            print("  Nearest stops:")        
+            self._vprint("  Nearest stops:")        
             for d, stop_id, stop_name, stop_lat, stop_lon in student['nearest_stops'][:3]:
-                print(f"  Stop: {stop_name}, ID: {stop_id}, Distance: {d:.6f}")
+                self._vprint(f"  Stop: {stop_name}, ID: {stop_id}, Distance: {d:.6f}")
         else:
-            print(" In your area, the bus stop is far far away")
+            self._vprint(" In your area, the bus stop is far far away")
 
         if student['reachable_stops']:
-            print("  Reachable stops (with routes to target):")
+            self._vprint("  Reachable stops (with routes to target):")
             for stop in student['reachable_stops']:
-                print(f"    Stop: {stop['stop_name']}, ID: {stop['stop_id']}, Routes to target: {stop['routes_to_target']}")
+                self._vprint(f"    Stop: {stop['stop_name']}, ID: {stop['stop_id']}, Routes to target: {stop['routes_to_target']}")
         else:
-            print("  No reachable stops with routes to target from nearest stops.")
+            self._vprint("  No reachable stops with routes to target from nearest stops.")
             
         if student.get('departures'):
-            print(' Next departures:')
+            self._vprint(' Next departures:')
             for dep in student.get('departures', []):
-                print(f"    Stop:{dep['stop_name']}, Route {dep['route_id']}: {dep['next_departure']}")
+                self._vprint(f"    Stop:{dep['stop_name']}, Route {dep['route_id']}: {dep['next_departure']}")
             display_departure_time_once(student['departures'])
         else:
-            print("  No departure times available for reachable stops.")
+            self._vprint("  No departure times available for reachable stops.")
         
         
 
 #Test - always run user_request first
-fsm = StopFinderFSM()
-fsm.on_event("user_request")
+if __name__ == '__main__':
+    fsm = StopFinderFSM()
+    fsm.on_event("user_request")
 

@@ -3,8 +3,8 @@ import sys
 import random
 import math
 from datetime import timedelta, datetime
-from students_pos import check_student_pos 
-from time_operation import time_now_td, check_departure_time, display_departure_time_once
+from .students_pos import check_student_pos 
+from .time_operation import time_now_td, check_departure_time, display_departure_time_once
 
 """
 Raw Data in .txt:
@@ -106,7 +106,8 @@ def check_trip_id_for_stops(cursor, nearest_stops, target_stops, max_results=3):
     return reachable_stops
 
 
-def find_nearest_stops( target="Dworzec Główny", students_pos=None, max_results=12):
+def find_nearest_stops( target="Dworzec Główny", students_pos=None, max_results=12,
+                       current_time = datetime.now()):
     conn = sqlite3.connect('.cache/mpk.db')
     cursor = conn.cursor()
     # ensure target stops exist (find_target_stops will raise if none)
@@ -125,7 +126,7 @@ def find_nearest_stops( target="Dworzec Główny", students_pos=None, max_result
     for idx, (student_lat, student_lon) in enumerate(students_pos):
         nearest_stops = find_nearest_to_student(cursor, student_lat, student_lon, max_results)
         reachable_stops = check_trip_id_for_stops(cursor, nearest_stops, target_stops)
-        departure_times = check_departure_time(cursor, reachable_stops)
+        departure_times = check_departure_time(cursor, reachable_stops, current_time)
 
         result.append({
             "student_id": idx +1,

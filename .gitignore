@@ -1,3 +1,6 @@
+#Ignore not to cause modification at every run
+students_stops_map.html
+
 # stolen from https://github.com/github/gitignore/blob/main/Python.gitignore
 # Byte-compiled / optimized / DLL files
 __pycache__/
