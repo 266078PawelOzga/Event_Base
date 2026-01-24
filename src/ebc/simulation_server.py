@@ -2,6 +2,7 @@ from .simulation import Simulation
 from .models import *
 from datetime import datetime, timedelta
 from fastapi import FastAPI, HTTPException, status
+from fastapi import BackgroundTasks
 from fastapi.responses import HTMLResponse
 import uvicorn
 import time
@@ -33,7 +34,7 @@ def set_tickrate(value: float):
     return {"tickrate": sim.config.tickrate}
 
 @app.post("/journey")
-def add_journey(journey: Journey):
+def add_journey(journey: Journey, background_tasks: BackgroundTasks):
     import geocoder
     journey.model_validate(journey)
     print(journey)
@@ -67,7 +68,7 @@ def add_journey(journey: Journey):
     if journey.current_time is None:
         journey.current_time = sim.status.time
 
-    sim.add_journey_and_automata(journey)
+    background_tasks.add_task(sim.add_journey_and_automata, journey)
 
 @app.post("/resume")
 def resume_simulation():
