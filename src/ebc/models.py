@@ -116,12 +116,83 @@ class Journey(BaseModel):
             self.current_position = self.locations[-1].coord
 
         self.current_time = time
+    
+    def update_position_schedule_time(self, time: datetime):
+        """
+        Move based on arrival/departure times instead of speed.
+        - Waits at stops until departure time
+        - Moves between stops until arrival time
+        - Marks locations as visited when reached
+        """
+
+        # First tick bootstrap
+        if self.current_time is None:
+            self.current_time = time
+            if self.current_position is None:
+                self.current_position = self.origin.coord
+            return
+
+        locs = self.locations
+
+        # Find current segment
+        prev_loc = None
+        next_loc = None
+
+        for loc in locs:
+            if not loc.visited:
+                next_loc = loc
+                break
+            prev_loc = loc
+
+        # Finished journey
+        if next_loc is None:
+            self.current_position = locs[-1].coord
+            self.current_time = time
+            self.state = JourneyState.FINISHED
+            return
+
+        # First movement (origin → first stop)
+        if prev_loc is None:
+            prev_loc = self.origin
+
+        # Times
+        dep_time = prev_loc.departure or self.current_time
+        arr_time = next_loc.arrival or time
+
+        # Before departure → wait at stop
+        if time <= dep_time:
+            self.current_position = prev_loc.coord
+            self.current_time = time
+            return
+
+        # After arrival → snap to stop
+        if time >= arr_time:
+            self.current_position = next_loc.coord
+            next_loc.visited = True
+            self.current_time = time
+            return
+
+        # Traveling → interpolate
+        total = (arr_time - dep_time).total_seconds()
+        elapsed = (time - dep_time).total_seconds()
+
+        if total > 0:
+            a = min(max(elapsed / total, 0), 1)
+        else:
+            a = 1
+
+        self.current_position = (
+            prev_loc.coord * (1 - a) +
+            next_loc.coord * a
+        )
+
+        self.current_time = time
 
 # Simulation
 # ----------------------------------------------------------
 
 class SimulationConfig(BaseModel):
-    t0: datetime = datetime.fromtimestamp(0)
+    t0: datetime = datetime(2025, 10, 19, 8, 0, 0)
     dt: timedelta = timedelta(minutes=1)
     tickrate: float = 1
     tickrate_resolution: float = 0.1

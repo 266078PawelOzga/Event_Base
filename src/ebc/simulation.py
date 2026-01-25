@@ -111,8 +111,7 @@ class Simulation:
             if self.status.running:
                 for journey in self.status.journeys:
                     journey_fsm_simple(journey)
-                    journey.update_position_travel_speed(self.status.time,
-                                                         speed_m_per_s=1.4)
+                    journey.update_position_schedule_time(self.status.time)
                 self.tick()
 
     def __del__(self):
