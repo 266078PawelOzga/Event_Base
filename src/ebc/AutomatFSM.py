@@ -120,7 +120,6 @@ class StopFinderFSM:
     def run_search(self, students_position):
         # TODO: add fining nearest stop to the destination of the journey
         #       (now it finds stops leading to the "Dworzec Główny")
-        self._vprint("FSM current_time:", self.current_time)
         if self.journey == None:
             self.results = find_nearest_stops(students_pos=students_position,
                                           current_time=self.current_time) 
@@ -160,7 +159,6 @@ class StopFinderFSM:
                 self._vprint(f"    Stop:{dep['stop_name']}, Route {dep['route_id']}: {dep['next_departure']}")
             display_departure_time_once(student['departures'])
         else:
-            self._vprint("FSM current_time:", self.current_time)
             self._vprint("  No departure times available for reachable stops.")
         
         

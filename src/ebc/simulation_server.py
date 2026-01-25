@@ -14,7 +14,7 @@ sim = Simulation(config=SimulationConfig(), run=False)
 
 def run_server():
     """Start the API server"""
-    uvicorn.run(app, host="0.0.0.0", port=8000, access_log = False)
+    uvicorn.run(app, host="0.0.0.0", port=8000)
 
 @app.get("/status")
 def get_simulation_status() -> SimulationStatus:
