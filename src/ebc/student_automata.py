@@ -26,6 +26,51 @@ class StudentAutomata:
         self.state = 'START'
         self.student = student
 
+        # ==========================
+        # NEW: build stop-by-stop path
+        # ==========================
+        self.path = []
+        self._build_path()
+        # ==========================
+
+    def _build_path(self):
+        """
+        Builds the full list of stops between the chosen start stop
+        and the destination stop for this student.
+        """
+        try:
+            reachable = self.student.get("reachable_stops", [])
+            if not reachable:
+                return
+
+            chosen = reachable[0]
+
+            trip_id = chosen.get("trip_id")
+            start_stop_id = chosen.get("stop_id")
+            target_stop_id = chosen.get("target_stop_id")
+
+            if not trip_id or not start_stop_id or not target_stop_id:
+                return
+
+            import sqlite3
+            from .target_stop import get_stops_between
+
+            conn = sqlite3.connect('.cache/mpk.db')
+            cursor = conn.cursor()
+
+            self.path = get_stops_between(
+                cursor,
+                start_stop_id,
+                target_stop_id,
+                trip_id
+            )
+
+            conn.close()
+            print(self.path)
+
+        except Exception as e:
+            print("StudentAutomata path build failed:", e)
+
     def on_event(self, event):
         state_transitions = TRANSITIONS.get(self.state, {})
         new_state = state_transitions.get(event)
@@ -47,4 +92,5 @@ class StudentAutomata:
         return {
             "student_id": self.student.get("student_id"),
             "state": self.state,
+            "path": self.path,  # optional: makes debugging & visualization easy
         }
