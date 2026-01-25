@@ -14,7 +14,7 @@ sim = Simulation(config=SimulationConfig(), run=False)
 
 def run_server():
     """Start the API server"""
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8000, access_log = False)
 
 @app.get("/status")
 def get_simulation_status() -> SimulationStatus:
@@ -70,7 +70,7 @@ def add_journey(journey: Journey, background_tasks: BackgroundTasks):
 
     # Asynchronious adding - the trip is not visible instantly, only after adding
     # the next trip
-    background_tasks.add_task(sim.add_journey_and_automata, journey)
+    # background_tasks.add_task(sim.add_journey_and_automata, journey)
     # Sychronious adding - the trip is visible at the right time,
     # but the app and simulation are frozen for the time of adding
     sim.add_journey_and_automata(journey)
