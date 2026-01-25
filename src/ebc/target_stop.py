@@ -26,7 +26,36 @@ Output: stop_id, trip_id, departure_time
 """ 1 Find all bus stop with name containing eg. "Dworzec Główny" """
 def distance(lat1, lon1, lat2, lon2):
         return math.sqrt((lat1 - lat2)**2 + (lon1 - lon2)**2)   # Euclidean distance
+
+def get_distance_from_lat_lon_in_m(lat1, lon1, lat2, lon2):
+    """
+    Calculate the great-circle distance between two points on Earth using the Haversine formula.
     
+    Parameters:
+    lat1, lon1: Latitude and longitude of first point in degrees
+    lat2, lon2: Latitude and longitude of second point in degrees
+    
+    Returns:
+    Distance in meters
+    """
+    R = 6371  # Radius of the earth in km
+    
+    d_lat = deg2rad(lat2 - lat1)
+    d_lon = deg2rad(lon2 - lon1)
+    
+    a = (math.sin(d_lat / 2) * math.sin(d_lat / 2) +
+         math.cos(deg2rad(lat1)) * math.cos(deg2rad(lat2)) *
+         math.sin(d_lon / 2) * math.sin(d_lon / 2))
+    
+    c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
+    d = R * c  # Distance in km
+    d = d*1000 # distance in m
+    
+    return d
+
+def deg2rad(deg):
+    """Convert degrees to radians."""
+    return deg * (math.pi / 180)
 
 def find_target_stops(cursor, target):
     # CHECK IF TARGET EXISTS !
@@ -74,21 +103,25 @@ def check_trip_id_for_stops(cursor, nearest_stops, target_stops, max_results=3):
             cursor.execute("SELECT trip_id, stop_sequence FROM stop_times WHERE stop_id = ?", (target_stop_id,))
             end_trips = cursor.fetchall()
             # check if any trip_id serves both stops in correct order
-            valid_trip_ids = set()
+            valid_trip_ids = {}
             for trip_id, end_seq in end_trips:
                 if trip_id in start_dict and start_dict[trip_id] < end_seq:
-                    valid_trip_ids.add(trip_id)
+                    valid_trip_ids[trip_id] = target_stop_id
                 #^-- This checks whether a given trip (trip_id) passes through the starting stop!
                 #^-- And whether the starting stop appears earlier on the route than the destination stop!
             # v--check which route_id serves valid_trip_ids
             if valid_trip_ids:
-                cursor.execute(
-                    "SELECT DISTINCT route_id FROM trips WHERE trip_id IN ({seq})".format(
-                        seq=','.join('?'*len(valid_trip_ids))
-                    ), tuple(valid_trip_ids)
-                )
-                for row in cursor.fetchall():
-                    lines_to_target.add(row[0]) # which route_id serves this trip_id, eg. route 3, 10, 14, etc.
+                chosen_trip, chosen_target = list(valid_trip_ids.items())[0]
+
+                reachable_stops.append({
+                    "stop_id": stop_id,
+                    "stop_name": stop_name,
+                    "stop_lat": stop_lat,
+                    "stop_lon": stop_lon,
+                    "routes_to_target": list(lines_to_target),
+                    "trip_id": chosen_trip,
+                    "target_stop_id": chosen_target
+                })
 
         if lines_to_target:
             reachable_stops.append({
@@ -107,7 +140,9 @@ def check_trip_id_for_stops(cursor, nearest_stops, target_stops, max_results=3):
 
 
 def find_nearest_stops( target="Dworzec Główny", students_pos=None, max_results=12,
-                       current_time = datetime.now()):
+                       current_time = None):
+    if current_time is None:
+        raise ValueError("Simulation time must be provided")
     conn = sqlite3.connect('.cache/mpk.db')
     cursor = conn.cursor()
     # ensure target stops exist (find_target_stops will raise if none)
@@ -139,6 +174,63 @@ def find_nearest_stops( target="Dworzec Główny", students_pos=None, max_result
     conn.close()
     return result
 
+def get_stops_between(cursor, start_stop_id, target_stop_id, trip_id):
+    """
+    Returns all stops between start and target on a given trip
+    including arrival/departure times and stop locations
+    """
+
+    # Get stop_sequence for start and target
+    cursor.execute("""
+        SELECT stop_sequence FROM stop_times
+        WHERE trip_id = ? AND stop_id = ?
+    """, (trip_id, start_stop_id))
+    start_seq = cursor.fetchone()
+
+    cursor.execute("""
+        SELECT stop_sequence FROM stop_times
+        WHERE trip_id = ? AND stop_id = ?
+    """, (trip_id, target_stop_id))
+    end_seq = cursor.fetchone()
+
+    if not start_seq or not end_seq:
+        return []
+
+    start_seq = start_seq[0]
+    end_seq = end_seq[0]
+
+    # Get all stops between them
+    cursor.execute("""
+        SELECT 
+            st.stop_id,
+            s.stop_name,
+            st.arrival_time,
+            st.departure_time,
+            s.stop_lat,
+            s.stop_lon,
+            st.stop_sequence
+        FROM stop_times st
+        JOIN stops s ON st.stop_id = s.stop_id
+        WHERE st.trip_id = ?
+          AND st.stop_sequence BETWEEN ? AND ?
+        ORDER BY st.stop_sequence
+    """, (trip_id, start_seq, end_seq))
+
+    rows = cursor.fetchall()
+
+    stops = []
+    for row in rows:
+        stops.append({
+            "stop_id": row[0],
+            "stop_name": row[1],
+            "arrival_time": row[2],
+            "departure_time": row[3],
+            "stop_lat": row[4],
+            "stop_lon": row[5],
+            "sequence": row[6]
+        })
+
+    return stops
 
 if __name__ == "__main__":
         find_nearest_stops()

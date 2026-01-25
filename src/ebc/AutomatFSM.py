@@ -1,5 +1,5 @@
 from .target_stop import find_nearest_stops
-from .students_pos import check_student_pos
+from .students_pos import check_student_pos, real_student_pos
 from .wro_map import show_map_with_students_and_stops
 from .time_operation import display_departure_time_once, time_now_td, check_departure_time
 import threading
@@ -8,6 +8,7 @@ import sqlite3
 import subprocess
 import os, sys
 from datetime import datetime
+from .models import *
 """
 Event: User requests to find nearest bus stops
 the target_stop.py is implemented in run_search method
@@ -51,7 +52,8 @@ WROMAP - showing map
 
 class StopFinderFSM:
     def __init__(self, number_of_students = 2, verbose = False, show_map = False,
-                 current_time = datetime.now()):
+                 current_time = datetime.now(),
+                 journey:Journey = None):
         self.state = 'IDLE'
         self.results = []
         self.students_position = []
@@ -59,6 +61,7 @@ class StopFinderFSM:
         self.verbose = verbose
         self.show_map = show_map
         self.current_time = current_time
+        self.journey = journey
       #  self.live_terminal_started = False 
 
     def _vprint(self, *args, **kwargs):
@@ -70,7 +73,10 @@ class StopFinderFSM:
         if self.state == 'IDLE':
             if event == 'user_request':
                 self._vprint("IDLE")
-                students_position = check_student_pos(students_count=self.number_of_students)
+                if self.journey == None:
+                    students_position = check_student_pos(students_count=self.number_of_students)
+                else:
+                    students_position = real_student_pos(self.journey.origin)
                 self.students_position = students_position
                 self.state = 'SEARCHING'
                 self.event_happend()
@@ -112,8 +118,15 @@ class StopFinderFSM:
         show_map_with_students_and_stops(stops, self.students_position)
 
     def run_search(self, students_position):
-        self.results = find_nearest_stops(students_pos=students_position,
+        # TODO: add fining nearest stop to the destination of the journey
+        #       (now it finds stops leading to the "Dworzec Główny")
+        if self.journey == None:
+            self.results = find_nearest_stops(students_pos=students_position,
                                           current_time=self.current_time) 
+        else:
+            self.results = find_nearest_stops(students_pos=students_position,
+                                          current_time=self.current_time,
+                                          target= self.journey.destination.name) 
         self.on_event("search_done")
        
     # def display_student_pos(self):

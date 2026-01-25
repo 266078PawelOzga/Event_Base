@@ -1,4 +1,5 @@
 import random
+from .models import Location
 """
     2: Generate Student position
 """
@@ -16,7 +17,10 @@ def check_student_pos(students_count=2, students_pos=None):
 
     return positions
 
-def real_student_pos(students_pos):
+def real_student_pos(location: Location):
     # TODO: implement reading real student position from file or input
     # How to handle a many students positions?
-    return students_pos
+    positions = []
+    positions.append((location.coord.lat, location.coord.lon))
+
+    return positions

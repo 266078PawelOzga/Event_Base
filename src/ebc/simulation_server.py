@@ -2,6 +2,7 @@ from .simulation import Simulation
 from .models import *
 from datetime import datetime, timedelta
 from fastapi import FastAPI, HTTPException, status
+from fastapi import BackgroundTasks
 from fastapi.responses import HTMLResponse
 import uvicorn
 import time
@@ -13,7 +14,7 @@ sim = Simulation(config=SimulationConfig(), run=False)
 
 def run_server():
     """Start the API server"""
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8000, access_log = False)
 
 @app.get("/status")
 def get_simulation_status() -> SimulationStatus:
@@ -33,7 +34,7 @@ def set_tickrate(value: float):
     return {"tickrate": sim.config.tickrate}
 
 @app.post("/journey")
-def add_journey(journey: Journey):
+def add_journey(journey: Journey, background_tasks: BackgroundTasks):
     import geocoder
     journey.model_validate(journey)
     print(journey)
@@ -67,7 +68,12 @@ def add_journey(journey: Journey):
     if journey.current_time is None:
         journey.current_time = sim.status.time
 
-    sim.add_journey(journey)
+    # Asynchronious adding - the trip is not visible instantly, only after adding
+    # the next trip
+    # background_tasks.add_task(sim.add_journey_and_automata, journey)
+    # Sychronious adding - the trip is visible at the right time,
+    # but the app and simulation are frozen for the time of adding
+    sim.add_journey_and_automata(journey)
 
 @app.post("/resume")
 def resume_simulation():
