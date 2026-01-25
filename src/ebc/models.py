@@ -68,6 +68,7 @@ class Journey(BaseModel):
     destination: Location
     current_position: Coordinates | None = None
     current_time: datetime | None = None
+    events: list[str] = []
     trips: list[Trip] = []
 
     @property
