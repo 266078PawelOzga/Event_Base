@@ -19,6 +19,7 @@ from PyQt5.QtWidgets import (
 from PyQt5.QtGui import QKeySequence
 from PyQt5.QtCore import Qt, QTimer, QUrl
 from PyQt5.QtWebEngineWidgets import QWebEngineView
+from functools import partial
 
 border_width = 1
 border_color = '#666'
@@ -135,6 +136,22 @@ class SimulationControlApp(QMainWindow):
         layout.addWidget(QLabel(f"D: {journey.destination.name}"))
         layout.addWidget(QLabel(f"State: {journey.state.value}"))
 
+        delay_button = QPushButton('Trigger delay')
+        delay_button.clicked.connect(partial(self.send_event, journey.id, 'Delay'))
+        layout.addWidget(delay_button)
+
+        crash_button = QPushButton('Trigger crash')
+        crash_button.clicked.connect(partial(self.send_event, journey.id, 'Crash'))
+        layout.addWidget(crash_button)
+
+        # Add new event
+        # event_button = QPushButton('EVENT')
+        # event_button.clicked.connect(partial(self.send_event, journey.id, 'EVENT'))
+        # layout.addWidget(event_button)
+
+        layout.addWidget(QLabel("Message log"))
+        layout.addWidget(QLabel('\n'.join(journey.message_log[::-1])))
+
         self.journeys_layout.insertWidget(0, journey_widget)
         self.journeys_list.insert(0, journey_widget)
 
@@ -144,6 +161,10 @@ class SimulationControlApp(QMainWindow):
             self.journeys_layout.removeWidget(journey)
             journey.deleteLater()
             self.journeys_list.remove(journey)
+
+    def send_event(self, journey_id: int, event: str):
+        requests.post(f"{base_url}/event", params={'journey_id': journey_id, 'event': event})
+        self.sync_simulation_status()
 
     def build_map(self) -> QWidget:
         map_ = QWidget(objectName='map')

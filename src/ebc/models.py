@@ -68,6 +68,8 @@ class Journey(BaseModel):
     destination: Location
     current_position: Coordinates | None = None
     current_time: datetime | None = None
+    events: list[str] = []
+    message_log: list[str] = []
     trips: list[Trip] = []
 
     @property
@@ -75,6 +77,9 @@ class Journey(BaseModel):
         return [self.origin] + \
                [loc for trip in self.trips for loc in trip.locations ] + \
                [self.destination]
+
+    def log_message(self, msg: str):
+        self.message_log.append(f"{self.current_time.strftime('%H:%M')}: {msg}")
 
     def update_position_arrival_time(self, time: datetime):
         next_location = None

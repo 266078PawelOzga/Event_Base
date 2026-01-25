@@ -33,6 +33,13 @@ def set_tickrate(value: float):
     sim.config.tickrate = value
     return {"tickrate": sim.config.tickrate}
 
+@app.post("/event")
+def set_tickrate(journey_id: int, event: str):
+    for journey in sim.status.journeys:
+        if journey.id == journey_id:
+            journey.events.append(event)
+            journey.log_message(event)
+
 @app.post("/journey")
 def add_journey(journey: Journey, background_tasks: BackgroundTasks):
     import geocoder
