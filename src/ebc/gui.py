@@ -136,11 +136,11 @@ class SimulationControlApp(QMainWindow):
         layout.addWidget(QLabel(f"D: {journey.destination.name}"))
         layout.addWidget(QLabel(f"State: {journey.state.value}"))
 
-        delay_button = QPushButton('Delay')
+        delay_button = QPushButton('Trigger delay')
         delay_button.clicked.connect(partial(self.send_event, journey.id, 'Delay'))
         layout.addWidget(delay_button)
 
-        crash_button = QPushButton('Crash')
+        crash_button = QPushButton('Trigger crash')
         crash_button.clicked.connect(partial(self.send_event, journey.id, 'Crash'))
         layout.addWidget(crash_button)
 
@@ -148,6 +148,9 @@ class SimulationControlApp(QMainWindow):
         # event_button = QPushButton('EVENT')
         # event_button.clicked.connect(partial(self.send_event, journey.id, 'EVENT'))
         # layout.addWidget(event_button)
+
+        layout.addWidget(QLabel("Message log"))
+        layout.addWidget(QLabel('\n'.join(journey.message_log[::-1])))
 
         self.journeys_layout.insertWidget(0, journey_widget)
         self.journeys_list.insert(0, journey_widget)
