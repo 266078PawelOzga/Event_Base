@@ -68,7 +68,12 @@ def add_journey(journey: Journey, background_tasks: BackgroundTasks):
     if journey.current_time is None:
         journey.current_time = sim.status.time
 
+    # Asynchronious adding - the trip is not visible instantly, only after adding
+    # the next trip
     background_tasks.add_task(sim.add_journey_and_automata, journey)
+    # Sychronious adding - the trip is visible at the right time,
+    # but the app and simulation are frozen for the time of adding
+    sim.add_journey_and_automata(journey)
 
 @app.post("/resume")
 def resume_simulation():

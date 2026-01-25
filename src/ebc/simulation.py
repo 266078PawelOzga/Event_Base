@@ -41,8 +41,6 @@ class Simulation:
 
     def add_journey_and_automata(self, journey: Journey):
         """Add journey to simulation"""
-        journey.id = next(self._journey_counter)
-        self.status.journeys.append(journey)
         fsm = StopFinderFSM(verbose=True,
                             number_of_students=1,
                             current_time=self.status.time,
@@ -50,15 +48,56 @@ class Simulation:
         fsm.on_event("user_request")
         stops_finding_results = fsm.results
         for student in stops_finding_results:
-            self.status.students_automatas.append(StudentAutomata(student))
+            # Create automata (this already builds student.path)
+            automata = StudentAutomata(student)
+            self.status.students_automatas.append(automata)
+
+            # ----------------------------
+            # WALK trip (origin → first stop)
+            # ----------------------------
             d, stop_id, stop_name, stop_lat, stop_lon = student['nearest_stops'][0]
-            loc = Location(name = stop_name,
-                           coord=Coordinates(lat=stop_lat,
-                                             lon=stop_lon))
-            initial_trip = Trip(kind = ModeOfTransport.WALK,
-                                name = "Walk to stop",
-                                locations=[loc])
-            self.status.journeys[-1].trips.append(initial_trip)
+
+            walk_loc = Location(
+                name=stop_name,
+                coord=Coordinates(lat=stop_lat, lon=stop_lon),
+                arrival=self.status.time,
+                departure=self.status.time
+            )
+
+            initial_trip = Trip(
+                kind=ModeOfTransport.WALK,
+                name="Walk to stop",
+                locations=[walk_loc]
+            )
+
+            journey.trips.append(initial_trip)
+
+            # ----------------------------
+            # BUS trip (full stop path)
+            # ----------------------------
+            bus_locations = []
+
+            for stop in automata.path:
+                loc = Location(
+                    name=stop["stop_name"],
+                    coord=Coordinates(
+                        lat=stop["stop_lat"],
+                        lon=stop["stop_lon"]
+                    ),
+                    arrival=_parse_gtfs_time(self.status.time, stop["arrival_time"]),
+                    departure=_parse_gtfs_time(self.status.time, stop["departure_time"])
+                )
+                bus_locations.append(loc)
+
+            if bus_locations:
+                bus_trip = Trip(
+                    kind=ModeOfTransport.BUS,
+                    name=f"Bus trip {automata.path[0]['stop_name']} → {automata.path[-1]['stop_name']}",
+                    locations=bus_locations
+                )
+                journey.trips.append(bus_trip)
+        journey.id = next(self._journey_counter)
+        self.status.journeys.append(journey)
 
     def _simulation_loop(self):
         """Simulation thread execution loop"""
@@ -80,6 +119,22 @@ class Simulation:
         """Terminate the thread when the object is deleted"""
         self.terminate.set()
         self.thread.join()
+
+def _parse_gtfs_time(sim_time: datetime, time_str: str) -> datetime:
+    """
+    Converts GTFS HH:MM:SS into a datetime aligned with simulation date.
+    Handles times past midnight (e.g. 25:10:00).
+    """
+    if not time_str:
+        return sim_time
+
+    h, m, s = map(int, time_str.split(":"))
+
+    day_offset = h // 24
+    h = h % 24
+
+    base = sim_time.replace(hour=0, minute=0, second=0, microsecond=0)
+    return base + timedelta(days=day_offset, hours=h, minutes=m, seconds=s)
 
 def counter() -> int:
     n: int = 1

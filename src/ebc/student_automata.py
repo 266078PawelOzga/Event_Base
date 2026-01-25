@@ -66,7 +66,6 @@ class StudentAutomata:
             )
 
             conn.close()
-            print(self.path)
 
         except Exception as e:
             print("StudentAutomata path build failed:", e)
