@@ -93,7 +93,8 @@ class Journey(BaseModel):
 
         self.current_time = time
         
-    def update_position_travel_speed(self, time: datetime, speed_m_per_s: float):
+    def update_position_travel_speed(self, time: datetime, walking_speed_m_per_s: float,
+                                     public_transportation_speed_m_per_s: float):
         from .target_stop import get_distance_from_lat_lon_in_m
         next_location = None
         for location in self.locations:
@@ -101,6 +102,17 @@ class Journey(BaseModel):
                 next_location = location
                 break
         
+        # Determine which trip this segment belongs to
+        speed_m_per_s = walking_speed_m_per_s  # default fallback
+
+        for trip in self.trips:
+            if next_location in trip.locations:
+                if trip.kind == ModeOfTransport.WALK:
+                    speed_m_per_s = walking_speed_m_per_s
+                elif trip.kind == ModeOfTransport.BUS:
+                    speed_m_per_s = public_transportation_speed_m_per_s
+                break
+
         if next_location:
             distance_to_next_location_m = get_distance_from_lat_lon_in_m(self.current_position.lat, self.current_position.lon,
                                         next_location.coord.lat, next_location.coord.lon)

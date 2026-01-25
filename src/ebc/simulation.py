@@ -112,7 +112,8 @@ class Simulation:
                 for journey in self.status.journeys:
                     journey_fsm_simple(journey)
                     journey.update_position_travel_speed(self.status.time,
-                                                         speed_m_per_s=1.4)
+                                                         walking_speed_m_per_s=1.4,
+                                                         public_transportation_speed_m_per_s=5)
                 self.tick()
 
     def __del__(self):
