@@ -146,6 +146,11 @@ class SimulationControlApp(QMainWindow):
         crash_button.clicked.connect(partial(self.send_event, journey.id, 'Crash'))
         layout.addWidget(crash_button)
 
+        cancel_button = QPushButton('Cancel classes')
+        cancel_button.clicked.connect(partial(self.send_event, journey.id, 'classes_canceled'))
+        layout.addWidget(cancel_button)
+
+
         # Add new event
         # event_button = QPushButton('EVENT')
         # event_button.clicked.connect(partial(self.send_event, journey.id, 'EVENT'))

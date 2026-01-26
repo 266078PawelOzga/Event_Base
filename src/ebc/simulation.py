@@ -6,6 +6,11 @@ import time
 from .AutomatFSM import StopFinderFSM
 from .target_stop import get_distance_from_lat_lon_in_m
 
+WYSPA_SLODOWA = Location(
+    name="Wyspa Słodowa",
+    coord=Coordinates(lat=51.1159, lon=17.0374)
+)
+
 class Simulation:
     def __init__(self, config: SimulationConfig, run: bool = False):
         self.config = config
@@ -140,6 +145,14 @@ class Simulation:
                             for automata in self.status.students_automatas:
                                 if automata.journey is journey:
                                     automata.on_event("crash")
+                        elif event == 'classes_canceled':
+                            for automata in self.status.students_automatas:
+                                if automata.journey is journey:
+                                    automata.on_event("classes_canceled")
+
+                            self._handle_classes_canceled(journey)
+                            # journey.events.clear()
+                            break  # IMPORTANT: journey is gone after this
 
                     #NOTE: assumes all the events were handled 
                     journey.events.clear()
@@ -239,6 +252,46 @@ class Simulation:
 
         # 6. Initialize routing for the new journey
         self.add_journey_and_automata(new_journey)
+
+    def _handle_classes_canceled(self, journey: Journey):
+        journey.events.clear()
+        current_pos = journey.current_position
+        if current_pos is None:
+            return
+
+        new_origin = Location(
+            name="Current location",
+            coord=current_pos,
+            arrival=self.status.time,
+            departure=self.status.time
+        )
+
+        new_destination = WYSPA_SLODOWA
+
+        new_journey = Journey(
+            origin=new_origin,
+            destination=new_destination,
+            current_time=self.status.time
+        )
+        new_journey.current_position = current_pos
+        new_journey.log_message("Classes canceled — walking to Wyspa Słodowa")
+
+        # 🚶 WALK-ONLY trip
+        walk_trip = Trip(
+            kind=ModeOfTransport.WALK,
+            name="Walk to Wyspa Słodowa",
+            locations=[new_destination]
+        )
+        new_journey.trips.append(walk_trip)
+
+        # Rebind automata
+        for automata in self.status.students_automatas:
+            if automata.journey is journey:
+                automata.journey = new_journey
+                automata.on_event("classes_canceled")
+
+        self.status.journeys.remove(journey)
+        self.status.journeys.append(new_journey)
 
 
     def __del__(self):
