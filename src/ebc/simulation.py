@@ -4,6 +4,12 @@ from .journey_fsm import journey_fsm_simple
 import threading
 import time
 from .AutomatFSM import StopFinderFSM
+from .target_stop import get_distance_from_lat_lon_in_m
+
+WYSPA_SLODOWA = Location(
+    name="Wyspa Słodowa",
+    coord=Coordinates(lat=51.1159, lon=17.0374)
+)
 
 class Simulation:
     def __init__(self, config: SimulationConfig, run: bool = False):
@@ -50,6 +56,7 @@ class Simulation:
         for student in stops_finding_results:
             # Create automata (this already builds student.path)
             automata = StudentAutomata(student)
+            automata.journey = journey
             self.status.students_automatas.append(automata)
 
             # ----------------------------
@@ -96,6 +103,9 @@ class Simulation:
                     locations=bus_locations
                 )
                 journey.trips.append(bus_trip)
+                automata.on_event('stop_found')
+            else:
+                automata.on_event('no_bus_available')
         journey.id = next(self._journey_counter)
         self.status.journeys.append(journey)
 
@@ -109,12 +119,177 @@ class Simulation:
             time.sleep(1.0/self.config.tickrate)
 
             if self.status.running:
-                for journey in self.status.journeys:
+                for journey in list(self.status.journeys):
+                    if journey.state == JourneyState.CRASHED:
+                        if journey.restart_after is None:
+                            continue
+
+                        if self.status.time < journey.restart_after:
+                            continue  # still waiting
+
+                        # ⏱ delay expired → restart
+                        self._handle_crash(journey)
+                        continue
+
+                    old_state = journey.state
                     journey_fsm_simple(journey)
-                    journey.update_position_travel_speed(self.status.time,
-                                                         walking_speed_m_per_s=1.4,
-                                                         public_transportation_speed_m_per_s=5)
+                    crash_detected = False
+
+                    for event in journey.events:
+                        if event == 'Delay':
+                            journey.remaining_delay_s += 300
+                        elif event == 'Crash':
+                            crash_detected = True
+                            journey.state = JourneyState.CRASHED
+                            journey.restart_after = self.status.time + timedelta(minutes=10)
+                            for automata in self.status.students_automatas:
+                                if automata.journey is journey:
+                                    automata.on_event("crash")
+                        elif event == 'classes_canceled':
+                            for automata in self.status.students_automatas:
+                                if automata.journey is journey:
+                                    automata.on_event("classes_canceled")
+
+                            self._handle_classes_canceled(journey)
+                            # journey.events.clear()
+                            break  # IMPORTANT: journey is gone after this
+
+                    #NOTE: assumes all the events were handled 
+                    journey.events.clear()
+                    journey.update_position_travel_speed(time = self.status.time,
+                                                    walking_speed_m_per_s=1.4,
+                                                    public_transportation_speed_m_per_s=5)
+                    # Checking if the goal was reached
+                    if old_state != journey.state and journey.state == "FINISHED":
+                        for automata in self.status.students_automatas:
+                            if automata.journey is journey:
+                                if automata.state != "TERMINAL_STATE":
+                                    automata.on_event("goal_reached")
+                    # Checking if the stop was reached
+                    for automata in self.status.students_automatas:
+                        if automata.journey is not journey:
+                            continue
+                        if automata.state == "WALK_TO_STOP":
+                            walk_trip = journey.trips[0]
+                            stop_location = walk_trip.locations[0]
+                            current_pos = journey.current_position  # <-- adjust name if needed
+
+                            if self._is_at_location(current_pos, stop_location.coord):
+                                automata.on_event("stop_reached")
+                        elif automata.state == "WAITING_FOR_TRANSPORTATION":
+                            # NOTE: this will just assume, the bus is there in the moment student
+                            # arrives to the stop
+                            automata.on_event("available_bus_arrived")
+                        elif automata.state == "TRAVELING_BY_TRANSPORTATION":
+                            bus_trip = journey.trips[1]   # WALK=0, BUS=1
+                            final_stop = bus_trip.locations[-1]
+
+                            if self._is_at_location(journey.current_position, final_stop.coord):
+                                automata.on_event("final_stop_reached")
+
                 self.tick()
+
+    def _is_at_location(self, pos: Coordinates,
+                target: Coordinates,
+                threshold_m: float = 5.0) -> bool:
+        """
+        Returns True if pos is within threshold meters of target.
+        """
+        if pos is None or target is None:
+            return False
+
+        return get_distance_from_lat_lon_in_m(pos.lat, pos.lon,
+                                              target.lat,
+                                              target.lon) <= threshold_m
+
+    def _handle_crash(self, journey: Journey):
+        """
+        Terminates the given journey and spawns a new one
+        from the current position to the original destination.
+        """
+
+        # 1. Capture state
+        current_pos = journey.current_position
+        destination = journey.destination
+
+        if current_pos is None:
+            return  # nothing sensible to do
+
+        # 2. Create a new origin location
+        new_origin = Location(
+            name="Crash location",
+            coord=current_pos,
+            arrival=self.status.time,
+            departure=self.status.time
+        )
+
+        # 3. Create a new journey
+        new_journey = Journey(
+            origin=new_origin,
+            destination=destination,
+            current_time=self.status.time
+        )
+
+        new_journey.current_position = new_origin.coord
+        new_journey.id = next(self._journey_counter)
+
+        # 4. Rebind automata
+        for automata in self.status.students_automatas:
+            if automata.journey is journey:
+                automata.journey = new_journey
+                automata.on_event("journey_restarted")  # optional FSM hook
+
+        # 5. Remove old journey and automata
+        self.status.journeys.remove(journey)
+
+        self.status.students_automatas = [
+            a for a in self.status.students_automatas
+            if a.journey is not journey
+        ]
+
+        # 6. Initialize routing for the new journey
+        self.add_journey_and_automata(new_journey)
+
+    def _handle_classes_canceled(self, journey: Journey):
+        journey.events.clear()
+        current_pos = journey.current_position
+        if current_pos is None:
+            return
+
+        new_origin = Location(
+            name="Current location",
+            coord=current_pos,
+            arrival=self.status.time,
+            departure=self.status.time
+        )
+
+        new_destination = WYSPA_SLODOWA
+
+        new_journey = Journey(
+            origin=new_origin,
+            destination=new_destination,
+            current_time=self.status.time
+        )
+        new_journey.current_position = current_pos
+        new_journey.log_message("Classes canceled — walking to Wyspa Słodowa")
+
+        # 🚶 WALK-ONLY trip
+        walk_trip = Trip(
+            kind=ModeOfTransport.WALK,
+            name="Walk to Wyspa Słodowa",
+            locations=[new_destination]
+        )
+        new_journey.trips.append(walk_trip)
+
+        # Rebind automata
+        for automata in self.status.students_automatas:
+            if automata.journey is journey:
+                automata.journey = new_journey
+                automata.on_event("classes_canceled")
+
+        self.status.journeys.remove(journey)
+        self.status.journeys.append(new_journey)
+
 
     def __del__(self):
         """Terminate the thread when the object is deleted"""

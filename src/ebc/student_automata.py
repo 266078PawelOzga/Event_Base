@@ -1,20 +1,39 @@
 TRANSITIONS = {
     'START': {
         'stop_found': 'WALK_TO_STOP',
-        'classes_canceled': 'TERMINAL_STATE',
+        'classes_canceled': 'FINDING_ROUTE_TO_WYSPA_SLODOWA',
+        'no_bus_available': 'TRAVELING_BY_FOOT',
     },
     'WALK_TO_STOP': {
         'stop_reached': 'WAITING_FOR_TRANSPORTATION',
-        'classes_canceled': 'TERMINAL_STATE',
+        'classes_canceled': 'FINDING_ROUTE_TO_WYSPA_SLODOWA',
+        'journey_restarted': 'START',
     },
     'WAITING_FOR_TRANSPORTATION': {
-        'available_bus_arrived':  'TRAVELING',
-        'classes_canceled': 'TERMINAL_STATE',
-
+        'available_bus_arrived':  'TRAVELING_BY_TRANSPORTATION',
+        'classes_canceled': 'FINDING_ROUTE_TO_WYSPA_SLODOWA',
+        'journey_restarted': 'START',
     },
-    'TRAVELING': {
+    'TRAVELING_BY_TRANSPORTATION': {
         'goal_reached': 'TERMINAL_STATE',
-        'classes_canceled': 'TERMINAL_STATE'
+        'final_stop_reached': 'TRAVELING_BY_FOOT',
+        'classes_canceled': 'FINDING_ROUTE_TO_WYSPA_SLODOWA',
+        'journey_restarted': 'START',
+        'crash': 'IN_A_CRASH'
+    },
+    'TRAVELING_BY_FOOT': {
+        'goal_reached': 'TERMINAL_STATE',
+        'classes_canceled': 'FINDING_ROUTE_TO_WYSPA_SLODOWA',
+        'journey_restarted': 'START',
+    },
+    'IN_A_CRASH': {
+        'classes_canceled': 'FINDING_ROUTE_TO_WYSPA_SLODOWA',
+        'journey_restarted': 'START'
+    },
+    'FINDING_ROUTE_TO_WYSPA_SLODOWA': {
+        'stop_found': 'WALK_TO_STOP',
+        'no_bus_available': 'TRAVELING_BY_FOOT',
+        'goal_reached': 'TERMINAL_STATE',
     },
     'TERMINAL_STATE': {
     }
@@ -75,9 +94,11 @@ class StudentAutomata:
         new_state = state_transitions.get(event)
 
         if new_state:
+            print(f"{self.state} --{event}--> {new_state}")
             self.state = new_state
         else:
-            print(f'Event "{event}" is not supported for state "{self.state}".')
+            if event != 'classes_canceled':
+                print(f'Event "{event}" is not supported for state "{self.state}".')
 
     def update_state(self, event):
         old = self.state

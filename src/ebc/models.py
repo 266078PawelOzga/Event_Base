@@ -12,6 +12,7 @@ from .student_automata import StudentAutomata
 class JourneyState(str, Enum):
     CREATED     = "CREATED"
     IN_PROGRESS = "IN_PROGRESS"
+    CRASHED = "CRASHED"
     FINISHED    = "FINISHED"
 
 @unique
@@ -68,6 +69,8 @@ class Journey(BaseModel):
     destination: Location
     current_position: Coordinates | None = None
     current_time: datetime | None = None
+    remaining_delay_s: float = 0
+    restart_after: datetime | None = None
     events: list[str] = []
     message_log: list[str] = []
     trips: list[Trip] = []
@@ -121,10 +124,13 @@ class Journey(BaseModel):
         if next_location:
             distance_to_next_location_m = get_distance_from_lat_lon_in_m(self.current_position.lat, self.current_position.lon,
                                         next_location.coord.lat, next_location.coord.lon)
-            timestep = (time - self.current_time).total_seconds()
+            timestep_s = (time - self.current_time).total_seconds()
+            consumed_delay_s = min(self.remaining_delay_s, timestep_s)
+            self.remaining_delay_s -= consumed_delay_s
+            timestep_s -= consumed_delay_s
             time_to_next_location = distance_to_next_location_m/speed_m_per_s
             if time_to_next_location > 0.1:
-                a = min(timestep / time_to_next_location, 1)
+                a = min(timestep_s / time_to_next_location, 1)
                 self.current_position = self.current_position * (1-a) + next_location.coord * a
             else:
                 self.current_position = next_location.coord
