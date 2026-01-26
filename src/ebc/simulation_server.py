@@ -132,6 +132,14 @@ def get_simulation_map():
         position_markers[journey.id] = position_marker
         position_marker.add_to(m)
 
+
+    kw = {"prefix": "fa", "color": "red", "icon": "burst"}
+    for crash in sim.status.crashes:
+        folium.Marker(location = crash[0].tuple(),
+                      icon=folium.Icon(**kw),
+                      popup=folium.Popup(f"Crash of journey from {crash[1]} to {crash[2]}")
+                      ).add_to(m)
+
     marker_script = "var position_markers = {};\n"
     for key, marker in position_markers.items():
         marker_script += f"position_markers['journey_{key}'] = '{marker.get_name()}';\n"

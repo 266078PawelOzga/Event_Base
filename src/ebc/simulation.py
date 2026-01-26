@@ -38,7 +38,8 @@ class Simulation:
             running = False,
             time = self.config.t0,
             journeys = [],
-            students_automatas = []
+            students_automatas = [],
+            crashes = []
         )
 
     def tick(self):
@@ -141,6 +142,7 @@ class Simulation:
                         elif event == 'Crash':
                             crash_detected = True
                             journey.state = JourneyState.CRASHED
+                            self.status.crashes.append((journey.current_position, journey.origin.name, journey.destination.name))
                             journey.restart_after = self.status.time + timedelta(minutes=10)
                             for automata in self.status.students_automatas:
                                 if automata.journey is journey:

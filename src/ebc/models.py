@@ -154,6 +154,7 @@ class SimulationStatus(BaseModel):
     running: bool = False
     time: datetime = datetime.fromtimestamp(0)
     journeys: list[Journey] = []
+    crashes: list[tuple[Coordinates,str,str]] = []
     students_automatas: list[StudentAutomata] = Field(default_factory=list)
 
     model_config = ConfigDict(arbitrary_types_allowed=True)
