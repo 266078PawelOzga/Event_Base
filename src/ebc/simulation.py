@@ -117,9 +117,14 @@ class Simulation:
                 for journey in self.status.journeys:
                     old_state = journey.state
                     journey_fsm_simple(journey)
-                    journey.update_position_travel_speed(self.status.time,
-                                                         walking_speed_m_per_s=1.4,
-                                                         public_transportation_speed_m_per_s=5)
+                    for event in journey.events:
+                        if event == 'Delay':
+                            journey.remaining_delay_s += 300
+                    #NOTE: assumes all the events were handled 
+                    journey.events.clear()
+                    journey.update_position_travel_speed(time = self.status.time,
+                                                    walking_speed_m_per_s=1.4,
+                                                    public_transportation_speed_m_per_s=5)
                     # Checking if the goal was reached
                     if old_state != journey.state and journey.state == "FINISHED":
                         for automata in self.status.students_automatas:
