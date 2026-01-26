@@ -114,7 +114,18 @@ class Simulation:
             time.sleep(1.0/self.config.tickrate)
 
             if self.status.running:
-                for journey in self.status.journeys:
+                for journey in list(self.status.journeys):
+                    if journey.state == JourneyState.CRASHED:
+                        if journey.restart_after is None:
+                            continue
+
+                        if self.status.time < journey.restart_after:
+                            continue  # still waiting
+
+                        # ⏱ delay expired → restart
+                        self._handle_crash(journey)
+                        continue
+
                     old_state = journey.state
                     journey_fsm_simple(journey)
                     crash_detected = False
@@ -124,12 +135,12 @@ class Simulation:
                             journey.remaining_delay_s += 300
                         elif event == 'Crash':
                             crash_detected = True
+                            journey.state = JourneyState.CRASHED
+                            journey.restart_after = self.status.time + timedelta(minutes=10)
+                            for automata in self.status.students_automatas:
+                                if automata.journey is journey:
+                                    automata.on_event("crash")
 
-                    journey.events.clear()
-
-                    if crash_detected:
-                        self._handle_crash(journey)
-                        continue  # IMPORTANT: skip further processing of this journey
                     #NOTE: assumes all the events were handled 
                     journey.events.clear()
                     journey.update_position_travel_speed(time = self.status.time,
@@ -218,9 +229,13 @@ class Simulation:
                 automata.journey = new_journey
                 automata.on_event("journey_restarted")  # optional FSM hook
 
-        # 5. Remove old journey, add new one
+        # 5. Remove old journey and automata
         self.status.journeys.remove(journey)
-        self.status.journeys.append(new_journey)
+
+        self.status.students_automatas = [
+            a for a in self.status.students_automatas
+            if a.journey is not journey
+        ]
 
         # 6. Initialize routing for the new journey
         self.add_journey_and_automata(new_journey)

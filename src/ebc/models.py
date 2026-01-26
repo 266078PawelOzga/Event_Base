@@ -12,6 +12,7 @@ from .student_automata import StudentAutomata
 class JourneyState(str, Enum):
     CREATED     = "CREATED"
     IN_PROGRESS = "IN_PROGRESS"
+    CRASHED = "CRASHED"
     FINISHED    = "FINISHED"
 
 @unique
@@ -69,6 +70,7 @@ class Journey(BaseModel):
     current_position: Coordinates | None = None
     current_time: datetime | None = None
     remaining_delay_s: float = 0
+    restart_after: datetime | None = None
     events: list[str] = []
     message_log: list[str] = []
     trips: list[Trip] = []
