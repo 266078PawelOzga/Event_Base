@@ -48,6 +48,8 @@ class SimulationControlApp(QMainWindow):
         self.spinner_timer.timeout.connect(self.update_spinner)
         self.spinner_timer.start(spinner_base_period)
 
+        self._last_journey_ids: set[int] = set()
+
         self.init_ui()
         self.sync_simulation_status()
         self.sync_simulation_config()
@@ -291,10 +293,18 @@ class SimulationControlApp(QMainWindow):
         time = self.simulation_status.time.strftime("%H:%M")
         self.time_label.setText(f'Time: {time}')
 
-        # FIXME: inefficient, but simple
+        current_ids = {j.id for j in status.journeys}
+
+        # 🔥 STRUCTURAL CHANGE → reload map
+        if current_ids != self._last_journey_ids:
+            self.web_view.reload()
+
+        self._last_journey_ids = current_ids
+
         self.clear_journeys_panel()
         for journey in status.journeys:
-            self.update_marker_position(journey)
+            if journey.current_position is not None:
+                self.update_marker_position(journey)
             self.add_journey_to_panel(journey)
 
 

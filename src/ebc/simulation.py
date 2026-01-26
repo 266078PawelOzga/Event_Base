@@ -117,9 +117,19 @@ class Simulation:
                 for journey in self.status.journeys:
                     old_state = journey.state
                     journey_fsm_simple(journey)
+                    crash_detected = False
+
                     for event in journey.events:
                         if event == 'Delay':
                             journey.remaining_delay_s += 300
+                        elif event == 'Crash':
+                            crash_detected = True
+
+                    journey.events.clear()
+
+                    if crash_detected:
+                        self._handle_crash(journey)
+                        continue  # IMPORTANT: skip further processing of this journey
                     #NOTE: assumes all the events were handled 
                     journey.events.clear()
                     journey.update_position_travel_speed(time = self.status.time,
@@ -170,6 +180,50 @@ class Simulation:
         return get_distance_from_lat_lon_in_m(pos.lat, pos.lon,
                                               target.lat,
                                               target.lon) <= threshold_m
+
+    def _handle_crash(self, journey: Journey):
+        """
+        Terminates the given journey and spawns a new one
+        from the current position to the original destination.
+        """
+
+        # 1. Capture state
+        current_pos = journey.current_position
+        destination = journey.destination
+
+        if current_pos is None:
+            return  # nothing sensible to do
+
+        # 2. Create a new origin location
+        new_origin = Location(
+            name="Crash location",
+            coord=current_pos,
+            arrival=self.status.time,
+            departure=self.status.time
+        )
+
+        # 3. Create a new journey
+        new_journey = Journey(
+            origin=new_origin,
+            destination=destination,
+            current_time=self.status.time
+        )
+
+        new_journey.current_position = new_origin.coord
+        new_journey.id = next(self._journey_counter)
+
+        # 4. Rebind automata
+        for automata in self.status.students_automatas:
+            if automata.journey is journey:
+                automata.journey = new_journey
+                automata.on_event("journey_restarted")  # optional FSM hook
+
+        # 5. Remove old journey, add new one
+        self.status.journeys.remove(journey)
+        self.status.journeys.append(new_journey)
+
+        # 6. Initialize routing for the new journey
+        self.add_journey_and_automata(new_journey)
 
 
     def __del__(self):

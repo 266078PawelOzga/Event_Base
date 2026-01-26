@@ -7,21 +7,30 @@ TRANSITIONS = {
     'WALK_TO_STOP': {
         'stop_reached': 'WAITING_FOR_TRANSPORTATION',
         'classes_canceled': 'TERMINAL_STATE',
+        'journey_restarted': 'START'
     },
     'WAITING_FOR_TRANSPORTATION': {
         'available_bus_arrived':  'TRAVELING_BY_TRANSPORTATION',
         'classes_canceled': 'TERMINAL_STATE',
-
+        'journey_restarted': 'START'
     },
     'TRAVELING_BY_TRANSPORTATION': {
         'goal_reached': 'TERMINAL_STATE',
         'final_stop_reached': 'TRAVELING_BY_FOOT',
-        'classes_canceled': 'TERMINAL_STATE'
+        'classes_canceled': 'TERMINAL_STATE',
+        'journey_restarted': 'START'
     },
     'TRAVELING_BY_FOOT': {
         'goal_reached': 'TERMINAL_STATE',
-        'classes_canceled': 'TERMINAL_STATE'
+        'classes_canceled': 'TERMINAL_STATE',
+        'journey_restarted': 'START'
     },
+    'IN_A_CRASH': {
+        'classes_canceled': 'TERMINAL_STATE',
+        'journey_restarted': 'START'
+    },
+    
+
     'TERMINAL_STATE': {
     }
 }
