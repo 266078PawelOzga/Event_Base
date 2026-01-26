@@ -165,7 +165,6 @@ class Simulation:
                             if automata.journey is journey:
                                 if automata.state != "TERMINAL_STATE":
                                     automata.on_event("goal_reached")
-                                    automata.print_student_state()
                     # Checking if the stop was reached
                     for automata in self.status.students_automatas:
                         if automata.journey is not journey:
@@ -177,7 +176,6 @@ class Simulation:
 
                             if self._is_at_location(current_pos, stop_location.coord):
                                 automata.on_event("stop_reached")
-                                automata.print_student_state()
                         elif automata.state == "WAITING_FOR_TRANSPORTATION":
                             # NOTE: this will just assume, the bus is there in the moment student
                             # arrives to the stop
@@ -188,7 +186,6 @@ class Simulation:
 
                             if self._is_at_location(journey.current_position, final_stop.coord):
                                 automata.on_event("final_stop_reached")
-                                automata.print_student_state()
 
                 self.tick()
 
