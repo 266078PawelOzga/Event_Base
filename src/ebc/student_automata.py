@@ -2,17 +2,23 @@ TRANSITIONS = {
     'START': {
         'stop_found': 'WALK_TO_STOP',
         'classes_canceled': 'TERMINAL_STATE',
+        'no_bus_available': 'TRAVELING_BY_FOOT',
     },
     'WALK_TO_STOP': {
         'stop_reached': 'WAITING_FOR_TRANSPORTATION',
         'classes_canceled': 'TERMINAL_STATE',
     },
     'WAITING_FOR_TRANSPORTATION': {
-        'available_bus_arrived':  'TRAVELING',
+        'available_bus_arrived':  'TRAVELING_BY_TRANSPORTATION',
         'classes_canceled': 'TERMINAL_STATE',
 
     },
-    'TRAVELING': {
+    'TRAVELING_BY_TRANSPORTATION': {
+        'goal_reached': 'TERMINAL_STATE',
+        'final_stop_reached': 'TRAVELING_BY_FOOT',
+        'classes_canceled': 'TERMINAL_STATE'
+    },
+    'TRAVELING_BY_FOOT': {
         'goal_reached': 'TERMINAL_STATE',
         'classes_canceled': 'TERMINAL_STATE'
     },
@@ -75,6 +81,7 @@ class StudentAutomata:
         new_state = state_transitions.get(event)
 
         if new_state:
+            print(f"{self.state} --{event}--> {new_state}")
             self.state = new_state
         else:
             print(f'Event "{event}" is not supported for state "{self.state}".')

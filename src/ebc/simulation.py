@@ -4,6 +4,7 @@ from .journey_fsm import journey_fsm_simple
 import threading
 import time
 from .AutomatFSM import StopFinderFSM
+from .target_stop import get_distance_from_lat_lon_in_m
 
 class Simulation:
     def __init__(self, config: SimulationConfig, run: bool = False):
@@ -50,6 +51,7 @@ class Simulation:
         for student in stops_finding_results:
             # Create automata (this already builds student.path)
             automata = StudentAutomata(student)
+            automata.journey = journey
             self.status.students_automatas.append(automata)
 
             # ----------------------------
@@ -96,6 +98,9 @@ class Simulation:
                     locations=bus_locations
                 )
                 journey.trips.append(bus_trip)
+                automata.on_event('stop_found')
+            else:
+                automata.on_event('no_bus_available')
         journey.id = next(self._journey_counter)
         self.status.journeys.append(journey)
 
@@ -110,11 +115,57 @@ class Simulation:
 
             if self.status.running:
                 for journey in self.status.journeys:
+                    old_state = journey.state
                     journey_fsm_simple(journey)
                     journey.update_position_travel_speed(self.status.time,
                                                          walking_speed_m_per_s=1.4,
                                                          public_transportation_speed_m_per_s=5)
+                    # Checking if the goal was reached
+                    if old_state != journey.state and journey.state == "FINISHED":
+                        for automata in self.status.students_automatas:
+                            if automata.journey is journey:
+                                if automata.state != "TERMINAL_STATE":
+                                    automata.on_event("goal_reached")
+                                    automata.print_student_state()
+                    # Checking if the stop was reached
+                    for automata in self.status.students_automatas:
+                        if automata.journey is not journey:
+                            continue
+                        if automata.state == "WALK_TO_STOP":
+                            walk_trip = journey.trips[0]
+                            stop_location = walk_trip.locations[0]
+                            current_pos = journey.current_position  # <-- adjust name if needed
+
+                            if self._is_at_location(current_pos, stop_location.coord):
+                                automata.on_event("stop_reached")
+                                automata.print_student_state()
+                        elif automata.state == "WAITING_FOR_TRANSPORTATION":
+                            # NOTE: this will just assume, the bus is there in the moment student
+                            # arrives to the stop
+                            automata.on_event("available_bus_arrived")
+                        elif automata.state == "TRAVELING_BY_TRANSPORTATION":
+                            bus_trip = journey.trips[1]   # WALK=0, BUS=1
+                            final_stop = bus_trip.locations[-1]
+
+                            if self._is_at_location(journey.current_position, final_stop.coord):
+                                automata.on_event("final_stop_reached")
+                                automata.print_student_state()
+
                 self.tick()
+
+    def _is_at_location(self, pos: Coordinates,
+                target: Coordinates,
+                threshold_m: float = 5.0) -> bool:
+        """
+        Returns True if pos is within threshold meters of target.
+        """
+        if pos is None or target is None:
+            return False
+
+        return get_distance_from_lat_lon_in_m(pos.lat, pos.lon,
+                                              target.lat,
+                                              target.lon) <= threshold_m
+
 
     def __del__(self):
         """Terminate the thread when the object is deleted"""
