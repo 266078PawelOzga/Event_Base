@@ -72,12 +72,11 @@ def stop_times(ctx) -> None:
 
 @click.group(
     epilog="""
+update requirements.txt if the new version of library is available.
 You can also run: \n
-$ poetry run python target_stop.py
- -to see 12 bus stops with 3 different target stops and departure times after 06:05:01.
 
-$ poetry run python AutomatFSM.py
- -to see FSM searching for nearest bus stops (testing).
+$ pip list
+ -to see import files with current version.
 """
 )
 
